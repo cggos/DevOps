@@ -3,6 +3,7 @@
 * https://www.docker.com/
 * https://www.docker-cn.com/
 * [docker中文社区](http://www.docker.org.cn/)
+* [Docker Hub](https://hub.docker.com/): Dev-test pipeline automation, 100,000+ free apps, public and private registries
 
 -----
 
