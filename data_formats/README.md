@@ -46,5 +46,8 @@ CoffeeScript-Object-Notation. Same as JSON but for CoffeeScript objects.
 ## Protocol Buffers
 [Protocol buffers](https://developers.google.com/protocol-buffers/) are Google's language-neutral, platform-neutral, extensible mechanism for serializing structured data – think XML, but smaller, faster, and simpler.
 
+## FlatBuffers
+[FlatBuffers](https://google.github.io/flatbuffers/) is an efficient cross platform serialization library for C++, C#, C, Go, Java, JavaScript, Lobster, Lua, TypeScript, PHP, Python, and Rust. It was originally created at Google for game development and other performance-critical applications.
+
 ## HDF - Hierarchical Data Format
 [Hierarchical Data Format (HDF)](https://eosweb.larc.nasa.gov/HBDOCS/hdf.html) is a data file format designed by the National Center for Supercomputing Applications (NCSA) to assist users in the storage and manipulation of scientific data across diverse operating systems and machines.
