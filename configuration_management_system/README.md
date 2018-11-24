@@ -20,4 +20,7 @@
 * [Mercurial (hg)](https://www.mercurial-scm.org/) is a free, distributed source control management tool.
 * SVN
 
+### wstool
+[wstool](https://www.mankier.com/1/wstool) is a command to manipulate multiple version controlled folders, using it you can update several folders using **a variety SCMs (SVN, Mercurial, git, Bazaar)** with just one command
+
 ### Git
