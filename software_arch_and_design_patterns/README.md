@@ -28,3 +28,5 @@
 #### Tools
 * [Enterprise Architect](https://sparxsystems.com/): UML modeling tools for Business, Software, Systems and Architecture
 * [Enterprise Architect (中)](https://sparxsystems.cn/)
+* [ArgoUML](http://argouml.tigris.org/) is the leading open source UML modeling tool and includes support for all standard UML 1.4 diagrams. It runs on any Java platform and is available in ten languages
+* [Umbrello UML Modeller](https://umbrello.kde.org/) is a Unified Modelling Language (UML) diagram program based on KDE Technology. UML allows you to create diagrams of software and other systems in a standard format to document or design the structure of your programs.
