@@ -3,6 +3,8 @@
 * [Software optimization resources](https://www.agner.org/optimize/)
 * [Programming Optimization](http://www.azillionmonkeys.com/qed/optimize.html)
 * [Making Your C++ Code Robust](https://www.codeproject.com/articles/216077/making-your-cplusplus-code-robust)
+* [性能调优攻略](https://coolshell.cn/articles/7490.html)
+* [内存管理内幕](https://www.ibm.com/developerworks/cn/linux/l-memory/)
 
 -----
 

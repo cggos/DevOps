@@ -6,6 +6,8 @@
 
 ## GCC/G++
 
+* [How to Install the Latest GCC on Windows](https://preshing.com/20141108/how-to-install-the-latest-gcc-on-windows/)
+
 ### gcc/g++ Options
 
 * `-dumpmachine`: print **the compiler's target machine** (for example, arm-linux-gnueabihf)

@@ -2,6 +2,8 @@
 
 -----
 
+[TOC]
+
 ## Cppcheck - a static analysis tool for C/C++ code
 [Cppcheck](http://cppcheck.sourceforge.net/) provides unique code analysis to detect bugs and focuses on detecting undefined behaviour and dangerous coding constructs. The goal is to detect only real errors in the code (i.e. have very few false positives).
 ```
@@ -29,3 +31,10 @@ gcov -b *.gcno
 ```
 
 * [cpp-coveralls](https://github.com/eddyxu/cpp-coveralls) - Upload C/C++ coverage report to coveralls.io
+
+
+## Code Quantity
+
+* [WakaTime](https://wakatime.com/): Open source plugins for automatic programming metrics
+* [Landscape](https://landscape.io/) is an early warning system for your Python codebase
+* [Synk](https://snyk.io/): A developer-first solution that automates finding & fixing vulnerabilities in your dependencies

@@ -14,6 +14,7 @@
 * [Packagist](https://packagist.org/) is the main Composer repository. It aggregates public PHP packages installable with Composer.
 * [RPM Fusion](https://rpmfusion.org/)
 * [RPM repository on fr2.rpmfind.net](http://rpmfind.net/linux/RPM/)
+* [AppImage](https://appimage.org/): Linux apps that run anywhere
 
 
 ## Software Archive
