@@ -38,3 +38,11 @@
 * [CodePlex](https://archive.codeplex.com/) was Microsoft's free, open source project hosting site, which ran from 2006 through 2017
 * [Libraries.io](https://libraries.io/) - The Open Source Discovery Service
 * [searchcode](https://searchcode.com/) is a free source code and documentation search engine
+
+
+## OTA (Over The Air)
+
+OTA（空中下载），具体指远程无线方式，OTA 技术可以理解为一种远程无线升级技术。
+
+### FOTA
+Firmware OverThe Air/固件空中升级，通过云端为具有连网功能的设备：例如手机、平板电脑、移动互联网设备等提供固件升级服务，手机中的固件升级即可称为 FOTA。
