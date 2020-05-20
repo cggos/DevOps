@@ -1,0 +1,119 @@
+\include{beamer_preamble}
+
+%% preamble
+\title[Slide Title]{Slide Title}
+% \subtitle{The subtitle}
+\author{高洪臣}
+\institute[MYNTAI]{gordongao@myntai.com}
+
+% -------------------------------------------------------------
+
+\begin{document}
+
+%% title frame
+\begin{frame}
+    \titlepage
+\end{frame}
+
+%% normal frame
+\section{Bayesian Statistics Tutorial}
+\subsection{}
+\begin{frame}
+    \frametitle{Basics}
+    conditional probabilities:
+    $$
+    p(x|y) \coloneqq \frac{p(x,y)}{p(y)}
+    $$
+    the joint probalility of $x$ and $y$:
+    $$
+    p(x,y)=p(x|y)p(y)=p(y|x)p(x)
+    $$
+
+    \begin{block}{Theorem: Bayes Rule}
+    Denote by X and Y random variables then the following holds
+    $$
+    p(y|x)=\frac{p(x|y)p(y)}{p(x)}
+    $$
+    \end{block}
+
+\end{frame}
+
+\begin{frame}
+    \frametitle{An Example}
+
+    \center{
+    \begin{tabular}{ c | c c }
+        $p(t|x)$ & $X = \mathtt{HIV-}$ & $X=\mathtt{HIV+}$ \\
+        \hline
+        $T=\mathtt{HIV-}$ & 0.99 & 0 \\
+        $T=\mathtt{HIV+}$ & 0.01 & 1
+    \end{tabular}
+    }
+
+    $$
+    p(X = \mathtt{HIV+}) = 0.0015
+    $$
+\end{frame}
+
+
+\begin{frame}
+    \frametitle{How can we improve the diagnosis}
+
+    % Define block styles
+    \tikzset{
+        grayCircle/.style = {
+            draw,
+            circle,
+            node distance=2.5cm,
+            minimum size=1.5cm,
+            fill=black!20
+        }
+    }
+
+    \center
+    \begin{tikzpicture}
+        \node[grayCircle] (age) {age};
+        \node[grayCircle, right of=age, style={fill=none}] (x) {x};
+        \node[grayCircle, right of=x, yshift=1.25cm] (t1) {test 1};
+        \node[grayCircle, below of=t1] (t2) {test 2};
+        \draw[->, >=latex] (age) -- (x);
+        \draw[->, >=latex] (x) -- (t1);
+        \draw[->, >=latex] (x) -- (t2);
+    \end{tikzpicture}
+
+    \begin{figure}
+        \caption{A graphical description of our HIV testing scenario. Knowing the age of the patient influences our prior on whether the patient is HIV positive (the random variable X). The outcomes of the tests 1 and 2 are independent of each other given the status X. We observe the shaded random variables (age, test 1, test 2) and would like to infer the un-shaded random variable X.}
+    \end{figure}
+
+\end{frame}
+
+
+\begin{frame}
+    \frametitle{How can we improve the diagnosis}
+
+    \begin{parchment}[Including additional observed random variables]
+    One way is to obtain further information about the patient and to use this in the diagnosis. For instance, information about his age is quite useful. Suppose the patient is 35 years old. In this case we would want to compute $p(X = \mathtt{HIV+}|T = \mathtt{HIV+}, A = 35)$ where the random variable A denotes the age.
+    \end{parchment}
+
+    The corresponding expression yields:
+    $$
+    \frac{p(T=\mathtt{HIV+}|X=\mathtt{HIV+},A)p(X=\mathtt{HIV+}|A)}{p(T=\mathtt{HIV+}|A)}
+    $$
+\end{frame}
+
+\begin{frame}
+%\includemedia[
+%  width=0.8\linewidth,
+%  height=0.6\linewidth,
+%  activate=pageopen,
+%  addresource=out.mp4,
+%  flashvars={
+%      source=out.mp4
+%      &loop=true
+%    }
+%  ]{}{VPlayer.swf}
+  
+\href{run:out.mp4}{Movie} 
+\end{frame}
+
+\end{document}
