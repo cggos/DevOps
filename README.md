@@ -3,9 +3,9 @@
 * [Google Code](https://code.google.com/)
 * [谷歌开发者社区(GDG)](https://chinagdg.org/)
 
-<div align=center>
-  <img src="images/devops.png">
-</div>
+<p align="center">
+  <img src="images/DevOps.png" style="width:80%;">
+</p>
 
 -----
 
