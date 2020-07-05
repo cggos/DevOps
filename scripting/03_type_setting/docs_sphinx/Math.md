@@ -16,6 +16,7 @@
 
 ## Equations
 
+* [Online LaTeX Equation Editor - LaTeX4technics](https://www.latex4technics.com/)
 * [CodeCogs Equation Editor](http://latex.codecogs.com/)
 * [Mathpix](https://mathpix.com/): Convert images to LaTeX
 * [KLatexFormula](https://klatexformula.sourceforge.io/): an easy-to-use graphical application for generating images (that you can drag and drop, copy and paste or save to disk) from LaTeX equations

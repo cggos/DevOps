@@ -29,7 +29,7 @@ echo $counter
 exit 0
 ```
 
-## xargs 
+## xargs
 
 ```sh
 cat install_manifest.txt | xargs sudo rm {} -fr
@@ -40,6 +40,14 @@ cat install_manifest.txt | xargs sudo rm {} -fr
 * [25 simple examples of Linux find command](http://www.binarytides.com/linux-find-command-examples/)
 
 * [Linux下的五个查找命令：grep、find、locate、whereis、which](http://www.cnblogs.com/wanqieddy/archive/2011/07/15/2107071.html)
+
+* [fzf](https://github.com/junegunn/fzf): a general-purpose command-line fuzzy finder
+  - install fzf
+	- alias
+	  ```sh
+		alias ff='find * -type f | fzf > selected'
+		```
+	- use in cli: `ff`
 
 ```bash
 # 在当前目录下查找"hello"字符串

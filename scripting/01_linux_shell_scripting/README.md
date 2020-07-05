@@ -12,6 +12,8 @@
 
 * [20 Funny Commands of Linux or Linux is Fun in Terminal](https://www.tecmint.com/20-funny-commands-of-linux-or-linux-is-fun-in-terminal/)
 
+* [UbuntuSkills (ubuntu wiki)](https://wiki.ubuntu.org.cn/UbuntuSkills)
+
 ---
 
 # System & Hardware

@@ -51,6 +51,20 @@
 * ubuntu 16.04下的latex的section没有编号的问题
   - 从 https://www.ctan.org/tex-archive/macros/latex/contrib/titlesec 下载解压到 `/usr/share/texlive/texmf-dist/tex/latex`
 
+* tlmgr
+  ```sh
+  sudo mktexlsr
+  tlmgr init-usertree
+  tlmgr update --list # sudo apt install xzdec
+  tlmgr --gui # sudo apt install perl-tk
+
+  # 永久更改镜像源
+  tlmgr option repository https://mirrors.tuna.tsinghua.edu.cn/CTAN/systems/texlive/tlnet
+
+  # 临时切换镜像源
+  tlmgr update --all --repository https://mirrors.tuna.tsinghua.edu.cn/CTAN/systems/texlive/tlnet
+  ```
+
 # TeX Editor
 
 * [Tables Generator](https://www.tablesgenerator.com/): Create LaTeX tables online
