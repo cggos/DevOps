@@ -1,6 +1,6 @@
 %!TeX encoding = UTF-8
 %!TeX program = xelatex
-\documentclass[notheorems, aspectratio=54]{beamer}
+\documentclass[notheorems, aspectratio=54, cjk]{beamer}
 % aspectratio: 1610, 149, 54, 43(default), 32
 
 \usepackage{xeCJK}
@@ -112,12 +112,12 @@
 % ----------------------------------------------
 
 \mode<presentation>{
-    \usetheme{CambridgeUS}
+    \usetheme{Madrid}
     % Boadilla CambridgeUS
     % default Antibes Berlin Copenhagen
     % Madrid Montpelier Ilmenau Malmoe
     % Berkeley Singapore Warsaw
-    \usecolortheme{beaver}
+    \usecolortheme{default}
     % beetle, beaver, orchid, whale, dolphin
     \useoutertheme{infolines}
     % infolines miniframes shadow sidebar smoothbars smoothtree split tree
@@ -125,7 +125,7 @@
     % circles, rectanges, rounded, inmargin
 }
 % 设置 block 颜色
-\setbeamercolor{block title}{bg=red!30,fg=white}
+% \setbeamercolor{block title}{bg=red!30,fg=white}
 
 \newcommand{\reditem}[1]{\setbeamercolor{item}{fg=red}\item #1}
 
