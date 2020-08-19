@@ -83,42 +83,6 @@ google-chrome --enable-easy-off-store-extension-install
 
 * [Vimium, Vimperator](https://www.iplaysoft.com/vimium-and-vimperator.html)
 
-## Download Manager
-
-### [aria2](https://aria2.github.io/)
-
-> aria2 is a lightweight multi-protocol & multi-source command-line download utility. It supports HTTP/HTTPS, FTP, SFTP, BitTorrent and Metalink. aria2 can be manipulated via built-in JSON-RPC and XML-RPC interfaces.
-
-* [YAAW](http://binux.github.io/yaaw/): Yet Another Aria2 Web Frontend in pure HTML/CSS/Javascirpt.
-
-* [acgotaku/BaiduExporter](https://github.com/acgotaku/BaiduExporter/): Export Baidu Cloud files address to aria2/aria2-rpc, support YAAW.  
-
-> 首先下载Chrome浏览器插件BaiduExporter，然后解压下载好的文件，打开Chrome浏览器，点击浏览器右上角设置->扩展程序，把开发者模式打上勾，最后把文件夹中的chrome.crx往Chrome中拖，一直点击下一步下一步的节奏。
-
-通过aria下载百度云文件:  
-
-1. 终端运行aria
-```
-aria2c \
---enable-rpc \
---rpc-listen-all \
---rpc-allow-origin-all \
---file-allocation=none \
---max-connection-per-server=10 \
---max-concurrent-downloads=5 \
---continue \
--d <download-dir>
-```
-2. 安装 Chrome浏览器插件 **BaiduExporter**
-3. 打开需要下载的百度云盘的分享链接，会发现网页上下载按钮旁边多出一个 **「导出下载」** 按钮，点击它弹出的「ARIA2 RPC」就自动添加到你的下载队列里了
-
-### Others
-
-* wget
-* [uGet](http://ugetdm.com/): the Best Download Manager for Linux.
-  - [uGet Download Manager](https://github.com/ugetdm)
-* [BitTorrent](http://www.bittorrent.com/), [uTorrent](http://www.utorrent.com/)
-
 
 ## Remote Access
 
