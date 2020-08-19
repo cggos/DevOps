@@ -81,7 +81,9 @@ export https_proxy=$http_proxy
 
 * 重启系统，执行命令 `systemctl status rc-local.service` 查看rc-local.service状态
 
-### [tsocks](http://tsocks.sourceforge.net/)
+### tsocks
+
+* [tsocks](http://tsocks.sourceforge.net/)
 
 * 配置文件 **/etc/tsocks.conf**
   ```sh
