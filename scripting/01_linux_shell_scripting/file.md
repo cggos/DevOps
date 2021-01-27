@@ -49,6 +49,10 @@ cat install_manifest.txt | xargs sudo rm {} -fr
 		```
 	- use in cli: `ff`
 
+* pdfgrep
+
+* [Recoll](https://www.lesbonscomptes.com/recoll/) is a desktop full-text search tool.
+
 ```bash
 # 在当前目录下查找"hello"字符串
 grep -rn "hello"
@@ -71,3 +75,11 @@ find
 # 删除目录及其子目录下某种类型文件，比如说所有的txt文件
 find . -name "*.txt" -type f -print -exec rm -rf {} \;
 ```
+
+
+## Compress & Uncompress
+
+* 多卷压缩
+  ```sh
+  zip -r -s 2g nutstore_papers.zip nutstore_papers/
+  ```
