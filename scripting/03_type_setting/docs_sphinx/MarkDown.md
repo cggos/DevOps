@@ -16,3 +16,5 @@
 ## Others
 
 * [Academic Markdown and Citations](https://www.chriskrycho.com/2015/academic-markdown-and-citations.html): A workflow with Pandoc, BibTEX, and the editor of your choice
+
+* [MkDocs](https://www.mkdocs.org/): Project documentation with Markdown.
