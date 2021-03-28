@@ -26,6 +26,8 @@
 * strip
 * [Backward-cpp](https://github.com/bombela/backward-cpp): a beautiful stack trace pretty printer for C++
 * od: dump files in octal and other formats
+* objdump: display information from object files
+* ldd: print shared object dependencies
 
 ## ROS Debug
 * [How to Roslaunch Nodes in Valgrind or GDB](http://wiki.ros.org/roslaunch/Tutorials/Roslaunch%20Nodes%20in%20Valgrind%20or%20GDB)
