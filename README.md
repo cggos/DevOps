@@ -30,7 +30,22 @@
 
 ## Software Architecture & Design Patterns
 
+## Process and Thread
+
+* Microsoft Spy++
+* Process Explorer（任务管理）
+* VMMap: 查看现有的进程或者追踪新的进程并查看其内存使用
+
+
 # 2. Languages
+
+* C and CPP
+* Python
+* matlab
+* R
+* VB
+* C#
+* Java
 
 
 # 3. App Build
