@@ -1,5 +1,7 @@
 # DevOps
 
+[![Documentation Status](https://readthedocs.org/projects/devops-cg/badge/?version=latest)](https://devops-cg.readthedocs.io/zh_CN/latest/?badge=latest)
+
 -----
 
 
