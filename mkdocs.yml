@@ -1,0 +1,69 @@
+site_name: DevOps
+
+nav:
+    - Basics:
+      - Data Formats: 01-basics/data_formats/README.md
+      - Software Architecture & Design Patterns: 01-basics/software_arch_and_design_patterns.md
+    
+    - Programming Languages:
+      - Overview: 02-program_languages/README.md
+      
+    - Windows Batch Scripting:
+      - Overview: 02-scripting/02_windows_batch_scripting/README.md
+      
+    - Linux Shell Scripting:
+      - Overview: 02-scripting/01_linux_shell_scripting/README.md
+      - Grub & BIOS: 02-scripting/01_linux_shell_scripting/grub_bios.md
+      - Disk: 02-scripting/01_linux_shell_scripting/disk.md
+      - File & File Systems: 02-scripting/01_linux_shell_scripting/file.md
+      - GPG & SSH Key: 02-scripting/01_linux_shell_scripting/key.md
+      - Terminals and X11: 02-scripting/01_linux_shell_scripting/terminals_x11.md
+      - Ubuntu Apps: 02-scripting/01_linux_shell_scripting/ubuntu_apps.md
+
+    - App Build:
+      - Build Tools: 03-app_build/build_tools.md
+      - Compiler: 03-app_build/compiler.md
+      - Debug: 03-app_build/software_debug.md
+      - Test: 03-app_build/software_test.md
+      - Code Analysis: 03-app_build/code_analysis.md
+      - Reverse Engineering: 03-app_build/reverse_engineering.md
+      - Docker: 03-app_build/docker.md
+
+    - Configuration Management System:
+      - Overview: 04-configuration_management_system/README.md
+      - Git: 04-configuration_management_system/git.md
+      - Apache Maven: 04-configuration_management_system/maven.md
+
+    - Personal Knowledge Management:
+      - Type Setting: 06-personal_knowledge_management/type_setting/README.md.md
+      - MarkDown: 06-personal_knowledge_management/type_setting/MarkDown.md
+      - TeX: 06-personal_knowledge_management/type_setting/TeX.md
+      - Sphinx: 06-personal_knowledge_management/type_setting/Sphinx.md
+      - Math: 06-personal_knowledge_management/type_setting/Math.md
+      - CHM: 06-personal_knowledge_management/type_setting/CHM.md
+      - EPUB: 06-personal_knowledge_management/type_setting/EPUB.md
+      - Online Docs: 06-personal_knowledge_management/type_setting/OnlineDocs.md
+      - Text Editors: 06-personal_knowledge_management/type_setting/TextEditors.md
+      - Diagrams: 06-personal_knowledge_management/type_setting/Diagrams.md
+      - Fonts: 06-personal_knowledge_management/type_setting/Fonts.md
+      - Convertor: 06-personal_knowledge_management/type_setting/Convertor.md
+
+    - Package Management System:
+      - Overview: 07-package_management_system/README.md
+    
+    - Network:
+      - Overview: 08-network/README.md
+      - Proxy: 08-network/proxy.md
+      - Database: 08-network/database.md      
+      - Download Managers: 08-network/download_managers.md
+      - Synology DS128+: 08-network/nas/synology_nas.md
+      - Router: 08-network/network_devices/router.md
+      - Serial Communication: 08-network/serial_communication/README.md
+
+theme: readthedocs
+
+markdown_extensions:
+    - toc:
+        permalink: "#"
+        baselevel: 5
+        separator: "_"
