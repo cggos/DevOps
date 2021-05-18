@@ -2,6 +2,8 @@
 
 * [CommonMark](https://commonmark.org/): A strongly defined, highly compatible specification of Markdown
 
+* **[TextBundle](http://textbundle.org/)**: The TextBundle file format aims to provide a more seamless user experience when exchanging plain text files, like Markdown or Fountain, between sandboxed applications.
+
 ## Editor
 * [MarkdownPad](http://markdownpad.com/) is a full-featured Markdown editor for Windows.
 * [StackEdit](https://stackedit.io/): In-browser Markdown editor

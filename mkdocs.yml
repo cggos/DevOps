@@ -35,7 +35,7 @@ nav:
       - Apache Maven: 04-configuration_management_system/maven.md
 
     - Personal Knowledge Management:
-      - Type Setting: 06-personal_knowledge_management/type_setting/README.md.md
+      - Type Setting: 06-personal_knowledge_management/type_setting/README.md
       - MarkDown: 06-personal_knowledge_management/type_setting/MarkDown.md
       - TeX: 06-personal_knowledge_management/type_setting/TeX.md
       - Sphinx: 06-personal_knowledge_management/type_setting/Sphinx.md
