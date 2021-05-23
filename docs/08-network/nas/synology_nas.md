@@ -6,35 +6,40 @@
 
 ### SMB
 
-* Ubuntu通过Samba访问NAS共享文件夹
-  - 修改`/etc/samba/smb.conf`，更改smb client版本
-    ```ini
-    [global]
+Ubuntu通过Samba访问NAS共享文件夹
 
-    # SMB protocol
-    client min protocol = SMB2
-    client max protocol = SMB3
-    ```
-  - 重启
-    ```sh
-    # restart smb service
-    sudo systemctl restart smbd.service
+- 修改`/etc/samba/smb.conf`，更改smb client版本
 
-    # or reboot
-    sudo reboot
-    ```
-  - 连接NAS服务器
-    ```sh
-    # 文件浏览器
-    smb://<nas-ip>
+```ini
+[global]
+# SMB protocol
+client min protocol = SMB2
+client max protocol = SMB3
+```
 
-    # CLI
-    smbclient -L <nas-ip> -U <user-name> # 查看要访问的ip地址下的共享目录
-    ```
+- 重启
+
+```sh
+# restart smb service
+sudo systemctl restart smbd.service
+
+# or reboot
+sudo reboot
+```
+
+- 连接NAS服务器
+
+```sh
+# 文件浏览器
+smb://<nas-ip>
+
+# CLI
+smbclient -L <nas-ip> -U <user-name> # 查看要访问的ip地址下的共享目录
+```
 
 ### FTP
 
-* FileZilla客户端
+* FileZilla 客户端
 
 
 ## 终端机

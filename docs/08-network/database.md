@@ -6,9 +6,6 @@
 
 - MySQL
   - MariaDB
-    - 完全兼容MySQL
-    - mariadb.org
-    - MariaDB社区
 
 - Redis
 	- redis.io
