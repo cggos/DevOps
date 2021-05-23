@@ -4,7 +4,7 @@
 * [Python tools for penetration testers](https://github.com/dloss/python-pentest-tools)
 * [IPAddress.com](https://www.ipaddress.com/): The Best IP Address, Email and Networking Tools
 
-```bash
+```sh
 ifconfig               # 查看所有网络接口的属性
 iptables -L            # 查看防火墙设置
 route -n               # 查看路由表
@@ -31,6 +31,7 @@ sudo mount -t cifs //192.168.4.247/shareGHC ../../shareMount
 * [坚果云](https://www.jianguoyun.com)：中国版Dropbox
 
 * [Dropbox](https://www.dropbox.com)
+
   ```sh
   # Ubuntu 16.04使用代理安装Dropbox
   sudo dpkg -i dropbox_2020.03.04_amd64.deb
@@ -182,6 +183,7 @@ Mosh is free software, available for GNU/Linux, BSD, macOS, Solaris, Android, Ch
 ## Config Wireless Network On Linux
 
 * [Configure static IP address on Ubuntu 16.04 LTS Server](https://michael.mckinnon.id.au/2016/05/05/configuring-ubuntu-16-04-static-ip-address/)
+
   ```sh
   # /etc/network/interfaces
 
