@@ -1,5 +1,7 @@
 # API Docs
 
+* [CodeDocs](https://codedocs.xyz/) will generate and publish documentation for you, using Doxygen. It's free and easy to setup with your public GitHub repositories.
+
 -----
 
 [TOC]
