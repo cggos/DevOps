@@ -1,5 +1,13 @@
 site_name: DevOps
 
+theme: readthedocs
+
+markdown_extensions:
+    - toc:
+        permalink: "#"
+        baselevel: 5
+        separator: "_"
+        
 nav:
     - Basics:
       - Data Formats: 01-basics/data_formats/README.md
@@ -59,11 +67,3 @@ nav:
       - Synology DS128+: 08-network/nas/synology_nas.md
       - Router: 08-network/network_devices/router.md
       - Serial Communication: 08-network/serial_communication/README.md
-
-theme: readthedocs
-
-markdown_extensions:
-    - toc:
-        permalink: "#"
-        baselevel: 5
-        separator: "_"
