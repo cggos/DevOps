@@ -4,13 +4,13 @@ nav:
     - Basics:
       - Data Formats: 01-basics/data_formats/README.md
       - Software Architecture & Design Patterns: 01-basics/software_arch_and_design_patterns.md
-    
+
     - Programming Languages:
       - Overview: 02-program_languages/README.md
-      
+
     - Windows Batch Scripting:
       - Overview: 02-scripting/02_windows_batch_scripting/README.md
-      
+
     - Linux Shell Scripting:
       - Overview: 02-scripting/01_linux_shell_scripting/README.md
       - Grub & BIOS: 02-scripting/01_linux_shell_scripting/grub_bios.md
@@ -35,26 +35,26 @@ nav:
       - Apache Maven: 04-configuration_management_system/maven.md
 
     - Personal Knowledge Management:
-      - Type Setting: 06-personal_knowledge_management/type_setting/README.md.md
+      - Text Editors: 06-personal_knowledge_management/type_setting/TextEditors.md
       - MarkDown: 06-personal_knowledge_management/type_setting/MarkDown.md
-      - TeX: 06-personal_knowledge_management/type_setting/TeX.md
       - Sphinx: 06-personal_knowledge_management/type_setting/Sphinx.md
+      - TeX: 06-personal_knowledge_management/type_setting/TeX.md
       - Math: 06-personal_knowledge_management/type_setting/Math.md
       - CHM: 06-personal_knowledge_management/type_setting/CHM.md
       - EPUB: 06-personal_knowledge_management/type_setting/EPUB.md
+      - API Docs: 06-personal_knowledge_management/type_setting/API-Docs.md
       - Online Docs: 06-personal_knowledge_management/type_setting/OnlineDocs.md
-      - Text Editors: 06-personal_knowledge_management/type_setting/TextEditors.md
       - Diagrams: 06-personal_knowledge_management/type_setting/Diagrams.md
       - Fonts: 06-personal_knowledge_management/type_setting/Fonts.md
       - Convertor: 06-personal_knowledge_management/type_setting/Convertor.md
 
     - Package Management System:
       - Overview: 07-package_management_system/README.md
-    
+
     - Network:
       - Overview: 08-network/README.md
       - Proxy: 08-network/proxy.md
-      - Database: 08-network/database.md      
+      - Database: 08-network/database.md
       - Download Managers: 08-network/download_managers.md
       - Synology DS128+: 08-network/nas/synology_nas.md
       - Router: 08-network/network_devices/router.md
