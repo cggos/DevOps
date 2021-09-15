@@ -38,32 +38,36 @@
 # TeX on ubuntu
 
 * [Ubuntu下部署Latex编译环境](http://ptbsare.org/2014/05/12/ubuntu%E4%B8%8B%E9%83%A8%E7%BD%B2latex%E7%BC%96%E8%AF%91%E7%8E%AF%E5%A2%83/#1_-从源里面安装)
-  ```sh
-  sudo apt install texlive-full
-  sudo apt install texmaker
 
-  # optional
-  # 安装中文字体包，字体包中包含bsmi，bkai，gkai，gbsn四种中文字体
-  # bsmi和bkai是Big5编码的宋体和楷体字；后两者gkai和gbsn分别处理简体中文楷体字和宋体字
-  sudo apt install latex-cjk-all
-  ```
+```sh
+sudo apt install texlive-full
+
+# optional
+# 安装中文字体包，字体包中包含bsmi，bkai，gkai，gbsn四种中文字体
+# bsmi和bkai是Big5编码的宋体和楷体字；后两者gkai和gbsn分别处理简体中文楷体字和宋体字
+sudo apt install latex-cjk-all
+```
 
 * ubuntu 16.04下的latex的section没有编号的问题
-  - 从 https://www.ctan.org/tex-archive/macros/latex/contrib/titlesec 下载解压到 `/usr/share/texlive/texmf-dist/tex/latex`
+
+从 https://www.ctan.org/tex-archive/macros/latex/contrib/titlesec 下载解压到 `/usr/share/texlive/texmf-dist/tex/latex`
 
 * tlmgr
-  ```sh
-  sudo mktexlsr
-  tlmgr init-usertree
-  tlmgr update --list # sudo apt install xzdec
-  tlmgr --gui # sudo apt install perl-tk
 
-  # 永久更改镜像源
-  tlmgr option repository https://mirrors.tuna.tsinghua.edu.cn/CTAN/systems/texlive/tlnet
+```sh
+sudo mktexlsr
 
-  # 临时切换镜像源
-  tlmgr update --all --repository https://mirrors.tuna.tsinghua.edu.cn/CTAN/systems/texlive/tlnet
-  ```
+tlmgr init-usertree
+tlmgr update --list # sudo apt install xzdec
+tlmgr --gui # sudo apt install perl-tk
+
+# 永久更改镜像源
+tlmgr option repository https://mirrors.tuna.tsinghua.edu.cn/CTAN/systems/texlive/tlnet
+
+# 临时切换镜像源
+tlmgr update --all --repository \
+  https://mirrors.tuna.tsinghua.edu.cn/CTAN/systems/texlive/tlnet
+```
 
 # TeX Editor
 
@@ -82,12 +86,46 @@
 
 # TeX with Make
 
+example: [jlblancoc/tutorial-se3-manifold](https://github.com/jlblancoc/tutorial-se3-manifold)
+
+Prerequisites in Ubuntu:
+
 ```sh
 sudo apt install latexmk texlive texlive-science
 ```
 
-* [How to properly 'make' a latex project?](https://tex.stackexchange.com/questions/40738/how-to-properly-make-a-latex-project)
-  - example: [jlblancoc/tutorial-se3-manifold](https://github.com/jlblancoc/tutorial-se3-manifold)
+Build PDF with:
+
+```sh
+make
+```
+
+**Makefile**:
+
+```makefile
+# From: http://tex.stackexchange.com/questions/40738/how-to-properly-make-a-latex-project
+# You want latexmk to *always* run, because make does not have all the info.
+.PHONY: out.pdf
+
+# First rule should always be the default "all" rule, so both "make all" and
+# "make" will invoke it.
+all: out.pdf
+
+# MAIN LATEXMK RULE
+
+# -pdf tells latexmk to generate PDF directly (instead of DVI).
+# -pdflatex="" tells latexmk to call a specific backend with specific options.
+# -use-make tells latexmk to call make for generating missing files.
+
+# -interactive=nonstopmode keeps the pdflatex backend from stopping at a
+# missing file reference and interactively asking you for an alternative.
+
+out.pdf: in.tex
+	latexmk -pdf -pdflatex="pdflatex -interactive=nonstopmode" -bibtex -use-make in.tex
+
+clean:
+	latexmk -CA
+```
 
 
 # Beamer Slides with LaTeX
