@@ -10,11 +10,17 @@ If you need to convert files from one markup format into another, [pandoc](http:
 
 * Markdown to PDF  
 
-  ```sh
-  pandoc -N -s --toc --smart --latex-engine=xelatex \
-    -V mainfont='WenQuanYi Micro Hei' -V geometry:margin=1in \
-    note.md  -o output.pdf
-  ```
+```sh
+pandoc -N -s --toc --smart --latex-engine=xelatex \
+  -V mainfont='WenQuanYi Micro Hei' -V geometry:margin=1in \
+  note.md  -o output.pdf
+```
+
+* Ubuntu上怎么把MS的Word docx文档转为LaTeX
+
+```sh
+pandoc -s a.docx --extract-media ./ -o ./b.tex
+```
 
 ## Docutils
 

@@ -26,6 +26,36 @@
 * [Freecode](http://freshmeat.sourceforge.net/)
 * [Tigris.org](http://www.tigris.org/): Open Source Software Engineering Tools
 
+### Snap
+
+设置代理
+
+```sh
+# 前置操作, 修改  systemctl edit 使用的编辑器为 VIM, 如果不介意 Nano 可以跳过这一步
+$ sudo tee -a /etc/profile <<-'EOF'
+export SYSTEMD_EDITOR="/bin/vim"
+EOF
+$ source /etc/profile
+
+# 开始设置代理
+$ sudo systemctl edit snapd
+加上：
+[Service]
+Environment="http_proxy=http://127.0.0.1:port"
+Environment="https_proxy=http://127.0.0.1:port"
+
+#保存退出。
+$ sudo systemctl daemon-reload
+$ sudo systemctl restart snapd
+```
+
+安装卸载软件
+
+```sh
+sudo snap refresh
+
+sudo snap remove okular && sudo snap install okular
+```
 
 ## Open Source Code Archive
 
