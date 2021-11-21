@@ -11,3 +11,23 @@ It was originally created for the Python documentation, and it has excellent fac
 ## reStructuredText
 
 * http://docutils.sourceforge.net/rst.html
+
+## install & build
+
+``` title="requirements.txt"
+sphinx
+sphinx-rtd-theme
+sphinx-markdown-tables
+recommonmark
+```
+
+* install
+  ```sh
+  pip install -r docs/requirements.txt
+  ```
+
+* build
+  ```sh
+  cd docs
+  make html
+  ```
