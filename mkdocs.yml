@@ -1,69 +1,112 @@
 site_name: DevOps
 
-theme: readthedocs
+site_description:
+
+site_author: Gavin Gao
+
+site_url:
+
+theme: 
+  name: material # readthedocs material
+  nav_style: light
+  language: 'zh'
+  palette:
+    primary: 'light blue'
+    accent: 'indigo' 
+  feature:
+    tabs: true  # 横向导航     
 
 markdown_extensions:
-    - toc:
-        permalink: "#"
-        baselevel: 5
-        separator: "_"
+  - toc:
+      permalink: true # "#"
+      baselevel: 5
+      separator: "_"
+  - pymdownx.highlight
+  - pymdownx.inlinehilite
+  - pymdownx.superfences
+  - pymdownx.snippets
+  - admonition
+  - codehilite:
+      guess_lang: false
+      linenums: false
+  - footnotes
+  - meta
+  - def_list
+  - pymdownx.arithmatex
+  - pymdownx.betterem:
+      smart_enable: all
+  - pymdownx.caret
+  - pymdownx.critic
+  - pymdownx.details
+  - pymdownx.emoji:
+      emoji_generator: !!python/name:pymdownx.emoji.to_png
+  - pymdownx.magiclink
+  - pymdownx.mark
+  - pymdownx.smartsymbols
+  - pymdownx.tasklist
+      custom_checkbox: true
+  - pymdownx.tilde        
+
+plugins:
+  - search
         
 nav:
-    - Basics:
-      - Data Formats: 01-basics/data_formats/README.md
-      - Software Architecture & Design Patterns: 01-basics/software_arch_and_design_patterns.md
+  - Home: 'index.md'
+  - Basics:
+    - Data Formats: 01-basics/data_formats/README.md
+    - Software Architecture & Design Patterns: 01-basics/software_arch_and_design_patterns.md
 
-    - Programming Languages:
-      - Overview: 02-program_languages/README.md
+  - Programming Languages:
+    - Overview: 02-program_languages/README.md
 
-    - Windows Batch Scripting:
-      - Overview: 02-scripting/02_windows_batch_scripting/README.md
+  - Windows Batch Scripting:
+    - Overview: 02-scripting/02_windows_batch_scripting/README.md
 
-    - Linux Shell Scripting:
-      - Overview: 02-scripting/01_linux_shell_scripting/README.md
-      - Grub & BIOS: 02-scripting/01_linux_shell_scripting/grub_bios.md
-      - Disk: 02-scripting/01_linux_shell_scripting/disk.md
-      - File & File Systems: 02-scripting/01_linux_shell_scripting/file.md
-      - GPG & SSH Key: 02-scripting/01_linux_shell_scripting/key.md
-      - Terminals and X11: 02-scripting/01_linux_shell_scripting/terminals_x11.md
-      - Ubuntu Apps: 02-scripting/01_linux_shell_scripting/ubuntu_apps.md
+  - Linux Shell Scripting:
+    - Overview: 02-scripting/01_linux_shell_scripting/README.md
+    - Grub & BIOS: 02-scripting/01_linux_shell_scripting/grub_bios.md
+    - Disk: 02-scripting/01_linux_shell_scripting/disk.md
+    - File & File Systems: 02-scripting/01_linux_shell_scripting/file.md
+    - GPG & SSH Key: 02-scripting/01_linux_shell_scripting/key.md
+    - Terminals and X11: 02-scripting/01_linux_shell_scripting/terminals_x11.md
+    - Ubuntu Apps: 02-scripting/01_linux_shell_scripting/ubuntu_apps.md
 
-    - App Build:
-      - Build Tools: 03-app_build/build_tools.md
-      - Compiler: 03-app_build/compiler.md
-      - Debug: 03-app_build/software_debug.md
-      - Test: 03-app_build/software_test.md
-      - Code Analysis: 03-app_build/code_analysis.md
-      - Reverse Engineering: 03-app_build/reverse_engineering.md
-      - Docker: 03-app_build/docker.md
+  - App Build:
+    - Build Tools: 03-app_build/build_tools.md
+    - Compiler: 03-app_build/compiler.md
+    - Debug: 03-app_build/software_debug.md
+    - Test: 03-app_build/software_test.md
+    - Code Analysis: 03-app_build/code_analysis.md
+    - Reverse Engineering: 03-app_build/reverse_engineering.md
+    - Docker: 03-app_build/docker.md
 
-    - Configuration Management System:
-      - Overview: 04-configuration_management_system/README.md
-      - Git: 04-configuration_management_system/git.md
-      - Apache Maven: 04-configuration_management_system/maven.md
+  - Configuration Management System:
+    - Overview: 04-configuration_management_system/README.md
+    - Git: 04-configuration_management_system/git.md
+    - Apache Maven: 04-configuration_management_system/maven.md
 
-    - Personal Knowledge Management:
-      - Text Editors: 06-personal_knowledge_management/type_setting/TextEditors.md
-      - MarkDown: 06-personal_knowledge_management/type_setting/MarkDown.md
-      - Sphinx: 06-personal_knowledge_management/type_setting/Sphinx.md
-      - TeX: 06-personal_knowledge_management/type_setting/TeX.md
-      - Math: 06-personal_knowledge_management/type_setting/Math.md
-      - CHM: 06-personal_knowledge_management/type_setting/CHM.md
-      - EPUB: 06-personal_knowledge_management/type_setting/EPUB.md
-      - API Docs: 06-personal_knowledge_management/type_setting/API-Docs.md
-      - Online Docs: 06-personal_knowledge_management/type_setting/OnlineDocs.md
-      - Diagrams: 06-personal_knowledge_management/type_setting/Diagrams.md
-      - Fonts: 06-personal_knowledge_management/type_setting/Fonts.md
-      - Convertor: 06-personal_knowledge_management/type_setting/Convertor.md
+  - Personal Knowledge Management:
+    - Text Editors: 06-personal_knowledge_management/type_setting/TextEditors.md
+    - MarkDown: 06-personal_knowledge_management/type_setting/MarkDown.md
+    - Sphinx: 06-personal_knowledge_management/type_setting/Sphinx.md
+    - TeX: 06-personal_knowledge_management/type_setting/TeX.md
+    - Math: 06-personal_knowledge_management/type_setting/Math.md
+    - CHM: 06-personal_knowledge_management/type_setting/CHM.md
+    - EPUB: 06-personal_knowledge_management/type_setting/EPUB.md
+    - API Docs: 06-personal_knowledge_management/type_setting/API-Docs.md
+    - Online Docs: 06-personal_knowledge_management/type_setting/OnlineDocs.md
+    - Diagrams: 06-personal_knowledge_management/type_setting/Diagrams.md
+    - Fonts: 06-personal_knowledge_management/type_setting/Fonts.md
+    - Convertor: 06-personal_knowledge_management/type_setting/Convertor.md
 
-    - Package Management System:
-      - Overview: 07-package_management_system/README.md
+  - Package Management System:
+    - Overview: 07-package_management_system/README.md
 
-    - Network:
-      - Overview: 08-network/README.md
-      - Proxy: 08-network/proxy.md
-      - Database: 08-network/database.md
-      - Download Managers: 08-network/download_managers.md
-      - Synology DS128+: 08-network/nas/synology_nas.md
-      - Router: 08-network/network_devices/router.md
-      - Serial Communication: 08-network/serial_communication/README.md
+  - Network:
+    - Overview: 08-network/README.md
+    - Proxy: 08-network/proxy.md
+    - Database: 08-network/database.md
+    - Download Managers: 08-network/download_managers.md
+    - Synology DS128+: 08-network/nas/synology_nas.md
+    - Router: 08-network/network_devices/router.md
+    - Serial Communication: 08-network/serial_communication/README.md
