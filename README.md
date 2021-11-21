@@ -7,13 +7,3 @@
 <p align="center">
   <img src="docs/images/DevOps00.png" style="width:80%;">
 </p>
-
-## MkDocs
-
-* [MkDocs](https://www.mkdocs.org/): Project documentation with Markdown.
-
-  ```sh
-  mkdocs build
-
-  mkdocs serve
-  ```
