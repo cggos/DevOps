@@ -1,0 +1,1552 @@
+
+<!doctype html>
+<html lang="zh" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+        <meta name="author" content="Gavin Gao">
+      
+      
+      <link rel="icon" href="assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.2.3, mkdocs-material-7.3.6">
+    
+    
+      
+        <title>DevOps</title>
+      
+    
+    
+      <link rel="stylesheet" href="assets/stylesheets/main.a57b2b03.min.css">
+      
+        
+        <link rel="stylesheet" href="assets/stylesheets/palette.3f5d1f46.min.css">
+        
+          
+          
+          <meta name="theme-color" content="#02a6f2">
+        
+      
+    
+    
+    
+      
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700%7CRoboto+Mono&display=fallback">
+        <style>:root{--md-text-font-family:"Roboto";--md-code-font-family:"Roboto Mono"}</style>
+      
+    
+    
+    
+    
+      
+
+
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="" data-md-color-primary="light-blue" data-md-color-accent="indigo">
+  
+    
+    <script>function __prefix(e){return new URL(".",location).pathname+"."+e}function __get(e,t=localStorage){return JSON.parse(t.getItem(__prefix(e)))}</script>
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#devops" class="md-skip">
+          跳转至
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="." title="DevOps" class="md-header__button md-logo" aria-label="DevOps" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            DevOps
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Home
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+      </label>
+      
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="搜索" placeholder="搜索" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" aria-label="Clear" tabindex="-1">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            正在初始化搜索引擎
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="." title="DevOps" class="md-nav__button md-logo" aria-label="DevOps" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
+
+    </a>
+    DevOps
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Home
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="." class="md-nav__link md-nav__link--active">
+        Home
+      </a>
+      
+        
+
+
+<nav class="md-nav md-nav--secondary" aria-label="目录">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#devops" class="md-nav__link">
+    DevOps
+  </a>
+  
+    <nav class="md-nav" aria-label="DevOps">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#01_basics" class="md-nav__link">
+    01. Basics
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#02_languages" class="md-nav__link">
+    02. Languages
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#02_scripting_linux_windows" class="md-nav__link">
+    02. Scripting (Linux &amp; Windows)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#03_app_build" class="md-nav__link">
+    03. App Build
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#04_cms_-_configuration_management_system" class="md-nav__link">
+    04. CMS - Configuration Management System
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#05_cms_-_content_management_system" class="md-nav__link">
+    05. CMS - Content Management System
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#06_pkm_-_personal_knowledge_management" class="md-nav__link">
+    06. PKM - Personal Knowledge Management
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#07_pms_-_package_management_system" class="md-nav__link">
+    07. PMS - Package Management System
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#08_network" class="md-nav__link">
+    08. Network
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#09_mailing" class="md-nav__link">
+    09. Mailing
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#10_kids_coding" class="md-nav__link">
+    10. Kids Coding
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2" type="checkbox" id="__nav_2" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_2">
+          Basics
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Basics" data-md-level="1">
+        <label class="md-nav__title" for="__nav_2">
+          <span class="md-nav__icon md-icon"></span>
+          Basics
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="01-basics/data_formats/" class="md-nav__link">
+        Data Formats
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="01-basics/software_arch_and_design_patterns/" class="md-nav__link">
+        Software Architecture & Design Patterns
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3" type="checkbox" id="__nav_3" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_3">
+          Programming Languages
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Programming Languages" data-md-level="1">
+        <label class="md-nav__title" for="__nav_3">
+          <span class="md-nav__icon md-icon"></span>
+          Programming Languages
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="02-program_languages/" class="md-nav__link">
+        Overview
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4" type="checkbox" id="__nav_4" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_4">
+          Windows Batch Scripting
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Windows Batch Scripting" data-md-level="1">
+        <label class="md-nav__title" for="__nav_4">
+          <span class="md-nav__icon md-icon"></span>
+          Windows Batch Scripting
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="02-scripting/02_windows_batch_scripting/" class="md-nav__link">
+        Overview
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5" type="checkbox" id="__nav_5" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_5">
+          Linux Shell Scripting
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Linux Shell Scripting" data-md-level="1">
+        <label class="md-nav__title" for="__nav_5">
+          <span class="md-nav__icon md-icon"></span>
+          Linux Shell Scripting
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="02-scripting/01_linux_shell_scripting/" class="md-nav__link">
+        Overview
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="02-scripting/01_linux_shell_scripting/grub_bios/" class="md-nav__link">
+        Grub & BIOS
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="02-scripting/01_linux_shell_scripting/disk/" class="md-nav__link">
+        Disk
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="02-scripting/01_linux_shell_scripting/file/" class="md-nav__link">
+        File & File Systems
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="02-scripting/01_linux_shell_scripting/key/" class="md-nav__link">
+        GPG & SSH Key
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="02-scripting/01_linux_shell_scripting/terminals_x11/" class="md-nav__link">
+        Terminals and X11
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="02-scripting/01_linux_shell_scripting/ubuntu_apps/" class="md-nav__link">
+        Ubuntu Apps
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_6" type="checkbox" id="__nav_6" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_6">
+          App Build
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="App Build" data-md-level="1">
+        <label class="md-nav__title" for="__nav_6">
+          <span class="md-nav__icon md-icon"></span>
+          App Build
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="03-app_build/build_tools/" class="md-nav__link">
+        Build Tools
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="03-app_build/compiler/" class="md-nav__link">
+        Compiler
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="03-app_build/software_debug/" class="md-nav__link">
+        Debug
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="03-app_build/software_test/" class="md-nav__link">
+        Test
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="03-app_build/code_analysis/" class="md-nav__link">
+        Code Analysis
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="03-app_build/reverse_engineering/" class="md-nav__link">
+        Reverse Engineering
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="03-app_build/docker/" class="md-nav__link">
+        Docker
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_7" type="checkbox" id="__nav_7" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_7">
+          Configuration Management System
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Configuration Management System" data-md-level="1">
+        <label class="md-nav__title" for="__nav_7">
+          <span class="md-nav__icon md-icon"></span>
+          Configuration Management System
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="04-configuration_management_system/" class="md-nav__link">
+        Overview
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="04-configuration_management_system/git/" class="md-nav__link">
+        Git
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="04-configuration_management_system/maven/" class="md-nav__link">
+        Apache Maven
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_8" type="checkbox" id="__nav_8" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_8">
+          Personal Knowledge Management
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Personal Knowledge Management" data-md-level="1">
+        <label class="md-nav__title" for="__nav_8">
+          <span class="md-nav__icon md-icon"></span>
+          Personal Knowledge Management
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="06-personal_knowledge_management/type_setting/TextEditors/" class="md-nav__link">
+        Text Editors
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="06-personal_knowledge_management/type_setting/MarkDown/" class="md-nav__link">
+        MarkDown
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="06-personal_knowledge_management/type_setting/Sphinx/" class="md-nav__link">
+        Sphinx
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="06-personal_knowledge_management/type_setting/TeX/" class="md-nav__link">
+        TeX
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="06-personal_knowledge_management/type_setting/Math/" class="md-nav__link">
+        Math
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="06-personal_knowledge_management/type_setting/CHM/" class="md-nav__link">
+        CHM
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="06-personal_knowledge_management/type_setting/EPUB/" class="md-nav__link">
+        EPUB
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="06-personal_knowledge_management/type_setting/API-Docs/" class="md-nav__link">
+        API Docs
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="06-personal_knowledge_management/type_setting/OnlineDocs/" class="md-nav__link">
+        Online Docs
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="06-personal_knowledge_management/type_setting/Diagrams/" class="md-nav__link">
+        Diagrams
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="06-personal_knowledge_management/type_setting/Fonts/" class="md-nav__link">
+        Fonts
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="06-personal_knowledge_management/type_setting/Convertor/" class="md-nav__link">
+        Convertor
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_9" type="checkbox" id="__nav_9" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_9">
+          Package Management System
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Package Management System" data-md-level="1">
+        <label class="md-nav__title" for="__nav_9">
+          <span class="md-nav__icon md-icon"></span>
+          Package Management System
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="07-package_management_system/" class="md-nav__link">
+        Overview
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_10" type="checkbox" id="__nav_10" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_10">
+          Network
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Network" data-md-level="1">
+        <label class="md-nav__title" for="__nav_10">
+          <span class="md-nav__icon md-icon"></span>
+          Network
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="08-network/" class="md-nav__link">
+        Overview
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="08-network/proxy/" class="md-nav__link">
+        Proxy
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="08-network/database/" class="md-nav__link">
+        Database
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="08-network/download_managers/" class="md-nav__link">
+        Download Managers
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="08-network/nas/synology_nas/" class="md-nav__link">
+        Synology DS128+
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="08-network/network_devices/router/" class="md-nav__link">
+        Router
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="08-network/serial_communication/" class="md-nav__link">
+        Serial Communication
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+<nav class="md-nav md-nav--secondary" aria-label="目录">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#devops" class="md-nav__link">
+    DevOps
+  </a>
+  
+    <nav class="md-nav" aria-label="DevOps">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#01_basics" class="md-nav__link">
+    01. Basics
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#02_languages" class="md-nav__link">
+    02. Languages
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#02_scripting_linux_windows" class="md-nav__link">
+    02. Scripting (Linux &amp; Windows)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#03_app_build" class="md-nav__link">
+    03. App Build
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#04_cms_-_configuration_management_system" class="md-nav__link">
+    04. CMS - Configuration Management System
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#05_cms_-_content_management_system" class="md-nav__link">
+    05. CMS - Content Management System
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#06_pkm_-_personal_knowledge_management" class="md-nav__link">
+    06. PKM - Personal Knowledge Management
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#07_pms_-_package_management_system" class="md-nav__link">
+    07. PMS - Package Management System
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#08_network" class="md-nav__link">
+    08. Network
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#09_mailing" class="md-nav__link">
+    09. Mailing
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#10_kids_coding" class="md-nav__link">
+    10. Kids Coding
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content" data-md-component="content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                
+                  <h1>Home</h1>
+                
+                <h5 id="devops">DevOps<a class="headerlink" href="#devops" title="Permanent link">&para;</a></h5>
+<ul>
+<li><a href="https://code.google.com/">Google Code</a></li>
+<li><a href="https://chinagdg.org/">谷歌开发者社区(GDG)</a></li>
+</ul>
+<p align="center">
+  <img src="images/DevOps01.png" style="width:80%;">
+</p>
+
+<p align="center">
+  <img src="images/DevOps-tools.jpg" style="width:80%;">
+</p>
+
+<hr />
+<div class="toc">
+<ul>
+<li><a href="#devops">DevOps</a><ul>
+<li><a href="#01_basics">01. Basics</a></li>
+<li><a href="#02_languages">02. Languages</a></li>
+<li><a href="#02_scripting_linux_windows">02. Scripting (Linux &amp; Windows)</a></li>
+<li><a href="#03_app_build">03. App Build</a></li>
+<li><a href="#04_cms_-_configuration_management_system">04. CMS - Configuration Management System</a></li>
+<li><a href="#05_cms_-_content_management_system">05. CMS - Content Management System</a></li>
+<li><a href="#06_pkm_-_personal_knowledge_management">06. PKM - Personal Knowledge Management</a></li>
+<li><a href="#07_pms_-_package_management_system">07. PMS - Package Management System</a></li>
+<li><a href="#08_network">08. Network</a></li>
+<li><a href="#09_mailing">09. Mailing</a></li>
+<li><a href="#10_kids_coding">10. Kids Coding</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<h6 id="01_basics">01. Basics<a class="headerlink" href="#01_basics" title="Permanent link">&para;</a></h6>
+<ul>
+<li>Character Encode</li>
+<li><a href="http://www.asciitable.com/">ASCII Table and Description</a></li>
+<li><a href="https://ascii.cl/">ASCII Codes Table</a></li>
+<li>
+<p><a href="http://www.unicode.org/">The Unicode Consortium</a></p>
+</li>
+<li>
+<p>Regular Expression</p>
+</li>
+<li><a href="http://www.regexlab.com/">Regular Expression Laboratory</a></li>
+<li>
+<p><a href="http://www.runoob.com/regexp/regexp-tutorial.html">正则表达式 - 教程</a></p>
+</li>
+<li>
+<p>Data Formats</p>
+</li>
+<li>
+<p>Code Style &amp; Formats</p>
+</li>
+<li><a href="https://github.com/google/styleguide">Google Style Guides</a></li>
+<li>
+<p><a href="https://github.com/ethz-asl/linter">ethz-asl/linter</a></p>
+</li>
+<li>
+<p>Software Architecture &amp; Design Patterns</p>
+</li>
+<li>
+<p>Process &amp; Thread</p>
+</li>
+<li>Microsoft Spy++</li>
+<li>Process Explorer（任务管理）</li>
+<li>VMMap: 查看现有的进程或者追踪新的进程并查看其内存使用</li>
+</ul>
+<h6 id="02_languages">02. Languages<a class="headerlink" href="#02_languages" title="Permanent link">&para;</a></h6>
+<ul>
+<li>C and CPP</li>
+<li>Python</li>
+<li>matlab</li>
+<li>R</li>
+<li>VB</li>
+<li>C#</li>
+<li>Java</li>
+</ul>
+<h6 id="02_scripting_linux_windows">02. Scripting (Linux &amp; Windows)<a class="headerlink" href="#02_scripting_linux_windows" title="Permanent link">&para;</a></h6>
+<ul>
+<li><a href="https://ss64.com/">Command line reference – Database and OS scripting</a></li>
+</ul>
+<h6 id="03_app_build">03. App Build<a class="headerlink" href="#03_app_build" title="Permanent link">&para;</a></h6>
+<ul>
+<li>
+<p>Compile</p>
+</li>
+<li>
+<p>Debug</p>
+</li>
+<li>
+<p>Reverse Engineering</p>
+</li>
+<li>
+<p>Docker</p>
+</li>
+</ul>
+<h6 id="04_cms_-_configuration_management_system">04. CMS - Configuration Management System<a class="headerlink" href="#04_cms_-_configuration_management_system" title="Permanent link">&para;</a></h6>
+<h6 id="05_cms_-_content_management_system">05. CMS - Content Management System<a class="headerlink" href="#05_cms_-_content_management_system" title="Permanent link">&para;</a></h6>
+<ul>
+<li><a href="https://getkirby.com/">Kirby</a> is a file‑based CMS</li>
+<li><a href="https://www.drupal.org/">Drupal</a> is content management software.</li>
+</ul>
+<h6 id="06_pkm_-_personal_knowledge_management">06. PKM - Personal Knowledge Management<a class="headerlink" href="#06_pkm_-_personal_knowledge_management" title="Permanent link">&para;</a></h6>
+<h6 id="07_pms_-_package_management_system">07. PMS - Package Management System<a class="headerlink" href="#07_pms_-_package_management_system" title="Permanent link">&para;</a></h6>
+<ul>
+<li>
+<p><a href="https://www.digitalocean.com/community/tutorials/package-management-basics-apt-yum-dnf-pkg">Package Management Basics: apt, yum, dnf, pkg</a></p>
+</li>
+<li>
+<p><a href="http://www.openpkg.org/">OpenPKG</a>: Cross-Platform Multiple-Instance Unix Software Packaging</p>
+</li>
+<li>
+<p><a href="https://snapcraft.io/">Snaps</a> are containerised software packages that are simple to create and install</p>
+</li>
+<li>
+<p><a href="https://conan.io/">Conan</a>: the C / C++ Package Manager for Developers</p>
+</li>
+<li>
+<p><a href="https://www.npmjs.com/">npm</a> is the package manager for JavaScript and the world’s largest software registry</p>
+</li>
+<li>
+<p><a href="https://packagist.org/">Packagist</a> is the main Composer repository. It aggregates public PHP packages installable with Composer.</p>
+</li>
+<li>
+<p><a href="https://rpmfusion.org/">RPM Fusion</a></p>
+</li>
+<li>
+<p><a href="http://rpmfind.net/linux/RPM/">RPM repository on fr2.rpmfind.net</a></p>
+</li>
+</ul>
+<h6 id="08_network">08. Network<a class="headerlink" href="#08_network" title="Permanent link">&para;</a></h6>
+<h6 id="09_mailing">09. Mailing<a class="headerlink" href="#09_mailing" title="Permanent link">&para;</a></h6>
+<ul>
+<li>
+<p><a href="https://grokbase.com/">Grokbase</a> is a growing mailing list archive that facilitates discovery of discussions and users within and across groups</p>
+</li>
+<li>
+<p><a href="https://markmail.org/">MarkMail</a> is a free service for searching mailing list archives, with huge advantages over traditional search engines</p>
+</li>
+<li>
+<p><a href="http://git.net/">git.net</a></p>
+</li>
+</ul>
+<h6 id="10_kids_coding">10. Kids Coding<a class="headerlink" href="#10_kids_coding" title="Permanent link">&para;</a></h6>
+<ul>
+<li>
+<p><a href="http://www.kidscode.cn/">少儿编程网</a></p>
+</li>
+<li>
+<p><a href="https://www.kidscodecs.com/">beanz</a>: A Magazine about Kids, Coding, and Computer Science</p>
+</li>
+<li>
+<p><a href="http://www.c-jump.com/">c-jump</a> helps children to learn basics of programming languages, such as C, C++ and Java.</p>
+</li>
+<li>
+<p><a href="https://scratch.mit.edu/">Scratch</a> is a free programming language and online community where you can create your own interactive stories, games, and animations</p>
+</li>
+<li>
+<p><a href="https://code.org/">Code.org®</a> is a nonprofit dedicated to expanding access to computer science in schools and increasing participation by women and underrepresented minorities.</p>
+</li>
+</ul>
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+        
+      </main>
+      
+        
+<footer class="md-footer">
+  
+    <nav class="md-footer__inner md-grid" aria-label="Footer">
+      
+      
+        
+        <a href="01-basics/data_formats/" class="md-footer__link md-footer__link--next" aria-label="下一页: Data Formats" rel="next">
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                下一页
+              </span>
+              Data Formats
+            </div>
+          </div>
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4z"/></svg>
+          </div>
+        </a>
+      
+    </nav>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+        
+          Made with
+          <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+            Material for MkDocs
+          </a>
+        
+        
+      </div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    <script id="__config" type="application/json">{"base": ".", "features": [], "translations": {"clipboard.copy": "\u590d\u5236", "clipboard.copied": "\u5df2\u590d\u5236", "search.config.lang": "ja", "search.config.pipeline": "trimmer, stemmer", "search.config.separator": "[\\uff0c\\u3002]+", "search.placeholder": "\u641c\u7d22", "search.result.placeholder": "\u952e\u5165\u4ee5\u5f00\u59cb\u641c\u7d22", "search.result.none": "\u6ca1\u6709\u627e\u5230\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.one": "\u627e\u5230 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.other": "# \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing", "select.version.title": "Select version"}, "search": "assets/javascripts/workers/search.fcfe8b6d.min.js", "version": null}</script>
+    
+    
+      <script src="assets/javascripts/bundle.b1047164.min.js"></script>
+      
+    
+  </body>
+</html>
