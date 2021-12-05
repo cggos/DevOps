@@ -16,7 +16,7 @@
     
     
       
-        <title>Docker - DevOps</title>
+        <title>Code Format - DevOps</title>
       
     
     
@@ -67,7 +67,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#docker" class="md-skip">
+        <a href="#code_format" class="md-skip">
           跳转至
         </a>
       
@@ -97,7 +97,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Docker
+              Code Format
             
           </span>
         </div>
@@ -469,11 +469,74 @@
             
   
   
+    
   
-    <li class="md-nav__item">
-      <a href="../code_format/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Code Format
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         Code Format
       </a>
+      
+        
+<nav class="md-nav md-nav--secondary" aria-label="目录">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#code_format" class="md-nav__link">
+    Code Format
+  </a>
+  
+    <nav class="md-nav" aria-label="Code Format">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#clang-format" class="md-nav__link">
+    clang-format
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#vscode" class="md-nav__link">
+    VSCode
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#clang-format_file" class="md-nav__link">
+    .clang-format file
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -553,74 +616,11 @@
             
   
   
-    
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
-      
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          Docker
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../docker/" class="md-nav__link">
         Docker
       </a>
-      
-        
-<nav class="md-nav md-nav--secondary" aria-label="目录">
-  
-  
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      目录
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#docker" class="md-nav__link">
-    Docker
-  </a>
-  
-    <nav class="md-nav" aria-label="Docker">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#basic" class="md-nav__link">
-    Basic
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#install" class="md-nav__link">
-    Install
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#docker_with_ros" class="md-nav__link">
-    Docker with ROS
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -1051,30 +1051,30 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#docker" class="md-nav__link">
-    Docker
+  <a href="#code_format" class="md-nav__link">
+    Code Format
   </a>
   
-    <nav class="md-nav" aria-label="Docker">
+    <nav class="md-nav" aria-label="Code Format">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#basic" class="md-nav__link">
-    Basic
+  <a href="#clang-format" class="md-nav__link">
+    clang-format
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#install" class="md-nav__link">
-    Install
+  <a href="#vscode" class="md-nav__link">
+    VSCode
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#docker_with_ros" class="md-nav__link">
-    Docker with ROS
+  <a href="#clang-format_file" class="md-nav__link">
+    .clang-format file
   </a>
   
 </li>
@@ -1097,121 +1097,238 @@
               
                 
                 
-                  <h1>Docker</h1>
+                  <h1>Code Format</h1>
                 
-                <h5 id="docker">Docker<a class="headerlink" href="#docker" title="Permanent link">&para;</a></h5>
-<ul>
-<li><a href="https://www.docker.com/">Docker</a>: Securely build, share and run any application, anywhere</li>
-<li><a href="https://hub.docker.com/">Docker Hub</a>: the world's easiest way to create, manage, and deliver your teams' container applications</li>
-<li><a href="https://www.runoob.com/docker/docker-tutorial.html">Docker 菜鸟教程</a></li>
-<li><a href="http://www.docker.org.cn/">docker中文社区</a></li>
-</ul>
+                <h5 id="code_format">Code Format<a class="headerlink" href="#code_format" title="Permanent link">&para;</a></h5>
 <hr />
+<h6 id="clang-format">clang-format<a class="headerlink" href="#clang-format" title="Permanent link">&para;</a></h6>
+<h6 id="vscode">VSCode<a class="headerlink" href="#vscode" title="Permanent link">&para;</a></h6>
 <ul>
 <li>
-<p><a href="https://blog.csdn.net/woodcorpse/article/details/80601899">Docker的基本使用-Ubuntu18.04</a></p>
+<p>shortcut: <code>Ctrl + Shift + I</code></p>
 </li>
 <li>
-<p><a href="https://www.digitalocean.com/community/tutorials/how-to-install-and-use-docker-on-ubuntu-16-04">How To Install and Use Docker on Ubuntu 16.04</a></p>
-</li>
-<li>
-<p><a href="https://towardsdatascience.com/real-time-and-video-processing-object-detection-using-tensorflow-opencv-and-docker-2be1694726e5">Real-time and video processing object detection using Tensorflow, OpenCV and Docker</a></p>
-</li>
-<li>
-<p><a href="https://www.leiphone.com/news/201807/V0dTefBD2QgNPwLj.html">基于 TensorFlow 、OpenCV 和 Docker 的实时视频目标检测</a></p>
-</li>
-<li>
-<p><a href="http://fabiorehm.com/blog/2014/09/11/running-gui-apps-with-docker/">Running GUI apps with Docker</a></p>
-</li>
-<li>
-<p><a href="https://blog.yadutaf.fr/2017/09/10/running-a-graphical-app-in-a-docker-container-on-a-remote-server/">Running a graphical app in a Docker container, on a remote server</a></p>
-</li>
-<li>
-<p><a href="https://kusemanohar.info/2018/10/03/docker-for-computer-vision-researchers/">Docker for Computer Vision Researchers</a> !!!</p>
+<p>setting</p>
 </li>
 </ul>
-<div class="highlight"><pre><span></span><code>sudo docker run \
-  --name=ros-kalibr \
-  -it --rm -e DISPLAY=$DISPLAY \
-  -v /tmp/.X11-unix:/tmp/.X11-unix davvdg/ros-kalibr \
-  /bin/bash
+<div class="highlight"><pre><span></span><code><span class="p">{</span><span class="err">BasedO</span><span class="kc">n</span><span class="err">S</span><span class="kc">t</span><span class="err">yle</span><span class="p">:</span> <span class="err">Google</span><span class="p">,</span>  <span class="err">Colum</span><span class="kc">n</span><span class="err">Limi</span><span class="kc">t</span><span class="p">:</span> <span class="mi">120</span><span class="p">}</span>
 </code></pre></div>
-<hr />
-<h6 id="basic">Basic<a class="headerlink" href="#basic" title="Permanent link">&para;</a></h6>
+<h6 id="clang-format_file">.clang-format file<a class="headerlink" href="#clang-format_file" title="Permanent link">&para;</a></h6>
 <ul>
 <li>
-<p>hello-world
-  <div class="highlight"><pre><span></span><code>sudo docker run hello-world
+<p>install clang-format
+  <div class="highlight"><pre><span></span><code>sudo apt install clang-format
 </code></pre></div></p>
 </li>
 <li>
-<p>the images and containers are stored by Docker in <code>/var/lib/docker</code> by default</p>
+<p>create .clang-format file manually</p>
 </li>
-<li>
-<p>view containers
-  <div class="highlight"><pre><span></span><code>docker ps -a
-</code></pre></div></p>
-</li>
-<li>
-<p>run
-  <div class="highlight"><pre><span></span><code>docker run -it &lt;image-name&gt;
-</code></pre></div></p>
-</li>
-<li>
-<p>we can also open another terminal for a running container with the following command
-  <div class="highlight"><pre><span></span><code>docker <span class="nb">exec</span> -it &lt;container-name/ID&gt; bash
+</ul>
+<div class="highlight"><pre><span></span><code><span class="nt">Language</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">Cpp</span>
+<span class="nt">BasedOnStyle</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">Google</span>
+<span class="nt">ColumnLimit</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">120</span>
 </code></pre></div>
-  or
-  <div class="highlight"><pre><span></span><code>docker attach &lt;container-name/ID&gt;
-</code></pre></div></p>
-</li>
-<li>
-<p>restart container
-  <div class="highlight"><pre><span></span><code>docker restart &lt;container-ID&gt;
-</code></pre></div>
-  restart container and enter
-  <div class="highlight"><pre><span></span><code>docker start -i &lt;container-ID&gt;
-</code></pre></div></p>
-</li>
-<li>
-<p>docker cp
-  <div class="highlight"><pre><span></span><code><span class="c1"># copy a file from host to container</span>
-docker cp foo.txt 72ca2488b353:/foo.txt
+<ul>
+<li>create .clang-format file by command
+  <div class="highlight"><pre><span></span><code>clang-format -style<span class="o">=</span>llvm -dump-config &gt; .clang-format
+</code></pre></div></li>
+</ul>
+<div class="highlight"><span class="filename">.clang-format</span><pre><span></span><code><span class="nn">---</span>
+<span class="nt">Language</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">Cpp</span>
+<span class="c1"># BasedOnStyle:   LLVM</span>
+<span class="c1"># 访问说明符(public、private等)的偏移</span>
+<span class="nt">AccessModifierOffset</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">-2</span>
+<span class="c1"># 开括号(开圆括号、开尖括号、开方括号)后的对齐: Align, DontAlign, AlwaysBreak(总是在开括号后换行)</span>
+<span class="nt">AlignAfterOpenBracket</span><span class="p">:</span>    <span class="l l-Scalar l-Scalar-Plain">Align</span>
+<span class="c1"># 连续赋值时，对齐所有等号</span>
+<span class="nt">AlignConsecutiveAssignments</span><span class="p">:</span>  <span class="l l-Scalar l-Scalar-Plain">true</span>
+<span class="c1"># 连续声明时，对齐所有声明的变量名</span>
+<span class="nt">AlignConsecutiveDeclarations</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">true</span>
 
-<span class="c1"># copy a file from Docker container to host</span>
-docker cp 72ca2488b353:/foo.txt foo.txt
-</code></pre></div></p>
-</li>
-</ul>
-<h6 id="install">Install<a class="headerlink" href="#install" title="Permanent link">&para;</a></h6>
-<ul>
-<li><a href="https://docs.docker.com/install/linux/docker-ce/ubuntu/">Get Docker Engine - Community for Ubuntu</a></li>
-</ul>
-<h6 id="docker_with_ros">Docker with ROS<a class="headerlink" href="#docker_with_ros" title="Permanent link">&para;</a></h6>
-<ul>
-<li>
-<p>ros
-  <div class="highlight"><pre><span></span><code>docker pull ros
-<span class="c1"># or</span>
-docker pull ros:kinetic-robot
+<span class="nt">AlignEscapedNewlines</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">Right</span>
+
+<span class="c1"># 左对齐逃脱换行(使用反斜杠换行)的反斜杠</span>
+<span class="c1">#AlignEscapedNewlinesLeft:    true</span>
+<span class="c1"># 水平对齐二元和三元表达式的操作数</span>
+<span class="nt">AlignOperands</span><span class="p">:</span>    <span class="l l-Scalar l-Scalar-Plain">true</span>
+<span class="c1"># 对齐连续的尾随的注释</span>
+<span class="nt">AlignTrailingComments</span><span class="p">:</span>    <span class="l l-Scalar l-Scalar-Plain">true</span>
+
+<span class="c1"># 允许函数声明的所有参数在放在下一行</span>
+<span class="nt">AllowAllParametersOfDeclarationOnNextLine</span><span class="p">:</span>    <span class="l l-Scalar l-Scalar-Plain">false</span>
+<span class="c1"># 允许短的块放在同一行</span>
+<span class="nt">AllowShortBlocksOnASingleLine</span><span class="p">:</span>    <span class="l l-Scalar l-Scalar-Plain">true</span>
+<span class="c1"># 允许短的case标签放在同一行</span>
+<span class="nt">AllowShortCaseLabelsOnASingleLine</span><span class="p">:</span>    <span class="l l-Scalar l-Scalar-Plain">true</span>
+<span class="c1"># 允许短的函数放在同一行: None, InlineOnly(定义在类中), Empty(空函数), Inline(定义在类中，空函数), All</span>
+<span class="nt">AllowShortFunctionsOnASingleLine</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">Empty</span>
+<span class="c1"># 允许短的if语句保持在同一行</span>
+<span class="nt">AllowShortIfStatementsOnASingleLine</span><span class="p">:</span>  <span class="l l-Scalar l-Scalar-Plain">false</span>
+<span class="c1"># 允许短的循环保持在同一行</span>
+<span class="nt">AllowShortLoopsOnASingleLine</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">false</span>
+
+<span class="c1"># 总是在定义返回类型后换行(deprecated)</span>
+<span class="nt">AlwaysBreakAfterDefinitionReturnType</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">None</span>
+<span class="c1"># 总是在返回类型后换行: None, All, TopLevel(顶级函数，不包括在类中的函数), </span>
+<span class="c1">#   AllDefinitions(所有的定义，不包括声明), TopLevelDefinitions(所有的顶级函数的定义)</span>
+<span class="nt">AlwaysBreakAfterReturnType</span><span class="p">:</span>   <span class="l l-Scalar l-Scalar-Plain">None</span>
+<span class="c1"># 总是在多行string字面量前换行</span>
+<span class="nt">AlwaysBreakBeforeMultilineStrings</span><span class="p">:</span>    <span class="l l-Scalar l-Scalar-Plain">false</span>
+<span class="c1"># 总是在template声明后换行</span>
+<span class="nt">AlwaysBreakTemplateDeclarations</span><span class="p">:</span>  <span class="l l-Scalar l-Scalar-Plain">false</span>
+<span class="c1"># false表示函数实参要么都在同一行，要么都各自一行</span>
+<span class="nt">BinPackArguments</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">true</span>
+<span class="c1"># false表示所有形参要么都在同一行，要么都各自一行</span>
+<span class="nt">BinPackParameters</span><span class="p">:</span>    <span class="l l-Scalar l-Scalar-Plain">false</span>
+<span class="c1"># 大括号换行，只有当BreakBeforeBraces设置为Custom时才有效</span>
+<span class="nt">BraceWrapping</span><span class="p">:</span>   
+  <span class="c1"># class定义后面</span>
+  <span class="nt">AfterClass</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">false</span>
+  <span class="c1"># 控制语句后面</span>
+  <span class="nt">AfterControlStatement</span><span class="p">:</span>  <span class="l l-Scalar l-Scalar-Plain">false</span>
+  <span class="c1"># enum定义后面</span>
+  <span class="nt">AfterEnum</span><span class="p">:</span>  <span class="l l-Scalar l-Scalar-Plain">false</span>
+  <span class="c1"># 函数定义后面</span>
+  <span class="nt">AfterFunction</span><span class="p">:</span>  <span class="l l-Scalar l-Scalar-Plain">true</span>
+  <span class="c1"># 命名空间定义后面</span>
+  <span class="nt">AfterNamespace</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">false</span>
+  <span class="c1"># ObjC定义后面</span>
+  <span class="nt">AfterObjCDeclaration</span><span class="p">:</span>   <span class="l l-Scalar l-Scalar-Plain">false</span>
+  <span class="c1"># struct定义后面</span>
+  <span class="nt">AfterStruct</span><span class="p">:</span>    <span class="l l-Scalar l-Scalar-Plain">true</span>
+  <span class="c1"># union定义后面</span>
+  <span class="nt">AfterUnion</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">true</span>
+
+  <span class="nt">AfterExternBlock</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">false</span>
+  <span class="c1"># catch之前</span>
+  <span class="nt">BeforeCatch</span><span class="p">:</span>    <span class="l l-Scalar l-Scalar-Plain">true</span>
+  <span class="c1"># else之前</span>
+  <span class="nt">BeforeElse</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">true</span>
+  <span class="c1"># 缩进大括号</span>
+  <span class="nt">IndentBraces</span><span class="p">:</span>   <span class="l l-Scalar l-Scalar-Plain">false</span>
+  <span class="nt">SplitEmptyFunction</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">true</span>
+  <span class="nt">SplitEmptyRecord</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">true</span>
+  <span class="nt">SplitEmptyNamespace</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">true</span>
+
+<span class="c1"># 在二元运算符前换行: None(在操作符后换行), NonAssignment(在非赋值的操作符前换行), All(在操作符前换行)</span>
+<span class="nt">BreakBeforeBinaryOperators</span><span class="p">:</span>   <span class="l l-Scalar l-Scalar-Plain">None</span>
+<span class="c1"># 在大括号前换行: Attach(始终将大括号附加到周围的上下文), Linux(除函数、命名空间和类定义，与Attach类似), </span>
+<span class="c1">#   Mozilla(除枚举、函数、记录定义，与Attach类似), Stroustrup(除函数定义、catch、else，与Attach类似), </span>
+<span class="c1">#   Allman(总是在大括号前换行), GNU(总是在大括号前换行，并对于控制语句的大括号增加额外的缩进), WebKit(在函数前换行), Custom</span>
+<span class="c1">#   注：这里认为语句块也属于函数</span>
+<span class="nt">BreakBeforeBraces</span><span class="p">:</span>    <span class="l l-Scalar l-Scalar-Plain">Custom</span>
+<span class="c1"># 在三元运算符前换行</span>
+<span class="nt">BreakBeforeTernaryOperators</span><span class="p">:</span>  <span class="l l-Scalar l-Scalar-Plain">false</span>
+
+<span class="c1"># 在构造函数的初始化列表的逗号前换行</span>
+<span class="nt">BreakConstructorInitializersBeforeComma</span><span class="p">:</span>  <span class="l l-Scalar l-Scalar-Plain">false</span>
+<span class="nt">BreakConstructorInitializers</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">BeforeColon</span>
+<span class="c1"># 每行字符的限制，0表示没有限制</span>
+<span class="nt">ColumnLimit</span><span class="p">:</span>  <span class="l l-Scalar l-Scalar-Plain">80</span>
+<span class="c1"># 描述具有特殊意义的注释的正则表达式，它不应该被分割为多行或以其它方式改变</span>
+<span class="nt">CommentPragmas</span><span class="p">:</span>   <span class="s">&#39;^</span><span class="nv"> </span><span class="s">IWYU</span><span class="nv"> </span><span class="s">pragma:&#39;</span>
+<span class="nt">CompactNamespaces</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">false</span>
+<span class="c1"># 构造函数的初始化列表要么都在同一行，要么都各自一行</span>
+<span class="nt">ConstructorInitializerAllOnOneLineOrOnePerLine</span><span class="p">:</span>   <span class="l l-Scalar l-Scalar-Plain">false</span>
+<span class="c1"># 构造函数的初始化列表的缩进宽度</span>
+<span class="nt">ConstructorInitializerIndentWidth</span><span class="p">:</span>    <span class="l l-Scalar l-Scalar-Plain">4</span>
+<span class="c1"># 延续的行的缩进宽度</span>
+<span class="nt">ContinuationIndentWidth</span><span class="p">:</span>  <span class="l l-Scalar l-Scalar-Plain">4</span>
+<span class="c1"># 去除C++11的列表初始化的大括号{后和}前的空格</span>
+<span class="nt">Cpp11BracedListStyle</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">true</span>
+<span class="c1"># 继承最常用的指针和引用的对齐方式</span>
+<span class="nt">DerivePointerAlignment</span><span class="p">:</span>   <span class="l l-Scalar l-Scalar-Plain">false</span>
+<span class="c1"># 关闭格式化</span>
+<span class="nt">DisableFormat</span><span class="p">:</span>    <span class="l l-Scalar l-Scalar-Plain">false</span>
+<span class="c1"># 自动检测函数的调用和定义是否被格式为每行一个参数(Experimental)</span>
+<span class="nt">ExperimentalAutoDetectBinPacking</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">false</span>
+<span class="c1"># 需要被解读为foreach循环而不是函数调用的宏</span>
+<span class="nt">ForEachMacros</span><span class="p">:</span>    <span class="p p-Indicator">[</span> <span class="nv">foreach</span><span class="p p-Indicator">,</span> <span class="nv">Q_FOREACH</span><span class="p p-Indicator">,</span> <span class="nv">BOOST_FOREACH</span> <span class="p p-Indicator">]</span>
+<span class="c1"># 对#include进行排序，匹配了某正则表达式的#include拥有对应的优先级，匹配不到的则默认优先级为INT_MAX(优先级越小排序越靠前)，</span>
+<span class="c1">#   可以定义负数优先级从而保证某些#include永远在最前面</span>
+<span class="nt">IncludeCategories</span><span class="p">:</span> 
+  <span class="p p-Indicator">-</span> <span class="nt">Regex</span><span class="p">:</span>    <span class="s">&#39;^&quot;(llvm|llvm-c|clang|clang-c)/&#39;</span>
+    <span class="nt">Priority</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">2</span>
+  <span class="p p-Indicator">-</span> <span class="nt">Regex</span><span class="p">:</span>    <span class="s">&#39;^(&lt;|&quot;(gtest|isl|json)/)&#39;</span>
+    <span class="nt">Priority</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">3</span>
+  <span class="p p-Indicator">-</span> <span class="nt">Regex</span><span class="p">:</span>    <span class="s">&#39;.*&#39;</span>
+    <span class="nt">Priority</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">1</span>
+<span class="c1"># 缩进case标签</span>
+<span class="nt">IndentCaseLabels</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">true</span>
+
+<span class="nt">IndentPPDirectives</span><span class="p">:</span>  <span class="l l-Scalar l-Scalar-Plain">AfterHash</span>
+<span class="c1"># 缩进宽度</span>
+<span class="nt">IndentWidth</span><span class="p">:</span>  <span class="l l-Scalar l-Scalar-Plain">4</span>
+<span class="c1"># 函数返回类型换行时，缩进函数声明或函数定义的函数名</span>
+<span class="nt">IndentWrappedFunctionNames</span><span class="p">:</span>   <span class="l l-Scalar l-Scalar-Plain">false</span>
+<span class="c1"># 保留在块开始处的空行</span>
+<span class="nt">KeepEmptyLinesAtTheStartOfBlocks</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">false</span>
+<span class="c1"># 开始一个块的宏的正则表达式</span>
+<span class="nt">MacroBlockBegin</span><span class="p">:</span>  <span class="s">&#39;&#39;</span>
+<span class="c1"># 结束一个块的宏的正则表达式</span>
+<span class="nt">MacroBlockEnd</span><span class="p">:</span>    <span class="s">&#39;&#39;</span>
+<span class="c1"># 连续空行的最大数量</span>
+<span class="nt">MaxEmptyLinesToKeep</span><span class="p">:</span>  <span class="l l-Scalar l-Scalar-Plain">1</span>
+<span class="c1"># 命名空间的缩进: None, Inner(缩进嵌套的命名空间中的内容), All</span>
+<span class="nt">NamespaceIndentation</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">Inner</span>
+<span class="c1"># 使用ObjC块时缩进宽度</span>
+<span class="nt">ObjCBlockIndentWidth</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">4</span>
+<span class="c1"># 在ObjC的@property后添加一个空格</span>
+<span class="nt">ObjCSpaceAfterProperty</span><span class="p">:</span>   <span class="l l-Scalar l-Scalar-Plain">false</span>
+<span class="c1"># 在ObjC的protocol列表前添加一个空格</span>
+<span class="nt">ObjCSpaceBeforeProtocolList</span><span class="p">:</span>  <span class="l l-Scalar l-Scalar-Plain">true</span>
+
+
+<span class="c1"># 在call(后对函数调用换行的penalty</span>
+<span class="nt">PenaltyBreakBeforeFirstCallParameter</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">19</span>
+<span class="c1"># 在一个注释中引入换行的penalty</span>
+<span class="nt">PenaltyBreakComment</span><span class="p">:</span>  <span class="l l-Scalar l-Scalar-Plain">300</span>
+<span class="c1"># 第一次在&lt;&lt;前换行的penalty</span>
+<span class="nt">PenaltyBreakFirstLessLess</span><span class="p">:</span>    <span class="l l-Scalar l-Scalar-Plain">120</span>
+<span class="c1"># 在一个字符串字面量中引入换行的penalty</span>
+<span class="nt">PenaltyBreakString</span><span class="p">:</span>   <span class="l l-Scalar l-Scalar-Plain">1000</span>
+<span class="c1"># 对于每个在行字符数限制之外的字符的penalty</span>
+<span class="nt">PenaltyExcessCharacter</span><span class="p">:</span>   <span class="l l-Scalar l-Scalar-Plain">1000000</span>
+<span class="c1"># 将函数的返回类型放到它自己的行的penalty</span>
+<span class="nt">PenaltyReturnTypeOnItsOwnLine</span><span class="p">:</span>    <span class="l l-Scalar l-Scalar-Plain">60</span>
+
+<span class="c1"># 指针和引用的对齐: Left, Right, Middle</span>
+<span class="nt">PointerAlignment</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">Left</span>
+<span class="c1"># 允许重新排版注释</span>
+<span class="nt">ReflowComments</span><span class="p">:</span>   <span class="l l-Scalar l-Scalar-Plain">true</span>
+<span class="c1"># 允许排序#include</span>
+<span class="nt">SortIncludes</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">true</span>
+
+<span class="c1"># 在C风格类型转换后添加空格</span>
+<span class="nt">SpaceAfterCStyleCast</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">false</span>
+
+<span class="nt">SpaceAfterTemplateKeyword</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">true</span>
+
+<span class="c1"># 在赋值运算符之前添加空格</span>
+<span class="nt">SpaceBeforeAssignmentOperators</span><span class="p">:</span>   <span class="l l-Scalar l-Scalar-Plain">true</span>
+<span class="c1"># 开圆括号之前添加一个空格: Never, ControlStatements, Always</span>
+<span class="nt">SpaceBeforeParens</span><span class="p">:</span>    <span class="l l-Scalar l-Scalar-Plain">ControlStatements</span>
+<span class="c1"># 在空的圆括号中添加空格</span>
+<span class="nt">SpaceInEmptyParentheses</span><span class="p">:</span>  <span class="l l-Scalar l-Scalar-Plain">false</span>
+<span class="c1"># 在尾随的评论前添加的空格数(只适用于//)</span>
+<span class="nt">SpacesBeforeTrailingComments</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">2</span>
+<span class="c1"># 在尖括号的&lt;后和&gt;前添加空格</span>
+<span class="nt">SpacesInAngles</span><span class="p">:</span>   <span class="l l-Scalar l-Scalar-Plain">false</span>
+<span class="c1"># 在容器(ObjC和JavaScript的数组和字典等)字面量中添加空格</span>
+<span class="nt">SpacesInContainerLiterals</span><span class="p">:</span>    <span class="l l-Scalar l-Scalar-Plain">false</span>
+<span class="c1"># 在C风格类型转换的括号中添加空格</span>
+<span class="nt">SpacesInCStyleCastParentheses</span><span class="p">:</span>    <span class="l l-Scalar l-Scalar-Plain">false</span>
+<span class="c1"># 在圆括号的(后和)前添加空格</span>
+<span class="nt">SpacesInParentheses</span><span class="p">:</span>  <span class="l l-Scalar l-Scalar-Plain">false</span>
+<span class="c1"># 在方括号的[后和]前添加空格，lamda表达式和未指明大小的数组的声明不受影响</span>
+<span class="nt">SpacesInSquareBrackets</span><span class="p">:</span>   <span class="l l-Scalar l-Scalar-Plain">false</span>
+<span class="c1"># 标准: Cpp03, Cpp11, Auto</span>
+<span class="nt">Standard</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">Cpp11</span>
+<span class="c1"># tab宽度</span>
+<span class="nt">TabWidth</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">4</span>
+<span class="c1"># 使用tab字符: Never, ForIndentation, ForContinuationAndIndentation, Always</span>
+<span class="nt">UseTab</span><span class="p">:</span>   <span class="l l-Scalar l-Scalar-Plain">Never</span>  
 </code></pre></div>
-  run ros
-  <div class="highlight"><pre><span></span><code>docker run -it ros
-</code></pre></div></p>
-</li>
-<li>
-<p><a href="https://github.com/HKUST-Aerial-Robotics/VINS-kidnap">HKUST-Aerial-Robotics/VINS-kidnap</a>
-  <div class="highlight"><pre><span></span><code>docker run --runtime<span class="o">=</span>nvidia -it <span class="se">\</span>
-        --add-host <span class="sb">`</span>hostname<span class="sb">`</span>:172.17.0.1 <span class="se">\</span>
-        --env <span class="nv">ROS_MASTER_URI</span><span class="o">=</span>http://<span class="sb">`</span>hostname<span class="sb">`</span>:11311/ <span class="se">\</span>
-        --env <span class="nv">ROS_IP</span><span class="o">=</span><span class="m">172</span>.17.0.2 <span class="se">\</span>
-        --env <span class="nv">CUDA_VISIBLE_DEVICES</span><span class="o">=</span><span class="m">0</span> <span class="se">\</span>
-        --hostname happy_go <span class="se">\</span>
-        --name happy_go  <span class="se">\</span>
-        mpkuse/kusevisionkit:vins-kidnap bash
-</code></pre></div></p>
-</li>
-</ul>
                 
               
               
@@ -1231,7 +1348,7 @@ docker pull ros:kinetic-robot
     <nav class="md-footer__inner md-grid" aria-label="Footer">
       
         
-        <a href="../reverse_engineering/" class="md-footer__link md-footer__link--prev" aria-label="上一页: Reverse Engineering" rel="prev">
+        <a href="../../02-scripting/01_linux_shell_scripting/ubuntu_apps/" class="md-footer__link md-footer__link--prev" aria-label="上一页: Ubuntu Apps" rel="prev">
           <div class="md-footer__button md-icon">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
           </div>
@@ -1240,20 +1357,20 @@ docker pull ros:kinetic-robot
               <span class="md-footer__direction">
                 上一页
               </span>
-              Reverse Engineering
+              Ubuntu Apps
             </div>
           </div>
         </a>
       
       
         
-        <a href="../../04-configuration_management_system/" class="md-footer__link md-footer__link--next" aria-label="下一页: Overview" rel="next">
+        <a href="../build_tools/" class="md-footer__link md-footer__link--next" aria-label="下一页: Build Tools" rel="next">
           <div class="md-footer__title">
             <div class="md-ellipsis">
               <span class="md-footer__direction">
                 下一页
               </span>
-              Overview
+              Build Tools
             </div>
           </div>
           <div class="md-footer__button md-icon">
