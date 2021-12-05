@@ -72,6 +72,7 @@ nav:
     - Ubuntu Apps: 02-scripting/01_linux_shell_scripting/ubuntu_apps.md
 
   - App Build:
+    - Code Format: 03-app_build/code_format.md
     - Build Tools: 03-app_build/build_tools.md
     - Compiler: 03-app_build/compiler.md
     - Debug: 03-app_build/software_debug.md
