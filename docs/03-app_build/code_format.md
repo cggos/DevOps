@@ -4,6 +4,8 @@
 
 ## clang-format
 
+* [Clang-Format Style Options](https://clang.llvm.org/docs/ClangFormatStyleOptions.html)
+
 ### VSCode
 
 * shortcut: `Ctrl + Shift + I`
@@ -11,7 +13,13 @@
 * setting
 
   ```json
-  {BasedOnStyle: Google,  ColumnLimit: 120}
+  {
+    BasedOnStyle: Google,  
+    ColumnLimit: 120, 
+    AllowAllParametersOfDeclarationOnNextLine: true, 
+    AllowAllArgumentsOnNextLine: true, 
+    BinPackParameters: false
+  }
   ```
 
 ### .clang-format file
