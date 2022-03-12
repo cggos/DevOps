@@ -375,6 +375,8 @@
       <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
       
       
+        
+      
       
         <label class="md-nav__link md-nav__link--active" for="__toc">
           Grub & BIOS
@@ -390,6 +392,8 @@
   
   
   
+    
+  
   
     <label class="md-nav__title" for="__toc">
       <span class="md-nav__icon md-icon"></span>
@@ -398,29 +402,16 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#grub_bios" class="md-nav__link">
-    Grub &amp; BIOS
-  </a>
-  
-    <nav class="md-nav" aria-label="Grub &amp; BIOS">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
   <a href="#grub" class="md-nav__link">
     Grub
   </a>
   
 </li>
-        
-          <li class="md-nav__item">
+      
+        <li class="md-nav__item">
   <a href="#boot_bios" class="md-nav__link">
     Boot &amp; BIOS
   </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
       
@@ -1036,6 +1027,8 @@
   
   
   
+    
+  
   
     <label class="md-nav__title" for="__toc">
       <span class="md-nav__icon md-icon"></span>
@@ -1044,29 +1037,16 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#grub_bios" class="md-nav__link">
-    Grub &amp; BIOS
-  </a>
-  
-    <nav class="md-nav" aria-label="Grub &amp; BIOS">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
   <a href="#grub" class="md-nav__link">
     Grub
   </a>
   
 </li>
-        
-          <li class="md-nav__item">
+      
+        <li class="md-nav__item">
   <a href="#boot_bios" class="md-nav__link">
     Boot &amp; BIOS
   </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
       
@@ -1083,11 +1063,9 @@
               
                 
                 
-                  <h1>Grub & BIOS</h1>
-                
-                <h5 id="grub_bios">Grub &amp; BIOS<a class="headerlink" href="#grub_bios" title="Permanent link">&para;</a></h5>
+                <h1 id="grub_bios">Grub &amp; BIOS<a class="headerlink" href="#grub_bios" title="Permanent link">&para;</a></h1>
 <hr />
-<h6 id="grub">Grub<a class="headerlink" href="#grub" title="Permanent link">&para;</a></h6>
+<h2 id="grub">Grub<a class="headerlink" href="#grub" title="Permanent link">&para;</a></h2>
 <p>配置单Ubuntu系统开机启动显示grub菜单：<br />
 修改<code>/etc/default/grub</code>文件，修改内容<br />
 <div class="highlight"><pre><span></span><code># GRUB_HIDDEN_TIMEOUT=0
@@ -1132,7 +1110,7 @@ GRUB_GFXPAYLOAD_LINUX=keep
 GRUB_INIT_TUNE=&quot;480 440 1&quot;
 </code></pre></div>
 然后，<code>sudo update-grub</code>，最后重启即可。</p>
-<h6 id="boot_bios">Boot &amp; BIOS<a class="headerlink" href="#boot_bios" title="Permanent link">&para;</a></h6>
+<h2 id="boot_bios">Boot &amp; BIOS<a class="headerlink" href="#boot_bios" title="Permanent link">&para;</a></h2>
 <ul>
 <li><a href="https://www.cnblogs.com/EasonJim/p/7130157.html?utm_source=itdadao&amp;utm_medium=referral">Ubuntu 16.04在启动和关机时不显示启动和关机画面且显示详细的命令信息，没有进度条和Logo，或者只有紫色界面，或者没有开机画面等问题解决</a></li>
 <li><a href="https://www.pcsuggest.com/check-bios-uefi-motherboard-info-in-linux/">Check BIOS, UEFI, motherboard info in Linux</a></li>

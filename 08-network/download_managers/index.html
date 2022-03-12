@@ -921,6 +921,8 @@
       <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
       
       
+        
+      
       
         <label class="md-nav__link md-nav__link--active" for="__toc">
           Download Managers
@@ -936,6 +938,8 @@
   
   
   
+    
+  
   
     <label class="md-nav__title" for="__toc">
       <span class="md-nav__icon md-icon"></span>
@@ -944,40 +948,33 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#download_managers" class="md-nav__link">
-    Download Managers
-  </a>
-  
-    <nav class="md-nav" aria-label="Download Managers">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
   <a href="#curl_wget" class="md-nav__link">
     curl &amp; wget
   </a>
   
 </li>
-        
-          <li class="md-nav__item">
+      
+        <li class="md-nav__item">
   <a href="#axel" class="md-nav__link">
     axel
   </a>
   
 </li>
-        
-          <li class="md-nav__item">
+      
+        <li class="md-nav__item">
   <a href="#uget" class="md-nav__link">
     uGet
   </a>
   
 </li>
-        
-          <li class="md-nav__item">
+      
+        <li class="md-nav__item">
   <a href="#aria2" class="md-nav__link">
     aria2
   </a>
   
-</li>
+    <nav class="md-nav" aria-label="aria2">
+      <ul class="md-nav__list">
         
           <li class="md-nav__item">
   <a href="#yaaw" class="md-nav__link">
@@ -993,15 +990,15 @@
   
 </li>
         
-          <li class="md-nav__item">
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#bittorrent_utorrent" class="md-nav__link">
     BitTorrent &amp; uTorrent
   </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
       
@@ -1071,6 +1068,8 @@
   
   
   
+    
+  
   
     <label class="md-nav__title" for="__toc">
       <span class="md-nav__icon md-icon"></span>
@@ -1079,40 +1078,33 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#download_managers" class="md-nav__link">
-    Download Managers
-  </a>
-  
-    <nav class="md-nav" aria-label="Download Managers">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
   <a href="#curl_wget" class="md-nav__link">
     curl &amp; wget
   </a>
   
 </li>
-        
-          <li class="md-nav__item">
+      
+        <li class="md-nav__item">
   <a href="#axel" class="md-nav__link">
     axel
   </a>
   
 </li>
-        
-          <li class="md-nav__item">
+      
+        <li class="md-nav__item">
   <a href="#uget" class="md-nav__link">
     uGet
   </a>
   
 </li>
-        
-          <li class="md-nav__item">
+      
+        <li class="md-nav__item">
   <a href="#aria2" class="md-nav__link">
     aria2
   </a>
   
-</li>
+    <nav class="md-nav" aria-label="aria2">
+      <ul class="md-nav__list">
         
           <li class="md-nav__item">
   <a href="#yaaw" class="md-nav__link">
@@ -1128,15 +1120,15 @@
   
 </li>
         
-          <li class="md-nav__item">
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#bittorrent_utorrent" class="md-nav__link">
     BitTorrent &amp; uTorrent
   </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
       
@@ -1153,9 +1145,7 @@
               
                 
                 
-                  <h1>Download Managers</h1>
-                
-                <h5 id="download_managers">Download Managers<a class="headerlink" href="#download_managers" title="Permanent link">&para;</a></h5>
+                <h1 id="download_managers">Download Managers<a class="headerlink" href="#download_managers" title="Permanent link">&para;</a></h1>
 <hr />
 <div class="toc">
 <ul>
@@ -1163,15 +1153,17 @@
 <li><a href="#curl_wget">curl &amp; wget</a></li>
 <li><a href="#axel">axel</a></li>
 <li><a href="#uget">uGet</a></li>
-<li><a href="#aria2">aria2</a></li>
+<li><a href="#aria2">aria2</a><ul>
 <li><a href="#yaaw">YAAW</a></li>
 <li><a href="#_1">下载百度云文件</a></li>
+</ul>
+</li>
 <li><a href="#bittorrent_utorrent">BitTorrent &amp; uTorrent</a></li>
 </ul>
 </li>
 </ul>
 </div>
-<h6 id="curl_wget">curl &amp; wget<a class="headerlink" href="#curl_wget" title="Permanent link">&para;</a></h6>
+<h2 id="curl_wget">curl &amp; wget<a class="headerlink" href="#curl_wget" title="Permanent link">&para;</a></h2>
 <ul>
 <li>To install on Ubuntu:</li>
 </ul>
@@ -1200,7 +1192,7 @@ curl -c <span class="s2">&quot;https://www.example.com/example.tar.gz&quot;</spa
 <div class="highlight"><pre><span></span><code>wget -i links.txt
 xargs -n <span class="m">1</span> curl -O &lt; links.txt
 </code></pre></div>
-<h6 id="axel">axel<a class="headerlink" href="#axel" title="Permanent link">&para;</a></h6>
+<h2 id="axel">axel<a class="headerlink" href="#axel" title="Permanent link">&para;</a></h2>
 <p>A console based Linux download manager. It downloads very fast when you use the multi-threaded feature. More than a download manager it’s rather a download accelerator. However, you can specify multiple URLs at once. It can resume broken downloads by default.</p>
 <ul>
 <li>To install on Ubuntu:</li>
@@ -1221,12 +1213,12 @@ axel -a -n <span class="m">5</span> &lt;URL&gt; <span class="c1"># compact progr
 </ul>
 <div class="highlight"><pre><span></span><code><span class="k">while</span> <span class="nb">read</span> link<span class="p">;</span> <span class="k">do</span> axel -n <span class="m">4</span> <span class="nv">$link</span><span class="p">;</span> <span class="k">done</span> &lt; links.txt
 </code></pre></div>
-<h6 id="uget">uGet<a class="headerlink" href="#uget" title="Permanent link">&para;</a></h6>
+<h2 id="uget">uGet<a class="headerlink" href="#uget" title="Permanent link">&para;</a></h2>
 <p>Much more sophisticated than axel with many advanced features like multi-segment download. Supports downloading files through <strong>HTTP, HTTPS, FTP, BitTorrent &amp; Metalink</strong>.</p>
 <ul>
 <li><a href="https://ugetdm.com/">uGet</a></li>
 </ul>
-<h6 id="aria2">aria2<a class="headerlink" href="#aria2" title="Permanent link">&para;</a></h6>
+<h2 id="aria2">aria2<a class="headerlink" href="#aria2" title="Permanent link">&para;</a></h2>
 <blockquote>
 <p><a href="https://aria2.github.io/">aria2</a> is a lightweight multi-protocol &amp; multi-source command-line download utility. It supports <strong>HTTP/HTTPS, FTP, SFTP, BitTorrent and Metalink</strong>. aria2 can be manipulated via built-in JSON-RPC and XML-RPC interfaces.</p>
 </blockquote>
@@ -1250,11 +1242,11 @@ axel -a -n <span class="m">5</span> &lt;URL&gt; <span class="c1"># compact progr
 </ul>
 <div class="highlight"><pre><span></span><code>aria2c -i links.txt
 </code></pre></div>
-<h6 id="yaaw">YAAW<a class="headerlink" href="#yaaw" title="Permanent link">&para;</a></h6>
+<h3 id="yaaw">YAAW<a class="headerlink" href="#yaaw" title="Permanent link">&para;</a></h3>
 <ul>
 <li><a href="http://binux.github.io/yaaw/">YAAW</a>: Yet Another Aria2 Web Frontend in pure HTML/CSS/Javascirpt.</li>
 </ul>
-<h6 id="_1">下载百度云文件<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h6>
+<h3 id="_1">下载百度云文件<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h3>
 <ol>
 <li>终端运行aria</li>
 </ol>
@@ -1279,7 +1271,7 @@ axel -a -n <span class="m">5</span> &lt;URL&gt; <span class="c1"># compact progr
 <p>打开需要下载的百度云盘的分享链接，会发现网页上下载按钮旁边多出一个 <strong>「导出下载」</strong> 按钮，点击它弹出的「ARIA2 RPC」就自动添加到你的下载队列里了</p>
 </li>
 </ol>
-<h6 id="bittorrent_utorrent">BitTorrent &amp; uTorrent<a class="headerlink" href="#bittorrent_utorrent" title="Permanent link">&para;</a></h6>
+<h2 id="bittorrent_utorrent">BitTorrent &amp; uTorrent<a class="headerlink" href="#bittorrent_utorrent" title="Permanent link">&para;</a></h2>
 <ul>
 <li><a href="http://www.bittorrent.com/">BitTorrent</a></li>
 <li><a href="http://www.utorrent.com/">uTorrent</a></li>

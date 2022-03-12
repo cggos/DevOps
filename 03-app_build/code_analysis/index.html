@@ -537,6 +537,8 @@
       <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
       
       
+        
+      
       
         <label class="md-nav__link md-nav__link--active" for="__toc">
           Code Analysis
@@ -552,6 +554,8 @@
   
   
   
+    
+  
   
     <label class="md-nav__title" for="__toc">
       <span class="md-nav__icon md-icon"></span>
@@ -560,43 +564,30 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#code_analysis" class="md-nav__link">
-    Code Analysis
-  </a>
-  
-    <nav class="md-nav" aria-label="Code Analysis">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
   <a href="#cppcheck_-_a_static_analysis_tool_for_cc_code" class="md-nav__link">
     Cppcheck - a static analysis tool for C/C++ code
   </a>
   
 </li>
-        
-          <li class="md-nav__item">
+      
+        <li class="md-nav__item">
   <a href="#valgrind_-_a_dynamic_analysis_tools" class="md-nav__link">
     Valgrind - a dynamic analysis tools
   </a>
   
 </li>
-        
-          <li class="md-nav__item">
+      
+        <li class="md-nav__item">
   <a href="#gprof_and_gcov" class="md-nav__link">
     gprof and gcov
   </a>
   
 </li>
-        
-          <li class="md-nav__item">
+      
+        <li class="md-nav__item">
   <a href="#code_quantity" class="md-nav__link">
     Code Quantity
   </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
       
@@ -1050,6 +1041,8 @@
   
   
   
+    
+  
   
     <label class="md-nav__title" for="__toc">
       <span class="md-nav__icon md-icon"></span>
@@ -1058,43 +1051,30 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#code_analysis" class="md-nav__link">
-    Code Analysis
-  </a>
-  
-    <nav class="md-nav" aria-label="Code Analysis">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
   <a href="#cppcheck_-_a_static_analysis_tool_for_cc_code" class="md-nav__link">
     Cppcheck - a static analysis tool for C/C++ code
   </a>
   
 </li>
-        
-          <li class="md-nav__item">
+      
+        <li class="md-nav__item">
   <a href="#valgrind_-_a_dynamic_analysis_tools" class="md-nav__link">
     Valgrind - a dynamic analysis tools
   </a>
   
 </li>
-        
-          <li class="md-nav__item">
+      
+        <li class="md-nav__item">
   <a href="#gprof_and_gcov" class="md-nav__link">
     gprof and gcov
   </a>
   
 </li>
-        
-          <li class="md-nav__item">
+      
+        <li class="md-nav__item">
   <a href="#code_quantity" class="md-nav__link">
     Code Quantity
   </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
       
@@ -1111,9 +1091,7 @@
               
                 
                 
-                  <h1>Code Analysis</h1>
-                
-                <h5 id="code_analysis">Code Analysis<a class="headerlink" href="#code_analysis" title="Permanent link">&para;</a></h5>
+                <h1 id="code_analysis">Code Analysis<a class="headerlink" href="#code_analysis" title="Permanent link">&para;</a></h1>
 <hr />
 <div class="toc">
 <ul>
@@ -1126,15 +1104,15 @@
 </li>
 </ul>
 </div>
-<h6 id="cppcheck_-_a_static_analysis_tool_for_cc_code">Cppcheck - a static analysis tool for C/C++ code<a class="headerlink" href="#cppcheck_-_a_static_analysis_tool_for_cc_code" title="Permanent link">&para;</a></h6>
+<h2 id="cppcheck_-_a_static_analysis_tool_for_cc_code">Cppcheck - a static analysis tool for C/C++ code<a class="headerlink" href="#cppcheck_-_a_static_analysis_tool_for_cc_code" title="Permanent link">&para;</a></h2>
 <p><a href="http://cppcheck.sourceforge.net/">Cppcheck</a> provides unique code analysis to detect bugs and focuses on detecting undefined behaviour and dangerous coding constructs. The goal is to detect only real errors in the code (i.e. have very few false positives).
 <div class="highlight"><pre><span></span><code>cppcheck --enable=all src/
 </code></pre></div></p>
-<h6 id="valgrind_-_a_dynamic_analysis_tools">Valgrind - a dynamic analysis tools<a class="headerlink" href="#valgrind_-_a_dynamic_analysis_tools" title="Permanent link">&para;</a></h6>
+<h2 id="valgrind_-_a_dynamic_analysis_tools">Valgrind - a dynamic analysis tools<a class="headerlink" href="#valgrind_-_a_dynamic_analysis_tools" title="Permanent link">&para;</a></h2>
 <p><a href="http://valgrind.org/">Valgrind</a> is an instrumentation framework for building dynamic analysis tools. There are Valgrind tools that can <strong>automatically detect many memory management and threading bugs, and profile your programs in detail</strong>. You can also use Valgrind to build new tools.
 <div class="highlight"><pre><span></span><code>valgrind --tool=memcheck --leak-check=full &lt;program args&gt;
 </code></pre></div></p>
-<h6 id="gprof_and_gcov">gprof and gcov<a class="headerlink" href="#gprof_and_gcov" title="Permanent link">&para;</a></h6>
+<h2 id="gprof_and_gcov">gprof and gcov<a class="headerlink" href="#gprof_and_gcov" title="Permanent link">&para;</a></h2>
 <p><a href="https://alex.dzyoba.com/blog/gprof-gcov/">gprof and gcov</a> are classical profilers that are still in use. Since the dawn of time, they were used by hackers to gain insight into their programs at the source code level.</p>
 <ul>
 <li>
@@ -1151,7 +1129,7 @@
 <p><a href="https://github.com/eddyxu/cpp-coveralls">cpp-coveralls</a> - Upload C/C++ coverage report to coveralls.io</p>
 </li>
 </ul>
-<h6 id="code_quantity">Code Quantity<a class="headerlink" href="#code_quantity" title="Permanent link">&para;</a></h6>
+<h2 id="code_quantity">Code Quantity<a class="headerlink" href="#code_quantity" title="Permanent link">&para;</a></h2>
 <ul>
 <li><a href="https://wakatime.com/">WakaTime</a>: Open source plugins for automatic programming metrics</li>
 <li><a href="https://landscape.io/">Landscape</a> is an early warning system for your Python codebase</li>

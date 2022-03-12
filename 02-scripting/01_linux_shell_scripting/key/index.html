@@ -411,6 +411,8 @@
       <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
       
       
+        
+      
       
         <label class="md-nav__link md-nav__link--active" for="__toc">
           GPG & SSH Key
@@ -426,6 +428,8 @@
   
   
   
+    
+  
   
     <label class="md-nav__title" for="__toc">
       <span class="md-nav__icon md-icon"></span>
@@ -434,26 +438,19 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#linux_key" class="md-nav__link">
-    Linux Key
-  </a>
-  
-    <nav class="md-nav" aria-label="Linux Key">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
   <a href="#overview" class="md-nav__link">
     Overview
   </a>
   
 </li>
-        
-          <li class="md-nav__item">
+      
+        <li class="md-nav__item">
   <a href="#gpgpgp" class="md-nav__link">
     GPG/PGP
   </a>
   
-</li>
+    <nav class="md-nav" aria-label="GPG/PGP">
+      <ul class="md-nav__list">
         
           <li class="md-nav__item">
   <a href="#gpg_keyserver" class="md-nav__link">
@@ -462,15 +459,15 @@
   
 </li>
         
-          <li class="md-nav__item">
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#ssh_key" class="md-nav__link">
     SSH Key
   </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
       
@@ -1050,6 +1047,8 @@
   
   
   
+    
+  
   
     <label class="md-nav__title" for="__toc">
       <span class="md-nav__icon md-icon"></span>
@@ -1058,26 +1057,19 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#linux_key" class="md-nav__link">
-    Linux Key
-  </a>
-  
-    <nav class="md-nav" aria-label="Linux Key">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
   <a href="#overview" class="md-nav__link">
     Overview
   </a>
   
 </li>
-        
-          <li class="md-nav__item">
+      
+        <li class="md-nav__item">
   <a href="#gpgpgp" class="md-nav__link">
     GPG/PGP
   </a>
   
-</li>
+    <nav class="md-nav" aria-label="GPG/PGP">
+      <ul class="md-nav__list">
         
           <li class="md-nav__item">
   <a href="#gpg_keyserver" class="md-nav__link">
@@ -1086,15 +1078,15 @@
   
 </li>
         
-          <li class="md-nav__item">
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#ssh_key" class="md-nav__link">
     SSH Key
   </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
       
@@ -1111,18 +1103,16 @@
               
                 
                 
-                  <h1>GPG & SSH Key</h1>
-                
-                <h5 id="linux_key">Linux Key<a class="headerlink" href="#linux_key" title="Permanent link">&para;</a></h5>
+                <h1 id="linux_key">Linux Key<a class="headerlink" href="#linux_key" title="Permanent link">&para;</a></h1>
 <hr />
-<h6 id="overview">Overview<a class="headerlink" href="#overview" title="Permanent link">&para;</a></h6>
+<h2 id="overview">Overview<a class="headerlink" href="#overview" title="Permanent link">&para;</a></h2>
 <p>公钥和密钥，是现在密码学的一个发明。以我们生活中的例子来说，公钥相当于你的银行帐号，私钥相当于你的银行存折和银行卡。</p>
-<h6 id="gpgpgp">GPG/PGP<a class="headerlink" href="#gpgpgp" title="Permanent link">&para;</a></h6>
+<h2 id="gpgpgp">GPG/PGP<a class="headerlink" href="#gpgpgp" title="Permanent link">&para;</a></h2>
 <ul>
 <li><a href="https://wiki.ubuntu.org.cn/GPG/PGP">https://wiki.ubuntu.org.cn/GPG/PGP</a></li>
 </ul>
 <p>PGP，简单的说，是一款以利用公钥和密钥技术的加密和身份验证软件；而GPG呢，就是开源的PGP。</p>
-<h6 id="gpg_keyserver">公钥服务器（GPG Keyserver）<a class="headerlink" href="#gpg_keyserver" title="Permanent link">&para;</a></h6>
+<h3 id="gpg_keyserver">公钥服务器（GPG Keyserver）<a class="headerlink" href="#gpg_keyserver" title="Permanent link">&para;</a></h3>
 <p>现在网络上有很多公钥服务器，而且都是互相同步的。比如：</p>
 <ul>
 <li><a href="http://keyserver.ubuntu.com:11371">http://keyserver.ubuntu.com:11371</a> </li>
@@ -1130,7 +1120,7 @@
 <li><a href="http://wwwkeys.pgp.net:11371">http://wwwkeys.pgp.net:11371</a> </li>
 <li><a href="http://subkeys.pgp.net">http://subkeys.pgp.net</a> </li>
 </ul>
-<h6 id="ssh_key">SSH Key<a class="headerlink" href="#ssh_key" title="Permanent link">&para;</a></h6>
+<h2 id="ssh_key">SSH Key<a class="headerlink" href="#ssh_key" title="Permanent link">&para;</a></h2>
 <ul>
 <li>Generating a new SSH key
   <div class="highlight"><pre><span></span><code>ssh-keygen -t rsa -b <span class="m">4096</span> -C <span class="s2">&quot;your_email@example.com&quot;</span>

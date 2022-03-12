@@ -501,6 +501,8 @@
       <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
       
       
+        
+      
       
         <label class="md-nav__link md-nav__link--active" for="__toc">
           Compiler
@@ -516,6 +518,8 @@
   
   
   
+    
+  
   
     <label class="md-nav__title" for="__toc">
       <span class="md-nav__icon md-icon"></span>
@@ -524,19 +528,12 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#compiler" class="md-nav__link">
-    Compiler
-  </a>
-  
-    <nav class="md-nav" aria-label="Compiler">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
   <a href="#gccg" class="md-nav__link">
     GCC/G++
   </a>
   
-</li>
+    <nav class="md-nav" aria-label="GCC/G++">
+      <ul class="md-nav__list">
         
           <li class="md-nav__item">
   <a href="#gccg_options" class="md-nav__link">
@@ -545,12 +542,18 @@
   
 </li>
         
-          <li class="md-nav__item">
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#faster_compilers" class="md-nav__link">
     Faster Compilers
   </a>
   
-</li>
+    <nav class="md-nav" aria-label="Faster Compilers">
+      <ul class="md-nav__list">
         
           <li class="md-nav__item">
   <a href="#ccache_a_fast_cc_compiler_cache" class="md-nav__link">
@@ -1057,6 +1060,8 @@
   
   
   
+    
+  
   
     <label class="md-nav__title" for="__toc">
       <span class="md-nav__icon md-icon"></span>
@@ -1065,19 +1070,12 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#compiler" class="md-nav__link">
-    Compiler
-  </a>
-  
-    <nav class="md-nav" aria-label="Compiler">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
   <a href="#gccg" class="md-nav__link">
     GCC/G++
   </a>
   
-</li>
+    <nav class="md-nav" aria-label="GCC/G++">
+      <ul class="md-nav__list">
         
           <li class="md-nav__item">
   <a href="#gccg_options" class="md-nav__link">
@@ -1086,12 +1084,18 @@
   
 </li>
         
-          <li class="md-nav__item">
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#faster_compilers" class="md-nav__link">
     Faster Compilers
   </a>
   
-</li>
+    <nav class="md-nav" aria-label="Faster Compilers">
+      <ul class="md-nav__list">
         
           <li class="md-nav__item">
   <a href="#ccache_a_fast_cc_compiler_cache" class="md-nav__link">
@@ -1125,38 +1129,40 @@
               
                 
                 
-                  <h1>Compiler</h1>
-                
-                <h5 id="compiler">Compiler<a class="headerlink" href="#compiler" title="Permanent link">&para;</a></h5>
+                <h1 id="compiler">Compiler<a class="headerlink" href="#compiler" title="Permanent link">&para;</a></h1>
 <hr />
 <div class="toc">
 <ul>
 <li><a href="#compiler">Compiler</a><ul>
-<li><a href="#gccg">GCC/G++</a></li>
+<li><a href="#gccg">GCC/G++</a><ul>
 <li><a href="#gccg_options">gcc/g++ Options</a></li>
-<li><a href="#faster_compilers">Faster Compilers</a></li>
+</ul>
+</li>
+<li><a href="#faster_compilers">Faster Compilers</a><ul>
 <li><a href="#ccache_a_fast_cc_compiler_cache">ccache: a fast C/C++ compiler cache</a></li>
 <li><a href="#distcc_a_fast_free_distributed_cc_compiler">distcc: a fast, free distributed C/C++ compiler</a></li>
 </ul>
 </li>
 </ul>
+</li>
+</ul>
 </div>
-<h6 id="gccg">GCC/G++<a class="headerlink" href="#gccg" title="Permanent link">&para;</a></h6>
+<h2 id="gccg">GCC/G++<a class="headerlink" href="#gccg" title="Permanent link">&para;</a></h2>
 <ul>
 <li><a href="https://preshing.com/20141108/how-to-install-the-latest-gcc-on-windows/">How to Install the Latest GCC on Windows</a></li>
 </ul>
-<h6 id="gccg_options">gcc/g++ Options<a class="headerlink" href="#gccg_options" title="Permanent link">&para;</a></h6>
+<h3 id="gccg_options">gcc/g++ Options<a class="headerlink" href="#gccg_options" title="Permanent link">&para;</a></h3>
 <ul>
 <li><code>-dumpmachine</code>: print <strong>the compiler's target machine</strong> (for example, arm-linux-gnueabihf)</li>
 <li><code>-dM -E</code>:</li>
 <li><code>gcc -dM -E - &lt; /dev/null</code>: 显示所有预定义的宏</li>
 </ul>
-<h6 id="faster_compilers">Faster Compilers<a class="headerlink" href="#faster_compilers" title="Permanent link">&para;</a></h6>
+<h2 id="faster_compilers">Faster Compilers<a class="headerlink" href="#faster_compilers" title="Permanent link">&para;</a></h2>
 <ul>
 <li><a href="https://rtt-lwr.readthedocs.io/en/latest/adv-tutos/ccache-distcc.html">Compile faster with Ccache and Distcc</a></li>
 <li><a href="http://www.jamessjackson.com/gcc/ccache/distcc/compiling/c++/2017/07/25/ccache-and-distcc/">Speeding Up Compilation with ccache and distcc</a></li>
 </ul>
-<h6 id="ccache_a_fast_cc_compiler_cache">ccache: a fast C/C++ compiler cache<a class="headerlink" href="#ccache_a_fast_cc_compiler_cache" title="Permanent link">&para;</a></h6>
+<h3 id="ccache_a_fast_cc_compiler_cache">ccache: a fast C/C++ compiler cache<a class="headerlink" href="#ccache_a_fast_cc_compiler_cache" title="Permanent link">&para;</a></h3>
 <p><a href="https://ccache.samba.org/">ccache</a> is a compiler cache. It speeds up recompilation by caching previous compilations and detecting when the same compilation is being done again. Supported languages are C, C++, Objective-C and Objective-C++.</p>
 <ul>
 <li>
@@ -1196,7 +1202,7 @@ ndk-build -j9
 </blockquote>
 </li>
 </ul>
-<h6 id="distcc_a_fast_free_distributed_cc_compiler">distcc: a fast, free distributed C/C++ compiler<a class="headerlink" href="#distcc_a_fast_free_distributed_cc_compiler" title="Permanent link">&para;</a></h6>
+<h3 id="distcc_a_fast_free_distributed_cc_compiler">distcc: a fast, free distributed C/C++ compiler<a class="headerlink" href="#distcc_a_fast_free_distributed_cc_compiler" title="Permanent link">&para;</a></h3>
 <p><a href="https://distcc.github.io/">distcc</a> is a program to distribute builds of C, C++, Objective C or Objective C++ code across several machines on a network. distcc should always generate the same results as a local build, is simple to install and use, and is usually much faster than a local compile.</p>
                 
               

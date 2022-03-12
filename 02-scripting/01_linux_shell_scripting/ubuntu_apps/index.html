@@ -435,6 +435,8 @@
       <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
       
       
+        
+      
       
         <label class="md-nav__link md-nav__link--active" for="__toc">
           Ubuntu Apps
@@ -450,6 +452,8 @@
   
   
   
+    
+  
   
     <label class="md-nav__title" for="__toc">
       <span class="md-nav__icon md-icon"></span>
@@ -458,33 +462,26 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#ubuntu_apps" class="md-nav__link">
-    Ubuntu Apps
-  </a>
-  
-    <nav class="md-nav" aria-label="Ubuntu Apps">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
   <a href="#_1" class="md-nav__link">
     软件仓库和包管理
   </a>
   
 </li>
-        
-          <li class="md-nav__item">
+      
+        <li class="md-nav__item">
   <a href="#ppa" class="md-nav__link">
     PPA
   </a>
   
 </li>
-        
-          <li class="md-nav__item">
+      
+        <li class="md-nav__item">
   <a href="#apt" class="md-nav__link">
     APT
   </a>
   
-</li>
+    <nav class="md-nav" aria-label="APT">
+      <ul class="md-nav__list">
         
           <li class="md-nav__item">
   <a href="#apt-get" class="md-nav__link">
@@ -507,15 +504,15 @@
   
 </li>
         
-          <li class="md-nav__item">
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#deb" class="md-nav__link">
     Deb
   </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
       
@@ -1071,6 +1068,8 @@
   
   
   
+    
+  
   
     <label class="md-nav__title" for="__toc">
       <span class="md-nav__icon md-icon"></span>
@@ -1079,33 +1078,26 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#ubuntu_apps" class="md-nav__link">
-    Ubuntu Apps
-  </a>
-  
-    <nav class="md-nav" aria-label="Ubuntu Apps">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
   <a href="#_1" class="md-nav__link">
     软件仓库和包管理
   </a>
   
 </li>
-        
-          <li class="md-nav__item">
+      
+        <li class="md-nav__item">
   <a href="#ppa" class="md-nav__link">
     PPA
   </a>
   
 </li>
-        
-          <li class="md-nav__item">
+      
+        <li class="md-nav__item">
   <a href="#apt" class="md-nav__link">
     APT
   </a>
   
-</li>
+    <nav class="md-nav" aria-label="APT">
+      <ul class="md-nav__list">
         
           <li class="md-nav__item">
   <a href="#apt-get" class="md-nav__link">
@@ -1128,15 +1120,15 @@
   
 </li>
         
-          <li class="md-nav__item">
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#deb" class="md-nav__link">
     Deb
   </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
       
@@ -1153,11 +1145,9 @@
               
                 
                 
-                  <h1>Ubuntu Apps</h1>
-                
-                <h5 id="ubuntu_apps">Ubuntu Apps<a class="headerlink" href="#ubuntu_apps" title="Permanent link">&para;</a></h5>
+                <h1 id="ubuntu_apps">Ubuntu Apps<a class="headerlink" href="#ubuntu_apps" title="Permanent link">&para;</a></h1>
 <hr />
-<h6 id="_1">软件仓库和包管理<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h6>
+<h2 id="_1">软件仓库和包管理<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
 <p>软件仓库是一组文件，其中包含各种软件及其版本的信息，以及校验和等其他一些详细信息。每个版本的 Ubuntu 都有自己的四个官方软件仓库：</p>
 <ul>
 <li>Main - Canonical 支持的自由开源软件。</li>
@@ -1170,7 +1160,7 @@
 <li>Ubuntu 软件中心</li>
 <li>Synaptic 包管理器：<code>sudo apt install synaptic</code></li>
 </ul>
-<h6 id="ppa">PPA<a class="headerlink" href="#ppa" title="Permanent link">&para;</a></h6>
+<h2 id="ppa">PPA<a class="headerlink" href="#ppa" title="Permanent link">&para;</a></h2>
 <p>PPA (Personal Package Archive) 表示 个人软件包存档。</p>
 <p>Ubuntu 提供了一个名为 Launchpad 的平台，使软件开发人员能够创建自己的软件仓库。终端用户，也就是你，可以将 PPA 仓库添加到 <code>sources.list</code> 文件中，当你更新系统时，你的系统会知道这个新软件的可用性，然后你可以使用标准的 <code>sudo apt install</code> 命令安装它。</p>
 <ul>
@@ -1198,9 +1188,9 @@ sudo apt-get install lighttable-installer
 </code></pre></div></p>
 </li>
 </ul>
-<h6 id="apt">APT<a class="headerlink" href="#apt" title="Permanent link">&para;</a></h6>
+<h2 id="apt">APT<a class="headerlink" href="#apt" title="Permanent link">&para;</a></h2>
 <p>Advanced Packaging Tool（apt）是Linux下的一款安装包管理工具。</p>
-<h6 id="apt-get">apt-get<a class="headerlink" href="#apt-get" title="Permanent link">&para;</a></h6>
+<h3 id="apt-get">apt-get<a class="headerlink" href="#apt-get" title="Permanent link">&para;</a></h3>
 <ul>
 <li>
 <p>install apps
@@ -1226,8 +1216,8 @@ sudo apt-get autoremove
 </code></pre></div></p>
 </li>
 </ul>
-<h6 id="apt-cache">apt-cache<a class="headerlink" href="#apt-cache" title="Permanent link">&para;</a></h6>
-<h6 id="apt-key">apt-key<a class="headerlink" href="#apt-key" title="Permanent link">&para;</a></h6>
+<h3 id="apt-cache">apt-cache<a class="headerlink" href="#apt-cache" title="Permanent link">&para;</a></h3>
+<h3 id="apt-key">apt-key<a class="headerlink" href="#apt-key" title="Permanent link">&para;</a></h3>
 <p>apt-key命令用于管理Debian Linux系统中的软件包密钥。每个发布的deb包，都是通过密钥认证的，apt-key用来管理密钥。</p>
 <ul>
 <li>add a GPG key to the apt sources keyring
@@ -1238,7 +1228,7 @@ sudo apt-key adv --keyserver <span class="s1">&#39;hkp://keyserver.ubuntu.com:80
 --recv-key F42ED6FBAB17C654
 </code></pre></div></li>
 </ul>
-<h6 id="deb">Deb<a class="headerlink" href="#deb" title="Permanent link">&para;</a></h6>
+<h2 id="deb">Deb<a class="headerlink" href="#deb" title="Permanent link">&para;</a></h2>
 <p>如果使用 DEB 包安装软件，将无法保证在运行 <code>sudo apt update</code> 和 <code>sudo apt upgrade</code> 命令时，已安装的软件会被更新为较新的版本。</p>
 <ul>
 <li>

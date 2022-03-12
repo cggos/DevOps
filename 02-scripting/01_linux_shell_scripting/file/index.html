@@ -399,6 +399,8 @@
       <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
       
       
+        
+      
       
         <label class="md-nav__link md-nav__link--active" for="__toc">
           File & File Systems
@@ -414,6 +416,8 @@
   
   
   
+    
+  
   
     <label class="md-nav__title" for="__toc">
       <span class="md-nav__icon md-icon"></span>
@@ -422,50 +426,37 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#files_file_systems" class="md-nav__link">
-    Files &amp; File Systems
-  </a>
-  
-    <nav class="md-nav" aria-label="Files &amp; File Systems">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
   <a href="#file_systems" class="md-nav__link">
     File Systems
   </a>
   
 </li>
-        
-          <li class="md-nav__item">
+      
+        <li class="md-nav__item">
   <a href="#statistics" class="md-nav__link">
     Statistics
   </a>
   
 </li>
-        
-          <li class="md-nav__item">
+      
+        <li class="md-nav__item">
   <a href="#xargs" class="md-nav__link">
     xargs
   </a>
   
 </li>
-        
-          <li class="md-nav__item">
+      
+        <li class="md-nav__item">
   <a href="#find" class="md-nav__link">
     Find
   </a>
   
 </li>
-        
-          <li class="md-nav__item">
+      
+        <li class="md-nav__item">
   <a href="#compress_uncompress" class="md-nav__link">
     Compress &amp; Uncompress
   </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
       
@@ -1057,6 +1048,8 @@
   
   
   
+    
+  
   
     <label class="md-nav__title" for="__toc">
       <span class="md-nav__icon md-icon"></span>
@@ -1065,50 +1058,37 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#files_file_systems" class="md-nav__link">
-    Files &amp; File Systems
-  </a>
-  
-    <nav class="md-nav" aria-label="Files &amp; File Systems">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
   <a href="#file_systems" class="md-nav__link">
     File Systems
   </a>
   
 </li>
-        
-          <li class="md-nav__item">
+      
+        <li class="md-nav__item">
   <a href="#statistics" class="md-nav__link">
     Statistics
   </a>
   
 </li>
-        
-          <li class="md-nav__item">
+      
+        <li class="md-nav__item">
   <a href="#xargs" class="md-nav__link">
     xargs
   </a>
   
 </li>
-        
-          <li class="md-nav__item">
+      
+        <li class="md-nav__item">
   <a href="#find" class="md-nav__link">
     Find
   </a>
   
 </li>
-        
-          <li class="md-nav__item">
+      
+        <li class="md-nav__item">
   <a href="#compress_uncompress" class="md-nav__link">
     Compress &amp; Uncompress
   </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
       
@@ -1125,11 +1105,9 @@
               
                 
                 
-                  <h1>File & File Systems</h1>
-                
-                <h5 id="files_file_systems">Files &amp; File Systems<a class="headerlink" href="#files_file_systems" title="Permanent link">&para;</a></h5>
+                <h1 id="files_file_systems">Files &amp; File Systems<a class="headerlink" href="#files_file_systems" title="Permanent link">&para;</a></h1>
 <hr />
-<h6 id="file_systems">File Systems<a class="headerlink" href="#file_systems" title="Permanent link">&para;</a></h6>
+<h2 id="file_systems">File Systems<a class="headerlink" href="#file_systems" title="Permanent link">&para;</a></h2>
 <ul>
 <li>
 <p>NTFS</p>
@@ -1153,7 +1131,7 @@
 <li>SMBv2.1</li>
 <li>SMBv3.0</li>
 </ul>
-<h6 id="statistics">Statistics<a class="headerlink" href="#statistics" title="Permanent link">&para;</a></h6>
+<h2 id="statistics">Statistics<a class="headerlink" href="#statistics" title="Permanent link">&para;</a></h2>
 <div class="highlight"><pre><span></span><code><span class="c1"># 查看当前目录下的文件数量（包含子目录中的文件） 注意：R，代表子目录</span>
 ls -lR<span class="p">|</span>grep <span class="s2">&quot;^-&quot;</span><span class="p">|</span> wc -l
 </code></pre></div>
@@ -1174,10 +1152,10 @@ ls -lR<span class="p">|</span>grep <span class="s2">&quot;^-&quot;</span><span c
 <span class="nb">echo</span> <span class="nv">$counter</span>
 <span class="nb">exit</span> <span class="m">0</span>
 </code></pre></div>
-<h6 id="xargs">xargs<a class="headerlink" href="#xargs" title="Permanent link">&para;</a></h6>
+<h2 id="xargs">xargs<a class="headerlink" href="#xargs" title="Permanent link">&para;</a></h2>
 <div class="highlight"><pre><span></span><code>cat install_manifest.txt <span class="p">|</span> xargs sudo rm <span class="o">{}</span> -fr
 </code></pre></div>
-<h6 id="find">Find<a class="headerlink" href="#find" title="Permanent link">&para;</a></h6>
+<h2 id="find">Find<a class="headerlink" href="#find" title="Permanent link">&para;</a></h2>
 <ul>
 <li>
 <p><a href="http://www.binarytides.com/linux-find-command-examples/">25 simple examples of Linux find command</a></p>
@@ -1225,7 +1203,7 @@ find
 <span class="c1"># 删除目录及其子目录下某种类型文件，比如说所有的txt文件</span>
 find . -name <span class="s2">&quot;*.txt&quot;</span> -type f -print -exec rm -rf <span class="o">{}</span> <span class="se">\;</span>
 </code></pre></div>
-<h6 id="compress_uncompress">Compress &amp; Uncompress<a class="headerlink" href="#compress_uncompress" title="Permanent link">&para;</a></h6>
+<h2 id="compress_uncompress">Compress &amp; Uncompress<a class="headerlink" href="#compress_uncompress" title="Permanent link">&para;</a></h2>
 <ul>
 <li>多卷压缩
   <div class="highlight"><pre><span></span><code>zip -r -s 2g nutstore_papers.zip nutstore_papers/

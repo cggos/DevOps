@@ -753,6 +753,8 @@
       <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
       
       
+        
+      
       
         <label class="md-nav__link md-nav__link--active" for="__toc">
           API Docs
@@ -768,6 +770,8 @@
   
   
   
+    
+  
   
     <label class="md-nav__title" for="__toc">
       <span class="md-nav__icon md-icon"></span>
@@ -776,19 +780,12 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#api_docs" class="md-nav__link">
-    API Docs
-  </a>
-  
-    <nav class="md-nav" aria-label="API Docs">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
   <a href="#doxygen" class="md-nav__link">
     Doxygen
   </a>
   
-</li>
+    <nav class="md-nav" aria-label="Doxygen">
+      <ul class="md-nav__list">
         
           <li class="md-nav__item">
   <a href="#doxygenpdf" class="md-nav__link">
@@ -797,15 +794,15 @@
   
 </li>
         
-          <li class="md-nav__item">
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#javadoc" class="md-nav__link">
     JavaDoc
   </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
       
@@ -1043,6 +1040,8 @@
   
   
   
+    
+  
   
     <label class="md-nav__title" for="__toc">
       <span class="md-nav__icon md-icon"></span>
@@ -1051,19 +1050,12 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#api_docs" class="md-nav__link">
-    API Docs
-  </a>
-  
-    <nav class="md-nav" aria-label="API Docs">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
   <a href="#doxygen" class="md-nav__link">
     Doxygen
   </a>
   
-</li>
+    <nav class="md-nav" aria-label="Doxygen">
+      <ul class="md-nav__list">
         
           <li class="md-nav__item">
   <a href="#doxygenpdf" class="md-nav__link">
@@ -1072,15 +1064,15 @@
   
 </li>
         
-          <li class="md-nav__item">
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#javadoc" class="md-nav__link">
     JavaDoc
   </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
       
@@ -1097,9 +1089,7 @@
               
                 
                 
-                  <h1>API Docs</h1>
-                
-                <h5 id="api_docs">API Docs<a class="headerlink" href="#api_docs" title="Permanent link">&para;</a></h5>
+                <h1 id="api_docs">API Docs<a class="headerlink" href="#api_docs" title="Permanent link">&para;</a></h1>
 <ul>
 <li><a href="https://codedocs.xyz/">CodeDocs</a> will generate and publish documentation for you, using Doxygen. It's free and easy to setup with your public GitHub repositories.</li>
 </ul>
@@ -1107,16 +1097,18 @@
 <div class="toc">
 <ul>
 <li><a href="#api_docs">API Docs</a><ul>
-<li><a href="#doxygen">Doxygen</a></li>
+<li><a href="#doxygen">Doxygen</a><ul>
 <li><a href="#doxygenpdf">使用Doxygen生成中文PDF文档</a></li>
+</ul>
+</li>
 <li><a href="#javadoc">JavaDoc</a></li>
 </ul>
 </li>
 </ul>
 </div>
-<h6 id="doxygen">Doxygen<a class="headerlink" href="#doxygen" title="Permanent link">&para;</a></h6>
+<h2 id="doxygen">Doxygen<a class="headerlink" href="#doxygen" title="Permanent link">&para;</a></h2>
 <p><a href="http://www.stack.nl/~dimitri/doxygen">Doxygen</a> is the de facto standard tool for generating documentation from annotated C++ sources, but it also supports other popular programming languages such as C, Objective-C, C#, PHP, Java, Python, IDL (Corba, Microsoft, and UNO/OpenOffice flavors), Fortran, VHDL, Tcl, and to some extent D.</p>
-<h6 id="doxygenpdf">使用Doxygen生成中文PDF文档<a class="headerlink" href="#doxygenpdf" title="Permanent link">&para;</a></h6>
+<h3 id="doxygenpdf">使用Doxygen生成中文PDF文档<a class="headerlink" href="#doxygenpdf" title="Permanent link">&para;</a></h3>
 <p>1) 修改Doxygen配置文件  </p>
 <p>To generate a PDF file, you should enable output format Latex, set the tag <code>GENERATE_LATEX</code> to YES. Also, to improve the quality of the pdf, the tag <code>PDF_HYPERLINKS</code> and <code>USE_PDFLATEX</code> need to be set to YES. After then, run doxygen, then latex files will be generated in the output directory under the directory <code>latex</code>.</p>
 <p>如果要排版 <strong>Latex数学公式</strong>，需要手动把需要的包加进来，在Doxygen配置文件中添加 <code>EXTRA_PACKAGES = {amsmath,amsthm,amssymb}</code>，最终  </p>
@@ -1138,7 +1130,7 @@
 </code></pre></div>
 <p>3) Convert Latex to PDF  </p>
 <p>在latex目录使用 <code>make</code> 命令生成 或者 用 LaTeXWorks 等工具生成</p>
-<h6 id="javadoc">JavaDoc<a class="headerlink" href="#javadoc" title="Permanent link">&para;</a></h6>
+<h2 id="javadoc">JavaDoc<a class="headerlink" href="#javadoc" title="Permanent link">&para;</a></h2>
                 
               
               
