@@ -792,9 +792,52 @@
         
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Fonts
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="./" class="md-nav__link md-nav__link--active">
         Fonts
       </a>
+      
+        
+<nav class="md-nav md-nav--secondary" aria-label="目录">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#app" class="md-nav__link">
+    App
+  </a>
+  
+    <nav class="md-nav" aria-label="App">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#ubuntuwps" class="md-nav__link">
+    Ubuntu下解决WPS字体缺失问题
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -993,6 +1036,34 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#app" class="md-nav__link">
+    App
+  </a>
+  
+    <nav class="md-nav" aria-label="App">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#ubuntuwps" class="md-nav__link">
+    Ubuntu下解决WPS字体缺失问题
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -1010,6 +1081,28 @@
 <li><a href="https://github.com/aui/font-spider">font-spider</a></li>
 <li><a href="https://www.free-fonts.com/">Free Fonts Search and Download</a></li>
 </ul>
+<h2 id="app">App<a class="headerlink" href="#app" title="Permanent link">&para;</a></h2>
+<h3 id="ubuntuwps">Ubuntu下解决WPS字体缺失问题<a class="headerlink" href="#ubuntuwps" title="Permanent link">&para;</a></h3>
+<ul>
+<li>
+<p>获取字体 <code>wps_symbol_fonts.zip</code></p>
+</li>
+<li>
+<p>将字体解压到文件夹 <code>/usr/share/fonts</code> 或 <code>~/.local/share/fonts</code></p>
+</li>
+<li>
+<p>生成字体的索引信息</p>
+</li>
+</ul>
+<div class="highlight"><pre><span></span><code>sudo mkfontscale
+sudo mkfontdir
+</code></pre></div>
+<ul>
+<li>更新字体缓存</li>
+</ul>
+<div class="highlight"><pre><span></span><code>sudo fc-cache
+</code></pre></div>
+<p>ref: <a href="https://mxy493.xyz/2019040840601/">https://mxy493.xyz/2019040840601/</a></p>
                 
               
               
