@@ -661,6 +661,29 @@
             
   
   
+    
+  
+  
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_8_1" type="checkbox" id="__nav_8_1" checked>
+      
+      <label class="md-nav__link" for="__nav_8_1">
+        Type Setting
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="Type Setting" data-md-level="2">
+        <label class="md-nav__title" for="__nav_8_1">
+          <span class="md-nav__icon md-icon"></span>
+          Type Setting
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
   
     <li class="md-nav__item">
       <a href="../TextEditors/" class="md-nav__link">
@@ -710,13 +733,6 @@
         <li class="md-nav__item">
   <a href="#editor" class="md-nav__link">
     Editor
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#mkdocs" class="md-nav__link">
-    MkDocs
   </a>
   
 </li>
@@ -813,18 +829,6 @@
   
   
     <li class="md-nav__item">
-      <a href="../OnlineDocs/" class="md-nav__link">
-        Online Docs
-      </a>
-    </li>
-  
-
-          
-            
-  
-  
-  
-    <li class="md-nav__item">
       <a href="../Diagrams/" class="md-nav__link">
         Diagrams
       </a>
@@ -852,6 +856,75 @@
       <a href="../Convertor/" class="md-nav__link">
         Convertor
       </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_8_2" type="checkbox" id="__nav_8_2" >
+      
+      <label class="md-nav__link" for="__nav_8_2">
+        Website
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="Website" data-md-level="2">
+        <label class="md-nav__title" for="__nav_8_2">
+          <span class="md-nav__icon md-icon"></span>
+          Website
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../website/OnlineDocs/" class="md-nav__link">
+        Online Docs
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../website/Jekyll/" class="md-nav__link">
+        Jekyll
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../website/MkDocs/" class="md-nav__link">
+        MkDocs
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
     </li>
   
 
@@ -1051,13 +1124,6 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#mkdocs" class="md-nav__link">
-    MkDocs
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
   <a href="#others" class="md-nav__link">
     Others
   </a>
@@ -1115,54 +1181,6 @@
 </li>
 <li>
 <p><a href="http://ui.toast.com/tui-editor/">tui.editor</a>: GFM Markdown Wysiwyg Editor - Productive and Extensible</p>
-</li>
-</ul>
-<h2 id="mkdocs">MkDocs<a class="headerlink" href="#mkdocs" title="Permanent link">&para;</a></h2>
-<ul>
-<li>
-<p><a href="https://www.mkdocs.org/">MkDocs</a>: Project documentation with Markdown.</p>
-</li>
-<li>
-<p>install
-  <div class="highlight"><pre><span></span><code><span class="c1"># python3</span>
-pip install mkdocs
-
-<span class="c1"># theme material</span>
-pip install mkdocs-material
-
-<span class="c1"># markdown_extensions</span>
-pip install pymdown-extensions
-</code></pre></div></p>
-</li>
-<li>
-<p>Commands</p>
-</li>
-<li><code>mkdocs new [dir-name]</code> - Create a new project.</li>
-<li><code>mkdocs serve</code> - Start the live-reloading docs server.</li>
-<li><code>mkdocs build</code> - Build the documentation site.</li>
-<li>
-<p><code>mkdocs -h</code> - Print help message and exit.</p>
-</li>
-<li>
-<p>GitHub</p>
-</li>
-<li>修改配置文件 <strong>mkdocs.yml</strong> 把 <code>site_name</code> 改成项目名称</li>
-<li>当前目录中的site/目录下的内容推送到远程github的gh-pages分支
-    <div class="highlight"><pre><span></span><code>mkdocs build
-mkdocs gh-deploy --clean
-</code></pre></div></li>
-<li>
-<p>访问
-    <div class="highlight"><pre><span></span><code>https://<span class="o">{</span>username<span class="o">}</span>.github.io/<span class="o">{</span>projectname<span class="o">}</span>
-</code></pre></div></p>
-</li>
-<li>
-<p>Project layout
-  <div class="highlight"><pre><span></span><code>mkdocs.yml    <span class="c1"># The configuration file.</span>
-docs/
-    index.md  <span class="c1"># The documentation homepage.</span>
-    ...       <span class="c1"># Other markdown pages, images and other files.</span>
-</code></pre></div></p>
 </li>
 </ul>
 <h2 id="others">Others<a class="headerlink" href="#others" title="Permanent link">&para;</a></h2>
