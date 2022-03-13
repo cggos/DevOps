@@ -101,6 +101,7 @@ nav:
       - Convertor: 06-personal_knowledge_management/type_setting/Convertor.md
     - Website:
       - Online Docs: 06-personal_knowledge_management/website/OnlineDocs.md
+      - Jekyll: 06-personal_knowledge_management/website/Jekyll.md
       - MkDocs: 06-personal_knowledge_management/website/MkDocs.md
 
   - Package Management System:
