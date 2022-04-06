@@ -58,3 +58,15 @@ e2fsck                        # check a Linux ext2/ext3/ext4 file system
   sudo exfatlabel /dev/sdc1 "udisk_cg"  # exFat
   sudo ntfslabel /dev/sdc1 "udisk_cg"   # NTFS
   ```
+
+* solve problem of "g++: internal compiler error: Killed (program cc1plus)"
+  ```sh
+  # create swap space
+  sudo dd if=/dev/zero of=/swapfile bs=64M count=16
+  sudo mkswap /swapfile
+  sudo swapon /swapfile
+
+  # shut the swap space down
+  sudo swapoff /swapfile
+  sudo rm /swapfile
+  ```
