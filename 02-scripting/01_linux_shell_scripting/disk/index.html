@@ -1135,6 +1135,18 @@ sudo exfatlabel /dev/sdc1 <span class="s2">&quot;udisk_cg&quot;</span>  <span cl
 sudo ntfslabel /dev/sdc1 <span class="s2">&quot;udisk_cg&quot;</span>   <span class="c1"># NTFS</span>
 </code></pre></div></p>
 </li>
+<li>
+<p>solve problem of "g++: internal compiler error: Killed (program cc1plus)"
+  <div class="highlight"><pre><span></span><code><span class="c1"># create swap space</span>
+sudo dd <span class="k">if</span><span class="o">=</span>/dev/zero <span class="nv">of</span><span class="o">=</span>/swapfile <span class="nv">bs</span><span class="o">=</span>64M <span class="nv">count</span><span class="o">=</span><span class="m">16</span>
+sudo mkswap /swapfile
+sudo swapon /swapfile
+
+<span class="c1"># shut the swap space down</span>
+sudo swapoff /swapfile
+sudo rm /swapfile
+</code></pre></div></p>
+</li>
 </ul>
                 
               
