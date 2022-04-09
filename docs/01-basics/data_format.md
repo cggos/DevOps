@@ -2,9 +2,8 @@
 
 -----
 
-[TOC]
-
 ## Database
+
 * MySQL
 
 ## [XML](https://www.xml.com/)

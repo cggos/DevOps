@@ -53,7 +53,9 @@ plugins:
 nav:
   - Home: 'index.md'
   - Basics:
-    - Data Formats: 01-basics/data_formats/README.md
+    - Data Formats: 01-basics/data_format.md
+    - Code Format: 01-basics/code_format.md
+    - Platform: 01-basics/platform.md
     - Software Architecture & Design Patterns: 01-basics/software_arch_and_design_patterns.md
 
   - Languages: 02-program_languages/README.md
@@ -70,7 +72,6 @@ nav:
     - Ubuntu Apps: 02-scripting/01_linux_shell_scripting/ubuntu_apps.md
 
   - App Build:
-    - Code Format: 03-app_build/code_format.md
     - Build Tools: 03-app_build/build_tools.md
     - Compiler: 03-app_build/compiler.md
     - Debug: 03-app_build/software_debug.md
@@ -88,7 +89,6 @@ nav:
     - Type Setting:
       - Text Editors: 06-personal_knowledge_management/type_setting/TextEditors.md
       - MarkDown: 06-personal_knowledge_management/type_setting/MarkDown.md
-      - Sphinx: 06-personal_knowledge_management/type_setting/Sphinx.md
       - TeX: 06-personal_knowledge_management/type_setting/TeX.md
       - Math: 06-personal_knowledge_management/type_setting/Math.md
       - CHM: 06-personal_knowledge_management/type_setting/CHM.md
@@ -99,6 +99,7 @@ nav:
       - Convertor: 06-personal_knowledge_management/type_setting/Convertor.md
     - Website:
       - Online Docs: 06-personal_knowledge_management/website/OnlineDocs.md
+      - Sphinx: 06-personal_knowledge_management/type_setting/Sphinx.md
       - Jekyll: 06-personal_knowledge_management/website/Jekyll.md
       - MkDocs: 06-personal_knowledge_management/website/MkDocs.md
 

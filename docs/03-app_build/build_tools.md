@@ -2,13 +2,15 @@
 
 -----
 
-[TOC]
-
 ## c_make series
 
 ### GNU Autotools
 
-* GNU Build System: `./configure && make && make install`
+* GNU Build System
+  ```sh
+  ./configure && make && make install
+  ```
+
 * [Autotools Tutorial](https://www.lrde.epita.fr/~adl/autotools.html)
 
 * [Autoconf](https://www.gnu.org/software/autoconf/) is an extensible package of M4 macros that produce shell scripts to automatically configure software source code packages
@@ -32,6 +34,24 @@
 * [CGold: The Hitchhiker’s Guide to the CMake](https://cgold.readthedocs.io/en/latest/)
 * [CMake如何查找链接库](http://www.yeolar.com/note/2014/12/16/cmake-how-to-find-libraries/)
 
+```sh
+cmake ..
+make -j$(nproc)
+```
+
+## make
+
+```sh
+make -j$(nproc)
+```
+
+### Andoid ndk-build
+
+* Android Native Cpp
+  ```sh
+  # .mk file
+  ndk-build
+  ```
 
 ## Ninja
 
