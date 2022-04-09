@@ -56,11 +56,9 @@ nav:
     - Data Formats: 01-basics/data_formats/README.md
     - Software Architecture & Design Patterns: 01-basics/software_arch_and_design_patterns.md
 
-  - Programming Languages:
-    - Overview: 02-program_languages/README.md
+  - Languages: 02-program_languages/README.md
 
-  - Windows Batch Scripting:
-    - Overview: 02-scripting/02_windows_batch_scripting/README.md
+  - Windows Batch Scripting: 02-scripting/02_windows_batch_scripting/README.md
 
   - Linux Shell Scripting:
     - Overview: 02-scripting/01_linux_shell_scripting/README.md
@@ -81,12 +79,12 @@ nav:
     - Reverse Engineering: 03-app_build/reverse_engineering.md
     - Docker: 03-app_build/docker.md
 
-  - Configuration Management System:
+  - CMS:
     - Overview: 04-configuration_management_system/README.md
     - Git: 04-configuration_management_system/git.md
     - Apache Maven: 04-configuration_management_system/maven.md
 
-  - Personal Knowledge Management:
+  - PKM:
     - Type Setting:
       - Text Editors: 06-personal_knowledge_management/type_setting/TextEditors.md
       - MarkDown: 06-personal_knowledge_management/type_setting/MarkDown.md
@@ -104,7 +102,7 @@ nav:
       - Jekyll: 06-personal_knowledge_management/website/Jekyll.md
       - MkDocs: 06-personal_knowledge_management/website/MkDocs.md
 
-  - Package Management System:
+  - PMS:
     - Overview: 07-package_management_system/README.md
 
   - Network:
