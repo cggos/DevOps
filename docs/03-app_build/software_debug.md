@@ -10,6 +10,10 @@
 * [gdb Debugging Full Example (Tutorial): ncurses](http://www.brendangregg.com/blog/2016-08-09/gdb-example-ncurses.html)
 * [GDB - Debugging stripped binaries](https://felix.abecassis.me/2012/08/gdb-debugging-stripped-binaries/)
 
+```sh
+directory: 设置路径
+```
+
 
 ## Bug Manager
 * [bugclose](https://www.bugclose.com/): 云端BUG管理工具
@@ -27,6 +31,10 @@
 * [Backward-cpp](https://github.com/bombela/backward-cpp): a beautiful stack trace pretty printer for C++
 * od: dump files in octal and other formats
 * objdump: display information from object files
+	```sh
+	# 查看.so文件的依赖关系
+	objdump -x libxxxxx.so | grep NEEDED
+	```
 * ldd: print shared object dependencies
 
 ## ROS Debug

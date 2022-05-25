@@ -2,9 +2,7 @@
 
 -----
 
-## c_make series
-
-### GNU Autotools
+## GNU Autotools
 
 * GNU Build System
   ```sh
@@ -22,7 +20,7 @@
 * Gettext
 
 
-### CMake
+## CMake
 
 [CMake](https://cmake.org/) is an open-source, cross-platform family of tools designed to build, test and package software
 
@@ -38,6 +36,30 @@
 cmake ..
 make -j$(nproc)
 ```
+
+### 基本命令
+
+在项目根目录运行编译命令并指定生成文件目录
+
+```bash
+cmake -B cmake-build-debug
+```
+
+在项目根目录运行命令生成可执行文件
+
+```bash
+cmake --build cmake-build-debug
+```
+
+install
+
+```bash
+cmake --build . --target install --config Debug
+
+# In CMake 3.15 and newer
+cmake --install . --config Debug
+```
+
 
 ## make
 
