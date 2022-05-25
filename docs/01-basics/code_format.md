@@ -6,12 +6,16 @@
 
 * [Clang-Format Style Options](https://clang.llvm.org/docs/ClangFormatStyleOptions.html)
 
+* install clang-format
+  ```sh
+  sudo apt install clang-format
+  ```
+
 ### VSCode
 
 * shortcut: `Ctrl + Shift + I`
 
 * setting
-
   ```json
   {
     BasedOnStyle: Google,  
@@ -22,15 +26,9 @@
   }
   ```
 
-### .clang-format file
-
-* install clang-format
-  ```sh
-  sudo apt install clang-format
-  ```
+### Create .clang-format file
 
 * create .clang-format file manually
-
   ```yaml
   Language:	Cpp
   BasedOnStyle: Google
@@ -42,7 +40,9 @@
   clang-format -style=llvm -dump-config > .clang-format
   ```
 
-  ```yaml title=".clang-format"
+### .clang-format file
+
+  ```yaml
   ---
   Language:	Cpp
   # BasedOnStyle:	LLVM
@@ -239,3 +239,13 @@
   # 使用tab字符: Never, ForIndentation, ForContinuationAndIndentation, Always
   UseTab:	Never  
   ```
+
+## Batch Format 
+
+```sh
+# 会从当前目录查找 .clang-format 格式文件
+find . -regex '.*\.\(cpp\|cc\|hpp\|cu\|c\|h\)' -exec clang-format -style=file -i {} \;
+
+# sudo apt install libc++-dev clang-tidy
+find . -regex '.*\.\(cpp\|hpp\|cu\|c\|h\)' -exec clang-tidy {} \;
+```
