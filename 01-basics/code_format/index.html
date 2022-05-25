@@ -279,6 +279,13 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#create_clang-format_file" class="md-nav__link">
+    Create .clang-format file
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#clang-format_file" class="md-nav__link">
     .clang-format file
   </a>
@@ -287,6 +294,13 @@
         
       </ul>
     </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#batch_format" class="md-nav__link">
+    Batch Format
+  </a>
   
 </li>
       
@@ -1101,6 +1115,13 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#create_clang-format_file" class="md-nav__link">
+    Create .clang-format file
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#clang-format_file" class="md-nav__link">
     .clang-format file
   </a>
@@ -1109,6 +1130,13 @@
         
       </ul>
     </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#batch_format" class="md-nav__link">
+    Batch Format
+  </a>
   
 </li>
       
@@ -1129,7 +1157,14 @@
 <hr />
 <h2 id="clang-format">clang-format<a class="headerlink" href="#clang-format" title="Permanent link">&para;</a></h2>
 <ul>
-<li><a href="https://clang.llvm.org/docs/ClangFormatStyleOptions.html">Clang-Format Style Options</a></li>
+<li>
+<p><a href="https://clang.llvm.org/docs/ClangFormatStyleOptions.html">Clang-Format Style Options</a></p>
+</li>
+<li>
+<p>install clang-format
+  <div class="highlight"><pre><span></span><code>sudo apt install clang-format
+</code></pre></div></p>
+</li>
 </ul>
 <h3 id="vscode">VSCode<a class="headerlink" href="#vscode" title="Permanent link">&para;</a></h3>
 <ul>
@@ -1137,38 +1172,34 @@
 <p>shortcut: <code>Ctrl + Shift + I</code></p>
 </li>
 <li>
-<p>setting</p>
-</li>
-</ul>
-<div class="highlight"><pre><span></span><code><span class="p">{</span>
+<p>setting
+  <div class="highlight"><pre><span></span><code><span class="p">{</span>
   <span class="err">BasedO</span><span class="kc">n</span><span class="err">S</span><span class="kc">t</span><span class="err">yle</span><span class="p">:</span> <span class="err">Google</span><span class="p">,</span>  
   <span class="err">Colum</span><span class="kc">n</span><span class="err">Limi</span><span class="kc">t</span><span class="p">:</span> <span class="mi">120</span><span class="p">,</span> 
   <span class="err">AllowAllParame</span><span class="kc">ters</span><span class="err">O</span><span class="kc">f</span><span class="err">Declara</span><span class="kc">t</span><span class="err">io</span><span class="kc">n</span><span class="err">O</span><span class="kc">n</span><span class="err">Nex</span><span class="kc">t</span><span class="err">Li</span><span class="kc">ne</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span> 
   <span class="err">AllowAllArgume</span><span class="kc">nts</span><span class="err">O</span><span class="kc">n</span><span class="err">Nex</span><span class="kc">t</span><span class="err">Li</span><span class="kc">ne</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span> 
   <span class="err">Bi</span><span class="kc">n</span><span class="err">PackParame</span><span class="kc">ters</span><span class="p">:</span> <span class="kc">false</span>
 <span class="p">}</span>
-</code></pre></div>
-<h3 id="clang-format_file">.clang-format file<a class="headerlink" href="#clang-format_file" title="Permanent link">&para;</a></h3>
+</code></pre></div></p>
+</li>
+</ul>
+<h3 id="create_clang-format_file">Create .clang-format file<a class="headerlink" href="#create_clang-format_file" title="Permanent link">&para;</a></h3>
 <ul>
 <li>
-<p>install clang-format
-  <div class="highlight"><pre><span></span><code>sudo apt install clang-format
+<p>create .clang-format file manually
+  <div class="highlight"><pre><span></span><code><span class="nt">Language</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">Cpp</span>
+<span class="nt">BasedOnStyle</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">Google</span>
+<span class="nt">ColumnLimit</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">120</span>
 </code></pre></div></p>
 </li>
 <li>
-<p>create .clang-format file manually</p>
+<p>create .clang-format file by command
+  <div class="highlight"><pre><span></span><code>clang-format -style<span class="o">=</span>llvm -dump-config &gt; .clang-format
+</code></pre></div></p>
 </li>
 </ul>
-<div class="highlight"><pre><span></span><code><span class="nt">Language</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">Cpp</span>
-<span class="nt">BasedOnStyle</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">Google</span>
-<span class="nt">ColumnLimit</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">120</span>
-</code></pre></div>
-<ul>
-<li>create .clang-format file by command
-  <div class="highlight"><pre><span></span><code>clang-format -style<span class="o">=</span>llvm -dump-config &gt; .clang-format
-</code></pre></div></li>
-</ul>
-<div class="highlight"><span class="filename">.clang-format</span><pre><span></span><code><span class="nn">---</span>
+<h3 id="clang-format_file">.clang-format file<a class="headerlink" href="#clang-format_file" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><span class="nn">---</span>
 <span class="nt">Language</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">Cpp</span>
 <span class="c1"># BasedOnStyle:   LLVM</span>
 <span class="c1"># 访问说明符(public、private等)的偏移</span>
@@ -1363,6 +1394,13 @@
 <span class="nt">TabWidth</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">4</span>
 <span class="c1"># 使用tab字符: Never, ForIndentation, ForContinuationAndIndentation, Always</span>
 <span class="nt">UseTab</span><span class="p">:</span>   <span class="l l-Scalar l-Scalar-Plain">Never</span>  
+</code></pre></div>
+<h2 id="batch_format">Batch Format<a class="headerlink" href="#batch_format" title="Permanent link">&para;</a></h2>
+<div class="highlight"><pre><span></span><code><span class="c1"># 会从当前目录查找 .clang-format 格式文件</span>
+find . -regex <span class="s1">&#39;.*\.\(cpp\|cc\|hpp\|cu\|c\|h\)&#39;</span> -exec clang-format -style<span class="o">=</span>file -i <span class="o">{}</span> <span class="se">\;</span>
+
+<span class="c1"># sudo apt install libc++-dev clang-tidy</span>
+find . -regex <span class="s1">&#39;.*\.\(cpp\|hpp\|cu\|c\|h\)&#39;</span> -exec clang-tidy <span class="o">{}</span> <span class="se">\;</span>
 </code></pre></div>
                 
               
