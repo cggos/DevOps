@@ -74,6 +74,12 @@ sudo mount -t cifs //192.168.4.247/shareGHC ../../shareMount
 
 ### Chrome & FireFox Extentions
 
+download chrome
+```sh
+wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
+```
+
+install extentions
 ```sh
 google-chrome --enable-easy-off-store-extension-install
 ```
