@@ -4,15 +4,35 @@
 
 ---
 
-## install
+## Install
+
+
+### mkdocs
 
 ```sh
 # python3
 pip install mkdocs
+```
 
-# theme material
-pip install mkdocs-material
+### theme
 
+#### material
+
+* https://squidfunk.github.io/mkdocs-material/
+
+=== "Latest"
+    ```sh
+    pip install mkdocs-material
+    ```
+
+=== "8.x"
+    ```sh
+    pip install mkdocs-material=="8.*"
+    ```
+
+### extension
+
+```sh
 # markdown_extensions
 pip install pymdown-extensions
 ```
@@ -41,7 +61,7 @@ pip install pymdown-extensions
 
 ## Project layout
 
-```sh
+```
 mkdocs.yml    # The configuration file.
 docs/
     index.md  # The documentation homepage.
