@@ -75,4 +75,5 @@ sudo snap remove okular && sudo snap install okular
 OTA（空中下载），具体指远程无线方式，OTA 技术可以理解为一种远程无线升级技术。
 
 ### FOTA
+
 Firmware OverThe Air/固件空中升级，通过云端为具有连网功能的设备：例如手机、平板电脑、移动互联网设备等提供固件升级服务，手机中的固件升级即可称为 FOTA。

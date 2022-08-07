@@ -4,7 +4,7 @@
 
 * **[TextBundle](http://textbundle.org/)**: The TextBundle file format aims to provide a more seamless user experience when exchanging plain text files, like Markdown or Fountain, between sandboxed applications.
 
------
+---
 
 ## Editor
 

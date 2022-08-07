@@ -12,7 +12,7 @@
 
 * `-dumpmachine`: print **the compiler's target machine** (for example, arm-linux-gnueabihf)
 * `-dM -E`:
-  - `gcc -dM -E - < /dev/null`: 显示所有预定义的宏
+    - `gcc -dM -E - < /dev/null`: 显示所有预定义的宏
 
 ## Faster Compilers
 
@@ -46,15 +46,17 @@
   ```
 
 * To see if ccache is really working, you can use `ccache -s` command, which will display ccache statistics, on second and all subsequent compilations the **cache hit** values should increase and thus show that ccache is working:
-  > cache directory                     /home/cg/.ccache
-    primary config                      /home/cg/.ccache/ccache.conf
-    secondary config      (readonly)    /etc/ccache.conf
-    cache hit (direct)                     0
-    cache hit (preprocessed)               0
-    cache miss                             0
-    files in cache                         0
-    cache size                           0.0 kB
-    max cache size                       5.0 GB
+  ```
+  cache directory                     /home/cg/.ccache
+  primary config                      /home/cg/.ccache/ccache.conf
+  secondary config      (readonly)    /etc/ccache.conf
+  cache hit (direct)                     0
+  cache hit (preprocessed)               0
+  cache miss                             0
+  files in cache                         0
+  cache size                           0.0 kB
+  max cache size                       5.0 GB
+  ```
 
 
 ### distcc: a fast, free distributed C/C++ compiler

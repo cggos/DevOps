@@ -15,9 +15,9 @@
 * CIFS
 
 * SMB
-  * SMBv1.0
-  * SMBv2.1
-  * SMBv3.0
+    * SMBv1.0
+    * SMBv2.1
+    * SMBv3.0
 
 
 

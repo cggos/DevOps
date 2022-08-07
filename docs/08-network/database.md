@@ -1,15 +1,15 @@
 # Database
 
------
+---
 
 ## DBMS
 
 - MySQL
-  - MariaDB
+    - MariaDB
 
 - Redis
-	- redis.io
-	- Redis中文网
+	  - redis.io
+	  - Redis中文网
 
 - MongoDB
 

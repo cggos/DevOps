@@ -61,9 +61,8 @@ sudo docker run \
 * restart container
   ```sh
   docker restart <container-ID>
-  ```
-  restart container and enter
-  ```sh
+  
+  # restart container and enter
   docker start -i <container-ID>
   ```
 
@@ -88,9 +87,8 @@ sudo docker run \
   docker pull ros
   # or
   docker pull ros:kinetic-robot
-  ```
-  run ros
-  ```sh
+  
+  # run ros
   docker run -it ros
   ```
 

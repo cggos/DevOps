@@ -29,7 +29,7 @@
 ### Create .clang-format file
 
 * create .clang-format file manually
-  ```yaml
+  ```yaml title=".clang-format"
   Language:	Cpp
   BasedOnStyle: Google
   ColumnLimit: 120
@@ -40,9 +40,8 @@
   clang-format -style=llvm -dump-config > .clang-format
   ```
 
-### .clang-format file
-
-  ```yaml
+* .clang-format file 说明
+  ```yaml title=".clang-format"
   ---
   Language:	Cpp
   # BasedOnStyle:	LLVM

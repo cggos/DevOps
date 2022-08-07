@@ -17,21 +17,19 @@ arp -a
 
 # share folder
 sudo mount -t cifs //192.168.4.247/shareGHC ../../shareMount
-
 ```
 
------
-
-[TOC]
+---
 
 ## 云存储
 
 * 百度网盘
+
 * [七牛云](https://www.qiniu.com/)：图片外链
+
 * [坚果云](https://www.jianguoyun.com)：中国版Dropbox
 
 * [Dropbox](https://www.dropbox.com)
-
   ```sh
   # Ubuntu 16.04使用代理安装Dropbox
   sudo dpkg -i dropbox_2020.03.04_amd64.deb
@@ -43,15 +41,21 @@ sudo mount -t cifs //192.168.4.247/shareGHC ../../shareMount
   ```
 
 * [OneDrive](https://onedrive.live.com/)
+
 * [box](https://www.box.com/)
+
 * [MEGA](https://mega.nz/)
+
 * [pCloud](https://www.pcloud.com/)
+
 * [hubiC](https://hubic.com)
+
 * 个人云存储
-  - NAS云服务器
+    - NAS云服务器
 
 
 ## Web Server
+
 * IIS
 * Apache
 * Tomcat
@@ -96,31 +100,32 @@ google-chrome --enable-easy-off-store-extension-install
 * [remote.it](https://www.remot3.it/web/index.html): Remote Device Access and Bulk Management
 
 * Remote Desktop
-  - TeamViewer
-  - [VNC](https://www.realvnc.com/en/)
-  - [NoMachine](https://www.nomachine.com/): Free Remote Desktop For Everybody
-  - [xrdp](http://www.xrdp.org/): An open source remote desktop protocol(rdp) server.The goal of this project is to provide a fully functional Linux terminal server, capable of accepting connections from **rdesktop, freerdp, and Microsoft's own terminal server / remote desktop clients**.
+    - TeamViewer
+    - [VNC](https://www.realvnc.com/en/)
+    - [NoMachine](https://www.nomachine.com/): Free Remote Desktop For Everybody
+    - [xrdp](http://www.xrdp.org/): An open source remote desktop protocol(rdp) server.The goal of this project is to provide a fully functional Linux terminal server, capable of accepting connections from **rdesktop, freerdp, and Microsoft's own terminal server / remote desktop clients**.
 
 * [SSH](https://www.ssh.com/) & Telnet
-  - [OpenSSH](http://www.openssh.com/)
-  - [bitvise](https://www.bitvise.com)
-  - [PuTTY](https://www.putty.org/), a free SSH and Telnet client
+    - [OpenSSH](http://www.openssh.com/)
+    - [bitvise](https://www.bitvise.com)
+    - [PuTTY](https://www.putty.org/), a free SSH and Telnet client
 
 * 无线传屏
-  - [MirrorOp](http://www.mirrorop.com/)
+    - [MirrorOp](http://www.mirrorop.com/)
 
 ## Files Transfer/Share
 
 * FTP/SFTP
-  - FTP三剑客：CuteFTP、LeapFTP、FlashFXP
-  - [FileZilla](https://filezilla-project.org/): the free FTP solution
+    - FTP三剑客：CuteFTP、LeapFTP、FlashFXP
+    - [FileZilla](https://filezilla-project.org/): the free FTP solution
 
 * scp
 * rsync
 
-* Network Share
-  - [常用共享介绍：CIFS、AFP、NFS、WebDAV](https://www.getnas.com/2015/01/176.html)  
-  - Samba: 进行网络共享的工具，比如分享打印机，互相之间传输资料文件  
+### Network Share
+
+- [常用共享介绍：CIFS、AFP、NFS、WebDAV](https://www.getnas.com/2015/01/176.html)  
+- Samba: 进行网络共享的工具，比如分享打印机，互相之间传输资料文件  
     * [samba.org](https://www.samba.org/)
     * [Samba-Ubuntu](http://wiki.ubuntu.org.cn/Samba)
     * PC Ubuntu 连接 华为HuaweiShare 手机：`smb://<phone-ip>`
@@ -189,7 +194,6 @@ Mosh is free software, available for GNU/Linux, BSD, macOS, Solaris, Android, Ch
 ## Config Wireless Network On Linux
 
 * [Configure static IP address on Ubuntu 16.04 LTS Server](https://michael.mckinnon.id.au/2016/05/05/configuring-ubuntu-16-04-static-ip-address/)
-
   ```sh
   # /etc/network/interfaces
 

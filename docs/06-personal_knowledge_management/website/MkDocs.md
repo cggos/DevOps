@@ -29,14 +29,12 @@ pip install pymdown-extensions
 - 修改配置文件 **mkdocs.yml** 把 `site_name` 改成项目名称
 
 - 当前目录中的site/目录下的内容推送到远程github的gh-pages分支
-
   ```sh
   mkdocs build
   mkdocs gh-deploy --clean
   ```
 
 - 访问
-
   ```sh
   https://{username}.github.io/{projectname}
   ```

@@ -1,15 +1,12 @@
 # Proxy
 
 * [Proxy settings (archlinux)](https://wiki.archlinux.org/index.php/proxy_settings)
+  ```sh
+  export http_proxy=socks5://127.0.0.1:1080
+  export https_proxy=$http_proxy
+  ```
 
-```sh
-export http_proxy=socks5://127.0.0.1:1080
-export https_proxy=$http_proxy
-```
-
------
-
-[TOC]
+---
 
 ## IPv6
 
@@ -19,11 +16,13 @@ export https_proxy=$http_proxy
 ## VPS
 
 * [老左常用国内/国外VPS推荐](http://www.laozuo.org/myvps)
+
 * 搬瓦工
-  * [BandwangonHOST](https://bwh88.net/)
-  * [http://banwagong.cn/]()
-  * [https://www.banwago.com/]()
-  * [KiwiVM Main Panel](https://kiwivm.64clouds.com/main.php)
+    * [BandwangonHOST](https://bwh88.net/)
+    * [http://banwagong.cn/]()
+    * [https://www.banwago.com/]()
+    * [KiwiVM Main Panel](https://kiwivm.64clouds.com/main.php)
+
 * [shadowsocks](https://order.shadowsocks.ch)
 
 ## Trojan
@@ -34,53 +33,50 @@ export https_proxy=$http_proxy
 ## Shadowsocks
 
 * [Shadowsocks](https://shadowsocks.org): A secure socks5 proxy, designed to protect your Internet traffic. ([github](https://github.com/shadowsocks))
-  - GUI: **shadowsocks-qt5**
-  - CLI: `sudo pip install shadowsocks`
+    - GUI: **shadowsocks-qt5**
+    - CLI: `sudo pip install shadowsocks`
 
 * [自己动手搭建翻墙SS服务器](https://www.yigeni.com/build-a-wall-ss-server/)
 
 ### Ubuntu 16.04 配置 shadowsocks
 
 * 编写shadowsocks.json文件，将其放在/opt目录下，文件格式如下
-
-```json
-{  
-    "server":"xxx.xxx.xxx.xxx",  
-    "server_port":xxx,  
-    "local_address": "127.0.0.1",  
-    "local_port":1080,  
-    "password":"xxx",  
-    "timeout":300,  
-    "method":"aes-256-cfb",  
-    "fast_open": true,  
-    "workers": 1  
-}
-```
+  ```json title="shadowsocks.json"
+  {  
+      "server":"xxx.xxx.xxx.xxx",  
+      "server_port":xxx,  
+      "local_address": "127.0.0.1",  
+      "local_port":1080,  
+      "password":"xxx",  
+      "timeout":300,  
+      "method":"aes-256-cfb",  
+      "fast_open": true,  
+      "workers": 1  
+  }
+  ```
 
 * 新建（若不存在）/etc/rc.local 文件，内容如下，通过`sudo chmod +x /etc/rc.local`命令，赋予其可执行权限
-
-```sh
-#!/bin/bash
-/usr/local/bin/sslocal -c /opt/shadowsocks.json -d start
-exit 0
-```
+  ```sh title="/etc/rc.local"
+  #!/bin/bash
+  /usr/local/bin/sslocal -c /opt/shadowsocks.json -d start
+  exit 0
+  ```
 
 * 新建/lib/systemd/system/rc-local.service文件（若不存在），我的系统中已存在，内容如下
-
-```ini
-# This unit gets pulled automatically into multi-user.target by
-# systemd-rc-local-generator if /etc/rc.local is executable.
-[Unit]
-Description=/etc/rc.local Compatibility
-ConditionFileIsExecutable=/etc/rc.local
-After=network.target
-[Service]
-Type=forking
-ExecStart=/etc/rc.local start
-TimeoutSec=0
-RemainAfterExit=yes
-GuessMainPID=no
-```
+  ```ini title="/lib/systemd/system/rc-local.service"
+  # This unit gets pulled automatically into multi-user.target by
+  # systemd-rc-local-generator if /etc/rc.local is executable.
+  [Unit]
+  Description=/etc/rc.local Compatibility
+  ConditionFileIsExecutable=/etc/rc.local
+  After=network.target
+  [Service]
+  Type=forking
+  ExecStart=/etc/rc.local start
+  TimeoutSec=0
+  RemainAfterExit=yes
+  GuessMainPID=no
+  ```
 
 * 重启系统，执行命令 `systemctl status rc-local.service` 查看rc-local.service状态
 
@@ -89,23 +85,22 @@ GuessMainPID=no
 * [tsocks](http://tsocks.sourceforge.net/)
 
 * 配置文件 **/etc/tsocks.conf**
-
-```sh
-local = 192.168.1.0/255.255.255.0
-server = 127.0.0.1
-server_type = 5
-server_port = 1080
-```
+  ```sh title="/etc/tsocks.conf"
+  local = 192.168.1.0/255.255.255.0
+  server = 127.0.0.1
+  server_type = 5
+  server_port = 1080
+  ```
 
 * examples
-
-```sh
-tsocks firefox
-tsocks git clone xxx
-tsocks wget xxx
-```
+  ```sh
+  tsocks firefox
+  tsocks git clone xxx
+  tsocks wget xxx
+  ```
 
 ### proxychains
+
 * `sudo apt-get install proxychains`
 * Edit **/etc/proxychains.conf**: `socks5 127.0.0.1 1080`
 

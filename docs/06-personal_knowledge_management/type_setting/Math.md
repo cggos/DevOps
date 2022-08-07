@@ -2,9 +2,7 @@
 
 * [List of mathematical symbols by subject](https://en.wikipedia.org/wiki/List_of_mathematical_symbols_by_subject)
 
------
-
-[TOC]
+---
 
 ## KaTeX
 

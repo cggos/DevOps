@@ -94,9 +94,10 @@ sudo xrandr --output DVI-I-0 --mode "1920x1080"
 ```
 
 ## Lid
+
 * Ubuntu 16.04 Ignore Lid
-  - /etc/UPower/UPower.conf: `IgnoreLid=true`
-  - `sudo service upower restart`
+    - /etc/UPower/UPower.conf: `IgnoreLid=true`
+    - `sudo service upower restart`
 
 ### Keyboard Led
 
@@ -130,6 +131,7 @@ fi
 ```
 
 ## Themes
+
 1) 下载Unity主题，将其解压到`~/.themes`目录下  
 2) 执行`unity-tweak-tool`命令打开管理器，选择相应的主题
 
@@ -143,15 +145,17 @@ fi
   ```sh
   fc-list :lang=zh
   ```
+
 * ubuntu安装文泉驿字体
   ```sh
   sudo apt-get install ttf-wqy-microhei  # 文泉驿-微米黑
   sudo apt-get install ttf-wqy-zenhei    # 文泉驿-正黑
   sudo apt-get install xfonts-wqy        # 文泉驿-点阵宋体
   ```
+
 * WPS for Linux（ubuntu）字体配置(字体缺失解决办法)
-  1. Dowload **wps_symbol_fonts.zip**(国内下载地址：https://pan.baidu.com/s/1eS6xIzo)
-  2. `sudo cp * /usr/share/fonts`
-  3. 生成字体的索引信息: `sudo mkfontscale & sudo mkfontdir`
-  4. 更新字体缓存: `sudo fc-cache`
-  5. 重启wps
+    1. Dowload **wps_symbol_fonts.zip**(国内下载地址：https://pan.baidu.com/s/1eS6xIzo)
+    2. `sudo cp * /usr/share/fonts`
+    3. 生成字体的索引信息: `sudo mkfontscale & sudo mkfontdir`
+    4. 更新字体缓存: `sudo fc-cache`
+    5. 重启wps

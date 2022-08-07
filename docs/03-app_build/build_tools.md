@@ -113,18 +113,24 @@ From mobile apps to microservices, from small startups to big enterprises, [Grad
 ## IDE
 
 * Visual Studio
-  - Extensions
-    - VAX
-    - ReSharper by JetBrains
+    - Extensions
+      - VAX
+      - ReSharper by JetBrains
+
 * Eclipse、MyEclipse、Eclipse RCP
+
 * PyCharm by JetBrains - Powerful Python and Django IDE
+
 * WebStorm by JetBrains - The Smartest JavaScript IDE
+
 * IntelliJ IDEA by JetBrains - the Java IDE
+
 * MonoDevelop
+
 * Linux
-  - Qt Creator
-  - CodeBlocks
-  - Anjuta DevStudio
-    - GNOME
-  - KDevelope
-    - KDE
+    - Qt Creator
+    - CodeBlocks
+    - Anjuta DevStudio
+      - GNOME
+    - KDevelope
+      - KDE

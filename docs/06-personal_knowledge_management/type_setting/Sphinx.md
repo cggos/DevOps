@@ -6,15 +6,15 @@ It was originally created for the Python documentation, and it has excellent fac
 
 * [Sphinx 使用手册](https://zh-sphinx-doc.readthedocs.io)
 
------
+---
 
 ## reStructuredText
 
 * http://docutils.sourceforge.net/rst.html
 
-## install & build
+## Install & Build
 
-``` title="requirements.txt"
+```sh title="requirements.txt"
 sphinx
 sphinx-rtd-theme
 sphinx-markdown-tables

@@ -25,8 +25,8 @@ Ubuntu 提供了一个名为 Launchpad 的平台，使软件开发人员能够�
 * 添加PPA源
   ```sh
   sudo add-apt-repository ppa:user/ppa-name
-  ```
-  ```sh
+  
+  # or
   sudo sh -c \
   '. /etc/lsb-release && echo \
   "deb http://mirrors.ustc.edu.cn/ros/ubuntu/ `lsb_release -cs` main" \

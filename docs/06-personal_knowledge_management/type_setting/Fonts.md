@@ -4,9 +4,11 @@
 * [font-spider](https://github.com/aui/font-spider)
 * [Free Fonts Search and Download](https://www.free-fonts.com/)
 
+---
+
 ## App
 
-### Ubuntu下解决WPS字体缺失问题
+### Ubuntu下解决WPS字体缺失问题 [^1]
 
 * 获取字体 `wps_symbol_fonts.zip`
 
@@ -25,4 +27,4 @@
   sudo fc-cache
   ```
 
-ref: https://mxy493.xyz/2019040840601/
+[^1]: https://mxy493.xyz/2019040840601/

@@ -1,8 +1,6 @@
 # CMS - Configuration Management System
 
------
-
-[TOC]
+---
 
 ## Source Code Repository
 
@@ -22,7 +20,7 @@
 * [RabbitVCS](http://rabbitvcs.org/) is a set of graphical tools written to provide simple and straightforward access to the version control systems you use.
 * [Mercurial (hg)](https://www.mercurial-scm.org/) is a free, distributed source control management tool.
 * SVN
-  - TortoiseSVN
+    - TortoiseSVN
 * ClearCase
 * MS SourceSafe（VSS）
 

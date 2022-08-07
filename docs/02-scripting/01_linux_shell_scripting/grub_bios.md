@@ -3,15 +3,20 @@
 -----
 
 ## Grub
+
 配置单Ubuntu系统开机启动显示grub菜单：  
-修改`/etc/default/grub`文件，修改内容  
-```
+
+修改`/etc/default/grub`文件，修改内容
+
+```title="/etc/default/grub"
 # GRUB_HIDDEN_TIMEOUT=0
 GRUB_HIDDEN_TIMEOUT_QUIET=false
 GRUB_TIMEOUT=10
 ```
-该文件如下：  
-```
+
+该文件如下： 
+
+```title="/etc/default/grub"
 # If you change this file, run 'update-grub' afterwards to update
 # /boot/grub/grub.cfg.
 # For full documentation of the options in this file, see:
@@ -47,13 +52,14 @@ GRUB_GFXPAYLOAD_LINUX=keep
 
 # Uncomment to get a beep at grub start
 GRUB_INIT_TUNE="480 440 1"
-
 ```
+
 然后，`sudo update-grub`，最后重启即可。
 
 ## Boot & BIOS
 
 * [Ubuntu 16.04在启动和关机时不显示启动和关机画面且显示详细的命令信息，没有进度条和Logo，或者只有紫色界面，或者没有开机画面等问题解决](https://www.cnblogs.com/EasonJim/p/7130157.html?utm_source=itdadao&utm_medium=referral)
+
 * [Check BIOS, UEFI, motherboard info in Linux](https://www.pcsuggest.com/check-bios-uefi-motherboard-info-in-linux/)
 
 

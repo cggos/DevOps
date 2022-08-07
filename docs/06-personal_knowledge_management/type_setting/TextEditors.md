@@ -2,8 +2,6 @@
 
 -----
 
-[TOC]
-
 ## Vi/Vim
 
 * [ViEmu](http://www.viemu.com/): Vi/vim emulation for Visual Studio, Xcode, Word, Outlook & SQL Server
@@ -26,13 +24,14 @@
 ## Atom
 
 https://atom.io/
+
 * [Atom 中文社区](https://atom-china.org/)
 * [Teletype](https://teletype.atom.io/)
 
 ### Packages
 
 * markdown-preview-enhanced
-  - **Atom Markdown to PDF**: Atom有一个Markdown Preview的插件，Markdown文件下按ctrl+shit+m就可以预览Markdown，然后右键生成的预览文件可以保存为html文件，再用chrome打开这个html文件，右键Print里面转换成pdf。
+    - **Atom Markdown to PDF**: Atom有一个Markdown Preview的插件，Markdown文件下按ctrl+shit+m就可以预览Markdown，然后右键生成的预览文件可以保存为html文件，再用chrome打开这个html文件，右键Print里面转换成pdf。
 
 * graphviz-preview-plus
 

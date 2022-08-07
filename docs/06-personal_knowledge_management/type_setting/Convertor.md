@@ -2,25 +2,21 @@
 
 -----
 
-[TOC]
-
 ## Pandoc
 
 If you need to convert files from one markup format into another, [pandoc](http://pandoc.org/) is your swiss-army knife.  
 
 * Markdown to PDF  
-
-```sh
-pandoc -N -s --toc --smart --latex-engine=xelatex \
-  -V mainfont='WenQuanYi Micro Hei' -V geometry:margin=1in \
-  note.md  -o output.pdf
-```
+  ```sh
+  pandoc -N -s --toc --smart --latex-engine=xelatex \
+    -V mainfont='WenQuanYi Micro Hei' -V geometry:margin=1in \
+    note.md  -o output.pdf
+  ```
 
 * Ubuntu上怎么把MS的Word docx文档转为LaTeX
-
-```sh
-pandoc -s a.docx --extract-media ./ -o ./b.tex
-```
+  ```sh
+  pandoc -s a.docx --extract-media ./ -o ./b.tex
+  ```
 
 ## Docutils
 
@@ -34,7 +30,7 @@ pandoc -s a.docx --extract-media ./ -o ./b.tex
 
 [PDF.js](https://github.com/mozilla/pdf.js) is a Portable Document Format (PDF) viewer that is built with HTML5.
 
-## wk\<html\>toPDF
+## wkhtmltoPDF
 
 [wkhtmltopdf](https://wkhtmltopdf.org/) and wkhtmltoimage are open source (LGPLv3) command line tools to render HTML into PDF and various image formats using the Qt WebKit rendering engine. These run entirely "headless" and do not require a display or display service. There is also a C library, if you're into that kind of thing.
 

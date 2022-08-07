@@ -2,8 +2,6 @@
 
 -----
 
-[TOC]
-
 ## Unit Test
 
 * CTest

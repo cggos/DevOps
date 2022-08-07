@@ -12,15 +12,12 @@
 * [Overleaf LaTeX Documentation](https://www.overleaf.com/learn/latex/Main_Page)
 
 * LaTeX Algorithms
-  - [LaTeX/Algorithms(wikibook)](https://en.wikibooks.org/wiki/LaTeX/Algorithms)
-  - [How to write algorithm in Latex](http://shantoroy.com/latex/how-to-write-algorithm-in-latex/)
+    - [LaTeX/Algorithms(wikibook)](https://en.wikibooks.org/wiki/LaTeX/Algorithms)
+    - [How to write algorithm in Latex](http://shantoroy.com/latex/how-to-write-algorithm-in-latex/)
 
------
+---
 
-[TOC]
-
-
-# TeX发行版
+## TeX发行版
 
 * [各个操作系统下的TeX发行版(清华大学开源软件镜像站)](https://mirrors.tuna.tsinghua.edu.cn/CTAN/systems/)
 
@@ -29,13 +26,13 @@
 * [Chinese TeX](http://www.ctex.org/HomePage)
 
 
-# TeX Templates
+## TeX Templates
 
 * [LaTeX Templates](http://www.latextemplates.com/)
 * [北京理工大学硕士（博士）学位论文LaTeX模板](https://github.com/BIT-thesis/LaTeX-template)
 
 
-# TeX on ubuntu
+## TeX on ubuntu
 
 * [Ubuntu下部署Latex编译环境](http://ptbsare.org/2014/05/12/ubuntu%E4%B8%8B%E9%83%A8%E7%BD%B2latex%E7%BC%96%E8%AF%91%E7%8E%AF%E5%A2%83/#1_-从源里面安装)
 
@@ -49,27 +46,25 @@ sudo apt install latex-cjk-all
 ```
 
 * ubuntu 16.04下的latex的section没有编号的问题
-
-从 https://www.ctan.org/tex-archive/macros/latex/contrib/titlesec 下载解压到 `/usr/share/texlive/texmf-dist/tex/latex`
+    - 从 https://www.ctan.org/tex-archive/macros/latex/contrib/titlesec 下载解压到 `/usr/share/texlive/texmf-dist/tex/latex`
 
 * tlmgr
+  ```sh
+  sudo mktexlsr
 
-```sh
-sudo mktexlsr
+  tlmgr init-usertree
+  tlmgr update --list # sudo apt install xzdec
+  tlmgr --gui # sudo apt install perl-tk
 
-tlmgr init-usertree
-tlmgr update --list # sudo apt install xzdec
-tlmgr --gui # sudo apt install perl-tk
+  # 永久更改镜像源
+  tlmgr option repository https://mirrors.tuna.tsinghua.edu.cn/CTAN/systems/texlive/tlnet
 
-# 永久更改镜像源
-tlmgr option repository https://mirrors.tuna.tsinghua.edu.cn/CTAN/systems/texlive/tlnet
+  # 临时切换镜像源
+  tlmgr update --all --repository \
+    https://mirrors.tuna.tsinghua.edu.cn/CTAN/systems/texlive/tlnet
+  ```
 
-# 临时切换镜像源
-tlmgr update --all --repository \
-  https://mirrors.tuna.tsinghua.edu.cn/CTAN/systems/texlive/tlnet
-```
-
-# TeX Editor
+## TeX Editor
 
 * [Tables Generator](https://www.tablesgenerator.com/): Create LaTeX tables online
 
@@ -84,7 +79,7 @@ tlmgr update --all --repository \
 * [Upmath](https://upmath.me/): Markdown & LaTeX Online Editor
 
 
-# TeX with Make
+## TeX with Make
 
 example: [jlblancoc/tutorial-se3-manifold](https://github.com/jlblancoc/tutorial-se3-manifold)
 
@@ -100,9 +95,7 @@ Build PDF with:
 make
 ```
 
-**Makefile**:
-
-```makefile
+```makefile title="Makefile"
 # From: http://tex.stackexchange.com/questions/40738/how-to-properly-make-a-latex-project
 # You want latexmk to *always* run, because make does not have all the info.
 .PHONY: out.pdf
@@ -128,13 +121,13 @@ clean:
 ```
 
 
-# Beamer Slides with LaTeX
+## Beamer Slides with LaTeX
 
 * [Urinx/LaTeX-PPT-Template](https://github.com/Urinx/LaTeX-PPT-Template): Seven awesome latex ppt templates for researchers or students
 * [beamer-theme-matrix](https://hartwork.org/beamer-theme-matrix/)
 * [slides](https://github.com/wzpan/wzpan.github.io/wiki/slides)
 
-# Curriculum Vitæ with TeX
+## Curriculum Vitæ with TeX
 
 * [Writing the curriculum vitæ with LaTeX](http://tug.org/pracjourn/2007-4/mori/)
 * [moderncv 的笔记](https://www.xiangsun.org/tex/notes-on-moderncv)
