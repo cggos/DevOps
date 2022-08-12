@@ -127,8 +127,6 @@ nav:
     - Type Setting:
       - Text Editors: 06-personal_knowledge_management/type_setting/TextEditors.md
       - MarkDown: 06-personal_knowledge_management/type_setting/MarkDown.md
-      - TeX: 06-personal_knowledge_management/type_setting/TeX.md
-      - Math: 06-personal_knowledge_management/type_setting/Math.md
       - CHM: 06-personal_knowledge_management/type_setting/CHM.md
       - EPUB: 06-personal_knowledge_management/type_setting/EPUB.md
       - API Docs: 06-personal_knowledge_management/type_setting/API-Docs.md

@@ -15,14 +15,12 @@
 * 将字体解压到文件夹 `/usr/share/fonts` 或 `~/.local/share/fonts`
 
 * 生成字体的索引信息
-  
   ```sh
   sudo mkfontscale
   sudo mkfontdir
   ```
 
 * 更新字体缓存
-
   ```sh
   sudo fc-cache
   ```
