@@ -19,11 +19,7 @@
 
 * 搬瓦工
     * [BandwangonHOST](https://bwh88.net/)
-    * [http://banwagong.cn/]()
-    * [https://www.banwago.com/]()
     * [KiwiVM Main Panel](https://kiwivm.64clouds.com/main.php)
-
-* [shadowsocks](https://order.shadowsocks.ch)
 
 ## Trojan
 
