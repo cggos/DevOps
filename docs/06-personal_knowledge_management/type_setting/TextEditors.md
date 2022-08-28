@@ -9,8 +9,9 @@
 * [VimAwesome](https://vimawesome.com/)
 * [The Ultimate Vim Distribution](http://vim.spf13.com/)
 * [Vim Movement Shortcuts Wallpaper](http://www.naleid.com/2010/10/04/vim-movement-shortcuts-wallpaper.html)
+* https://vim.rtorr.com/
 
-![Vim Movement Shortcuts](http://bitbucket.org/tednaleid/vim-shortcut-wallpaper/raw/tip/vim-shortcuts.png)
+![Vim Movement Shortcuts](https://raw.githubusercontent.com/tednaleid/vim-shortcuts-wallpaper/main/vim-shortcuts.png)
 
 ### Config & Usage
 
