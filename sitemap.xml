@@ -56,17 +56,17 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
+         <loc>https://dev.cgabc.xyz/02-scripting/01_linux_shell_scripting/system/</loc>
+         <lastmod>2022-08-28</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
          <loc>https://dev.cgabc.xyz/02-scripting/01_linux_shell_scripting/terminals_x11/</loc>
          <lastmod>2022-08-28</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://dev.cgabc.xyz/02-scripting/01_linux_shell_scripting/ubuntu_apps/</loc>
-         <lastmod>2022-08-28</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://dev.cgabc.xyz/02-scripting/02_windows_batch_scripting/</loc>
          <lastmod>2022-08-28</lastmod>
          <changefreq>daily</changefreq>
     </url>
