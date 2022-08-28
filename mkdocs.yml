@@ -98,10 +98,9 @@ nav:
 
   - Languages: 02-program_languages/README.md
 
-  - Windows Batch Scripting: 02-scripting/02_windows_batch_scripting/README.md
-
-  - Linux Shell Scripting:
+  - Scripting:
     - Overview: 02-scripting/01_linux_shell_scripting/README.md
+    - System: 02-scripting/01_linux_shell_scripting/system.md
     - Grub & BIOS: 02-scripting/01_linux_shell_scripting/grub_bios.md
     - Disk: 02-scripting/01_linux_shell_scripting/disk.md
     - File & File Systems: 02-scripting/01_linux_shell_scripting/file.md

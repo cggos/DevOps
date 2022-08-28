@@ -1,8 +1,6 @@
 # Terminals and X11
 
------
-
-[TOC]
+---
 
 ## Terminals
 
