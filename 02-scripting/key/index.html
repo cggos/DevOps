@@ -10,14 +10,14 @@
         <meta name="author" content="Gavin Gao">
       
       
-        <link rel="canonical" href="https://dev.cgabc.xyz/01-basics/data_format/">
+        <link rel="canonical" href="https://dev.cgabc.xyz/02-scripting/key/">
       
       <link rel="icon" href="../../images/favicon.png">
       <meta name="generator" content="mkdocs-1.3.1, mkdocs-material-8.3.9">
     
     
       
-        <title>Data Formats - DevOps</title>
+        <title>GPG & SSH Key - DevOps</title>
       
     
     
@@ -64,7 +64,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#Data_Formats" class="md-skip">
+        <a href="#Linux_Key" class="md-skip">
           跳转至
         </a>
       
@@ -97,7 +97,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Data Formats
+              GPG & SSH Key
             
           </span>
         </div>
@@ -197,15 +197,13 @@
         
   
   
-    
-  
 
 
   
   
   
     <li class="md-tabs__item">
-      <a href="../" class="md-tabs__link md-tabs__link--active">
+      <a href="../../01-basics/" class="md-tabs__link">
         Basics
       </a>
     </li>
@@ -227,13 +225,15 @@
         
   
   
+    
+  
 
 
   
   
   
     <li class="md-tabs__item">
-      <a href="../../02-scripting/" class="md-tabs__link">
+      <a href="../" class="md-tabs__link md-tabs__link--active">
         Scripting
       </a>
     </li>
@@ -476,14 +476,12 @@
 
   
   
-    
-  
   
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3" type="checkbox" id="__nav_3" checked>
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" data-md-toggle="__nav_3" type="checkbox" id="__nav_3" checked>
       
       
       
@@ -503,7 +501,7 @@
         
         
         <div class="md-nav__link md-nav__link--index ">
-          <a href="../">Basics</a>
+          <a href="../../01-basics/">Basics</a>
           
             <label for="__nav_3">
               <span class="md-nav__icon md-icon"></span>
@@ -524,121 +522,11 @@
               
   
   
-    
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          Data Formats
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../../01-basics/data_format/" class="md-nav__link">
         Data Formats
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="目录">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      目录
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#Database" class="md-nav__link">
-    Database
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#XML" class="md-nav__link">
-    XML
-  </a>
-  
-    <nav class="md-nav" aria-label="XML">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#XML_Parser_Libs" class="md-nav__link">
-    XML Parser Libs
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#YAML" class="md-nav__link">
-    YAML
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#JSON" class="md-nav__link">
-    JSON
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#CSON" class="md-nav__link">
-    CSON
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#Excel" class="md-nav__link">
-    Excel
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#Protocol_Buffers" class="md-nav__link">
-    Protocol Buffers
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#FlatBuffers" class="md-nav__link">
-    FlatBuffers
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#HDF_-_Hierarchical_Data_Format" class="md-nav__link">
-    HDF - Hierarchical Data Format
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -650,7 +538,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../platform/" class="md-nav__link">
+      <a href="../../01-basics/platform/" class="md-nav__link">
         Platform
       </a>
     </li>
@@ -664,7 +552,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../software_arch_and_design_patterns/" class="md-nav__link">
+      <a href="../../01-basics/software_arch_and_design_patterns/" class="md-nav__link">
         Software Architecture & Design Patterns
       </a>
     </li>
@@ -699,12 +587,14 @@
 
   
   
+    
+  
   
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" data-md-toggle="__nav_5" type="checkbox" id="__nav_5" checked>
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5" type="checkbox" id="__nav_5" checked>
       
       
       
@@ -732,7 +622,7 @@
         
         
         <div class="md-nav__link md-nav__link--index ">
-          <a href="../../02-scripting/">Scripting</a>
+          <a href="../">Scripting</a>
           
             <label for="__nav_5">
               <span class="md-nav__icon md-icon"></span>
@@ -755,7 +645,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../02-scripting/system/" class="md-nav__link">
+      <a href="../system/" class="md-nav__link">
         System
       </a>
     </li>
@@ -769,7 +659,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../02-scripting/grub_bios/" class="md-nav__link">
+      <a href="../grub_bios/" class="md-nav__link">
         Grub & BIOS
       </a>
     </li>
@@ -783,7 +673,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../02-scripting/disk/" class="md-nav__link">
+      <a href="../disk/" class="md-nav__link">
         Disk
       </a>
     </li>
@@ -797,7 +687,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../02-scripting/file/" class="md-nav__link">
+      <a href="../file/" class="md-nav__link">
         File & File Systems
       </a>
     </li>
@@ -809,11 +699,79 @@
               
   
   
+    
   
-    <li class="md-nav__item">
-      <a href="../../02-scripting/key/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          GPG & SSH Key
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         GPG & SSH Key
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="目录">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#Overview" class="md-nav__link">
+    Overview
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#GPGPGP" class="md-nav__link">
+    GPG/PGP
+  </a>
+  
+    <nav class="md-nav" aria-label="GPG/PGP">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#公钥服务器GPG_Keyserver" class="md-nav__link">
+    公钥服务器（GPG Keyserver）
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#SSH_Key" class="md-nav__link">
+    SSH Key
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -825,7 +783,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../02-scripting/terminals_x11/" class="md-nav__link">
+      <a href="../terminals_x11/" class="md-nav__link">
         Terminals and X11
       </a>
     </li>
@@ -839,7 +797,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../02-scripting/ubuntu_apps/" class="md-nav__link">
+      <a href="../ubuntu_apps/" class="md-nav__link">
         Ubuntu Apps
       </a>
     </li>
@@ -1604,23 +1562,23 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#Database" class="md-nav__link">
-    Database
+  <a href="#Overview" class="md-nav__link">
+    Overview
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#XML" class="md-nav__link">
-    XML
+  <a href="#GPGPGP" class="md-nav__link">
+    GPG/PGP
   </a>
   
-    <nav class="md-nav" aria-label="XML">
+    <nav class="md-nav" aria-label="GPG/PGP">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#XML_Parser_Libs" class="md-nav__link">
-    XML Parser Libs
+  <a href="#公钥服务器GPG_Keyserver" class="md-nav__link">
+    公钥服务器（GPG Keyserver）
   </a>
   
 </li>
@@ -1631,50 +1589,8 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#YAML" class="md-nav__link">
-    YAML
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#JSON" class="md-nav__link">
-    JSON
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#CSON" class="md-nav__link">
-    CSON
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#Excel" class="md-nav__link">
-    Excel
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#Protocol_Buffers" class="md-nav__link">
-    Protocol Buffers
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#FlatBuffers" class="md-nav__link">
-    FlatBuffers
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#HDF_-_Hierarchical_Data_Format" class="md-nav__link">
-    HDF - Hierarchical Data Format
+  <a href="#SSH_Key" class="md-nav__link">
+    SSH Key
   </a>
   
 </li>
@@ -1691,7 +1607,7 @@
             <article class="md-content__inner md-typeset">
               
                 
-  <a href="https://github.com/cggos/DevOps/edit/master/docs/01-basics/data_format.md" title="编辑此页" class="md-content__button md-icon">
+  <a href="https://github.com/cggos/DevOps/edit/master/docs/02-scripting/key.md" title="编辑此页" class="md-content__button md-icon">
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25Z"/></svg>
   </a>
 
@@ -1700,65 +1616,29 @@
 
 
 
-<h1 id="Data_Formats">Data Formats<a class="headerlink" href="#Data_Formats" title="Permanent link">&para;</a></h1>
+<h1 id="Linux_Key">Linux Key<a class="headerlink" href="#Linux_Key" title="Permanent link">&para;</a></h1>
 <hr />
-<h2 id="Database">Database<a class="headerlink" href="#Database" title="Permanent link">&para;</a></h2>
+<h2 id="Overview">Overview<a class="headerlink" href="#Overview" title="Permanent link">&para;</a></h2>
+<p>公钥和密钥，是现在密码学的一个发明。以我们生活中的例子来说，公钥相当于你的银行帐号，私钥相当于你的银行存折和银行卡。</p>
+<h2 id="GPGPGP">GPG/PGP<a class="headerlink" href="#GPGPGP" title="Permanent link">&para;</a></h2>
 <ul>
-<li>MySQL</li>
+<li><a href="https://wiki.ubuntu.org.cn/GPG/PGP">https://wiki.ubuntu.org.cn/GPG/PGP</a></li>
 </ul>
-<h2 id="XML"><a href="https://www.xml.com/">XML</a><a class="headerlink" href="#XML" title="Permanent link">&para;</a></h2>
+<p>PGP，简单的说，是一款以利用公钥和密钥技术的加密和身份验证软件；而GPG呢，就是开源的PGP。</p>
+<h3 id="公钥服务器GPG_Keyserver">公钥服务器（GPG Keyserver）<a class="headerlink" href="#公钥服务器GPG_Keyserver" title="Permanent link">&para;</a></h3>
+<p>现在网络上有很多公钥服务器，而且都是互相同步的。比如：</p>
 <ul>
-<li><a href="https://www.ibm.com/developerworks/cn/xml/x-newxml/">XML 新手入门基础知识</a></li>
-<li><a href="http://blog-ythu.github.io/2012/07/11/using-MSXML/">Using MSXML to read/write XML files</a></li>
+<li><a href="http://keyserver.ubuntu.com:11371">http://keyserver.ubuntu.com:11371</a> </li>
+<li><a href="http://pgp.mit.edu/">http://pgp.mit.edu/</a> </li>
+<li><a href="http://wwwkeys.pgp.net:11371">http://wwwkeys.pgp.net:11371</a> </li>
+<li><a href="http://subkeys.pgp.net">http://subkeys.pgp.net</a> </li>
 </ul>
-<h3 id="XML_Parser_Libs">XML Parser Libs<a class="headerlink" href="#XML_Parser_Libs" title="Permanent link">&para;</a></h3>
+<h2 id="SSH_Key">SSH Key<a class="headerlink" href="#SSH_Key" title="Permanent link">&para;</a></h2>
 <ul>
-<li><a href="http://lars.ruoff.free.fr/xmlcpp/">Free C or C++ XML Parser Libraries</a></li>
-<li><a href="http://www.grinninglizard.com/tinyxml/index.html">TinyXML</a> is a simple, small, C++ XML parser that can be easily integrating into other programs.</li>
-<li><a href="http://www.xmlsoft.org/">Libxml2</a> is the XML C parser and toolkit developed for the Gnome project.</li>
+<li>Generating a new SSH key
+  <div class="highlight"><span class="filename">Bash</span><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>ssh-keygen -t rsa -b <span class="m">4096</span> -C <span class="s2">&quot;your_email@example.com&quot;</span>
+</code></pre></div></li>
 </ul>
-<h2 id="YAML">YAML<a class="headerlink" href="#YAML" title="Permanent link">&para;</a></h2>
-<p><a href="http://yaml.org">YAML</a> is an international collaboration to make a data serialization language which is both human readable and computationally powerful.</p>
-<ul>
-<li><a href="https://github.com/jbeder/yaml-cpp/">yaml-cpp</a> is a YAML parser and emitter in C++ matching the YAML 1.2 spec.</li>
-</ul>
-<h2 id="JSON">JSON<a class="headerlink" href="#JSON" title="Permanent link">&para;</a></h2>
-<p><a href="http://www.json.org/">JSON</a> (JavaScript Object Notation) is a lightweight data-interchange format.</p>
-<ul>
-<li><a href="http://www.json.org.cn/">JSON中文网</a></li>
-<li><a href="http://jsoneditoronline.org/">JSON Editor Online</a></li>
-<li><a href="https://www.json.cn/">Json在线解析及格式化验证</a></li>
-<li><a href="https://github.com/antonmedv/fx">antonmedv/fx</a>: Command-line tool and terminal JSON viewer</li>
-</ul>
-<h2 id="CSON">CSON<a class="headerlink" href="#CSON" title="Permanent link">&para;</a></h2>
-<p>CoffeeScript-Object-Notation. Same as JSON but for CoffeeScript objects.</p>
-<ul>
-<li><a href="https://github.com/bevry/cson">bevry/cson</a></li>
-</ul>
-<h2 id="Excel">Excel<a class="headerlink" href="#Excel" title="Permanent link">&para;</a></h2>
-<ul>
-<li>
-<p><a href="http://www.libxl.com/">LibXL</a> is a library that can read and write Excel files. It doesn't require Microsoft Excel and .NET framework, combines an easy to use and powerful features.</p>
-</li>
-<li>
-<p><a href="http://xlslib.sourceforge.net/">xlsLib</a>: A C/C++ multi-platform library for dynamically generating Excel(TM) files</p>
-</li>
-<li>
-<p><a href="http://libxlsxwriter.github.io/">Libxlsxwriter</a> is a C library that can be used to write text, numbers, formulas and hyperlinks to multiple worksheets in an Excel 2007+ XLSX file</p>
-</li>
-<li>
-<p><a href="https://brechtsanders.github.io/xlsxio/">XLSX I/O</a> - C library for reading and writing .xlsx files</p>
-</li>
-<li>
-<p><a href="http://jexcelapi.sourceforge.net/">Java Excel API</a> - A Java API to read, write, and modify Excel spreadsheets</p>
-</li>
-</ul>
-<h2 id="Protocol_Buffers">Protocol Buffers<a class="headerlink" href="#Protocol_Buffers" title="Permanent link">&para;</a></h2>
-<p><a href="https://developers.google.com/protocol-buffers/">Protocol buffers</a> are Google's language-neutral, platform-neutral, extensible mechanism for serializing structured data – think XML, but smaller, faster, and simpler.</p>
-<h2 id="FlatBuffers">FlatBuffers<a class="headerlink" href="#FlatBuffers" title="Permanent link">&para;</a></h2>
-<p><a href="https://google.github.io/flatbuffers/">FlatBuffers</a> is an efficient cross platform serialization library for C++, C#, C, Go, Java, JavaScript, Lobster, Lua, TypeScript, PHP, Python, and Rust. It was originally created at Google for game development and other performance-critical applications.</p>
-<h2 id="HDF_-_Hierarchical_Data_Format">HDF - Hierarchical Data Format<a class="headerlink" href="#HDF_-_Hierarchical_Data_Format" title="Permanent link">&para;</a></h2>
-<p><a href="https://eosweb.larc.nasa.gov/HBDOCS/hdf.html">Hierarchical Data Format (HDF)</a> is a data file format designed by the National Center for Supercomputing Applications (NCSA) to assist users in the storage and manipulation of scientific data across diverse operating systems and machines.</p>
 
               
             </article>
@@ -1779,7 +1659,7 @@
     <nav class="md-footer__inner md-grid" aria-label="页脚" >
       
         
-        <a href="../" class="md-footer__link md-footer__link--prev" aria-label="上一页: Overview" rel="prev">
+        <a href="../file/" class="md-footer__link md-footer__link--prev" aria-label="上一页: File &amp; File Systems" rel="prev">
           <div class="md-footer__button md-icon">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
           </div>
@@ -1788,20 +1668,20 @@
               <span class="md-footer__direction">
                 上一页
               </span>
-              Overview
+              File & File Systems
             </div>
           </div>
         </a>
       
       
         
-        <a href="../platform/" class="md-footer__link md-footer__link--next" aria-label="下一页: Platform" rel="next">
+        <a href="../terminals_x11/" class="md-footer__link md-footer__link--next" aria-label="下一页: Terminals and X11" rel="next">
           <div class="md-footer__title">
             <div class="md-ellipsis">
               <span class="md-footer__direction">
                 下一页
               </span>
-              Platform
+              Terminals and X11
             </div>
           </div>
           <div class="md-footer__button md-icon">

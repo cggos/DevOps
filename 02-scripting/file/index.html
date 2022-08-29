@@ -10,21 +10,21 @@
         <meta name="author" content="Gavin Gao">
       
       
-        <link rel="canonical" href="https://dev.cgabc.xyz/02-scripting/01_linux_shell_scripting/terminals_x11/">
+        <link rel="canonical" href="https://dev.cgabc.xyz/02-scripting/file/">
       
-      <link rel="icon" href="../../../images/favicon.png">
+      <link rel="icon" href="../../images/favicon.png">
       <meta name="generator" content="mkdocs-1.3.1, mkdocs-material-8.3.9">
     
     
       
-        <title>Terminals and X11 - DevOps</title>
+        <title>File & File Systems - DevOps</title>
       
     
     
-      <link rel="stylesheet" href="../../../assets/stylesheets/main.1d29e8d0.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.1d29e8d0.min.css">
       
         
-        <link rel="stylesheet" href="../../../assets/stylesheets/palette.cbb835fc.min.css">
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.cbb835fc.min.css">
         
       
       
@@ -40,7 +40,7 @@
       
     
     
-    <script>__md_scope=new URL("../../..",location),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("../..",location),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
@@ -64,7 +64,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#Terminals_and_X11" class="md-skip">
+        <a href="#Files__File_Systems" class="md-skip">
           跳转至
         </a>
       
@@ -78,7 +78,7 @@
 
 <header class="md-header" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="页眉">
-    <a href="../../.." title="DevOps" class="md-header__button md-logo" aria-label="DevOps" data-md-component="logo">
+    <a href="../.." title="DevOps" class="md-header__button md-logo" aria-label="DevOps" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
@@ -97,7 +97,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Terminals and X11
+              File & File Systems
             
           </span>
         </div>
@@ -172,7 +172,7 @@
 
 
   <li class="md-tabs__item">
-    <a href="../../.." class="md-tabs__link">
+    <a href="../.." class="md-tabs__link">
       Home
     </a>
   </li>
@@ -187,7 +187,23 @@
   
   
     <li class="md-tabs__item">
-      <a href="../../../01-basics/data_format/" class="md-tabs__link">
+      <a href="../../00-std/code_format/" class="md-tabs__link">
+        Standard
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../01-basics/" class="md-tabs__link">
         Basics
       </a>
     </li>
@@ -200,7 +216,7 @@
 
 
   <li class="md-tabs__item">
-    <a href="../../../02-program_languages/" class="md-tabs__link">
+    <a href="../../02-program_languages/" class="md-tabs__link">
       Languages
     </a>
   </li>
@@ -233,7 +249,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="../../../03-app_build/build_tools/" class="md-tabs__link">
+      <a href="../../03-app_build/build_tools/" class="md-tabs__link">
         App Build
       </a>
     </li>
@@ -249,7 +265,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="../../../04-configuration_management_system/" class="md-tabs__link">
+      <a href="../../04-configuration_management_system/" class="md-tabs__link">
         CMS
       </a>
     </li>
@@ -270,7 +286,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="../../../06-personal_knowledge_management/type_setting/TextEditors/" class="md-tabs__link">
+      <a href="../../06-personal_knowledge_management/type_setting/TextEditors/" class="md-tabs__link">
         PKM
       </a>
     </li>
@@ -288,7 +304,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="../../../07-package_management_system/" class="md-tabs__link">
+      <a href="../../07-package_management_system/" class="md-tabs__link">
         PMS
       </a>
     </li>
@@ -304,7 +320,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="../../../08-network/" class="md-tabs__link">
+      <a href="../../08-network/" class="md-tabs__link">
         Network
       </a>
     </li>
@@ -332,7 +348,7 @@
 
 <nav class="md-nav md-nav--primary md-nav--lifted" aria-label="导航栏" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="../../.." title="DevOps" class="md-nav__button md-logo" aria-label="DevOps" data-md-component="logo">
+    <a href="../.." title="DevOps" class="md-nav__button md-logo" aria-label="DevOps" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
@@ -363,7 +379,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../.." class="md-nav__link">
+      <a href="../.." class="md-nav__link">
         Home
       </a>
     </li>
@@ -392,19 +408,17 @@
         
           
         
-          
-        
       
       
         <label class="md-nav__link" for="__nav_2">
-          Basics
+          Standard
           <span class="md-nav__icon md-icon"></span>
         </label>
       
-      <nav class="md-nav" aria-label="Basics" data-md-level="1">
+      <nav class="md-nav" aria-label="Standard" data-md-level="1">
         <label class="md-nav__title" for="__nav_2">
           <span class="md-nav__icon md-icon"></span>
-          Basics
+          Standard
         </label>
         <ul class="md-nav__list" data-md-scrollfix>
           
@@ -414,21 +428,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../01-basics/data_format/" class="md-nav__link">
-        Data Formats
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../../01-basics/code_format/" class="md-nav__link">
+      <a href="../../00-std/code_format/" class="md-nav__link">
         Code Format
       </a>
     </li>
@@ -442,7 +442,103 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../01-basics/platform/" class="md-nav__link">
+      <a href="../../00-std/comment_output_style/" class="md-nav__link">
+        Comment & Output Style
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../00-std/license/" class="md-nav__link">
+        License
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" data-md-toggle="__nav_3" type="checkbox" id="__nav_3" checked>
+      
+      
+      
+        
+          
+            
+          
+        
+          
+        
+          
+        
+          
+        
+      
+      
+        
+        
+        <div class="md-nav__link md-nav__link--index ">
+          <a href="../../01-basics/">Basics</a>
+          
+            <label for="__nav_3">
+              <span class="md-nav__icon md-icon"></span>
+            </label>
+          
+        </div>
+      
+      <nav class="md-nav" aria-label="Basics" data-md-level="1">
+        <label class="md-nav__title" for="__nav_3">
+          <span class="md-nav__icon md-icon"></span>
+          Basics
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../01-basics/data_format/" class="md-nav__link">
+        Data Formats
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../01-basics/platform/" class="md-nav__link">
         Platform
       </a>
     </li>
@@ -456,7 +552,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../01-basics/software_arch_and_design_patterns/" class="md-nav__link">
+      <a href="../../01-basics/software_arch_and_design_patterns/" class="md-nav__link">
         Software Architecture & Design Patterns
       </a>
     </li>
@@ -478,7 +574,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../02-program_languages/" class="md-nav__link">
+      <a href="../../02-program_languages/" class="md-nav__link">
         Languages
       </a>
     </li>
@@ -498,7 +594,7 @@
     <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4" type="checkbox" id="__nav_4" checked>
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5" type="checkbox" id="__nav_5" checked>
       
       
       
@@ -528,14 +624,14 @@
         <div class="md-nav__link md-nav__link--index ">
           <a href="../">Scripting</a>
           
-            <label for="__nav_4">
+            <label for="__nav_5">
               <span class="md-nav__icon md-icon"></span>
             </label>
           
         </div>
       
       <nav class="md-nav" aria-label="Scripting" data-md-level="1">
-        <label class="md-nav__title" for="__nav_4">
+        <label class="md-nav__title" for="__nav_5">
           <span class="md-nav__icon md-icon"></span>
           Scripting
         </label>
@@ -589,11 +685,80 @@
               
   
   
+    
   
-    <li class="md-nav__item">
-      <a href="../file/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          File & File Systems
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         File & File Systems
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="目录">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#File_Systems" class="md-nav__link">
+    File Systems
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#Statistics" class="md-nav__link">
+    Statistics
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#xargs" class="md-nav__link">
+    xargs
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#Find" class="md-nav__link">
+    Find
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#Compress__Uncompress" class="md-nav__link">
+    Compress &amp; Uncompress
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -617,99 +782,11 @@
               
   
   
-    
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          Terminals and X11
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../terminals_x11/" class="md-nav__link">
         Terminals and X11
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="目录">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      目录
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#Terminals" class="md-nav__link">
-    Terminals
-  </a>
-  
-    <nav class="md-nav" aria-label="Terminals">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#tumx" class="md-nav__link">
-    tumx
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#screen" class="md-nav__link">
-    screen
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#Shells" class="md-nav__link">
-    Shells
-  </a>
-  
-    <nav class="md-nav" aria-label="Shells">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#Operations" class="md-nav__link">
-    Operations
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#X_Window_System_X11_or_X" class="md-nav__link">
-    X Window System (X11 or X)
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -746,7 +823,7 @@
     <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" data-md-toggle="__nav_5" type="checkbox" id="__nav_5" checked>
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" data-md-toggle="__nav_6" type="checkbox" id="__nav_6" checked>
       
       
       
@@ -767,13 +844,13 @@
         
       
       
-        <label class="md-nav__link" for="__nav_5">
+        <label class="md-nav__link" for="__nav_6">
           App Build
           <span class="md-nav__icon md-icon"></span>
         </label>
       
       <nav class="md-nav" aria-label="App Build" data-md-level="1">
-        <label class="md-nav__title" for="__nav_5">
+        <label class="md-nav__title" for="__nav_6">
           <span class="md-nav__icon md-icon"></span>
           App Build
         </label>
@@ -785,7 +862,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../03-app_build/build_tools/" class="md-nav__link">
+      <a href="../../03-app_build/build_tools/" class="md-nav__link">
         Build Tools
       </a>
     </li>
@@ -799,7 +876,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../03-app_build/compiler/" class="md-nav__link">
+      <a href="../../03-app_build/compiler/" class="md-nav__link">
         Compiler
       </a>
     </li>
@@ -813,7 +890,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../03-app_build/software_debug/" class="md-nav__link">
+      <a href="../../03-app_build/software_debug/" class="md-nav__link">
         Debug
       </a>
     </li>
@@ -827,7 +904,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../03-app_build/software_test/" class="md-nav__link">
+      <a href="../../03-app_build/software_test/" class="md-nav__link">
         Test
       </a>
     </li>
@@ -841,7 +918,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../03-app_build/code_analysis/" class="md-nav__link">
+      <a href="../../03-app_build/code_analysis/" class="md-nav__link">
         Code Analysis
       </a>
     </li>
@@ -855,7 +932,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../03-app_build/reverse_engineering/" class="md-nav__link">
+      <a href="../../03-app_build/reverse_engineering/" class="md-nav__link">
         Reverse Engineering
       </a>
     </li>
@@ -869,88 +946,8 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../03-app_build/docker/" class="md-nav__link">
+      <a href="../../03-app_build/docker/" class="md-nav__link">
         Docker
-      </a>
-    </li>
-  
-
-            
-          
-        </ul>
-      </nav>
-    </li>
-  
-
-    
-      
-      
-      
-
-  
-  
-  
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-      
-        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" data-md-toggle="__nav_6" type="checkbox" id="__nav_6" checked>
-      
-      
-      
-        
-          
-            
-          
-        
-          
-        
-          
-        
-      
-      
-        
-        
-        <div class="md-nav__link md-nav__link--index ">
-          <a href="../../../04-configuration_management_system/">CMS</a>
-          
-            <label for="__nav_6">
-              <span class="md-nav__icon md-icon"></span>
-            </label>
-          
-        </div>
-      
-      <nav class="md-nav" aria-label="CMS" data-md-level="1">
-        <label class="md-nav__title" for="__nav_6">
-          <span class="md-nav__icon md-icon"></span>
-          CMS
-        </label>
-        <ul class="md-nav__list" data-md-scrollfix>
-          
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../../04-configuration_management_system/git/" class="md-nav__link">
-        Git
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../../04-configuration_management_system/maven/" class="md-nav__link">
-        Apache Maven
       </a>
     </li>
   
@@ -980,18 +977,98 @@
       
         
           
+            
+          
+        
+          
         
           
         
       
       
-        <label class="md-nav__link" for="__nav_7">
+        
+        
+        <div class="md-nav__link md-nav__link--index ">
+          <a href="../../04-configuration_management_system/">CMS</a>
+          
+            <label for="__nav_7">
+              <span class="md-nav__icon md-icon"></span>
+            </label>
+          
+        </div>
+      
+      <nav class="md-nav" aria-label="CMS" data-md-level="1">
+        <label class="md-nav__title" for="__nav_7">
+          <span class="md-nav__icon md-icon"></span>
+          CMS
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../04-configuration_management_system/git/" class="md-nav__link">
+        Git
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../04-configuration_management_system/maven/" class="md-nav__link">
+        Apache Maven
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" data-md-toggle="__nav_8" type="checkbox" id="__nav_8" checked>
+      
+      
+      
+        
+          
+        
+          
+        
+      
+      
+        <label class="md-nav__link" for="__nav_8">
           PKM
           <span class="md-nav__icon md-icon"></span>
         </label>
       
       <nav class="md-nav" aria-label="PKM" data-md-level="1">
-        <label class="md-nav__title" for="__nav_7">
+        <label class="md-nav__title" for="__nav_8">
           <span class="md-nav__icon md-icon"></span>
           PKM
         </label>
@@ -1008,7 +1085,7 @@
     <li class="md-nav__item md-nav__item--section md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" data-md-toggle="__nav_7_1" type="checkbox" id="__nav_7_1" checked>
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" data-md-toggle="__nav_8_1" type="checkbox" id="__nav_8_1" checked>
       
       
       
@@ -1031,13 +1108,13 @@
         
       
       
-        <label class="md-nav__link" for="__nav_7_1">
+        <label class="md-nav__link" for="__nav_8_1">
           Type Setting
           <span class="md-nav__icon md-icon"></span>
         </label>
       
       <nav class="md-nav" aria-label="Type Setting" data-md-level="2">
-        <label class="md-nav__title" for="__nav_7_1">
+        <label class="md-nav__title" for="__nav_8_1">
           <span class="md-nav__icon md-icon"></span>
           Type Setting
         </label>
@@ -1049,7 +1126,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../06-personal_knowledge_management/type_setting/TextEditors/" class="md-nav__link">
+      <a href="../../06-personal_knowledge_management/type_setting/TextEditors/" class="md-nav__link">
         Text Editors
       </a>
     </li>
@@ -1063,7 +1140,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../06-personal_knowledge_management/type_setting/MarkDown/" class="md-nav__link">
+      <a href="../../06-personal_knowledge_management/type_setting/MarkDown/" class="md-nav__link">
         MarkDown
       </a>
     </li>
@@ -1077,7 +1154,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../06-personal_knowledge_management/type_setting/CHM/" class="md-nav__link">
+      <a href="../../06-personal_knowledge_management/type_setting/CHM/" class="md-nav__link">
         CHM
       </a>
     </li>
@@ -1091,7 +1168,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../06-personal_knowledge_management/type_setting/EPUB/" class="md-nav__link">
+      <a href="../../06-personal_knowledge_management/type_setting/EPUB/" class="md-nav__link">
         EPUB
       </a>
     </li>
@@ -1105,7 +1182,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../06-personal_knowledge_management/type_setting/API-Docs/" class="md-nav__link">
+      <a href="../../06-personal_knowledge_management/type_setting/API-Docs/" class="md-nav__link">
         API Docs
       </a>
     </li>
@@ -1119,7 +1196,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../06-personal_knowledge_management/type_setting/Diagrams/" class="md-nav__link">
+      <a href="../../06-personal_knowledge_management/type_setting/Diagrams/" class="md-nav__link">
         Diagrams
       </a>
     </li>
@@ -1133,7 +1210,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../06-personal_knowledge_management/type_setting/Fonts/" class="md-nav__link">
+      <a href="../../06-personal_knowledge_management/type_setting/Fonts/" class="md-nav__link">
         Fonts
       </a>
     </li>
@@ -1147,7 +1224,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../06-personal_knowledge_management/type_setting/Convertor/" class="md-nav__link">
+      <a href="../../06-personal_knowledge_management/type_setting/Convertor/" class="md-nav__link">
         Convertor
       </a>
     </li>
@@ -1173,7 +1250,7 @@
     <li class="md-nav__item md-nav__item--section md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" data-md-toggle="__nav_7_2" type="checkbox" id="__nav_7_2" checked>
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" data-md-toggle="__nav_8_2" type="checkbox" id="__nav_8_2" checked>
       
       
       
@@ -1188,13 +1265,13 @@
         
       
       
-        <label class="md-nav__link" for="__nav_7_2">
+        <label class="md-nav__link" for="__nav_8_2">
           Website
           <span class="md-nav__icon md-icon"></span>
         </label>
       
       <nav class="md-nav" aria-label="Website" data-md-level="2">
-        <label class="md-nav__title" for="__nav_7_2">
+        <label class="md-nav__title" for="__nav_8_2">
           <span class="md-nav__icon md-icon"></span>
           Website
         </label>
@@ -1206,7 +1283,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../06-personal_knowledge_management/website/OnlineDocs/" class="md-nav__link">
+      <a href="../../06-personal_knowledge_management/website/OnlineDocs/" class="md-nav__link">
         Online Docs
       </a>
     </li>
@@ -1220,7 +1297,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../06-personal_knowledge_management/type_setting/Sphinx/" class="md-nav__link">
+      <a href="../../06-personal_knowledge_management/type_setting/Sphinx/" class="md-nav__link">
         Sphinx
       </a>
     </li>
@@ -1234,7 +1311,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../06-personal_knowledge_management/website/Jekyll/" class="md-nav__link">
+      <a href="../../06-personal_knowledge_management/website/Jekyll/" class="md-nav__link">
         Jekyll
       </a>
     </li>
@@ -1248,7 +1325,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../06-personal_knowledge_management/website/MkDocs/" class="md-nav__link">
+      <a href="../../06-personal_knowledge_management/website/MkDocs/" class="md-nav__link">
         MkDocs
       </a>
     </li>
@@ -1280,7 +1357,7 @@
     <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" data-md-toggle="__nav_8" type="checkbox" id="__nav_8" checked>
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" data-md-toggle="__nav_9" type="checkbox" id="__nav_9" checked>
       
       
       
@@ -1294,12 +1371,12 @@
         
         
         <div class="md-nav__link md-nav__link--index ">
-          <a href="../../../07-package_management_system/">PMS</a>
+          <a href="../../07-package_management_system/">PMS</a>
           
         </div>
       
       <nav class="md-nav" aria-label="PMS" data-md-level="1">
-        <label class="md-nav__title" for="__nav_8">
+        <label class="md-nav__title" for="__nav_9">
           <span class="md-nav__icon md-icon"></span>
           PMS
         </label>
@@ -1324,7 +1401,7 @@
     <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" data-md-toggle="__nav_9" type="checkbox" id="__nav_9" checked>
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" data-md-toggle="__nav_10" type="checkbox" id="__nav_10" checked>
       
       
       
@@ -1352,16 +1429,16 @@
         
         
         <div class="md-nav__link md-nav__link--index ">
-          <a href="../../../08-network/">Network</a>
+          <a href="../../08-network/">Network</a>
           
-            <label for="__nav_9">
+            <label for="__nav_10">
               <span class="md-nav__icon md-icon"></span>
             </label>
           
         </div>
       
       <nav class="md-nav" aria-label="Network" data-md-level="1">
-        <label class="md-nav__title" for="__nav_9">
+        <label class="md-nav__title" for="__nav_10">
           <span class="md-nav__icon md-icon"></span>
           Network
         </label>
@@ -1375,7 +1452,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../08-network/proxy/" class="md-nav__link">
+      <a href="../../08-network/proxy/" class="md-nav__link">
         Proxy
       </a>
     </li>
@@ -1389,7 +1466,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../08-network/database/" class="md-nav__link">
+      <a href="../../08-network/database/" class="md-nav__link">
         Database
       </a>
     </li>
@@ -1403,7 +1480,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../08-network/download_managers/" class="md-nav__link">
+      <a href="../../08-network/download_managers/" class="md-nav__link">
         Download Managers
       </a>
     </li>
@@ -1417,7 +1494,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../08-network/nas/synology_nas/" class="md-nav__link">
+      <a href="../../08-network/nas/synology_nas/" class="md-nav__link">
         Synology DS128+
       </a>
     </li>
@@ -1431,7 +1508,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../08-network/network_devices/router/" class="md-nav__link">
+      <a href="../../08-network/network_devices/router/" class="md-nav__link">
         Router
       </a>
     </li>
@@ -1445,7 +1522,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../08-network/serial_communication/" class="md-nav__link">
+      <a href="../../08-network/serial_communication/" class="md-nav__link">
         Serial Communication
       </a>
     </li>
@@ -1486,55 +1563,36 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#Terminals" class="md-nav__link">
-    Terminals
+  <a href="#File_Systems" class="md-nav__link">
+    File Systems
   </a>
-  
-    <nav class="md-nav" aria-label="Terminals">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#tumx" class="md-nav__link">
-    tumx
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#screen" class="md-nav__link">
-    screen
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#Shells" class="md-nav__link">
-    Shells
-  </a>
-  
-    <nav class="md-nav" aria-label="Shells">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#Operations" class="md-nav__link">
-    Operations
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#X_Window_System_X11_or_X" class="md-nav__link">
-    X Window System (X11 or X)
+  <a href="#Statistics" class="md-nav__link">
+    Statistics
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#xargs" class="md-nav__link">
+    xargs
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#Find" class="md-nav__link">
+    Find
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#Compress__Uncompress" class="md-nav__link">
+    Compress &amp; Uncompress
   </a>
   
 </li>
@@ -1551,7 +1609,7 @@
             <article class="md-content__inner md-typeset">
               
                 
-  <a href="https://github.com/cggos/DevOps/edit/master/docs/02-scripting/01_linux_shell_scripting/terminals_x11.md" title="编辑此页" class="md-content__button md-icon">
+  <a href="https://github.com/cggos/DevOps/edit/master/docs/02-scripting/file.md" title="编辑此页" class="md-content__button md-icon">
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25Z"/></svg>
   </a>
 
@@ -1560,51 +1618,111 @@
 
 
 
-<h1 id="Terminals_and_X11">Terminals and X11<a class="headerlink" href="#Terminals_and_X11" title="Permanent link">&para;</a></h1>
+<h1 id="Files__File_Systems">Files &amp; File Systems<a class="headerlink" href="#Files__File_Systems" title="Permanent link">&para;</a></h1>
 <hr />
-<h2 id="Terminals">Terminals<a class="headerlink" href="#Terminals" title="Permanent link">&para;</a></h2>
-<h3 id="tumx">tumx<a class="headerlink" href="#tumx" title="Permanent link">&para;</a></h3>
-<p><a href="https://github.com/tmux/tmux">tumx</a>: a "terminal multiplexer", it enables a number of terminals (or windows) to be accessed and controlled from a single terminal  </p>
+<h2 id="File_Systems">File Systems<a class="headerlink" href="#File_Systems" title="Permanent link">&para;</a></h2>
 <ul>
-<li><a href="https://github.com/tmux-plugins/tpm">Tmux Plugin Manager</a></li>
-<li><a href="https://www.cnblogs.com/kevingrace/p/6496899.html">Linux终端复用神器-Tmux使用梳理</a></li>
-<li><a href="https://github.com/gpakosz/.tmux">gpakosz/.tmux</a></li>
-<li><a href="https://tmuxcheatsheet.com/">Tmux Cheat Sheet &amp; Quick Reference</a></li>
-<li><a href="http://www.dayid.org/comp/tm.html">tmux &amp; screen cheat-sheet</a></li>
-<li><a href="https://github.com/tmux-plugins/tmux-resurrect">Tmux Resurrect</a></li>
+<li>
+<p>NTFS</p>
+</li>
+<li>
+<p>FAT</p>
+</li>
+<li>
+<p>exFAT</p>
+</li>
+<li>
+<p>NFS</p>
+</li>
+<li>
+<p>CIFS</p>
+</li>
+<li>
+<p>SMB</p>
+<ul>
+<li>SMBv1.0</li>
+<li>SMBv2.1</li>
+<li>SMBv3.0</li>
 </ul>
-<h3 id="screen">screen<a class="headerlink" href="#screen" title="Permanent link">&para;</a></h3>
-<h3 id="Shells">Shells<a class="headerlink" href="#Shells" title="Permanent link">&para;</a></h3>
+</li>
+</ul>
+<h2 id="Statistics">Statistics<a class="headerlink" href="#Statistics" title="Permanent link">&para;</a></h2>
+<div class="highlight"><span class="filename">Bash</span><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="c1"># 查看当前目录下的文件数量（包含子目录中的文件） 注意：R，代表子目录</span>
+<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>ls -lR<span class="p">|</span>grep <span class="s2">&quot;^-&quot;</span><span class="p">|</span> wc -l
+</code></pre></div>
+<p>统计文件的数目:</p>
+<div class="highlight"><span class="filename">Bash</span><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="ch">#!/bin/bash</span>
+<a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>
+<a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a><span class="c1">#变量counter用于统计文件的数目</span>
+<a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a><span class="nv">counter</span><span class="o">=</span><span class="m">0</span>
+<a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a><span class="c1">#变量files遍历当前文件夹</span>
+<a id="__codelineno-1-6" name="__codelineno-1-6" href="#__codelineno-1-6"></a><span class="k">for</span> files <span class="k">in</span> *
+<a id="__codelineno-1-7" name="__codelineno-1-7" href="#__codelineno-1-7"></a><span class="k">do</span>
+<a id="__codelineno-1-8" name="__codelineno-1-8" href="#__codelineno-1-8"></a>    <span class="c1">#判断files是否是文件，若是，就将counter变量的值加1，再赋给自己</span>
+<a id="__codelineno-1-9" name="__codelineno-1-9" href="#__codelineno-1-9"></a>    <span class="k">if</span> <span class="o">[</span> -f <span class="s2">&quot;files&quot;</span> <span class="o">]</span>
+<a id="__codelineno-1-10" name="__codelineno-1-10" href="#__codelineno-1-10"></a>    <span class="k">then</span>
+<a id="__codelineno-1-11" name="__codelineno-1-11" href="#__codelineno-1-11"></a>        <span class="nv">counter</span><span class="o">=</span><span class="sb">`</span>expr <span class="nv">$counter</span> + <span class="m">1</span><span class="sb">`</span>
+<a id="__codelineno-1-12" name="__codelineno-1-12" href="#__codelineno-1-12"></a>    <span class="k">fi</span>
+<a id="__codelineno-1-13" name="__codelineno-1-13" href="#__codelineno-1-13"></a><span class="k">done</span>
+<a id="__codelineno-1-14" name="__codelineno-1-14" href="#__codelineno-1-14"></a><span class="nb">echo</span> <span class="nv">$counter</span>
+<a id="__codelineno-1-15" name="__codelineno-1-15" href="#__codelineno-1-15"></a><span class="nb">exit</span> <span class="m">0</span>
+</code></pre></div>
+<h2 id="xargs">xargs<a class="headerlink" href="#xargs" title="Permanent link">&para;</a></h2>
+<div class="highlight"><span class="filename">Bash</span><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>cat install_manifest.txt <span class="p">|</span> xargs sudo rm <span class="o">{}</span> -fr
+</code></pre></div>
+<h2 id="Find">Find<a class="headerlink" href="#Find" title="Permanent link">&para;</a></h2>
 <ul>
 <li>
-<p>bash</p>
+<p><a href="http://www.binarytides.com/linux-find-command-examples/">25 simple examples of Linux find command</a></p>
 </li>
 <li>
-<p>zsh</p>
+<p><a href="http://www.cnblogs.com/wanqieddy/archive/2011/07/15/2107071.html">Linux下的五个查找命令：grep、find、locate、whereis、which</a></p>
+</li>
+<li>
+<p><a href="https://github.com/junegunn/fzf">fzf</a>: a general-purpose command-line fuzzy finder</p>
+</li>
+<li>
+<p>install fzf</p>
 <ul>
-<li><a href="http://ohmyz.sh/">Oh My ZSH</a></li>
+<li>alias
+  <code>sh
+    alias ff='find * -type f | fzf &gt; selected'</code></li>
+<li>use in cli: <code>ff</code></li>
 </ul>
 </li>
 <li>
-<p><a href="http://fishshell.com/">fishshell</a></p>
+<p>pdfgrep</p>
+</li>
+<li>
+<p><a href="https://www.lesbonscomptes.com/recoll/">Recoll</a> is a desktop full-text search tool.</p>
 </li>
 </ul>
-<h4 id="Operations">Operations<a class="headerlink" href="#Operations" title="Permanent link">&para;</a></h4>
+<div class="highlight"><span class="filename">Bash</span><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="c1"># 在当前目录下查找&quot;hello&quot;字符串</span>
+<a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a>grep -rn <span class="s2">&quot;hello&quot;</span>
+<a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a>
+<a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a><span class="c1"># 只能寻找执行文件 ，并在PATH变量里面寻找</span>
+<a id="__codelineno-3-5" name="__codelineno-3-5" href="#__codelineno-3-5"></a>which
+<a id="__codelineno-3-6" name="__codelineno-3-6" href="#__codelineno-3-6"></a>
+<a id="__codelineno-3-7" name="__codelineno-3-7" href="#__codelineno-3-7"></a><span class="c1"># 从linux文件数据库（/var/lib/slocate/slocate.db）寻找，所以有可能找到刚刚删除或者没有发现新建的文件</span>
+<a id="__codelineno-3-8" name="__codelineno-3-8" href="#__codelineno-3-8"></a><span class="c1"># 先运行updatedb（无论在那个目录中均可，可以放在crontab中 ）后在/var/lib/slocate/下生成 slocate.db 数据库即可快速查找，在命令提示符下直接执行#updatedb命令即可</span>
+<a id="__codelineno-3-9" name="__codelineno-3-9" href="#__codelineno-3-9"></a>updatedb
+<a id="__codelineno-3-10" name="__codelineno-3-10" href="#__codelineno-3-10"></a>whereis
+<a id="__codelineno-3-11" name="__codelineno-3-11" href="#__codelineno-3-11"></a>
+<a id="__codelineno-3-12" name="__codelineno-3-12" href="#__codelineno-3-12"></a><span class="c1"># 同上,不过文件名是部分匹配</span>
+<a id="__codelineno-3-13" name="__codelineno-3-13" href="#__codelineno-3-13"></a>updatedb
+<a id="__codelineno-3-14" name="__codelineno-3-14" href="#__codelineno-3-14"></a>locate
+<a id="__codelineno-3-15" name="__codelineno-3-15" href="#__codelineno-3-15"></a>
+<a id="__codelineno-3-16" name="__codelineno-3-16" href="#__codelineno-3-16"></a><span class="c1"># 直接在硬盘上搜寻，功能强大，但耗硬盘，一般不要用</span>
+<a id="__codelineno-3-17" name="__codelineno-3-17" href="#__codelineno-3-17"></a>find
+<a id="__codelineno-3-18" name="__codelineno-3-18" href="#__codelineno-3-18"></a>
+<a id="__codelineno-3-19" name="__codelineno-3-19" href="#__codelineno-3-19"></a><span class="c1"># 删除目录及其子目录下某种类型文件，比如说所有的txt文件</span>
+<a id="__codelineno-3-20" name="__codelineno-3-20" href="#__codelineno-3-20"></a>find . -name <span class="s2">&quot;*.txt&quot;</span> -type f -print -exec rm -rf <span class="o">{}</span> <span class="se">\;</span>
+</code></pre></div>
+<h2 id="Compress__Uncompress">Compress &amp; Uncompress<a class="headerlink" href="#Compress__Uncompress" title="Permanent link">&para;</a></h2>
 <ul>
-<li>view shells in linux: <code>cat /etc/shells</code></li>
-<li>change default shell, e.g. bash: <code>chsh -s /bin/bash</code></li>
-</ul>
-<h2 id="X_Window_System_X11_or_X">X Window System (X11 or X)<a class="headerlink" href="#X_Window_System_X11_or_X" title="Permanent link">&para;</a></h2>
-<ul>
-<li>
-<p>The X.Org project provides an open source implementation of the X Window System.</p>
-</li>
-<li>
-<p>The <a href="https://invisible-island.net/xterm/">xterm</a> program is a terminal emulator for the X Window System. It provides DEC VT102 and Tektronix 4014 compatible terminals for programs that can't use the window system directly.</p>
-</li>
-<li>
-<p><a href="https://mobaxterm.mobatek.net/">MobaXterm</a>: Enhanced terminal for Windows with X11 server, tabbed SSH client, network tools and much more</p>
-</li>
+<li>多卷压缩
+  <div class="highlight"><span class="filename">Bash</span><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a>zip -r -s 2g nutstore_papers.zip nutstore_papers/
+</code></pre></div></li>
 </ul>
 
               
@@ -1626,7 +1744,7 @@
     <nav class="md-footer__inner md-grid" aria-label="页脚" >
       
         
-        <a href="../key/" class="md-footer__link md-footer__link--prev" aria-label="上一页: GPG &amp; SSH Key" rel="prev">
+        <a href="../disk/" class="md-footer__link md-footer__link--prev" aria-label="上一页: Disk" rel="prev">
           <div class="md-footer__button md-icon">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
           </div>
@@ -1635,20 +1753,20 @@
               <span class="md-footer__direction">
                 上一页
               </span>
-              GPG & SSH Key
+              Disk
             </div>
           </div>
         </a>
       
       
         
-        <a href="../ubuntu_apps/" class="md-footer__link md-footer__link--next" aria-label="下一页: Ubuntu Apps" rel="next">
+        <a href="../key/" class="md-footer__link md-footer__link--next" aria-label="下一页: GPG &amp; SSH Key" rel="next">
           <div class="md-footer__title">
             <div class="md-ellipsis">
               <span class="md-footer__direction">
                 下一页
               </span>
-              Ubuntu Apps
+              GPG & SSH Key
             </div>
           </div>
           <div class="md-footer__button md-icon">
@@ -1694,10 +1812,10 @@
     <div class="md-dialog" data-md-component="dialog">
       <div class="md-dialog__inner md-typeset"></div>
     </div>
-    <script id="__config" type="application/json">{"base": "../../..", "features": ["navigation.instant", "navigation.tracking", "navigation.tabs", "navigation.sections", "navigation.expand", "navigation.prune", "navigation.indexes", "navigation.top", "toc.follow", "content.code.annotate"], "search": "../../../assets/javascripts/workers/search.b97dbffb.min.js", "translations": {"clipboard.copied": "\u5df2\u590d\u5236", "clipboard.copy": "\u590d\u5236", "search.config.lang": "ja", "search.config.pipeline": "trimmer, stemmer", "search.config.separator": "[\\s\\-\uff0c\u3002]+", "search.placeholder": "\u641c\u7d22", "search.result.more.one": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.more.other": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 # \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.none": "\u6ca1\u6709\u627e\u5230\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.one": "\u627e\u5230 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.other": "# \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.placeholder": "\u952e\u5165\u4ee5\u5f00\u59cb\u641c\u7d22", "search.result.term.missing": "\u7f3a\u5c11", "select.version.title": "\u9009\u62e9\u5f53\u524d\u7248\u672c"}}</script>
+    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.instant", "navigation.tracking", "navigation.tabs", "navigation.sections", "navigation.expand", "navigation.prune", "navigation.indexes", "navigation.top", "toc.follow", "content.code.annotate"], "search": "../../assets/javascripts/workers/search.b97dbffb.min.js", "translations": {"clipboard.copied": "\u5df2\u590d\u5236", "clipboard.copy": "\u590d\u5236", "search.config.lang": "ja", "search.config.pipeline": "trimmer, stemmer", "search.config.separator": "[\\s\\-\uff0c\u3002]+", "search.placeholder": "\u641c\u7d22", "search.result.more.one": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.more.other": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 # \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.none": "\u6ca1\u6709\u627e\u5230\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.one": "\u627e\u5230 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.other": "# \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.placeholder": "\u952e\u5165\u4ee5\u5f00\u59cb\u641c\u7d22", "search.result.term.missing": "\u7f3a\u5c11", "select.version.title": "\u9009\u62e9\u5f53\u524d\u7248\u672c"}}</script>
     
     
-      <script src="../../../assets/javascripts/bundle.6c7ad80a.min.js"></script>
+      <script src="../../assets/javascripts/bundle.6c7ad80a.min.js"></script>
       
     
   </body>

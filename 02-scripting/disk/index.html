@@ -10,21 +10,21 @@
         <meta name="author" content="Gavin Gao">
       
       
-        <link rel="canonical" href="https://dev.cgabc.xyz/02-scripting/01_linux_shell_scripting/system/">
+        <link rel="canonical" href="https://dev.cgabc.xyz/02-scripting/disk/">
       
-      <link rel="icon" href="../../../images/favicon.png">
+      <link rel="icon" href="../../images/favicon.png">
       <meta name="generator" content="mkdocs-1.3.1, mkdocs-material-8.3.9">
     
     
       
-        <title>System - DevOps</title>
+        <title>Disk - DevOps</title>
       
     
     
-      <link rel="stylesheet" href="../../../assets/stylesheets/main.1d29e8d0.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.1d29e8d0.min.css">
       
         
-        <link rel="stylesheet" href="../../../assets/stylesheets/palette.cbb835fc.min.css">
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.cbb835fc.min.css">
         
       
       
@@ -40,7 +40,7 @@
       
     
     
-    <script>__md_scope=new URL("../../..",location),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("../..",location),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
@@ -64,7 +64,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#System__Hardware" class="md-skip">
+        <a href="#Disk__Partition" class="md-skip">
           跳转至
         </a>
       
@@ -78,7 +78,7 @@
 
 <header class="md-header" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="页眉">
-    <a href="../../.." title="DevOps" class="md-header__button md-logo" aria-label="DevOps" data-md-component="logo">
+    <a href="../.." title="DevOps" class="md-header__button md-logo" aria-label="DevOps" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
@@ -97,7 +97,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              System
+              Disk
             
           </span>
         </div>
@@ -172,7 +172,7 @@
 
 
   <li class="md-tabs__item">
-    <a href="../../.." class="md-tabs__link">
+    <a href="../.." class="md-tabs__link">
       Home
     </a>
   </li>
@@ -187,7 +187,23 @@
   
   
     <li class="md-tabs__item">
-      <a href="../../../01-basics/data_format/" class="md-tabs__link">
+      <a href="../../00-std/code_format/" class="md-tabs__link">
+        Standard
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../01-basics/" class="md-tabs__link">
         Basics
       </a>
     </li>
@@ -200,7 +216,7 @@
 
 
   <li class="md-tabs__item">
-    <a href="../../../02-program_languages/" class="md-tabs__link">
+    <a href="../../02-program_languages/" class="md-tabs__link">
       Languages
     </a>
   </li>
@@ -233,7 +249,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="../../../03-app_build/build_tools/" class="md-tabs__link">
+      <a href="../../03-app_build/build_tools/" class="md-tabs__link">
         App Build
       </a>
     </li>
@@ -249,7 +265,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="../../../04-configuration_management_system/" class="md-tabs__link">
+      <a href="../../04-configuration_management_system/" class="md-tabs__link">
         CMS
       </a>
     </li>
@@ -270,7 +286,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="../../../06-personal_knowledge_management/type_setting/TextEditors/" class="md-tabs__link">
+      <a href="../../06-personal_knowledge_management/type_setting/TextEditors/" class="md-tabs__link">
         PKM
       </a>
     </li>
@@ -288,7 +304,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="../../../07-package_management_system/" class="md-tabs__link">
+      <a href="../../07-package_management_system/" class="md-tabs__link">
         PMS
       </a>
     </li>
@@ -304,7 +320,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="../../../08-network/" class="md-tabs__link">
+      <a href="../../08-network/" class="md-tabs__link">
         Network
       </a>
     </li>
@@ -332,7 +348,7 @@
 
 <nav class="md-nav md-nav--primary md-nav--lifted" aria-label="导航栏" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="../../.." title="DevOps" class="md-nav__button md-logo" aria-label="DevOps" data-md-component="logo">
+    <a href="../.." title="DevOps" class="md-nav__button md-logo" aria-label="DevOps" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
@@ -363,7 +379,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../.." class="md-nav__link">
+      <a href="../.." class="md-nav__link">
         Home
       </a>
     </li>
@@ -392,19 +408,17 @@
         
           
         
-          
-        
       
       
         <label class="md-nav__link" for="__nav_2">
-          Basics
+          Standard
           <span class="md-nav__icon md-icon"></span>
         </label>
       
-      <nav class="md-nav" aria-label="Basics" data-md-level="1">
+      <nav class="md-nav" aria-label="Standard" data-md-level="1">
         <label class="md-nav__title" for="__nav_2">
           <span class="md-nav__icon md-icon"></span>
-          Basics
+          Standard
         </label>
         <ul class="md-nav__list" data-md-scrollfix>
           
@@ -414,21 +428,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../01-basics/data_format/" class="md-nav__link">
-        Data Formats
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../../01-basics/code_format/" class="md-nav__link">
+      <a href="../../00-std/code_format/" class="md-nav__link">
         Code Format
       </a>
     </li>
@@ -442,7 +442,103 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../01-basics/platform/" class="md-nav__link">
+      <a href="../../00-std/comment_output_style/" class="md-nav__link">
+        Comment & Output Style
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../00-std/license/" class="md-nav__link">
+        License
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" data-md-toggle="__nav_3" type="checkbox" id="__nav_3" checked>
+      
+      
+      
+        
+          
+            
+          
+        
+          
+        
+          
+        
+          
+        
+      
+      
+        
+        
+        <div class="md-nav__link md-nav__link--index ">
+          <a href="../../01-basics/">Basics</a>
+          
+            <label for="__nav_3">
+              <span class="md-nav__icon md-icon"></span>
+            </label>
+          
+        </div>
+      
+      <nav class="md-nav" aria-label="Basics" data-md-level="1">
+        <label class="md-nav__title" for="__nav_3">
+          <span class="md-nav__icon md-icon"></span>
+          Basics
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../01-basics/data_format/" class="md-nav__link">
+        Data Formats
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../01-basics/platform/" class="md-nav__link">
         Platform
       </a>
     </li>
@@ -456,7 +552,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../01-basics/software_arch_and_design_patterns/" class="md-nav__link">
+      <a href="../../01-basics/software_arch_and_design_patterns/" class="md-nav__link">
         Software Architecture & Design Patterns
       </a>
     </li>
@@ -478,7 +574,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../02-program_languages/" class="md-nav__link">
+      <a href="../../02-program_languages/" class="md-nav__link">
         Languages
       </a>
     </li>
@@ -498,7 +594,7 @@
     <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4" type="checkbox" id="__nav_4" checked>
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5" type="checkbox" id="__nav_5" checked>
       
       
       
@@ -528,14 +624,14 @@
         <div class="md-nav__link md-nav__link--index ">
           <a href="../">Scripting</a>
           
-            <label for="__nav_4">
+            <label for="__nav_5">
               <span class="md-nav__icon md-icon"></span>
             </label>
           
         </div>
       
       <nav class="md-nav" aria-label="Scripting" data-md-level="1">
-        <label class="md-nav__title" for="__nav_4">
+        <label class="md-nav__title" for="__nav_5">
           <span class="md-nav__icon md-icon"></span>
           Scripting
         </label>
@@ -547,114 +643,11 @@
               
   
   
-    
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          System
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../system/" class="md-nav__link">
         System
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="目录">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      目录
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#Overview" class="md-nav__link">
-    Overview
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#Services" class="md-nav__link">
-    Services
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#Process" class="md-nav__link">
-    Process
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#Driver" class="md-nav__link">
-    Driver
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#Display" class="md-nav__link">
-    Display
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#Lid" class="md-nav__link">
-    Lid
-  </a>
-  
-    <nav class="md-nav" aria-label="Lid">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#Keyboard_Led" class="md-nav__link">
-    Keyboard Led
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#Themes" class="md-nav__link">
-    Themes
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#Fonts" class="md-nav__link">
-    Fonts
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -678,11 +671,21 @@
               
   
   
+    
   
-    <li class="md-nav__item">
-      <a href="../disk/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         Disk
       </a>
+      
     </li>
   
 
@@ -761,7 +764,7 @@
     <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" data-md-toggle="__nav_5" type="checkbox" id="__nav_5" checked>
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" data-md-toggle="__nav_6" type="checkbox" id="__nav_6" checked>
       
       
       
@@ -782,13 +785,13 @@
         
       
       
-        <label class="md-nav__link" for="__nav_5">
+        <label class="md-nav__link" for="__nav_6">
           App Build
           <span class="md-nav__icon md-icon"></span>
         </label>
       
       <nav class="md-nav" aria-label="App Build" data-md-level="1">
-        <label class="md-nav__title" for="__nav_5">
+        <label class="md-nav__title" for="__nav_6">
           <span class="md-nav__icon md-icon"></span>
           App Build
         </label>
@@ -800,7 +803,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../03-app_build/build_tools/" class="md-nav__link">
+      <a href="../../03-app_build/build_tools/" class="md-nav__link">
         Build Tools
       </a>
     </li>
@@ -814,7 +817,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../03-app_build/compiler/" class="md-nav__link">
+      <a href="../../03-app_build/compiler/" class="md-nav__link">
         Compiler
       </a>
     </li>
@@ -828,7 +831,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../03-app_build/software_debug/" class="md-nav__link">
+      <a href="../../03-app_build/software_debug/" class="md-nav__link">
         Debug
       </a>
     </li>
@@ -842,7 +845,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../03-app_build/software_test/" class="md-nav__link">
+      <a href="../../03-app_build/software_test/" class="md-nav__link">
         Test
       </a>
     </li>
@@ -856,7 +859,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../03-app_build/code_analysis/" class="md-nav__link">
+      <a href="../../03-app_build/code_analysis/" class="md-nav__link">
         Code Analysis
       </a>
     </li>
@@ -870,7 +873,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../03-app_build/reverse_engineering/" class="md-nav__link">
+      <a href="../../03-app_build/reverse_engineering/" class="md-nav__link">
         Reverse Engineering
       </a>
     </li>
@@ -884,88 +887,8 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../03-app_build/docker/" class="md-nav__link">
+      <a href="../../03-app_build/docker/" class="md-nav__link">
         Docker
-      </a>
-    </li>
-  
-
-            
-          
-        </ul>
-      </nav>
-    </li>
-  
-
-    
-      
-      
-      
-
-  
-  
-  
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-      
-        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" data-md-toggle="__nav_6" type="checkbox" id="__nav_6" checked>
-      
-      
-      
-        
-          
-            
-          
-        
-          
-        
-          
-        
-      
-      
-        
-        
-        <div class="md-nav__link md-nav__link--index ">
-          <a href="../../../04-configuration_management_system/">CMS</a>
-          
-            <label for="__nav_6">
-              <span class="md-nav__icon md-icon"></span>
-            </label>
-          
-        </div>
-      
-      <nav class="md-nav" aria-label="CMS" data-md-level="1">
-        <label class="md-nav__title" for="__nav_6">
-          <span class="md-nav__icon md-icon"></span>
-          CMS
-        </label>
-        <ul class="md-nav__list" data-md-scrollfix>
-          
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../../04-configuration_management_system/git/" class="md-nav__link">
-        Git
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../../04-configuration_management_system/maven/" class="md-nav__link">
-        Apache Maven
       </a>
     </li>
   
@@ -995,18 +918,98 @@
       
         
           
+            
+          
+        
+          
         
           
         
       
       
-        <label class="md-nav__link" for="__nav_7">
+        
+        
+        <div class="md-nav__link md-nav__link--index ">
+          <a href="../../04-configuration_management_system/">CMS</a>
+          
+            <label for="__nav_7">
+              <span class="md-nav__icon md-icon"></span>
+            </label>
+          
+        </div>
+      
+      <nav class="md-nav" aria-label="CMS" data-md-level="1">
+        <label class="md-nav__title" for="__nav_7">
+          <span class="md-nav__icon md-icon"></span>
+          CMS
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../04-configuration_management_system/git/" class="md-nav__link">
+        Git
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../04-configuration_management_system/maven/" class="md-nav__link">
+        Apache Maven
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" data-md-toggle="__nav_8" type="checkbox" id="__nav_8" checked>
+      
+      
+      
+        
+          
+        
+          
+        
+      
+      
+        <label class="md-nav__link" for="__nav_8">
           PKM
           <span class="md-nav__icon md-icon"></span>
         </label>
       
       <nav class="md-nav" aria-label="PKM" data-md-level="1">
-        <label class="md-nav__title" for="__nav_7">
+        <label class="md-nav__title" for="__nav_8">
           <span class="md-nav__icon md-icon"></span>
           PKM
         </label>
@@ -1023,7 +1026,7 @@
     <li class="md-nav__item md-nav__item--section md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" data-md-toggle="__nav_7_1" type="checkbox" id="__nav_7_1" checked>
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" data-md-toggle="__nav_8_1" type="checkbox" id="__nav_8_1" checked>
       
       
       
@@ -1046,13 +1049,13 @@
         
       
       
-        <label class="md-nav__link" for="__nav_7_1">
+        <label class="md-nav__link" for="__nav_8_1">
           Type Setting
           <span class="md-nav__icon md-icon"></span>
         </label>
       
       <nav class="md-nav" aria-label="Type Setting" data-md-level="2">
-        <label class="md-nav__title" for="__nav_7_1">
+        <label class="md-nav__title" for="__nav_8_1">
           <span class="md-nav__icon md-icon"></span>
           Type Setting
         </label>
@@ -1064,7 +1067,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../06-personal_knowledge_management/type_setting/TextEditors/" class="md-nav__link">
+      <a href="../../06-personal_knowledge_management/type_setting/TextEditors/" class="md-nav__link">
         Text Editors
       </a>
     </li>
@@ -1078,7 +1081,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../06-personal_knowledge_management/type_setting/MarkDown/" class="md-nav__link">
+      <a href="../../06-personal_knowledge_management/type_setting/MarkDown/" class="md-nav__link">
         MarkDown
       </a>
     </li>
@@ -1092,7 +1095,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../06-personal_knowledge_management/type_setting/CHM/" class="md-nav__link">
+      <a href="../../06-personal_knowledge_management/type_setting/CHM/" class="md-nav__link">
         CHM
       </a>
     </li>
@@ -1106,7 +1109,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../06-personal_knowledge_management/type_setting/EPUB/" class="md-nav__link">
+      <a href="../../06-personal_knowledge_management/type_setting/EPUB/" class="md-nav__link">
         EPUB
       </a>
     </li>
@@ -1120,7 +1123,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../06-personal_knowledge_management/type_setting/API-Docs/" class="md-nav__link">
+      <a href="../../06-personal_knowledge_management/type_setting/API-Docs/" class="md-nav__link">
         API Docs
       </a>
     </li>
@@ -1134,7 +1137,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../06-personal_knowledge_management/type_setting/Diagrams/" class="md-nav__link">
+      <a href="../../06-personal_knowledge_management/type_setting/Diagrams/" class="md-nav__link">
         Diagrams
       </a>
     </li>
@@ -1148,7 +1151,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../06-personal_knowledge_management/type_setting/Fonts/" class="md-nav__link">
+      <a href="../../06-personal_knowledge_management/type_setting/Fonts/" class="md-nav__link">
         Fonts
       </a>
     </li>
@@ -1162,7 +1165,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../06-personal_knowledge_management/type_setting/Convertor/" class="md-nav__link">
+      <a href="../../06-personal_knowledge_management/type_setting/Convertor/" class="md-nav__link">
         Convertor
       </a>
     </li>
@@ -1188,7 +1191,7 @@
     <li class="md-nav__item md-nav__item--section md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" data-md-toggle="__nav_7_2" type="checkbox" id="__nav_7_2" checked>
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" data-md-toggle="__nav_8_2" type="checkbox" id="__nav_8_2" checked>
       
       
       
@@ -1203,13 +1206,13 @@
         
       
       
-        <label class="md-nav__link" for="__nav_7_2">
+        <label class="md-nav__link" for="__nav_8_2">
           Website
           <span class="md-nav__icon md-icon"></span>
         </label>
       
       <nav class="md-nav" aria-label="Website" data-md-level="2">
-        <label class="md-nav__title" for="__nav_7_2">
+        <label class="md-nav__title" for="__nav_8_2">
           <span class="md-nav__icon md-icon"></span>
           Website
         </label>
@@ -1221,7 +1224,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../06-personal_knowledge_management/website/OnlineDocs/" class="md-nav__link">
+      <a href="../../06-personal_knowledge_management/website/OnlineDocs/" class="md-nav__link">
         Online Docs
       </a>
     </li>
@@ -1235,7 +1238,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../06-personal_knowledge_management/type_setting/Sphinx/" class="md-nav__link">
+      <a href="../../06-personal_knowledge_management/type_setting/Sphinx/" class="md-nav__link">
         Sphinx
       </a>
     </li>
@@ -1249,7 +1252,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../06-personal_knowledge_management/website/Jekyll/" class="md-nav__link">
+      <a href="../../06-personal_knowledge_management/website/Jekyll/" class="md-nav__link">
         Jekyll
       </a>
     </li>
@@ -1263,7 +1266,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../06-personal_knowledge_management/website/MkDocs/" class="md-nav__link">
+      <a href="../../06-personal_knowledge_management/website/MkDocs/" class="md-nav__link">
         MkDocs
       </a>
     </li>
@@ -1295,7 +1298,7 @@
     <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" data-md-toggle="__nav_8" type="checkbox" id="__nav_8" checked>
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" data-md-toggle="__nav_9" type="checkbox" id="__nav_9" checked>
       
       
       
@@ -1309,12 +1312,12 @@
         
         
         <div class="md-nav__link md-nav__link--index ">
-          <a href="../../../07-package_management_system/">PMS</a>
+          <a href="../../07-package_management_system/">PMS</a>
           
         </div>
       
       <nav class="md-nav" aria-label="PMS" data-md-level="1">
-        <label class="md-nav__title" for="__nav_8">
+        <label class="md-nav__title" for="__nav_9">
           <span class="md-nav__icon md-icon"></span>
           PMS
         </label>
@@ -1339,7 +1342,7 @@
     <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" data-md-toggle="__nav_9" type="checkbox" id="__nav_9" checked>
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" data-md-toggle="__nav_10" type="checkbox" id="__nav_10" checked>
       
       
       
@@ -1367,16 +1370,16 @@
         
         
         <div class="md-nav__link md-nav__link--index ">
-          <a href="../../../08-network/">Network</a>
+          <a href="../../08-network/">Network</a>
           
-            <label for="__nav_9">
+            <label for="__nav_10">
               <span class="md-nav__icon md-icon"></span>
             </label>
           
         </div>
       
       <nav class="md-nav" aria-label="Network" data-md-level="1">
-        <label class="md-nav__title" for="__nav_9">
+        <label class="md-nav__title" for="__nav_10">
           <span class="md-nav__icon md-icon"></span>
           Network
         </label>
@@ -1390,7 +1393,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../08-network/proxy/" class="md-nav__link">
+      <a href="../../08-network/proxy/" class="md-nav__link">
         Proxy
       </a>
     </li>
@@ -1404,7 +1407,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../08-network/database/" class="md-nav__link">
+      <a href="../../08-network/database/" class="md-nav__link">
         Database
       </a>
     </li>
@@ -1418,7 +1421,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../08-network/download_managers/" class="md-nav__link">
+      <a href="../../08-network/download_managers/" class="md-nav__link">
         Download Managers
       </a>
     </li>
@@ -1432,7 +1435,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../08-network/nas/synology_nas/" class="md-nav__link">
+      <a href="../../08-network/nas/synology_nas/" class="md-nav__link">
         Synology DS128+
       </a>
     </li>
@@ -1446,7 +1449,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../08-network/network_devices/router/" class="md-nav__link">
+      <a href="../../08-network/network_devices/router/" class="md-nav__link">
         Router
       </a>
     </li>
@@ -1460,7 +1463,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../08-network/serial_communication/" class="md-nav__link">
+      <a href="../../08-network/serial_communication/" class="md-nav__link">
         Serial Communication
       </a>
     </li>
@@ -1494,83 +1497,6 @@
     
   
   
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      目录
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#Overview" class="md-nav__link">
-    Overview
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#Services" class="md-nav__link">
-    Services
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#Process" class="md-nav__link">
-    Process
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#Driver" class="md-nav__link">
-    Driver
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#Display" class="md-nav__link">
-    Display
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#Lid" class="md-nav__link">
-    Lid
-  </a>
-  
-    <nav class="md-nav" aria-label="Lid">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#Keyboard_Led" class="md-nav__link">
-    Keyboard Led
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#Themes" class="md-nav__link">
-    Themes
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#Fonts" class="md-nav__link">
-    Fonts
-  </a>
-  
-</li>
-      
-    </ul>
-  
 </nav>
                   </div>
                 </div>
@@ -1581,7 +1507,7 @@
             <article class="md-content__inner md-typeset">
               
                 
-  <a href="https://github.com/cggos/DevOps/edit/master/docs/02-scripting/01_linux_shell_scripting/system.md" title="编辑此页" class="md-content__button md-icon">
+  <a href="https://github.com/cggos/DevOps/edit/master/docs/02-scripting/disk.md" title="编辑此页" class="md-content__button md-icon">
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25Z"/></svg>
   </a>
 
@@ -1590,148 +1516,70 @@
 
 
 
-<h1 id="System__Hardware">System &amp; Hardware<a class="headerlink" href="#System__Hardware" title="Permanent link">&para;</a></h1>
+<h1 id="Disk__Partition">Disk &amp; Partition<a class="headerlink" href="#Disk__Partition" title="Permanent link">&para;</a></h1>
 <hr />
-<h2 id="Overview">Overview<a class="headerlink" href="#Overview" title="Permanent link">&para;</a></h2>
 <ul>
-<li>
-<p><a href="https://linux.cn/article-3794-1.html">systemd 与 sysVinit 彩版对照表</a></p>
-</li>
-<li>
-<p><a href="https://www.cyberciti.biz/tips/top-linux-monitoring-tools.html">30 Linux System Monitoring Tools Every SysAdmin Should Know</a></p>
-</li>
+<li><a href="https://geekpeek.net/resize-filesystem-fdisk-resize2fs/">Resize Partition and Filesystem with fdisk &amp; resize2fs</a></li>
 </ul>
-<div class="highlight"><span class="filename">Bash</span><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>w                             <span class="c1"># 查看活动用户</span>
-<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>id &lt;用户名&gt;                    <span class="c1"># 查看指定用户信息</span>
-<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>last                          <span class="c1"># 查看用户登录日志</span>
-<a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>cut -d: -f1 /etc/passwd       <span class="c1"># 查看系统所有用户</span>
-<a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a>cut -d: -f1 /etc/group        <span class="c1"># 查看系统所有组</span>
-<a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a>crontab -l                    <span class="c1"># 查看当前用户的计划任务</span>
-<a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a>
-<a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a>uptime                 <span class="c1"># 查看系统运行时间、用户数、负载</span>
-<a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a>who –rH                <span class="c1"># 显示当前的运行级别</span>
-<a id="__codelineno-0-10" name="__codelineno-0-10" href="#__codelineno-0-10"></a>uname -a               <span class="c1"># 查看内核/操作系统/CPU信息</span>
-<a id="__codelineno-0-11" name="__codelineno-0-11" href="#__codelineno-0-11"></a>env                    <span class="c1"># 查看环境变量</span>
-<a id="__codelineno-0-12" name="__codelineno-0-12" href="#__codelineno-0-12"></a>hostname               <span class="c1"># 查看计算机名</span>
-<a id="__codelineno-0-13" name="__codelineno-0-13" href="#__codelineno-0-13"></a>
-<a id="__codelineno-0-14" name="__codelineno-0-14" href="#__codelineno-0-14"></a>cat /etc/issue         <span class="c1"># 查看操作系统版本</span>
-<a id="__codelineno-0-15" name="__codelineno-0-15" href="#__codelineno-0-15"></a>cat /proc/bus/input/devices
-<a id="__codelineno-0-16" name="__codelineno-0-16" href="#__codelineno-0-16"></a>cat /proc/interrupts   <span class="c1"># 查看各设备的中断请求(IRQ)</span>
-<a id="__codelineno-0-17" name="__codelineno-0-17" href="#__codelineno-0-17"></a>cat /proc/meminfo      <span class="c1"># 查看内存信息</span>
-<a id="__codelineno-0-18" name="__codelineno-0-18" href="#__codelineno-0-18"></a>cat /proc/cpuinfo      <span class="c1"># 查看CPU信息</span>
-<a id="__codelineno-0-19" name="__codelineno-0-19" href="#__codelineno-0-19"></a>cat /proc/loadavg      <span class="c1"># 查看系统负载</span>
-<a id="__codelineno-0-20" name="__codelineno-0-20" href="#__codelineno-0-20"></a>
-<a id="__codelineno-0-21" name="__codelineno-0-21" href="#__codelineno-0-21"></a>lspci <span class="p">|</span>grep -i <span class="s1">&#39;VGA&#39;</span>   <span class="c1"># 查看显卡信息</span>
-<a id="__codelineno-0-22" name="__codelineno-0-22" href="#__codelineno-0-22"></a>lspci -tv              <span class="c1"># 列出所有PCI设备</span>
-<a id="__codelineno-0-23" name="__codelineno-0-23" href="#__codelineno-0-23"></a>lsusb -tv              <span class="c1"># 列出所有USB设备</span>
-<a id="__codelineno-0-24" name="__codelineno-0-24" href="#__codelineno-0-24"></a>lshw               <span class="c1"># list hardware</span>
-<a id="__codelineno-0-25" name="__codelineno-0-25" href="#__codelineno-0-25"></a>lsmod                  <span class="c1"># 列出加载的内核模块</span>
-<a id="__codelineno-0-26" name="__codelineno-0-26" href="#__codelineno-0-26"></a>
-<a id="__codelineno-0-27" name="__codelineno-0-27" href="#__codelineno-0-27"></a>dmesg <span class="p">|</span> grep -i <span class="s1">&#39;VGA&#39;</span>
-<a id="__codelineno-0-28" name="__codelineno-0-28" href="#__codelineno-0-28"></a>dmesg <span class="p">|</span> grep -i <span class="s1">&#39;cpu&#39;</span>
-<a id="__codelineno-0-29" name="__codelineno-0-29" href="#__codelineno-0-29"></a>dmesg <span class="p">|</span> grep IDE       <span class="c1"># 查看启动时IDE设备检测状况</span>
-<a id="__codelineno-0-30" name="__codelineno-0-30" href="#__codelineno-0-30"></a>
-<a id="__codelineno-0-31" name="__codelineno-0-31" href="#__codelineno-0-31"></a>dmidecode              <span class="c1"># 查看硬件信息，包括bios、cpu、内存等信息</span>
-<a id="__codelineno-0-32" name="__codelineno-0-32" href="#__codelineno-0-32"></a>dmidecode -t processor
-<a id="__codelineno-0-33" name="__codelineno-0-33" href="#__codelineno-0-33"></a>dmidecode <span class="p">|</span> grep -i <span class="s1">&#39;serial number&#39;</span> <span class="c1">#查看主板序列号</span>
+<div class="highlight"><span class="filename">Bash</span><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>mount -t ext4 /dev/sdb1 /data
+<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>mount <span class="p">|</span> column -t             <span class="c1"># 查看挂接的分区状态</span>
+<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>fdisk                         <span class="c1"># manipulate disk partition table</span>
+<a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>swapon -s                     <span class="c1"># 查看所有交换分区</span>
+<a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a>hdparm -i /dev/hda            <span class="c1"># 查看磁盘参数(仅适用于IDE设备)</span>
+<a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a>free -m                       <span class="c1"># Display amount of free and used memory in the system</span>
+<a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a>df -h                         <span class="c1"># report file system disk space usage</span>
+<a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a>lsblk                         <span class="c1"># list block devices</span>
+<a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a>resize2fs                     <span class="c1"># ext2/ext3/ext4 file system resizer</span>
+<a id="__codelineno-0-10" name="__codelineno-0-10" href="#__codelineno-0-10"></a>e2fsck                        <span class="c1"># check a Linux ext2/ext3/ext4 file system</span>
 </code></pre></div>
-<h2 id="Services">Services<a class="headerlink" href="#Services" title="Permanent link">&para;</a></h2>
-<div class="highlight"><span class="filename">Bash</span><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>chkconfig --list              <span class="c1"># 列出所有系统服务</span>
-<a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>chkconfig --list <span class="p">|</span> grep on    <span class="c1"># 列出所有启动的系统服务</span>
-</code></pre></div>
-<h2 id="Process">Process<a class="headerlink" href="#Process" title="Permanent link">&para;</a></h2>
+<p>磁盘格式化分区，并开机挂载：</p>
+<ul>
+<li>查看磁盘
+  <div class="highlight"><span class="filename">Bash</span><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>sudo fdisk -l
+</code></pre></div></li>
+<li>磁盘分区
+  <div class="highlight"><span class="filename">Bash</span><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>sudo fdisk /dev/sdb
+</code></pre></div></li>
+<li>磁盘格式化
+  <div class="highlight"><span class="filename">Bash</span><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>sudo mkfs.ext4 /dev/sdb1
+</code></pre></div></li>
+<li>开机挂载硬盘，在 <strong>/etc/fstab</strong> 中添加
+  <div class="highlight"><span class="filename">Bash</span><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a>/dev/sdb1 /dev_sdb ext4 defaults <span class="m">0</span> <span class="m">0</span>
+</code></pre></div></li>
+<li>建立软链接
+  <div class="highlight"><span class="filename">Bash</span><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a>ln -s /dev_sdb ~/dev_sdb
+</code></pre></div></li>
+</ul>
+<p>修改卷标名：</p>
 <ul>
 <li>
-<p><code>ps aux</code>: show processes for all users, display the process's user/owner and show processes not attached to a terminal</p>
-</li>
-<li>
-<p><code>pstree</code></p>
-</li>
-</ul>
-<h2 id="Driver">Driver<a class="headerlink" href="#Driver" title="Permanent link">&para;</a></h2>
-<div class="highlight"><span class="filename">Bash</span><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>ubuntu-drivers devices        <span class="c1"># 驱动</span>
-</code></pre></div>
-<h2 id="Display">Display<a class="headerlink" href="#Display" title="Permanent link">&para;</a></h2>
-<div class="highlight"><span class="filename">Bash</span><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="c1">#查看显示器标识符：我的是DVI-I-0，在&#39;connected&#39;之前。</span>
-<a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a>xrandr
-<a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a><span class="c1">#查看分辨率的属性：我要看1920x1080的分辨率，在&#39;Modeline&#39;之后。</span>
-<a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a>cvt <span class="m">1920</span> <span class="m">1080</span>
-<a id="__codelineno-3-5" name="__codelineno-3-5" href="#__codelineno-3-5"></a><span class="c1">#创建新分辨率模式：拷贝&#39;Modeline&#39;之后的信息即可。</span>
-<a id="__codelineno-3-6" name="__codelineno-3-6" href="#__codelineno-3-6"></a>sudo xrandr --newmode <span class="s2">&quot;1920x1080&quot;</span> <span class="se">\</span>
-<a id="__codelineno-3-7" name="__codelineno-3-7" href="#__codelineno-3-7"></a>  <span class="m">173</span>.00  <span class="m">1920</span> <span class="m">2048</span> <span class="m">2248</span> <span class="m">2576</span>  <span class="m">1080</span> <span class="m">1083</span> <span class="m">1088</span> <span class="m">1120</span> -hsync +vsync
-<a id="__codelineno-3-8" name="__codelineno-3-8" href="#__codelineno-3-8"></a><span class="c1">#为显示器添加分辨率模式：</span>
-<a id="__codelineno-3-9" name="__codelineno-3-9" href="#__codelineno-3-9"></a>sudo xrandr --addmode DVI-I-0 <span class="s2">&quot;1920x1080&quot;</span>
-<a id="__codelineno-3-10" name="__codelineno-3-10" href="#__codelineno-3-10"></a><span class="c1">#将分辨率模式应用到显示器：</span>
-<a id="__codelineno-3-11" name="__codelineno-3-11" href="#__codelineno-3-11"></a>sudo xrandr --output DVI-I-0 --mode <span class="s2">&quot;1920x1080&quot;</span>
-</code></pre></div>
-<h2 id="Lid">Lid<a class="headerlink" href="#Lid" title="Permanent link">&para;</a></h2>
-<ul>
-<li>Ubuntu 16.04 Ignore Lid<ul>
-<li>/etc/UPower/UPower.conf: <code>IgnoreLid=true</code></li>
-<li><code>sudo service upower restart</code></li>
-</ul>
-</li>
-</ul>
-<h3 id="Keyboard_Led">Keyboard Led<a class="headerlink" href="#Keyboard_Led" title="Permanent link">&para;</a></h3>
-<p>Turn Keyboard Led On/Off<br />
-<div class="highlight"><span class="filename">Bash</span><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="ch">#!/bin/bash -</span>
-<a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a><span class="c1">#===============================================================================</span>
-<a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a><span class="c1">#</span>
-<a id="__codelineno-4-4" name="__codelineno-4-4" href="#__codelineno-4-4"></a><span class="c1">#          FILE: ledctrl</span>
-<a id="__codelineno-4-5" name="__codelineno-4-5" href="#__codelineno-4-5"></a><span class="c1">#</span>
-<a id="__codelineno-4-6" name="__codelineno-4-6" href="#__codelineno-4-6"></a><span class="c1">#         USAGE: ./ledctrl</span>
-<a id="__codelineno-4-7" name="__codelineno-4-7" href="#__codelineno-4-7"></a><span class="c1">#</span>
-<a id="__codelineno-4-8" name="__codelineno-4-8" href="#__codelineno-4-8"></a><span class="c1">#   DESCRIPTION:</span>
-<a id="__codelineno-4-9" name="__codelineno-4-9" href="#__codelineno-4-9"></a><span class="c1">#</span>
-<a id="__codelineno-4-10" name="__codelineno-4-10" href="#__codelineno-4-10"></a><span class="c1">#       OPTIONS: ---</span>
-<a id="__codelineno-4-11" name="__codelineno-4-11" href="#__codelineno-4-11"></a><span class="c1">#  REQUIREMENTS: ---</span>
-<a id="__codelineno-4-12" name="__codelineno-4-12" href="#__codelineno-4-12"></a><span class="c1">#          BUGS: ---</span>
-<a id="__codelineno-4-13" name="__codelineno-4-13" href="#__codelineno-4-13"></a><span class="c1">#         NOTES: ---</span>
-<a id="__codelineno-4-14" name="__codelineno-4-14" href="#__codelineno-4-14"></a><span class="c1">#        AUTHOR: linkscue (scue), linkscue@gmail.com</span>
-<a id="__codelineno-4-15" name="__codelineno-4-15" href="#__codelineno-4-15"></a><span class="c1">#  ORGANIZATION:</span>
-<a id="__codelineno-4-16" name="__codelineno-4-16" href="#__codelineno-4-16"></a><span class="c1">#       CREATED: 2014年02月13日 13时16分55秒 CST</span>
-<a id="__codelineno-4-17" name="__codelineno-4-17" href="#__codelineno-4-17"></a><span class="c1">#      REVISION:  ---</span>
-<a id="__codelineno-4-18" name="__codelineno-4-18" href="#__codelineno-4-18"></a><span class="c1">#===============================================================================</span>
-<a id="__codelineno-4-19" name="__codelineno-4-19" href="#__codelineno-4-19"></a>
-<a id="__codelineno-4-20" name="__codelineno-4-20" href="#__codelineno-4-20"></a><span class="nv">status</span><span class="o">=</span>/tmp/keyboard_led_status
-<a id="__codelineno-4-21" name="__codelineno-4-21" href="#__codelineno-4-21"></a><span class="k">if</span> <span class="o">[[</span> <span class="si">${</span><span class="nv">1</span><span class="si">}</span> <span class="o">==</span> <span class="s2">&quot;on&quot;</span> <span class="o">]]</span> <span class="o">||</span> <span class="o">[[</span> ! -e <span class="si">${</span><span class="nv">status</span><span class="si">}</span> <span class="o">]]</span><span class="p">;</span> <span class="k">then</span>
-<a id="__codelineno-4-22" name="__codelineno-4-22" href="#__codelineno-4-22"></a>    xset led named <span class="s1">&#39;Scroll Lock&#39;</span> <span class="o">&amp;&amp;</span> <span class="nb">echo</span> <span class="s2">&quot;on&quot;</span> &gt; <span class="si">${</span><span class="nv">status</span><span class="si">}</span>
-<a id="__codelineno-4-23" name="__codelineno-4-23" href="#__codelineno-4-23"></a><span class="k">else</span>
-<a id="__codelineno-4-24" name="__codelineno-4-24" href="#__codelineno-4-24"></a>    xset -led named <span class="s1">&#39;Scroll Lock&#39;</span> <span class="o">&amp;&amp;</span> rm -f <span class="si">${</span><span class="nv">status</span><span class="si">}</span>
-<a id="__codelineno-4-25" name="__codelineno-4-25" href="#__codelineno-4-25"></a><span class="k">fi</span>
-</code></pre></div></p>
-<h2 id="Themes">Themes<a class="headerlink" href="#Themes" title="Permanent link">&para;</a></h2>
-<p>1) 下载Unity主题，将其解压到<code>~/.themes</code>目录下<br />
-2) 执行<code>unity-tweak-tool</code>命令打开管理器，选择相应的主题</p>
-<ul>
-<li><a href="https://github.com/dracula/gnome-terminal">Dracula colorscheme for Gnome Terminal</a></li>
-</ul>
-<h2 id="Fonts">Fonts<a class="headerlink" href="#Fonts" title="Permanent link">&para;</a></h2>
-<ul>
-<li>
-<p><a href="https://github.com/powerline/fonts">powerline/fonts</a></p>
-</li>
-<li>
-<p>查看系统中文字体
-  <div class="highlight"><span class="filename">Bash</span><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a>fc-list :lang<span class="o">=</span>zh
+<p>查看卷标
+  <div class="highlight"><span class="filename">Bash</span><pre><span></span><code><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a>sudo blkid
 </code></pre></div></p>
 </li>
 <li>
-<p>ubuntu安装文泉驿字体
-  <div class="highlight"><span class="filename">Bash</span><pre><span></span><code><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a>sudo apt-get install ttf-wqy-microhei  <span class="c1"># 文泉驿-微米黑</span>
-<a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a>sudo apt-get install ttf-wqy-zenhei    <span class="c1"># 文泉驿-正黑</span>
-<a id="__codelineno-6-3" name="__codelineno-6-3" href="#__codelineno-6-3"></a>sudo apt-get install xfonts-wqy        <span class="c1"># 文泉驿-点阵宋体</span>
+<p>umount
+  <div class="highlight"><span class="filename">Bash</span><pre><span></span><code><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a>sudo umount /dev/sdc1
 </code></pre></div></p>
 </li>
 <li>
-<p>WPS for Linux（ubuntu）字体配置(字体缺失解决办法)</p>
-<ol>
-<li>Dowload <strong>wps_symbol_fonts.zip</strong>(国内下载地址：<a href="https://pan.baidu.com/s/1eS6xIzo">https://pan.baidu.com/s/1eS6xIzo</a>)</li>
-<li><code>sudo cp * /usr/share/fonts</code></li>
-<li>生成字体的索引信息: <code>sudo mkfontscale &amp; sudo mkfontdir</code></li>
-<li>更新字体缓存: <code>sudo fc-cache</code></li>
-<li>重启wps</li>
-</ol>
+<p>修改卷标名
+  <div class="highlight"><span class="filename">Bash</span><pre><span></span><code><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a>sudo e2label /dev/sdc1 <span class="s2">&quot;udisk_cg&quot;</span>     <span class="c1"># ext2 or ext3</span>
+<a id="__codelineno-8-2" name="__codelineno-8-2" href="#__codelineno-8-2"></a>sudo exfatlabel /dev/sdc1 <span class="s2">&quot;udisk_cg&quot;</span>  <span class="c1"># exFat</span>
+<a id="__codelineno-8-3" name="__codelineno-8-3" href="#__codelineno-8-3"></a>sudo ntfslabel /dev/sdc1 <span class="s2">&quot;udisk_cg&quot;</span>   <span class="c1"># NTFS</span>
+</code></pre></div></p>
+</li>
+<li>
+<p>solve problem of "g++: internal compiler error: Killed (program cc1plus)"
+  <div class="highlight"><span class="filename">Bash</span><pre><span></span><code><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a><span class="c1"># create swap space</span>
+<a id="__codelineno-9-2" name="__codelineno-9-2" href="#__codelineno-9-2"></a>sudo dd <span class="k">if</span><span class="o">=</span>/dev/zero <span class="nv">of</span><span class="o">=</span>/swapfile <span class="nv">bs</span><span class="o">=</span>64M <span class="nv">count</span><span class="o">=</span><span class="m">16</span>
+<a id="__codelineno-9-3" name="__codelineno-9-3" href="#__codelineno-9-3"></a>sudo mkswap /swapfile
+<a id="__codelineno-9-4" name="__codelineno-9-4" href="#__codelineno-9-4"></a>sudo swapon /swapfile
+<a id="__codelineno-9-5" name="__codelineno-9-5" href="#__codelineno-9-5"></a>
+<a id="__codelineno-9-6" name="__codelineno-9-6" href="#__codelineno-9-6"></a><span class="c1"># shut the swap space down</span>
+<a id="__codelineno-9-7" name="__codelineno-9-7" href="#__codelineno-9-7"></a>sudo swapoff /swapfile
+<a id="__codelineno-9-8" name="__codelineno-9-8" href="#__codelineno-9-8"></a>sudo rm /swapfile
+</code></pre></div></p>
 </li>
 </ul>
 
@@ -1754,7 +1602,7 @@
     <nav class="md-footer__inner md-grid" aria-label="页脚" >
       
         
-        <a href="../" class="md-footer__link md-footer__link--prev" aria-label="上一页: Overview" rel="prev">
+        <a href="../grub_bios/" class="md-footer__link md-footer__link--prev" aria-label="上一页: Grub &amp; BIOS" rel="prev">
           <div class="md-footer__button md-icon">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
           </div>
@@ -1763,20 +1611,20 @@
               <span class="md-footer__direction">
                 上一页
               </span>
-              Overview
+              Grub & BIOS
             </div>
           </div>
         </a>
       
       
         
-        <a href="../grub_bios/" class="md-footer__link md-footer__link--next" aria-label="下一页: Grub &amp; BIOS" rel="next">
+        <a href="../file/" class="md-footer__link md-footer__link--next" aria-label="下一页: File &amp; File Systems" rel="next">
           <div class="md-footer__title">
             <div class="md-ellipsis">
               <span class="md-footer__direction">
                 下一页
               </span>
-              Grub & BIOS
+              File & File Systems
             </div>
           </div>
           <div class="md-footer__button md-icon">
@@ -1822,10 +1670,10 @@
     <div class="md-dialog" data-md-component="dialog">
       <div class="md-dialog__inner md-typeset"></div>
     </div>
-    <script id="__config" type="application/json">{"base": "../../..", "features": ["navigation.instant", "navigation.tracking", "navigation.tabs", "navigation.sections", "navigation.expand", "navigation.prune", "navigation.indexes", "navigation.top", "toc.follow", "content.code.annotate"], "search": "../../../assets/javascripts/workers/search.b97dbffb.min.js", "translations": {"clipboard.copied": "\u5df2\u590d\u5236", "clipboard.copy": "\u590d\u5236", "search.config.lang": "ja", "search.config.pipeline": "trimmer, stemmer", "search.config.separator": "[\\s\\-\uff0c\u3002]+", "search.placeholder": "\u641c\u7d22", "search.result.more.one": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.more.other": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 # \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.none": "\u6ca1\u6709\u627e\u5230\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.one": "\u627e\u5230 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.other": "# \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.placeholder": "\u952e\u5165\u4ee5\u5f00\u59cb\u641c\u7d22", "search.result.term.missing": "\u7f3a\u5c11", "select.version.title": "\u9009\u62e9\u5f53\u524d\u7248\u672c"}}</script>
+    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.instant", "navigation.tracking", "navigation.tabs", "navigation.sections", "navigation.expand", "navigation.prune", "navigation.indexes", "navigation.top", "toc.follow", "content.code.annotate"], "search": "../../assets/javascripts/workers/search.b97dbffb.min.js", "translations": {"clipboard.copied": "\u5df2\u590d\u5236", "clipboard.copy": "\u590d\u5236", "search.config.lang": "ja", "search.config.pipeline": "trimmer, stemmer", "search.config.separator": "[\\s\\-\uff0c\u3002]+", "search.placeholder": "\u641c\u7d22", "search.result.more.one": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.more.other": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 # \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.none": "\u6ca1\u6709\u627e\u5230\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.one": "\u627e\u5230 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.other": "# \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.placeholder": "\u952e\u5165\u4ee5\u5f00\u59cb\u641c\u7d22", "search.result.term.missing": "\u7f3a\u5c11", "select.version.title": "\u9009\u62e9\u5f53\u524d\u7248\u672c"}}</script>
     
     
-      <script src="../../../assets/javascripts/bundle.6c7ad80a.min.js"></script>
+      <script src="../../assets/javascripts/bundle.6c7ad80a.min.js"></script>
       
     
   </body>
