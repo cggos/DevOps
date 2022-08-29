@@ -1,5 +1,7 @@
 # Scripting
 
+* [Command line reference – Database and OS scripting](https://ss64.com/)
+
 ---
 
 ## Linux Shell Scripting

@@ -7,7 +7,6 @@
 ## Types
 
 * [OpenPKG](http://www.openpkg.org/): Cross-Platform Multiple-Instance Unix Software Packaging
-
 * [Snaps](https://snapcraft.io/) are containerised software packages that are simple to create and install
 * [Conan](https://conan.io/): the C / C++ Package Manager for Developers
 * [npm](https://www.npmjs.com/) is the package manager for JavaScript and the world’s largest software registry
