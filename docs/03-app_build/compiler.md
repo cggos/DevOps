@@ -2,8 +2,6 @@
 
 -----
 
-[TOC]
-
 ## GCC/G++
 
 * [How to Install the Latest GCC on Windows](https://preshing.com/20141108/how-to-install-the-latest-gcc-on-windows/)
@@ -11,8 +9,11 @@
 ### gcc/g++ Options
 
 * `-dumpmachine`: print **the compiler's target machine** (for example, arm-linux-gnueabihf)
+
 * `-dM -E`:
     - `gcc -dM -E - < /dev/null`: 显示所有预定义的宏
+
+* 编译属性 `__attribute__`
 
 ## Faster Compilers
 
