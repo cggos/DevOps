@@ -1644,32 +1644,23 @@
 
 <h1 id="Compiler">Compiler<a class="headerlink" href="#Compiler" title="Permanent link">&para;</a></h1>
 <hr />
-<div class="toc">
-<ul>
-<li><a href="#Compiler">Compiler</a><ul>
-<li><a href="#GCCG">GCC/G++</a><ul>
-<li><a href="#gccg_Options">gcc/g++ Options</a></li>
-</ul>
-</li>
-<li><a href="#Faster_Compilers">Faster Compilers</a><ul>
-<li><a href="#ccache_a_fast_CC_compiler_cache">ccache: a fast C/C++ compiler cache</a></li>
-<li><a href="#distcc_a_fast_free_distributed_CC_compiler">distcc: a fast, free distributed C/C++ compiler</a></li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-</div>
 <h2 id="GCCG">GCC/G++<a class="headerlink" href="#GCCG" title="Permanent link">&para;</a></h2>
 <ul>
 <li><a href="https://preshing.com/20141108/how-to-install-the-latest-gcc-on-windows/">How to Install the Latest GCC on Windows</a></li>
 </ul>
 <h3 id="gccg_Options">gcc/g++ Options<a class="headerlink" href="#gccg_Options" title="Permanent link">&para;</a></h3>
 <ul>
-<li><code>-dumpmachine</code>: print <strong>the compiler's target machine</strong> (for example, arm-linux-gnueabihf)</li>
-<li><code>-dM -E</code>:<ul>
+<li>
+<p><code>-dumpmachine</code>: print <strong>the compiler's target machine</strong> (for example, arm-linux-gnueabihf)</p>
+</li>
+<li>
+<p><code>-dM -E</code>:</p>
+<ul>
 <li><code>gcc -dM -E - &lt; /dev/null</code>: 显示所有预定义的宏</li>
 </ul>
+</li>
+<li>
+<p>编译属性 <code>__attribute__</code></p>
 </li>
 </ul>
 <h2 id="Faster_Compilers">Faster Compilers<a class="headerlink" href="#Faster_Compilers" title="Permanent link">&para;</a></h2>
