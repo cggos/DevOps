@@ -911,9 +911,29 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#Basic" class="md-nav__link">
-    Basic
+  <a href="#Overview" class="md-nav__link">
+    Overview
   </a>
+  
+    <nav class="md-nav" aria-label="Overview">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#Image_vs_Container" class="md-nav__link">
+    Image vs Container
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#Tutorial" class="md-nav__link">
+    Tutorial
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -925,8 +945,55 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#Docker_with_ROS" class="md-nav__link">
-    Docker with ROS
+  <a href="#Usage" class="md-nav__link">
+    Usage
+  </a>
+  
+    <nav class="md-nav" aria-label="Usage">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#Image" class="md-nav__link">
+    Image
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#Container" class="md-nav__link">
+    Container
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#with_ROS" class="md-nav__link">
+    with ROS
+  </a>
+  
+    <nav class="md-nav" aria-label="with ROS">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#Network" class="md-nav__link">
+    Network
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#Docker_Hub" class="md-nav__link">
+    Docker Hub
   </a>
   
 </li>
@@ -1549,9 +1616,29 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#Basic" class="md-nav__link">
-    Basic
+  <a href="#Overview" class="md-nav__link">
+    Overview
   </a>
+  
+    <nav class="md-nav" aria-label="Overview">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#Image_vs_Container" class="md-nav__link">
+    Image vs Container
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#Tutorial" class="md-nav__link">
+    Tutorial
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -1563,8 +1650,55 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#Docker_with_ROS" class="md-nav__link">
-    Docker with ROS
+  <a href="#Usage" class="md-nav__link">
+    Usage
+  </a>
+  
+    <nav class="md-nav" aria-label="Usage">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#Image" class="md-nav__link">
+    Image
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#Container" class="md-nav__link">
+    Container
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#with_ROS" class="md-nav__link">
+    with ROS
+  </a>
+  
+    <nav class="md-nav" aria-label="with ROS">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#Network" class="md-nav__link">
+    Network
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#Docker_Hub" class="md-nav__link">
+    Docker Hub
   </a>
   
 </li>
@@ -1592,13 +1726,29 @@
 
 <h1 id="Docker">Docker<a class="headerlink" href="#Docker" title="Permanent link">&para;</a></h1>
 <ul>
-<li><a href="https://www.docker.com/">Docker</a>: Securely build, share and run any application, anywhere</li>
+<li><a href="https://docker.com/">Docker</a>: Securely build, share and run any application, anywhere</li>
 <li><a href="https://hub.docker.com/">Docker Hub</a>: the world's easiest way to create, manage, and deliver your teams' container applications</li>
-<li><a href="https://www.runoob.com/docker/docker-tutorial.html">Docker 菜鸟教程</a></li>
-<li><a href="http://www.docker.org.cn/">docker中文社区</a></li>
+<li><a href="https://docker.org.cn/">docker中文社区</a></li>
 </ul>
 <hr />
+<h2 id="Overview">Overview<a class="headerlink" href="#Overview" title="Permanent link">&para;</a></h2>
 <ul>
+<li>the images and containers are stored by Docker in <code>/var/lib/docker</code> by default</li>
+</ul>
+<h3 id="Image_vs_Container">Image vs Container<a class="headerlink" href="#Image_vs_Container" title="Permanent link">&para;</a></h3>
+<ul>
+<li>
+<p>镜像 (Images): 可以认为是超级轻量级的虚拟机的快照。镜像会有自己的唯一ID，名字和标签，比如ubuntu, 比如ubuntu:18.04等。通常都是在已有的镜像（多数是Linux操作系统的镜像）的基础上构建自己的具有新功能的镜像。</p>
+</li>
+<li>
+<p>容器 (Containers): 可以认为是超级轻量级的虚拟机，是镜像运行起来所处的可读写的状态。容器里面可以安装、运行程序，还可以把安装好的程序存储起来获得新的镜像。与虚拟机很大的不同在于，一个容器通常只运行一个程序。在Docker中，应用程序和数据文件是分开的，因此可以在不影响数据的情况下快速升级代码或系统。</p>
+</li>
+</ul>
+<h3 id="Tutorial">Tutorial<a class="headerlink" href="#Tutorial" title="Permanent link">&para;</a></h3>
+<ul>
+<li>
+<p><a href="https://www.runoob.com/docker/docker-tutorial.html">Docker 菜鸟教程</a></p>
+</li>
 <li>
 <p><a href="https://blog.csdn.net/woodcorpse/article/details/80601899">Docker的基本使用-Ubuntu18.04</a></p>
 </li>
@@ -1621,88 +1771,171 @@
 <p><a href="https://kusemanohar.info/2018/10/03/docker-for-computer-vision-researchers/">Docker for Computer Vision Researchers</a> !!!</p>
 </li>
 </ul>
-<div class="highlight"><span class="filename">Text Only</span><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>sudo docker run \
-<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>  --name=ros-kalibr \
-<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>  -it --rm -e DISPLAY=$DISPLAY \
-<a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>  -v /tmp/.X11-unix:/tmp/.X11-unix davvdg/ros-kalibr \
-<a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a>  /bin/bash
-</code></pre></div>
-<hr />
-<h2 id="Basic">Basic<a class="headerlink" href="#Basic" title="Permanent link">&para;</a></h2>
-<ul>
-<li>
-<p>hello-world
-  <div class="highlight"><span class="filename">Bash</span><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>sudo docker run hello-world
-</code></pre></div></p>
-</li>
-<li>
-<p>the images and containers are stored by Docker in <code>/var/lib/docker</code> by default</p>
-</li>
-<li>
-<p>view containers
-  <div class="highlight"><span class="filename">Bash</span><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>docker ps -a
-</code></pre></div></p>
-</li>
-<li>
-<p>run
-  <div class="highlight"><span class="filename">Bash</span><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>docker run -it &lt;image-name&gt;
-</code></pre></div></p>
-</li>
-<li>
-<p>we can also open another terminal for a running container with the following command
-  <div class="highlight"><span class="filename">Bash</span><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a>docker <span class="nb">exec</span> -it &lt;container-name/ID&gt; bash
-</code></pre></div>
-  or
-  <div class="highlight"><span class="filename">Bash</span><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a>docker attach &lt;container-name/ID&gt;
-</code></pre></div></p>
-</li>
-<li>
-<p>restart container
-  <div class="highlight"><span class="filename">Bash</span><pre><span></span><code><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a>docker restart &lt;container-ID&gt;
-<a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a>
-<a id="__codelineno-6-3" name="__codelineno-6-3" href="#__codelineno-6-3"></a><span class="c1"># restart container and enter</span>
-<a id="__codelineno-6-4" name="__codelineno-6-4" href="#__codelineno-6-4"></a>docker start -i &lt;container-ID&gt;
-</code></pre></div></p>
-</li>
-<li>
-<p>docker cp
-  <div class="highlight"><span class="filename">Bash</span><pre><span></span><code><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a><span class="c1"># copy a file from host to container</span>
-<a id="__codelineno-7-2" name="__codelineno-7-2" href="#__codelineno-7-2"></a>docker cp foo.txt 72ca2488b353:/foo.txt
-<a id="__codelineno-7-3" name="__codelineno-7-3" href="#__codelineno-7-3"></a>
-<a id="__codelineno-7-4" name="__codelineno-7-4" href="#__codelineno-7-4"></a><span class="c1"># copy a file from Docker container to host</span>
-<a id="__codelineno-7-5" name="__codelineno-7-5" href="#__codelineno-7-5"></a>docker cp 72ca2488b353:/foo.txt foo.txt
-</code></pre></div></p>
-</li>
-</ul>
 <h2 id="Install">Install<a class="headerlink" href="#Install" title="Permanent link">&para;</a></h2>
 <ul>
 <li><a href="https://docs.docker.com/install/linux/docker-ce/ubuntu/">Get Docker Engine - Community for Ubuntu</a></li>
 </ul>
-<h2 id="Docker_with_ROS">Docker with ROS<a class="headerlink" href="#Docker_with_ROS" title="Permanent link">&para;</a></h2>
+<h2 id="Usage">Usage<a class="headerlink" href="#Usage" title="Permanent link">&para;</a></h2>
+<div class="highlight"><span class="filename">Bash</span><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>sudo docker info
+</code></pre></div>
+<h3 id="Image">Image<a class="headerlink" href="#Image" title="Permanent link">&para;</a></h3>
 <ul>
 <li>
-<p>ros
-  <div class="highlight"><span class="filename">Bash</span><pre><span></span><code><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a>docker pull ros
-<a id="__codelineno-8-2" name="__codelineno-8-2" href="#__codelineno-8-2"></a><span class="c1"># or</span>
-<a id="__codelineno-8-3" name="__codelineno-8-3" href="#__codelineno-8-3"></a>docker pull ros:kinetic-robot
-<a id="__codelineno-8-4" name="__codelineno-8-4" href="#__codelineno-8-4"></a>
-<a id="__codelineno-8-5" name="__codelineno-8-5" href="#__codelineno-8-5"></a><span class="c1"># run ros</span>
-<a id="__codelineno-8-6" name="__codelineno-8-6" href="#__codelineno-8-6"></a>docker run -it ros
+<p>view
+  <div class="highlight"><span class="filename">Bash</span><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>sudo docker images
+</code></pre></div></p>
+</li>
+<li>
+<p>get
+  <div class="highlight"><span class="filename">Bash</span><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>sudo docker pull ros
+<a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a>
+<a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a>sudo docker pull ros:kinetic-robot
+</code></pre></div></p>
+</li>
+<li>
+<p>create
+  <div class="highlight"><span class="filename">Bash</span><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>sudo docker build -t &lt;REPO-NAME:TAG&gt;
+<a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a>
+<a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a>sudo docker build -t &lt;REPO-NAME:TAG&gt; -f &lt;path-to-Dockerfile&gt; .
+</code></pre></div></p>
+</li>
+<li>
+<p>modify
+  <div class="highlight"><span class="filename">Bash</span><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a>sudo docker tag &lt;IMAGE-ID&gt; &lt;REPO-NAME&gt;:&lt;TAG&gt;
+</code></pre></div></p>
+</li>
+<li>
+<p>delete
+  <div class="highlight"><span class="filename">Bash</span><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a>sudo docker rmi &lt;REPO-NAME&gt;
+</code></pre></div></p>
+</li>
+<li>
+<p>get
+  <div class="highlight"><span class="filename">Bash</span><pre><span></span><code><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a>sudo docker search ubuntu
+<a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a>
+<a id="__codelineno-6-3" name="__codelineno-6-3" href="#__codelineno-6-3"></a>sudo docker pull ubuntu
+</code></pre></div></p>
+</li>
+<li>
+<p>run
+  <div class="highlight"><span class="filename">Bash</span><pre><span></span><code><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a>sudo docker run --help
+<a id="__codelineno-7-2" name="__codelineno-7-2" href="#__codelineno-7-2"></a>
+<a id="__codelineno-7-3" name="__codelineno-7-3" href="#__codelineno-7-3"></a><span class="c1"># e.g.</span>
+<a id="__codelineno-7-4" name="__codelineno-7-4" href="#__codelineno-7-4"></a>sudo docker run hello-world
+<a id="__codelineno-7-5" name="__codelineno-7-5" href="#__codelineno-7-5"></a>
+<a id="__codelineno-7-6" name="__codelineno-7-6" href="#__codelineno-7-6"></a>sudo docker run -it &lt;REPO-NAME:TAG&gt; /bin/bash
+<a id="__codelineno-7-7" name="__codelineno-7-7" href="#__codelineno-7-7"></a><span class="c1"># default TAG: latest</span>
+<a id="__codelineno-7-8" name="__codelineno-7-8" href="#__codelineno-7-8"></a>sudo docker run -it &lt;REPO-NAME&gt; /bin/bash
+<a id="__codelineno-7-9" name="__codelineno-7-9" href="#__codelineno-7-9"></a><span class="c1"># e.g.</span>
+<a id="__codelineno-7-10" name="__codelineno-7-10" href="#__codelineno-7-10"></a>sudo docker run -it ubuntu:15.10 /bin/bash
+</code></pre></div></p>
+<ul>
+<li>-i: 交互式操作</li>
+<li>-t: 终端</li>
+<li>ubuntu:15.10: 这是指用 ubuntu 15.10 版本镜像为基础来启动容器</li>
+<li>/bin/bash：放在镜像名后的是命令，这里我们希望有个交互式 Shell，因此用的是 /bin/bash</li>
+</ul>
+</li>
+</ul>
+<h3 id="Container">Container<a class="headerlink" href="#Container" title="Permanent link">&para;</a></h3>
+<ul>
+<li>
+<p>view
+  <div class="highlight"><span class="filename">Bash</span><pre><span></span><code><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a> sudo docker ps -a
+</code></pre></div></p>
+</li>
+<li>
+<p>start &amp; stop container
+  <div class="highlight"><span class="filename">Bash</span><pre><span></span><code><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a><span class="c1"># start container and enter</span>
+<a id="__codelineno-9-2" name="__codelineno-9-2" href="#__codelineno-9-2"></a>docker start -i &lt;Container-ID&gt;
+<a id="__codelineno-9-3" name="__codelineno-9-3" href="#__codelineno-9-3"></a>
+<a id="__codelineno-9-4" name="__codelineno-9-4" href="#__codelineno-9-4"></a><span class="c1"># restart</span>
+<a id="__codelineno-9-5" name="__codelineno-9-5" href="#__codelineno-9-5"></a>docker restart &lt;Container-ID&gt;
+<a id="__codelineno-9-6" name="__codelineno-9-6" href="#__codelineno-9-6"></a>
+<a id="__codelineno-9-7" name="__codelineno-9-7" href="#__codelineno-9-7"></a><span class="c1"># stop</span>
+<a id="__codelineno-9-8" name="__codelineno-9-8" href="#__codelineno-9-8"></a>docker stop &lt;Container-ID&gt;
+</code></pre></div></p>
+</li>
+<li>
+<p>we can also open another terminal for a running container with the following command
+  <div class="highlight"><span class="filename">Bash</span><pre><span></span><code><a id="__codelineno-10-1" name="__codelineno-10-1" href="#__codelineno-10-1"></a>docker <span class="nb">exec</span> -it &lt;Container-Name/ID&gt; bash
+</code></pre></div>
+  or
+  <div class="highlight"><span class="filename">Bash</span><pre><span></span><code><a id="__codelineno-11-1" name="__codelineno-11-1" href="#__codelineno-11-1"></a>docker attach &lt;Container-Name/ID&gt;
+</code></pre></div></p>
+</li>
+<li>
+<p>commit to update IMAGE
+  <div class="highlight"><span class="filename">Bash</span><pre><span></span><code><a id="__codelineno-12-1" name="__codelineno-12-1" href="#__codelineno-12-1"></a>sudo docker commit <span class="o">[</span>-m<span class="o">=</span><span class="s2">&quot;update dataset&quot;</span> -a<span class="o">=</span><span class="s2">&quot;cggos&quot;</span><span class="o">]</span> &lt;Container-ID&gt; &lt;REPO-NAME:TAG&gt;
+</code></pre></div></p>
+</li>
+<li>
+<p>history
+  <div class="highlight"><span class="filename">Bash</span><pre><span></span><code><a id="__codelineno-13-1" name="__codelineno-13-1" href="#__codelineno-13-1"></a>sudo docker <span class="nb">history</span> &lt;IMAGE-ID&gt;
+</code></pre></div></p>
+</li>
+<li>
+<p>delete
+  <div class="highlight"><span class="filename">Bash</span><pre><span></span><code><a id="__codelineno-14-1" name="__codelineno-14-1" href="#__codelineno-14-1"></a>sudo docker rm &lt;container-name/ID&gt;
+<a id="__codelineno-14-2" name="__codelineno-14-2" href="#__codelineno-14-2"></a>
+<a id="__codelineno-14-3" name="__codelineno-14-3" href="#__codelineno-14-3"></a><span class="c1"># stop all containers</span>
+<a id="__codelineno-14-4" name="__codelineno-14-4" href="#__codelineno-14-4"></a>sudo docker container stop <span class="k">$(</span>docker container ls -aq<span class="k">)</span>
+<a id="__codelineno-14-5" name="__codelineno-14-5" href="#__codelineno-14-5"></a><span class="c1"># remove all stopped containers</span>
+<a id="__codelineno-14-6" name="__codelineno-14-6" href="#__codelineno-14-6"></a>sudo docker container prune
+</code></pre></div></p>
+</li>
+<li>
+<p>copy file
+  <div class="highlight"><span class="filename">Bash</span><pre><span></span><code><a id="__codelineno-15-1" name="__codelineno-15-1" href="#__codelineno-15-1"></a><span class="c1"># host to container</span>
+<a id="__codelineno-15-2" name="__codelineno-15-2" href="#__codelineno-15-2"></a>docker cp foo.txt &lt;Container-ID&gt;:/foo.txt
+<a id="__codelineno-15-3" name="__codelineno-15-3" href="#__codelineno-15-3"></a>
+<a id="__codelineno-15-4" name="__codelineno-15-4" href="#__codelineno-15-4"></a><span class="c1"># container to host</span>
+<a id="__codelineno-15-5" name="__codelineno-15-5" href="#__codelineno-15-5"></a>docker cp &lt;Container-ID&gt;:/foo.txt foo.txt
+</code></pre></div></p>
+</li>
+</ul>
+<h2 id="with_ROS">with ROS<a class="headerlink" href="#with_ROS" title="Permanent link">&para;</a></h2>
+<ul>
+<li>
+<p>ros-kalibr
+  <div class="highlight"><span class="filename">Bash</span><pre><span></span><code><a id="__codelineno-16-1" name="__codelineno-16-1" href="#__codelineno-16-1"></a>sudo docker run <span class="se">\</span>
+<a id="__codelineno-16-2" name="__codelineno-16-2" href="#__codelineno-16-2"></a>  --name<span class="o">=</span>ros-kalibr <span class="se">\</span>
+<a id="__codelineno-16-3" name="__codelineno-16-3" href="#__codelineno-16-3"></a>  -it --rm -e <span class="nv">DISPLAY</span><span class="o">=</span><span class="nv">$DISPLAY</span> <span class="se">\</span>
+<a id="__codelineno-16-4" name="__codelineno-16-4" href="#__codelineno-16-4"></a>  -v /tmp/.X11-unix:/tmp/.X11-unix davvdg/ros-kalibr <span class="se">\</span>
+<a id="__codelineno-16-5" name="__codelineno-16-5" href="#__codelineno-16-5"></a>  /bin/bash
 </code></pre></div></p>
 </li>
 <li>
 <p><a href="https://github.com/HKUST-Aerial-Robotics/VINS-kidnap">HKUST-Aerial-Robotics/VINS-kidnap</a>
-  <div class="highlight"><span class="filename">Bash</span><pre><span></span><code><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a>docker run --runtime<span class="o">=</span>nvidia -it <span class="se">\</span>
-<a id="__codelineno-9-2" name="__codelineno-9-2" href="#__codelineno-9-2"></a>        --add-host <span class="sb">`</span>hostname<span class="sb">`</span>:172.17.0.1 <span class="se">\</span>
-<a id="__codelineno-9-3" name="__codelineno-9-3" href="#__codelineno-9-3"></a>        --env <span class="nv">ROS_MASTER_URI</span><span class="o">=</span>http://<span class="sb">`</span>hostname<span class="sb">`</span>:11311/ <span class="se">\</span>
-<a id="__codelineno-9-4" name="__codelineno-9-4" href="#__codelineno-9-4"></a>        --env <span class="nv">ROS_IP</span><span class="o">=</span><span class="m">172</span>.17.0.2 <span class="se">\</span>
-<a id="__codelineno-9-5" name="__codelineno-9-5" href="#__codelineno-9-5"></a>        --env <span class="nv">CUDA_VISIBLE_DEVICES</span><span class="o">=</span><span class="m">0</span> <span class="se">\</span>
-<a id="__codelineno-9-6" name="__codelineno-9-6" href="#__codelineno-9-6"></a>        --hostname happy_go <span class="se">\</span>
-<a id="__codelineno-9-7" name="__codelineno-9-7" href="#__codelineno-9-7"></a>        --name happy_go  <span class="se">\</span>
-<a id="__codelineno-9-8" name="__codelineno-9-8" href="#__codelineno-9-8"></a>        mpkuse/kusevisionkit:vins-kidnap bash
+  <div class="highlight"><span class="filename">Bash</span><pre><span></span><code><a id="__codelineno-17-1" name="__codelineno-17-1" href="#__codelineno-17-1"></a>docker run --runtime<span class="o">=</span>nvidia -it <span class="se">\</span>
+<a id="__codelineno-17-2" name="__codelineno-17-2" href="#__codelineno-17-2"></a>        --add-host <span class="sb">`</span>hostname<span class="sb">`</span>:172.17.0.1 <span class="se">\</span>
+<a id="__codelineno-17-3" name="__codelineno-17-3" href="#__codelineno-17-3"></a>        --env <span class="nv">ROS_MASTER_URI</span><span class="o">=</span>http://<span class="sb">`</span>hostname<span class="sb">`</span>:11311/ <span class="se">\</span>
+<a id="__codelineno-17-4" name="__codelineno-17-4" href="#__codelineno-17-4"></a>        --env <span class="nv">ROS_IP</span><span class="o">=</span><span class="m">172</span>.17.0.2 <span class="se">\</span>
+<a id="__codelineno-17-5" name="__codelineno-17-5" href="#__codelineno-17-5"></a>        --env <span class="nv">CUDA_VISIBLE_DEVICES</span><span class="o">=</span><span class="m">0</span> <span class="se">\</span>
+<a id="__codelineno-17-6" name="__codelineno-17-6" href="#__codelineno-17-6"></a>        --hostname happy_go <span class="se">\</span>
+<a id="__codelineno-17-7" name="__codelineno-17-7" href="#__codelineno-17-7"></a>        --name happy_go  <span class="se">\</span>
+<a id="__codelineno-17-8" name="__codelineno-17-8" href="#__codelineno-17-8"></a>        mpkuse/kusevisionkit:vins-kidnap bash
 </code></pre></div></p>
 </li>
 </ul>
+<h3 id="Network">Network<a class="headerlink" href="#Network" title="Permanent link">&para;</a></h3>
+<p>params</p>
+<div class="highlight"><span class="filename">Bash</span><pre><span></span><code><a id="__codelineno-18-1" name="__codelineno-18-1" href="#__codelineno-18-1"></a>--net<span class="o">=</span>host
+<a id="__codelineno-18-2" name="__codelineno-18-2" href="#__codelineno-18-2"></a>
+<a id="__codelineno-18-3" name="__codelineno-18-3" href="#__codelineno-18-3"></a><span class="c1"># or</span>
+<a id="__codelineno-18-4" name="__codelineno-18-4" href="#__codelineno-18-4"></a>--add-host <span class="sb">`</span>hostname<span class="sb">`</span>:172.17.0.1 <span class="se">\</span>
+<a id="__codelineno-18-5" name="__codelineno-18-5" href="#__codelineno-18-5"></a>--env <span class="nv">ROS_MASTER_URI</span><span class="o">=</span>http://<span class="sb">`</span>hostname<span class="sb">`</span>:11311/ <span class="se">\</span>
+<a id="__codelineno-18-6" name="__codelineno-18-6" href="#__codelineno-18-6"></a>--env <span class="nv">ROS_IP</span><span class="o">=</span><span class="m">172</span>.17.0.2 <span class="se">\</span>
+<a id="__codelineno-18-7" name="__codelineno-18-7" href="#__codelineno-18-7"></a>--hostname happy_go <span class="se">\</span>
+<a id="__codelineno-18-8" name="__codelineno-18-8" href="#__codelineno-18-8"></a>--name happy_go  <span class="se">\</span>
+</code></pre></div>
+<h2 id="Docker_Hub">Docker Hub<a class="headerlink" href="#Docker_Hub" title="Permanent link">&para;</a></h2>
+<div class="highlight"><span class="filename">Bash</span><pre><span></span><code><a id="__codelineno-19-1" name="__codelineno-19-1" href="#__codelineno-19-1"></a>sudo docker login
+<a id="__codelineno-19-2" name="__codelineno-19-2" href="#__codelineno-19-2"></a>
+<a id="__codelineno-19-3" name="__codelineno-19-3" href="#__codelineno-19-3"></a>sudo docker inspect &lt;USER/REPO-NAME:TAG&gt;
+<a id="__codelineno-19-4" name="__codelineno-19-4" href="#__codelineno-19-4"></a>
+<a id="__codelineno-19-5" name="__codelineno-19-5" href="#__codelineno-19-5"></a>sudo docker push &lt;USER/REPO-NAME:TAG&gt;
+</code></pre></div>
 
               
             </article>
