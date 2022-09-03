@@ -855,16 +855,43 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#GDB" class="md-nav__link">
-    GDB
+  <a href="#Overview" class="md-nav__link">
+    Overview
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#Bug_Manager" class="md-nav__link">
-    Bug Manager
+  <a href="#GDB" class="md-nav__link">
+    GDB
   </a>
+  
+    <nav class="md-nav" aria-label="GDB">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#Build" class="md-nav__link">
+    Build
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#Start_GDB" class="md-nav__link">
+    Start GDB
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#Usage" class="md-nav__link">
+    Usage
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -876,15 +903,8 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#ROS_Debug" class="md-nav__link">
-    ROS Debug
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#Others" class="md-nav__link">
-    Others
+  <a href="#Bug_Manager" class="md-nav__link">
+    Bug Manager
   </a>
   
 </li>
@@ -1563,16 +1583,43 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#GDB" class="md-nav__link">
-    GDB
+  <a href="#Overview" class="md-nav__link">
+    Overview
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#Bug_Manager" class="md-nav__link">
-    Bug Manager
+  <a href="#GDB" class="md-nav__link">
+    GDB
   </a>
+  
+    <nav class="md-nav" aria-label="GDB">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#Build" class="md-nav__link">
+    Build
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#Start_GDB" class="md-nav__link">
+    Start GDB
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#Usage" class="md-nav__link">
+    Usage
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -1584,15 +1631,8 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#ROS_Debug" class="md-nav__link">
-    ROS Debug
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#Others" class="md-nav__link">
-    Others
+  <a href="#Bug_Manager" class="md-nav__link">
+    Bug Manager
   </a>
   
 </li>
@@ -1619,47 +1659,108 @@
 
 
 <h1 id="Software_Debug">Software Debug<a class="headerlink" href="#Software_Debug" title="Permanent link">&para;</a></h1>
-<ul>
-<li><a href="https://www.cprogramming.com/debugging/">Debuggers and Debugging Techniques</a></li>
-<li><a href="https://www.cnblogs.com/gaohongchen01/p/8311732.html">类Unix平台程序调试</a></li>
-</ul>
 <hr />
+<h2 id="Overview">Overview<a class="headerlink" href="#Overview" title="Permanent link">&para;</a></h2>
+<ul>
+<li>
+<p><a href="https://www.cprogramming.com/debugging/">Debuggers and Debugging Techniques</a></p>
+</li>
+<li>
+<p><a href="https://cgabc.xyz/tags/Debug/">Debug (CGABC)</a></p>
+</li>
+</ul>
 <h2 id="GDB">GDB<a class="headerlink" href="#GDB" title="Permanent link">&para;</a></h2>
+<p align="center">
+  <iframe src="https://www.youtube.com/embed/PorfLSr3DDI?rel=0&showinfo=0"
+    width="780" height="480" frameborder="no" scrolling="no" allowfullscreen="true">
+  </iframe>
+</p>
+
 <ul>
 <li><a href="https://www.gnu.org/software/gdb/">GDB</a>: The GNU Project Debugger</li>
 <li><a href="http://www.brendangregg.com/blog/2016-08-09/gdb-example-ncurses.html">gdb Debugging Full Example (Tutorial): ncurses</a></li>
 <li><a href="https://felix.abecassis.me/2012/08/gdb-debugging-stripped-binaries/">GDB - Debugging stripped binaries</a></li>
+<li><a href="http://airekans.github.io/cpp/2014/03/11/cpp-debug-01">一次调试C++程序的艰苦历程</a></li>
+<li><a href="https://www.eet-china.com/mp/a34200.html">图文并茂 | 彻底弄懂GDB调试原理</a></li>
 </ul>
-<div class="highlight"><span class="filename">Bash</span><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>directory: 设置路径
+<h3 id="Build">Build<a class="headerlink" href="#Build" title="Permanent link">&para;</a></h3>
+<div class="highlight"><span class="filename">Bash</span><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>g++ -g fun.cpp
 </code></pre></div>
-<h2 id="Bug_Manager">Bug Manager<a class="headerlink" href="#Bug_Manager" title="Permanent link">&para;</a></h2>
-<ul>
-<li><a href="https://www.bugclose.com/">bugclose</a>: 云端BUG管理工具</li>
-<li><a href="https://www.bugzilla.org/">Bugzilla</a> is server software designed to help you manage software development.</li>
-</ul>
+<h3 id="Start_GDB">Start GDB<a class="headerlink" href="#Start_GDB" title="Permanent link">&para;</a></h3>
+<div class="highlight"><span class="filename">Bash</span><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>gdb a.out <span class="o">[</span>--tui<span class="o">]</span> <span class="c1"># or open TUI by Ctrl-X-O after entering gdb</span>
+</code></pre></div>
+<h3 id="Usage">Usage<a class="headerlink" href="#Usage" title="Permanent link">&para;</a></h3>
+<div class="highlight"><span class="filename">Bash</span><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="o">(</span>gdb<span class="o">)</span> directory
+<a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a><span class="o">(</span>gdb<span class="o">)</span> show directories
+<a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a>
+<a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a><span class="o">(</span>gdb<span class="o">)</span> <span class="nb">set</span> args xxx
+<a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a><span class="o">(</span>gdb<span class="o">)</span> show args
+<a id="__codelineno-2-6" name="__codelineno-2-6" href="#__codelineno-2-6"></a>
+<a id="__codelineno-2-7" name="__codelineno-2-7" href="#__codelineno-2-7"></a><span class="o">(</span>gdb<span class="o">)</span> i r
+<a id="__codelineno-2-8" name="__codelineno-2-8" href="#__codelineno-2-8"></a>
+<a id="__codelineno-2-9" name="__codelineno-2-9" href="#__codelineno-2-9"></a><span class="o">(</span>gdb<span class="o">)</span> <span class="nb">set</span> print pretty
+<a id="__codelineno-2-10" name="__codelineno-2-10" href="#__codelineno-2-10"></a><span class="o">(</span>gdb<span class="o">)</span> p /d var <span class="c1"># /x /o /t /f /c </span>
+<a id="__codelineno-2-11" name="__codelineno-2-11" href="#__codelineno-2-11"></a><span class="o">(</span>gdb<span class="o">)</span> p <span class="p">&amp;</span>var
+<a id="__codelineno-2-12" name="__codelineno-2-12" href="#__codelineno-2-12"></a><span class="o">(</span>gdb<span class="o">)</span> p <span class="nv">var</span> <span class="o">=</span> <span class="m">20</span>
+<a id="__codelineno-2-13" name="__codelineno-2-13" href="#__codelineno-2-13"></a><span class="o">(</span>gdb<span class="o">)</span> p sizeof<span class="o">(</span>long<span class="o">)</span>
+<a id="__codelineno-2-14" name="__codelineno-2-14" href="#__codelineno-2-14"></a><span class="o">(</span>gdb<span class="o">)</span> <span class="nb">set</span> print array on
+<a id="__codelineno-2-15" name="__codelineno-2-15" href="#__codelineno-2-15"></a>
+<a id="__codelineno-2-16" name="__codelineno-2-16" href="#__codelineno-2-16"></a><span class="o">(</span>gdb<span class="o">)</span> x addr
+<a id="__codelineno-2-17" name="__codelineno-2-17" href="#__codelineno-2-17"></a>
+<a id="__codelineno-2-18" name="__codelineno-2-18" href="#__codelineno-2-18"></a><span class="o">(</span>gdb<span class="o">)</span> bt
+<a id="__codelineno-2-19" name="__codelineno-2-19" href="#__codelineno-2-19"></a><span class="o">(</span>gdb<span class="o">)</span> info frame
+<a id="__codelineno-2-20" name="__codelineno-2-20" href="#__codelineno-2-20"></a><span class="o">(</span>gdb<span class="o">)</span> info args
+<a id="__codelineno-2-21" name="__codelineno-2-21" href="#__codelineno-2-21"></a><span class="o">(</span>gdb<span class="o">)</span> info locals
+<a id="__codelineno-2-22" name="__codelineno-2-22" href="#__codelineno-2-22"></a><span class="o">(</span>gdb<span class="o">)</span> info catch
+</code></pre></div>
 <h2 id="Debug_Utils">Debug Utils<a class="headerlink" href="#Debug_Utils" title="Permanent link">&para;</a></h2>
 <ul>
-<li>dmesg</li>
-<li>readelf</li>
-<li>strace</li>
-<li>addr2line</li>
-<li>nm</li>
-<li>strip</li>
-<li><a href="https://github.com/bombela/backward-cpp">Backward-cpp</a>: a beautiful stack trace pretty printer for C++</li>
-<li>od: dump files in octal and other formats</li>
-<li>objdump: display information from object files
-    <div class="highlight"><span class="filename">Bash</span><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="c1"># 查看.so文件的依赖关系</span>
-<a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>objdump -x libxxxxx.so <span class="p">|</span> grep NEEDED
-</code></pre></div></li>
-<li>ldd: print shared object dependencies</li>
-</ul>
-<h2 id="ROS_Debug">ROS Debug<a class="headerlink" href="#ROS_Debug" title="Permanent link">&para;</a></h2>
-<ul>
-<li><a href="http://wiki.ros.org/roslaunch/Tutorials/Roslaunch%20Nodes%20in%20Valgrind%20or%20GDB">How to Roslaunch Nodes in Valgrind or GDB</a></li>
-<li><a href="https://bluesat.com.au/a-dummys-guide-to-debugging-ros-systems/">A Dummy’s Guide to Debugging ROS Systems</a></li>
-</ul>
-<h2 id="Others">Others<a class="headerlink" href="#Others" title="Permanent link">&para;</a></h2>
-<ul>
+<li>
+<p>dmesg
+    <div class="highlight"><span class="filename">Bash</span><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>dmesg <span class="p">|</span> tail
+</code></pre></div></p>
+</li>
+<li>
+<p>readelf</p>
+</li>
+<li>
+<p>strace</p>
+</li>
+<li>
+<p>addr2line
+    <div class="highlight"><span class="filename">Bash</span><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="c1"># 根据 函数地址，查看函数名</span>
+<a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a>addr2line -e a.out 0x4004e5 -f <span class="o">[</span>--demangle<span class="o">=</span>gnu-v3<span class="o">]</span>
+</code></pre></div></p>
+</li>
+<li>
+<p>nm: list symbols from object files
+    <div class="highlight"><span class="filename">Bash</span><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a>nm libhello.so
+</code></pre></div></p>
+</li>
+<li>
+<p>strip</p>
+</li>
+<li>
+<p><a href="https://github.com/bombela/backward-cpp">Backward-cpp</a>: a beautiful stack trace pretty printer for C++</p>
+</li>
+<li>
+<p>od: dump files in octal and other formats</p>
+</li>
+<li>
+<p>objdump: display information from object files
+    <div class="highlight"><span class="filename">Bash</span><pre><span></span><code><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a><span class="c1"># 查看.so文件的依赖关系</span>
+<a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a>objdump -x libxxx.so <span class="p">|</span> grep NEEDED
+<a id="__codelineno-6-3" name="__codelineno-6-3" href="#__codelineno-6-3"></a>
+<a id="__codelineno-6-4" name="__codelineno-6-4" href="#__codelineno-6-4"></a><span class="c1"># 查看动态库和静态库是32位，还是64位</span>
+<a id="__codelineno-6-5" name="__codelineno-6-5" href="#__codelineno-6-5"></a>file *.so  <span class="c1"># 动态库</span>
+<a id="__codelineno-6-6" name="__codelineno-6-6" href="#__codelineno-6-6"></a>objdump -x *.a  <span class="c1"># 静态</span>
+</code></pre></div></p>
+</li>
+<li>
+<p>ldd: print shared object dependencies
+    <div class="highlight"><span class="filename">Bash</span><pre><span></span><code><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a>ldd /bin/lnlibc.so.6
+</code></pre></div></p>
+</li>
 <li>
 <p>WinDbg</p>
 <ul>
@@ -1670,6 +1771,11 @@
 <li>
 <p>SxsTrace: 跟踪调试应用程序</p>
 </li>
+</ul>
+<h2 id="Bug_Manager">Bug Manager<a class="headerlink" href="#Bug_Manager" title="Permanent link">&para;</a></h2>
+<ul>
+<li><a href="https://www.bugclose.com/">bugclose</a>: 云端BUG管理工具</li>
+<li><a href="https://www.bugzilla.org/">Bugzilla</a> is server software designed to help you manage software development.</li>
 </ul>
 
               
