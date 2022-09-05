@@ -842,6 +842,13 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
+  <a href="#安装最新版本" class="md-nav__link">
+    安装最新版本
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#基本命令" class="md-nav__link">
     基本命令
   </a>
@@ -1519,10 +1526,93 @@
   
   
   
+    
+      
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" data-md-toggle="__nav_10_2" type="checkbox" id="__nav_10_2" checked>
+      
+      
+      
+        
+          
+            
+          
+        
+          
+        
+          
+        
+          
+        
+      
+      
+        
+        
+        <div class="md-nav__link md-nav__link--index ">
+          <a href="../../08-network/proxy/">Proxy</a>
+          
+            <label for="__nav_10_2">
+              <span class="md-nav__icon md-icon"></span>
+            </label>
+          
+        </div>
+      
+      <nav class="md-nav" aria-label="Proxy" data-md-level="2">
+        <label class="md-nav__title" for="__nav_10_2">
+          <span class="md-nav__icon md-icon"></span>
+          Proxy
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+          
+            
+              
+  
+  
+  
     <li class="md-nav__item">
-      <a href="../../08-network/proxy/" class="md-nav__link">
-        Proxy
+      <a href="../../08-network/proxy/server/" class="md-nav__link">
+        Server
       </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../08-network/proxy/client/" class="md-nav__link">
+        Client
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../08-network/proxy/use/" class="md-nav__link">
+        Use
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
     </li>
   
 
@@ -1644,6 +1734,13 @@
   
     <nav class="md-nav" aria-label="CMake">
       <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#安装最新版本" class="md-nav__link">
+    安装最新版本
+  </a>
+  
+</li>
         
           <li class="md-nav__item">
   <a href="#基本命令" class="md-nav__link">
@@ -1794,30 +1891,42 @@
 <li><a href="https://cgold.readthedocs.io/en/latest/">CGold: The Hitchhiker’s Guide to the CMake</a></li>
 <li><a href="http://www.yeolar.com/note/2014/12/16/cmake-how-to-find-libraries/">CMake如何查找链接库</a></li>
 </ul>
-<div class="highlight"><span class="filename">Bash</span><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>cmake ..
-<a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>make -j<span class="k">$(</span>nproc<span class="k">)</span>
+<h3 id="安装最新版本">安装最新版本<a class="headerlink" href="#安装最新版本" title="Permanent link">&para;</a></h3>
+<p>remove the old (optional)</p>
+<div class="highlight"><span class="filename">Bash</span><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>sudo apt autoremove cmake
+</code></pre></div>
+<p>download: <a href="https://cmake.org/download/">https://cmake.org/download/</a></p>
+<p>install</p>
+<div class="highlight"><span class="filename">Bash</span><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>tar xvzf cmake-3.24.1-linux-x86_64.tar.gz
+<a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a>sudo ln -sf ~/tools/cmake-3.24.1-linux-x86_64/bin/*  /usr/bin/
+<a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a>
+<a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a><span class="c1"># or</span>
+<a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a>sudo ./cmake-3.22.1-linux-x86_64.sh --prefix<span class="o">=</span>/usr/ --skip-license
 </code></pre></div>
 <h3 id="基本命令">基本命令<a class="headerlink" href="#基本命令" title="Permanent link">&para;</a></h3>
+<div class="highlight"><span class="filename">Bash</span><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>cmake ..
+<a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a>make -j<span class="k">$(</span>nproc<span class="k">)</span>
+</code></pre></div>
 <p>在项目根目录运行编译命令并指定生成文件目录</p>
-<div class="highlight"><span class="filename">Bash</span><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>cmake -B cmake-build-debug
+<div class="highlight"><span class="filename">Bash</span><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a>cmake -B cmake-build-debug
 </code></pre></div>
 <p>在项目根目录运行命令生成可执行文件</p>
-<div class="highlight"><span class="filename">Bash</span><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>cmake --build cmake-build-debug
+<div class="highlight"><span class="filename">Bash</span><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a>cmake --build cmake-build-debug
 </code></pre></div>
 <p>install</p>
-<div class="highlight"><span class="filename">Bash</span><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a>cmake --build . --target install --config Debug
-<a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a>
-<a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a><span class="c1"># In CMake 3.15 and newer</span>
-<a id="__codelineno-4-4" name="__codelineno-4-4" href="#__codelineno-4-4"></a>cmake --install . --config Debug
+<div class="highlight"><span class="filename">Bash</span><pre><span></span><code><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a>cmake --build . --target install --config Debug
+<a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a>
+<a id="__codelineno-6-3" name="__codelineno-6-3" href="#__codelineno-6-3"></a><span class="c1"># In CMake 3.15 and newer</span>
+<a id="__codelineno-6-4" name="__codelineno-6-4" href="#__codelineno-6-4"></a>cmake --install . --config Debug
 </code></pre></div>
 <h2 id="make">make<a class="headerlink" href="#make" title="Permanent link">&para;</a></h2>
-<div class="highlight"><span class="filename">Bash</span><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a>make -j<span class="k">$(</span>nproc<span class="k">)</span>
+<div class="highlight"><span class="filename">Bash</span><pre><span></span><code><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a>make -j<span class="k">$(</span>nproc<span class="k">)</span>
 </code></pre></div>
 <h3 id="Andoid_ndk-build">Andoid ndk-build<a class="headerlink" href="#Andoid_ndk-build" title="Permanent link">&para;</a></h3>
 <ul>
 <li>Android Native Cpp
-  <div class="highlight"><span class="filename">Bash</span><pre><span></span><code><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a><span class="c1"># .mk file</span>
-<a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a>ndk-build
+  <div class="highlight"><span class="filename">Bash</span><pre><span></span><code><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a><span class="c1"># .mk file</span>
+<a id="__codelineno-8-2" name="__codelineno-8-2" href="#__codelineno-8-2"></a>ndk-build
 </code></pre></div></li>
 </ul>
 <h2 id="Ninja">Ninja<a class="headerlink" href="#Ninja" title="Permanent link">&para;</a></h2>

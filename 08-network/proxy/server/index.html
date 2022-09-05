@@ -10,21 +10,21 @@
         <meta name="author" content="Gavin Gao">
       
       
-        <link rel="canonical" href="https://dev.cgabc.xyz/03-app_build/docker/">
+        <link rel="canonical" href="https://dev.cgabc.xyz/08-network/proxy/server/">
       
-      <link rel="icon" href="../../images/favicon.png">
+      <link rel="icon" href="../../../images/favicon.png">
       <meta name="generator" content="mkdocs-1.3.1, mkdocs-material-8.3.9">
     
     
       
-        <title>Docker - DevOps</title>
+        <title>Server - DevOps</title>
       
     
     
-      <link rel="stylesheet" href="../../assets/stylesheets/main.1d29e8d0.min.css">
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.1d29e8d0.min.css">
       
         
-        <link rel="stylesheet" href="../../assets/stylesheets/palette.cbb835fc.min.css">
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.cbb835fc.min.css">
         
       
       
@@ -40,7 +40,7 @@
       
     
     
-    <script>__md_scope=new URL("../..",location),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("../../..",location),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
@@ -64,7 +64,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#Docker" class="md-skip">
+        <a href="#Proxy_Server" class="md-skip">
           跳转至
         </a>
       
@@ -78,7 +78,7 @@
 
 <header class="md-header" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="页眉">
-    <a href="../.." title="DevOps" class="md-header__button md-logo" aria-label="DevOps" data-md-component="logo">
+    <a href="../../.." title="DevOps" class="md-header__button md-logo" aria-label="DevOps" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
@@ -97,7 +97,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Docker
+              Server
             
           </span>
         </div>
@@ -172,7 +172,7 @@
 
 
   <li class="md-tabs__item">
-    <a href="../.." class="md-tabs__link">
+    <a href="../../.." class="md-tabs__link">
       Home
     </a>
   </li>
@@ -187,7 +187,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="../../00-std/code_format/" class="md-tabs__link">
+      <a href="../../../00-std/code_format/" class="md-tabs__link">
         Standard
       </a>
     </li>
@@ -203,7 +203,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="../../01-basics/" class="md-tabs__link">
+      <a href="../../../01-basics/" class="md-tabs__link">
         Basics
       </a>
     </li>
@@ -216,7 +216,7 @@
 
 
   <li class="md-tabs__item">
-    <a href="../../02-program_languages/" class="md-tabs__link">
+    <a href="../../../02-program_languages/" class="md-tabs__link">
       Languages
     </a>
   </li>
@@ -231,7 +231,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="../../02-scripting/" class="md-tabs__link">
+      <a href="../../../02-scripting/" class="md-tabs__link">
         Scripting
       </a>
     </li>
@@ -241,15 +241,13 @@
         
   
   
-    
-  
 
 
   
   
   
     <li class="md-tabs__item">
-      <a href="../build_tools/" class="md-tabs__link md-tabs__link--active">
+      <a href="../../../03-app_build/build_tools/" class="md-tabs__link">
         App Build
       </a>
     </li>
@@ -265,7 +263,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="../../04-configuration_management_system/" class="md-tabs__link">
+      <a href="../../../04-configuration_management_system/" class="md-tabs__link">
         CMS
       </a>
     </li>
@@ -286,7 +284,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="../../06-personal_knowledge_management/type_setting/TextEditors/" class="md-tabs__link">
+      <a href="../../../06-personal_knowledge_management/type_setting/TextEditors/" class="md-tabs__link">
         PKM
       </a>
     </li>
@@ -304,7 +302,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="../../07-package_management_system/" class="md-tabs__link">
+      <a href="../../../07-package_management_system/" class="md-tabs__link">
         PMS
       </a>
     </li>
@@ -314,13 +312,15 @@
         
   
   
+    
+  
 
 
   
   
   
     <li class="md-tabs__item">
-      <a href="../../08-network/" class="md-tabs__link">
+      <a href="../../" class="md-tabs__link md-tabs__link--active">
         Network
       </a>
     </li>
@@ -348,7 +348,7 @@
 
 <nav class="md-nav md-nav--primary md-nav--lifted" aria-label="导航栏" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="../.." title="DevOps" class="md-nav__button md-logo" aria-label="DevOps" data-md-component="logo">
+    <a href="../../.." title="DevOps" class="md-nav__button md-logo" aria-label="DevOps" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
@@ -379,7 +379,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../.." class="md-nav__link">
+      <a href="../../.." class="md-nav__link">
         Home
       </a>
     </li>
@@ -428,7 +428,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../00-std/code_format/" class="md-nav__link">
+      <a href="../../../00-std/code_format/" class="md-nav__link">
         Code Format
       </a>
     </li>
@@ -442,7 +442,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../00-std/comment_output_style/" class="md-nav__link">
+      <a href="../../../00-std/comment_output_style/" class="md-nav__link">
         Comment & Output Style
       </a>
     </li>
@@ -456,7 +456,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../00-std/license/" class="md-nav__link">
+      <a href="../../../00-std/license/" class="md-nav__link">
         License
       </a>
     </li>
@@ -501,7 +501,7 @@
         
         
         <div class="md-nav__link md-nav__link--index ">
-          <a href="../../01-basics/">Basics</a>
+          <a href="../../../01-basics/">Basics</a>
           
             <label for="__nav_3">
               <span class="md-nav__icon md-icon"></span>
@@ -524,7 +524,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../01-basics/data_format/" class="md-nav__link">
+      <a href="../../../01-basics/data_format/" class="md-nav__link">
         Data Formats
       </a>
     </li>
@@ -538,7 +538,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../01-basics/platform/" class="md-nav__link">
+      <a href="../../../01-basics/platform/" class="md-nav__link">
         Platform
       </a>
     </li>
@@ -552,7 +552,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../01-basics/software_arch_and_design_patterns/" class="md-nav__link">
+      <a href="../../../01-basics/software_arch_and_design_patterns/" class="md-nav__link">
         Software Architecture & Design Patterns
       </a>
     </li>
@@ -574,7 +574,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../02-program_languages/" class="md-nav__link">
+      <a href="../../../02-program_languages/" class="md-nav__link">
         Languages
       </a>
     </li>
@@ -620,7 +620,7 @@
         
         
         <div class="md-nav__link md-nav__link--index ">
-          <a href="../../02-scripting/">Scripting</a>
+          <a href="../../../02-scripting/">Scripting</a>
           
             <label for="__nav_5">
               <span class="md-nav__icon md-icon"></span>
@@ -643,7 +643,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../02-scripting/system/" class="md-nav__link">
+      <a href="../../../02-scripting/system/" class="md-nav__link">
         System
       </a>
     </li>
@@ -657,7 +657,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../02-scripting/grub_bios/" class="md-nav__link">
+      <a href="../../../02-scripting/grub_bios/" class="md-nav__link">
         Grub & BIOS
       </a>
     </li>
@@ -671,7 +671,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../02-scripting/disk/" class="md-nav__link">
+      <a href="../../../02-scripting/disk/" class="md-nav__link">
         Disk
       </a>
     </li>
@@ -685,7 +685,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../02-scripting/file/" class="md-nav__link">
+      <a href="../../../02-scripting/file/" class="md-nav__link">
         File & File Systems
       </a>
     </li>
@@ -699,7 +699,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../02-scripting/key/" class="md-nav__link">
+      <a href="../../../02-scripting/key/" class="md-nav__link">
         GPG & SSH Key
       </a>
     </li>
@@ -713,7 +713,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../02-scripting/terminals_x11/" class="md-nav__link">
+      <a href="../../../02-scripting/terminals_x11/" class="md-nav__link">
         Terminals and X11
       </a>
     </li>
@@ -727,7 +727,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../02-scripting/ubuntu_apps/" class="md-nav__link">
+      <a href="../../../02-scripting/ubuntu_apps/" class="md-nav__link">
         Ubuntu Apps
       </a>
     </li>
@@ -747,14 +747,12 @@
 
   
   
-    
-  
   
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_6" type="checkbox" id="__nav_6" checked>
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" data-md-toggle="__nav_6" type="checkbox" id="__nav_6" checked>
       
       
       
@@ -793,7 +791,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../build_tools/" class="md-nav__link">
+      <a href="../../../03-app_build/build_tools/" class="md-nav__link">
         Build Tools
       </a>
     </li>
@@ -807,7 +805,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../compiler/" class="md-nav__link">
+      <a href="../../../03-app_build/compiler/" class="md-nav__link">
         Compiler
       </a>
     </li>
@@ -821,7 +819,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../software_debug/" class="md-nav__link">
+      <a href="../../../03-app_build/software_debug/" class="md-nav__link">
         Debug
       </a>
     </li>
@@ -835,7 +833,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../software_test/" class="md-nav__link">
+      <a href="../../../03-app_build/software_test/" class="md-nav__link">
         Test
       </a>
     </li>
@@ -849,7 +847,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../code_analysis/" class="md-nav__link">
+      <a href="../../../03-app_build/code_analysis/" class="md-nav__link">
         Code Analysis
       </a>
     </li>
@@ -863,7 +861,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../reverse_engineering/" class="md-nav__link">
+      <a href="../../../03-app_build/reverse_engineering/" class="md-nav__link">
         Reverse Engineering
       </a>
     </li>
@@ -875,133 +873,11 @@
               
   
   
-    
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          Docker
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../../../03-app_build/docker/" class="md-nav__link">
         Docker
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="目录">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      目录
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#Overview" class="md-nav__link">
-    Overview
-  </a>
-  
-    <nav class="md-nav" aria-label="Overview">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#Image_vs_Container" class="md-nav__link">
-    Image vs Container
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#Tutorial" class="md-nav__link">
-    Tutorial
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#Install" class="md-nav__link">
-    Install
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#Usage" class="md-nav__link">
-    Usage
-  </a>
-  
-    <nav class="md-nav" aria-label="Usage">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#Image" class="md-nav__link">
-    Image
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#Container" class="md-nav__link">
-    Container
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#with_ROS" class="md-nav__link">
-    with ROS
-  </a>
-  
-    <nav class="md-nav" aria-label="with ROS">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#Network" class="md-nav__link">
-    Network
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#Docker_Hub" class="md-nav__link">
-    Docker Hub
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -1042,7 +918,7 @@
         
         
         <div class="md-nav__link md-nav__link--index ">
-          <a href="../../04-configuration_management_system/">CMS</a>
+          <a href="../../../04-configuration_management_system/">CMS</a>
           
             <label for="__nav_7">
               <span class="md-nav__icon md-icon"></span>
@@ -1065,7 +941,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../04-configuration_management_system/git/" class="md-nav__link">
+      <a href="../../../04-configuration_management_system/git/" class="md-nav__link">
         Git
       </a>
     </li>
@@ -1079,7 +955,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../04-configuration_management_system/maven/" class="md-nav__link">
+      <a href="../../../04-configuration_management_system/maven/" class="md-nav__link">
         Apache Maven
       </a>
     </li>
@@ -1179,7 +1055,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../06-personal_knowledge_management/type_setting/TextEditors/" class="md-nav__link">
+      <a href="../../../06-personal_knowledge_management/type_setting/TextEditors/" class="md-nav__link">
         Text Editors
       </a>
     </li>
@@ -1193,7 +1069,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../06-personal_knowledge_management/type_setting/MarkDown/" class="md-nav__link">
+      <a href="../../../06-personal_knowledge_management/type_setting/MarkDown/" class="md-nav__link">
         MarkDown
       </a>
     </li>
@@ -1207,7 +1083,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../06-personal_knowledge_management/type_setting/CHM/" class="md-nav__link">
+      <a href="../../../06-personal_knowledge_management/type_setting/CHM/" class="md-nav__link">
         CHM
       </a>
     </li>
@@ -1221,7 +1097,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../06-personal_knowledge_management/type_setting/EPUB/" class="md-nav__link">
+      <a href="../../../06-personal_knowledge_management/type_setting/EPUB/" class="md-nav__link">
         EPUB
       </a>
     </li>
@@ -1235,7 +1111,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../06-personal_knowledge_management/type_setting/API-Docs/" class="md-nav__link">
+      <a href="../../../06-personal_knowledge_management/type_setting/API-Docs/" class="md-nav__link">
         API Docs
       </a>
     </li>
@@ -1249,7 +1125,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../06-personal_knowledge_management/type_setting/Diagrams/" class="md-nav__link">
+      <a href="../../../06-personal_knowledge_management/type_setting/Diagrams/" class="md-nav__link">
         Diagrams
       </a>
     </li>
@@ -1263,7 +1139,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../06-personal_knowledge_management/type_setting/Fonts/" class="md-nav__link">
+      <a href="../../../06-personal_knowledge_management/type_setting/Fonts/" class="md-nav__link">
         Fonts
       </a>
     </li>
@@ -1277,7 +1153,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../06-personal_knowledge_management/type_setting/Convertor/" class="md-nav__link">
+      <a href="../../../06-personal_knowledge_management/type_setting/Convertor/" class="md-nav__link">
         Convertor
       </a>
     </li>
@@ -1336,7 +1212,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../06-personal_knowledge_management/website/OnlineDocs/" class="md-nav__link">
+      <a href="../../../06-personal_knowledge_management/website/OnlineDocs/" class="md-nav__link">
         Online Docs
       </a>
     </li>
@@ -1350,7 +1226,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../06-personal_knowledge_management/type_setting/Sphinx/" class="md-nav__link">
+      <a href="../../../06-personal_knowledge_management/type_setting/Sphinx/" class="md-nav__link">
         Sphinx
       </a>
     </li>
@@ -1364,7 +1240,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../06-personal_knowledge_management/website/Jekyll/" class="md-nav__link">
+      <a href="../../../06-personal_knowledge_management/website/Jekyll/" class="md-nav__link">
         Jekyll
       </a>
     </li>
@@ -1378,7 +1254,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../06-personal_knowledge_management/website/MkDocs/" class="md-nav__link">
+      <a href="../../../06-personal_knowledge_management/website/MkDocs/" class="md-nav__link">
         MkDocs
       </a>
     </li>
@@ -1424,7 +1300,7 @@
         
         
         <div class="md-nav__link md-nav__link--index ">
-          <a href="../../07-package_management_system/">PMS</a>
+          <a href="../../../07-package_management_system/">PMS</a>
           
         </div>
       
@@ -1449,12 +1325,14 @@
 
   
   
+    
+  
   
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" data-md-toggle="__nav_10" type="checkbox" id="__nav_10" checked>
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_10" type="checkbox" id="__nav_10" checked>
       
       
       
@@ -1482,7 +1360,7 @@
         
         
         <div class="md-nav__link md-nav__link--index ">
-          <a href="../../08-network/">Network</a>
+          <a href="../../">Network</a>
           
             <label for="__nav_10">
               <span class="md-nav__icon md-icon"></span>
@@ -1503,14 +1381,16 @@
               
   
   
+    
+  
   
     
       
     
-    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" data-md-toggle="__nav_10_2" type="checkbox" id="__nav_10_2" checked>
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_10_2" type="checkbox" id="__nav_10_2" checked>
       
       
       
@@ -1530,7 +1410,7 @@
         
         
         <div class="md-nav__link md-nav__link--index ">
-          <a href="../../08-network/proxy/">Proxy</a>
+          <a href="../">Proxy</a>
           
             <label for="__nav_10_2">
               <span class="md-nav__icon md-icon"></span>
@@ -1551,11 +1431,66 @@
               
   
   
+    
   
-    <li class="md-nav__item">
-      <a href="../../08-network/proxy/server/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Server
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         Server
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="目录">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#Overview" class="md-nav__link">
+    Overview
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#VPS" class="md-nav__link">
+    VPS
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#机场" class="md-nav__link">
+    机场
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -1567,7 +1502,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../08-network/proxy/client/" class="md-nav__link">
+      <a href="../client/" class="md-nav__link">
         Client
       </a>
     </li>
@@ -1581,7 +1516,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../08-network/proxy/use/" class="md-nav__link">
+      <a href="../use/" class="md-nav__link">
         Use
       </a>
     </li>
@@ -1602,7 +1537,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../08-network/database/" class="md-nav__link">
+      <a href="../../database/" class="md-nav__link">
         Database
       </a>
     </li>
@@ -1616,7 +1551,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../08-network/download_managers/" class="md-nav__link">
+      <a href="../../download_managers/" class="md-nav__link">
         Download Managers
       </a>
     </li>
@@ -1630,7 +1565,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../08-network/nas/synology_nas/" class="md-nav__link">
+      <a href="../../nas/synology_nas/" class="md-nav__link">
         Synology DS128+
       </a>
     </li>
@@ -1644,7 +1579,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../08-network/network_devices/router/" class="md-nav__link">
+      <a href="../../network_devices/router/" class="md-nav__link">
         Router
       </a>
     </li>
@@ -1658,7 +1593,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../08-network/serial_communication/" class="md-nav__link">
+      <a href="../../serial_communication/" class="md-nav__link">
         Serial Communication
       </a>
     </li>
@@ -1703,85 +1638,18 @@
     Overview
   </a>
   
-    <nav class="md-nav" aria-label="Overview">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#Image_vs_Container" class="md-nav__link">
-    Image vs Container
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#Tutorial" class="md-nav__link">
-    Tutorial
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
 </li>
       
         <li class="md-nav__item">
-  <a href="#Install" class="md-nav__link">
-    Install
+  <a href="#VPS" class="md-nav__link">
+    VPS
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#Usage" class="md-nav__link">
-    Usage
-  </a>
-  
-    <nav class="md-nav" aria-label="Usage">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#Image" class="md-nav__link">
-    Image
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#Container" class="md-nav__link">
-    Container
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#with_ROS" class="md-nav__link">
-    with ROS
-  </a>
-  
-    <nav class="md-nav" aria-label="with ROS">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#Network" class="md-nav__link">
-    Network
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#Docker_Hub" class="md-nav__link">
-    Docker Hub
+  <a href="#机场" class="md-nav__link">
+    机场
   </a>
   
 </li>
@@ -1798,7 +1666,7 @@
             <article class="md-content__inner md-typeset">
               
                 
-  <a href="https://github.com/cggos/DevOps/edit/master/docs/03-app_build/docker.md" title="编辑此页" class="md-content__button md-icon">
+  <a href="https://github.com/cggos/DevOps/edit/master/docs/08-network/proxy/server.md" title="编辑此页" class="md-content__button md-icon">
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25Z"/></svg>
   </a>
 
@@ -1807,218 +1675,37 @@
 
 
 
-<h1 id="Docker">Docker<a class="headerlink" href="#Docker" title="Permanent link">&para;</a></h1>
-<ul>
-<li><a href="https://docker.com/">Docker</a>: Securely build, share and run any application, anywhere</li>
-<li><a href="https://hub.docker.com/">Docker Hub</a>: the world's easiest way to create, manage, and deliver your teams' container applications</li>
-<li><a href="https://docker.org.cn/">docker中文社区</a></li>
-</ul>
+<h1 id="Proxy_Server">Proxy Server<a class="headerlink" href="#Proxy_Server" title="Permanent link">&para;</a></h1>
 <hr />
 <h2 id="Overview">Overview<a class="headerlink" href="#Overview" title="Permanent link">&para;</a></h2>
 <ul>
-<li>the images and containers are stored by Docker in <code>/var/lib/docker</code> by default</li>
+<li><a href="https://www.yigeni.com/build-a-wall-ss-server/">自己动手搭建翻墙SS服务器</a></li>
 </ul>
-<h3 id="Image_vs_Container">Image vs Container<a class="headerlink" href="#Image_vs_Container" title="Permanent link">&para;</a></h3>
+<h2 id="VPS">VPS<a class="headerlink" href="#VPS" title="Permanent link">&para;</a></h2>
 <ul>
 <li>
-<p>镜像 (Images): 可以认为是超级轻量级的虚拟机的快照。镜像会有自己的唯一ID，名字和标签，比如ubuntu, 比如ubuntu:18.04等。通常都是在已有的镜像（多数是Linux操作系统的镜像）的基础上构建自己的具有新功能的镜像。</p>
+<p><a href="http://www.laozuo.org/myvps">老左常用国内/国外VPS推荐</a></p>
 </li>
 <li>
-<p>容器 (Containers): 可以认为是超级轻量级的虚拟机，是镜像运行起来所处的可读写的状态。容器里面可以安装、运行程序，还可以把安装好的程序存储起来获得新的镜像。与虚拟机很大的不同在于，一个容器通常只运行一个程序。在Docker中，应用程序和数据文件是分开的，因此可以在不影响数据的情况下快速升级代码或系统。</p>
+<p>搬瓦工</p>
+<ul>
+<li><a href="https://bwh88.net/">BandwangonHOST</a></li>
+<li><a href="https://kiwivm.64clouds.com/main.php">KiwiVM Main Panel</a></li>
+</ul>
 </li>
 </ul>
-<h3 id="Tutorial">Tutorial<a class="headerlink" href="#Tutorial" title="Permanent link">&para;</a></h3>
+<h2 id="机场">机场<a class="headerlink" href="#机场" title="Permanent link">&para;</a></h2>
+<blockquote>
+<p>郑重声明：本文所介绍产品主要是为了方便学习、科研以及外贸工作，且为自用过的推荐而已。请遵守中华人民共和国法律法规，切勿在任何地方发布分裂国家，激化民族矛盾的言论。</p>
+</blockquote>
 <ul>
 <li>
-<p><a href="https://www.runoob.com/docker/docker-tutorial.html">Docker 菜鸟教程</a></p>
+<p><a href="https://portal.shadowsocks.nz/aff.php?aff=56214">Shadowsocks</a></p>
 </li>
 <li>
-<p><a href="https://blog.csdn.net/woodcorpse/article/details/80601899">Docker的基本使用-Ubuntu18.04</a></p>
-</li>
-<li>
-<p><a href="https://www.digitalocean.com/community/tutorials/how-to-install-and-use-docker-on-ubuntu-16-04">How To Install and Use Docker on Ubuntu 16.04</a></p>
-</li>
-<li>
-<p><a href="https://towardsdatascience.com/real-time-and-video-processing-object-detection-using-tensorflow-opencv-and-docker-2be1694726e5">Real-time and video processing object detection using Tensorflow, OpenCV and Docker</a></p>
-</li>
-<li>
-<p><a href="https://www.leiphone.com/news/201807/V0dTefBD2QgNPwLj.html">基于 TensorFlow 、OpenCV 和 Docker 的实时视频目标检测</a></p>
-</li>
-<li>
-<p><a href="http://fabiorehm.com/blog/2014/09/11/running-gui-apps-with-docker/">Running GUI apps with Docker</a></p>
-</li>
-<li>
-<p><a href="https://blog.yadutaf.fr/2017/09/10/running-a-graphical-app-in-a-docker-container-on-a-remote-server/">Running a graphical app in a Docker container, on a remote server</a></p>
-</li>
-<li>
-<p><a href="https://kusemanohar.info/2018/10/03/docker-for-computer-vision-researchers/">Docker for Computer Vision Researchers</a> !!!</p>
+<p><a href="https://portal.uuks.club/aff.php?aff=2829">IPLC.VIP</a></p>
 </li>
 </ul>
-<h2 id="Install">Install<a class="headerlink" href="#Install" title="Permanent link">&para;</a></h2>
-<ul>
-<li><a href="https://docs.docker.com/install/linux/docker-ce/ubuntu/">Get Docker Engine - Community for Ubuntu</a></li>
-</ul>
-<h2 id="Usage">Usage<a class="headerlink" href="#Usage" title="Permanent link">&para;</a></h2>
-<div class="highlight"><span class="filename">Bash</span><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>sudo docker info
-</code></pre></div>
-<h3 id="Image">Image<a class="headerlink" href="#Image" title="Permanent link">&para;</a></h3>
-<ul>
-<li>
-<p>view
-  <div class="highlight"><span class="filename">Bash</span><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>sudo docker images
-</code></pre></div></p>
-</li>
-<li>
-<p>get
-  <div class="highlight"><span class="filename">Bash</span><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>sudo docker pull ros
-<a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a>
-<a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a>sudo docker pull ros:kinetic-robot
-</code></pre></div></p>
-</li>
-<li>
-<p>create
-  <div class="highlight"><span class="filename">Bash</span><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>sudo docker build -t &lt;REPO-NAME:TAG&gt;
-<a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a>
-<a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a>sudo docker build -t &lt;REPO-NAME:TAG&gt; -f &lt;path-to-Dockerfile&gt; .
-</code></pre></div></p>
-</li>
-<li>
-<p>modify
-  <div class="highlight"><span class="filename">Bash</span><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a>sudo docker tag &lt;IMAGE-ID&gt; &lt;REPO-NAME&gt;:&lt;TAG&gt;
-</code></pre></div></p>
-</li>
-<li>
-<p>delete
-  <div class="highlight"><span class="filename">Bash</span><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a>sudo docker rmi &lt;REPO-NAME&gt;
-</code></pre></div></p>
-</li>
-<li>
-<p>get
-  <div class="highlight"><span class="filename">Bash</span><pre><span></span><code><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a>sudo docker search ubuntu
-<a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a>
-<a id="__codelineno-6-3" name="__codelineno-6-3" href="#__codelineno-6-3"></a>sudo docker pull ubuntu
-</code></pre></div></p>
-</li>
-<li>
-<p>run
-  <div class="highlight"><span class="filename">Bash</span><pre><span></span><code><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a>sudo docker run --help
-<a id="__codelineno-7-2" name="__codelineno-7-2" href="#__codelineno-7-2"></a>
-<a id="__codelineno-7-3" name="__codelineno-7-3" href="#__codelineno-7-3"></a><span class="c1"># e.g.</span>
-<a id="__codelineno-7-4" name="__codelineno-7-4" href="#__codelineno-7-4"></a>sudo docker run hello-world
-<a id="__codelineno-7-5" name="__codelineno-7-5" href="#__codelineno-7-5"></a>
-<a id="__codelineno-7-6" name="__codelineno-7-6" href="#__codelineno-7-6"></a>sudo docker run -it &lt;REPO-NAME:TAG&gt; /bin/bash
-<a id="__codelineno-7-7" name="__codelineno-7-7" href="#__codelineno-7-7"></a><span class="c1"># default TAG: latest</span>
-<a id="__codelineno-7-8" name="__codelineno-7-8" href="#__codelineno-7-8"></a>sudo docker run -it &lt;REPO-NAME&gt; /bin/bash
-<a id="__codelineno-7-9" name="__codelineno-7-9" href="#__codelineno-7-9"></a><span class="c1"># e.g.</span>
-<a id="__codelineno-7-10" name="__codelineno-7-10" href="#__codelineno-7-10"></a>sudo docker run -it ubuntu:15.10 /bin/bash
-</code></pre></div></p>
-<ul>
-<li>-i: 交互式操作</li>
-<li>-t: 终端</li>
-<li>ubuntu:15.10: 这是指用 ubuntu 15.10 版本镜像为基础来启动容器</li>
-<li>/bin/bash：放在镜像名后的是命令，这里我们希望有个交互式 Shell，因此用的是 /bin/bash</li>
-</ul>
-</li>
-</ul>
-<h3 id="Container">Container<a class="headerlink" href="#Container" title="Permanent link">&para;</a></h3>
-<ul>
-<li>
-<p>view
-  <div class="highlight"><span class="filename">Bash</span><pre><span></span><code><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a> sudo docker ps -a
-</code></pre></div></p>
-</li>
-<li>
-<p>start &amp; stop container
-  <div class="highlight"><span class="filename">Bash</span><pre><span></span><code><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a><span class="c1"># start container and enter</span>
-<a id="__codelineno-9-2" name="__codelineno-9-2" href="#__codelineno-9-2"></a>docker start -i &lt;Container-ID&gt;
-<a id="__codelineno-9-3" name="__codelineno-9-3" href="#__codelineno-9-3"></a>
-<a id="__codelineno-9-4" name="__codelineno-9-4" href="#__codelineno-9-4"></a><span class="c1"># restart</span>
-<a id="__codelineno-9-5" name="__codelineno-9-5" href="#__codelineno-9-5"></a>docker restart &lt;Container-ID&gt;
-<a id="__codelineno-9-6" name="__codelineno-9-6" href="#__codelineno-9-6"></a>
-<a id="__codelineno-9-7" name="__codelineno-9-7" href="#__codelineno-9-7"></a><span class="c1"># stop</span>
-<a id="__codelineno-9-8" name="__codelineno-9-8" href="#__codelineno-9-8"></a>docker stop &lt;Container-ID&gt;
-</code></pre></div></p>
-</li>
-<li>
-<p>we can also open another terminal for a running container with the following command
-  <div class="highlight"><span class="filename">Bash</span><pre><span></span><code><a id="__codelineno-10-1" name="__codelineno-10-1" href="#__codelineno-10-1"></a>docker <span class="nb">exec</span> -it &lt;Container-Name/ID&gt; bash
-</code></pre></div>
-  or
-  <div class="highlight"><span class="filename">Bash</span><pre><span></span><code><a id="__codelineno-11-1" name="__codelineno-11-1" href="#__codelineno-11-1"></a>docker attach &lt;Container-Name/ID&gt;
-</code></pre></div></p>
-</li>
-<li>
-<p>commit to update IMAGE
-  <div class="highlight"><span class="filename">Bash</span><pre><span></span><code><a id="__codelineno-12-1" name="__codelineno-12-1" href="#__codelineno-12-1"></a>sudo docker commit <span class="o">[</span>-m<span class="o">=</span><span class="s2">&quot;update dataset&quot;</span> -a<span class="o">=</span><span class="s2">&quot;cggos&quot;</span><span class="o">]</span> &lt;Container-ID&gt; &lt;REPO-NAME:TAG&gt;
-</code></pre></div></p>
-</li>
-<li>
-<p>history
-  <div class="highlight"><span class="filename">Bash</span><pre><span></span><code><a id="__codelineno-13-1" name="__codelineno-13-1" href="#__codelineno-13-1"></a>sudo docker <span class="nb">history</span> &lt;IMAGE-ID&gt;
-</code></pre></div></p>
-</li>
-<li>
-<p>delete
-  <div class="highlight"><span class="filename">Bash</span><pre><span></span><code><a id="__codelineno-14-1" name="__codelineno-14-1" href="#__codelineno-14-1"></a>sudo docker rm &lt;container-name/ID&gt;
-<a id="__codelineno-14-2" name="__codelineno-14-2" href="#__codelineno-14-2"></a>
-<a id="__codelineno-14-3" name="__codelineno-14-3" href="#__codelineno-14-3"></a><span class="c1"># stop all containers</span>
-<a id="__codelineno-14-4" name="__codelineno-14-4" href="#__codelineno-14-4"></a>sudo docker container stop <span class="k">$(</span>docker container ls -aq<span class="k">)</span>
-<a id="__codelineno-14-5" name="__codelineno-14-5" href="#__codelineno-14-5"></a><span class="c1"># remove all stopped containers</span>
-<a id="__codelineno-14-6" name="__codelineno-14-6" href="#__codelineno-14-6"></a>sudo docker container prune
-</code></pre></div></p>
-</li>
-<li>
-<p>copy file
-  <div class="highlight"><span class="filename">Bash</span><pre><span></span><code><a id="__codelineno-15-1" name="__codelineno-15-1" href="#__codelineno-15-1"></a><span class="c1"># host to container</span>
-<a id="__codelineno-15-2" name="__codelineno-15-2" href="#__codelineno-15-2"></a>docker cp foo.txt &lt;Container-ID&gt;:/foo.txt
-<a id="__codelineno-15-3" name="__codelineno-15-3" href="#__codelineno-15-3"></a>
-<a id="__codelineno-15-4" name="__codelineno-15-4" href="#__codelineno-15-4"></a><span class="c1"># container to host</span>
-<a id="__codelineno-15-5" name="__codelineno-15-5" href="#__codelineno-15-5"></a>docker cp &lt;Container-ID&gt;:/foo.txt foo.txt
-</code></pre></div></p>
-</li>
-</ul>
-<h2 id="with_ROS">with ROS<a class="headerlink" href="#with_ROS" title="Permanent link">&para;</a></h2>
-<ul>
-<li>
-<p>ros-kalibr
-  <div class="highlight"><span class="filename">Bash</span><pre><span></span><code><a id="__codelineno-16-1" name="__codelineno-16-1" href="#__codelineno-16-1"></a>sudo docker run <span class="se">\</span>
-<a id="__codelineno-16-2" name="__codelineno-16-2" href="#__codelineno-16-2"></a>  --name<span class="o">=</span>ros-kalibr <span class="se">\</span>
-<a id="__codelineno-16-3" name="__codelineno-16-3" href="#__codelineno-16-3"></a>  -it --rm -e <span class="nv">DISPLAY</span><span class="o">=</span><span class="nv">$DISPLAY</span> <span class="se">\</span>
-<a id="__codelineno-16-4" name="__codelineno-16-4" href="#__codelineno-16-4"></a>  -v /tmp/.X11-unix:/tmp/.X11-unix davvdg/ros-kalibr <span class="se">\</span>
-<a id="__codelineno-16-5" name="__codelineno-16-5" href="#__codelineno-16-5"></a>  /bin/bash
-</code></pre></div></p>
-</li>
-<li>
-<p><a href="https://github.com/HKUST-Aerial-Robotics/VINS-kidnap">HKUST-Aerial-Robotics/VINS-kidnap</a>
-  <div class="highlight"><span class="filename">Bash</span><pre><span></span><code><a id="__codelineno-17-1" name="__codelineno-17-1" href="#__codelineno-17-1"></a>docker run --runtime<span class="o">=</span>nvidia -it <span class="se">\</span>
-<a id="__codelineno-17-2" name="__codelineno-17-2" href="#__codelineno-17-2"></a>        --add-host <span class="sb">`</span>hostname<span class="sb">`</span>:172.17.0.1 <span class="se">\</span>
-<a id="__codelineno-17-3" name="__codelineno-17-3" href="#__codelineno-17-3"></a>        --env <span class="nv">ROS_MASTER_URI</span><span class="o">=</span>http://<span class="sb">`</span>hostname<span class="sb">`</span>:11311/ <span class="se">\</span>
-<a id="__codelineno-17-4" name="__codelineno-17-4" href="#__codelineno-17-4"></a>        --env <span class="nv">ROS_IP</span><span class="o">=</span><span class="m">172</span>.17.0.2 <span class="se">\</span>
-<a id="__codelineno-17-5" name="__codelineno-17-5" href="#__codelineno-17-5"></a>        --env <span class="nv">CUDA_VISIBLE_DEVICES</span><span class="o">=</span><span class="m">0</span> <span class="se">\</span>
-<a id="__codelineno-17-6" name="__codelineno-17-6" href="#__codelineno-17-6"></a>        --hostname happy_go <span class="se">\</span>
-<a id="__codelineno-17-7" name="__codelineno-17-7" href="#__codelineno-17-7"></a>        --name happy_go  <span class="se">\</span>
-<a id="__codelineno-17-8" name="__codelineno-17-8" href="#__codelineno-17-8"></a>        mpkuse/kusevisionkit:vins-kidnap bash
-</code></pre></div></p>
-</li>
-</ul>
-<h3 id="Network">Network<a class="headerlink" href="#Network" title="Permanent link">&para;</a></h3>
-<p>params</p>
-<div class="highlight"><span class="filename">Bash</span><pre><span></span><code><a id="__codelineno-18-1" name="__codelineno-18-1" href="#__codelineno-18-1"></a>--net<span class="o">=</span>host
-<a id="__codelineno-18-2" name="__codelineno-18-2" href="#__codelineno-18-2"></a>
-<a id="__codelineno-18-3" name="__codelineno-18-3" href="#__codelineno-18-3"></a><span class="c1"># or</span>
-<a id="__codelineno-18-4" name="__codelineno-18-4" href="#__codelineno-18-4"></a>--add-host <span class="sb">`</span>hostname<span class="sb">`</span>:172.17.0.1 <span class="se">\</span>
-<a id="__codelineno-18-5" name="__codelineno-18-5" href="#__codelineno-18-5"></a>--env <span class="nv">ROS_MASTER_URI</span><span class="o">=</span>http://<span class="sb">`</span>hostname<span class="sb">`</span>:11311/ <span class="se">\</span>
-<a id="__codelineno-18-6" name="__codelineno-18-6" href="#__codelineno-18-6"></a>--env <span class="nv">ROS_IP</span><span class="o">=</span><span class="m">172</span>.17.0.2 <span class="se">\</span>
-<a id="__codelineno-18-7" name="__codelineno-18-7" href="#__codelineno-18-7"></a>--hostname happy_go <span class="se">\</span>
-<a id="__codelineno-18-8" name="__codelineno-18-8" href="#__codelineno-18-8"></a>--name happy_go  <span class="se">\</span>
-</code></pre></div>
-<h2 id="Docker_Hub">Docker Hub<a class="headerlink" href="#Docker_Hub" title="Permanent link">&para;</a></h2>
-<div class="highlight"><span class="filename">Bash</span><pre><span></span><code><a id="__codelineno-19-1" name="__codelineno-19-1" href="#__codelineno-19-1"></a>sudo docker login
-<a id="__codelineno-19-2" name="__codelineno-19-2" href="#__codelineno-19-2"></a>
-<a id="__codelineno-19-3" name="__codelineno-19-3" href="#__codelineno-19-3"></a>sudo docker inspect &lt;USER/REPO-NAME:TAG&gt;
-<a id="__codelineno-19-4" name="__codelineno-19-4" href="#__codelineno-19-4"></a>
-<a id="__codelineno-19-5" name="__codelineno-19-5" href="#__codelineno-19-5"></a>sudo docker push &lt;USER/REPO-NAME:TAG&gt;
-</code></pre></div>
 
               
             </article>
@@ -2039,7 +1726,7 @@
     <nav class="md-footer__inner md-grid" aria-label="页脚" >
       
         
-        <a href="../reverse_engineering/" class="md-footer__link md-footer__link--prev" aria-label="上一页: Reverse Engineering" rel="prev">
+        <a href="../" class="md-footer__link md-footer__link--prev" aria-label="上一页: Overview" rel="prev">
           <div class="md-footer__button md-icon">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
           </div>
@@ -2048,20 +1735,20 @@
               <span class="md-footer__direction">
                 上一页
               </span>
-              Reverse Engineering
+              Overview
             </div>
           </div>
         </a>
       
       
         
-        <a href="../../04-configuration_management_system/" class="md-footer__link md-footer__link--next" aria-label="下一页: Overview" rel="next">
+        <a href="../client/" class="md-footer__link md-footer__link--next" aria-label="下一页: Client" rel="next">
           <div class="md-footer__title">
             <div class="md-ellipsis">
               <span class="md-footer__direction">
                 下一页
               </span>
-              Overview
+              Client
             </div>
           </div>
           <div class="md-footer__button md-icon">
@@ -2107,10 +1794,10 @@
     <div class="md-dialog" data-md-component="dialog">
       <div class="md-dialog__inner md-typeset"></div>
     </div>
-    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.instant", "navigation.tracking", "navigation.tabs", "navigation.sections", "navigation.expand", "navigation.prune", "navigation.indexes", "navigation.top", "toc.follow", "content.code.annotate"], "search": "../../assets/javascripts/workers/search.b97dbffb.min.js", "translations": {"clipboard.copied": "\u5df2\u590d\u5236", "clipboard.copy": "\u590d\u5236", "search.config.lang": "ja", "search.config.pipeline": "trimmer, stemmer", "search.config.separator": "[\\s\\-\uff0c\u3002]+", "search.placeholder": "\u641c\u7d22", "search.result.more.one": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.more.other": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 # \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.none": "\u6ca1\u6709\u627e\u5230\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.one": "\u627e\u5230 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.other": "# \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.placeholder": "\u952e\u5165\u4ee5\u5f00\u59cb\u641c\u7d22", "search.result.term.missing": "\u7f3a\u5c11", "select.version.title": "\u9009\u62e9\u5f53\u524d\u7248\u672c"}}</script>
+    <script id="__config" type="application/json">{"base": "../../..", "features": ["navigation.instant", "navigation.tracking", "navigation.tabs", "navigation.sections", "navigation.expand", "navigation.prune", "navigation.indexes", "navigation.top", "toc.follow", "content.code.annotate"], "search": "../../../assets/javascripts/workers/search.b97dbffb.min.js", "translations": {"clipboard.copied": "\u5df2\u590d\u5236", "clipboard.copy": "\u590d\u5236", "search.config.lang": "ja", "search.config.pipeline": "trimmer, stemmer", "search.config.separator": "[\\s\\-\uff0c\u3002]+", "search.placeholder": "\u641c\u7d22", "search.result.more.one": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.more.other": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 # \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.none": "\u6ca1\u6709\u627e\u5230\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.one": "\u627e\u5230 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.other": "# \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.placeholder": "\u952e\u5165\u4ee5\u5f00\u59cb\u641c\u7d22", "search.result.term.missing": "\u7f3a\u5c11", "select.version.title": "\u9009\u62e9\u5f53\u524d\u7248\u672c"}}</script>
     
     
-      <script src="../../assets/javascripts/bundle.6c7ad80a.min.js"></script>
+      <script src="../../../assets/javascripts/bundle.6c7ad80a.min.js"></script>
       
     
   </body>
