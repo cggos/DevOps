@@ -32,12 +32,34 @@
 * [CGold: The Hitchhiker’s Guide to the CMake](https://cgold.readthedocs.io/en/latest/)
 * [CMake如何查找链接库](http://www.yeolar.com/note/2014/12/16/cmake-how-to-find-libraries/)
 
+### 安装最新版本
+
+remove the old (optional)
+
+```bash
+sudo apt autoremove cmake
+```
+
+download: [https://cmake.org/download/](https://cmake.org/download/)
+
+
+install
+
+```bash
+tar xvzf cmake-3.24.1-linux-x86_64.tar.gz
+sudo ln -sf ~/tools/cmake-3.24.1-linux-x86_64/bin/*  /usr/bin/
+
+# or
+sudo ./cmake-3.22.1-linux-x86_64.sh --prefix=/usr/ --skip-license
+```
+
+
+### 基本命令
+
 ```sh
 cmake ..
 make -j$(nproc)
 ```
-
-### 基本命令
 
 在项目根目录运行编译命令并指定生成文件目录
 
