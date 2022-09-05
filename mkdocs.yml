@@ -149,7 +149,13 @@ nav:
 
   - Network:
     - Overview: 08-network/README.md
-    - Proxy: 08-network/proxy.md
+    
+    - Proxy: 
+      - Overview: 08-network/proxy/README.md
+      - Server: 08-network/proxy/server.md
+      - Client: 08-network/proxy/client.md
+      - Use: 08-network/proxy/use.md
+
     - Database: 08-network/database.md
     - Download Managers: 08-network/download_managers.md
     - Synology DS128+: 08-network/nas/synology_nas.md
