@@ -1,6 +1,6 @@
 # Files & File Systems
 
------
+---
 
 ## File Systems
 
@@ -18,7 +18,6 @@
     * SMBv1.0
     * SMBv2.1
     * SMBv3.0
-
 
 
 ## Statistics
@@ -54,28 +53,33 @@ exit 0
 cat install_manifest.txt | xargs sudo rm {} -fr
 ```
 
+
+## Linux 三剑客
+
+### grep
+
+```sh
+grep -rn "hello" ./
+
+```
+
+### sed
+
+### awk
+
+
+
 ## Find
 
 * [25 simple examples of Linux find command](http://www.binarytides.com/linux-find-command-examples/)
 
 * [Linux下的五个查找命令：grep、find、locate、whereis、which](http://www.cnblogs.com/wanqieddy/archive/2011/07/15/2107071.html)
 
-* [fzf](https://github.com/junegunn/fzf): a general-purpose command-line fuzzy finder
-  - install fzf
-	- alias
-	  ```sh
-		alias ff='find * -type f | fzf > selected'
-		```
-	- use in cli: `ff`
-
 * pdfgrep
 
 * [Recoll](https://www.lesbonscomptes.com/recoll/) is a desktop full-text search tool.
 
 ```bash
-# 在当前目录下查找"hello"字符串
-grep -rn "hello"
-
 # 只能寻找执行文件 ，并在PATH变量里面寻找
 which
 
@@ -88,13 +92,22 @@ whereis
 updatedb
 locate
 
-# 直接在硬盘上搜寻，功能强大，但耗硬盘，一般不要用
-find
-
 # 删除目录及其子目录下某种类型文件，比如说所有的txt文件
 find . -name "*.txt" -type f -print -exec rm -rf {} \;
 ```
 
+### fzf
+
+[fzf](https://github.com/junegunn/fzf): a general-purpose command-line fuzzy finder
+
+- install fzf
+
+- alias
+  ```sh
+	alias ff='find * -type f | fzf > selected'
+	```
+
+- use in cli: `ff`
 
 ## Compress & Uncompress
 

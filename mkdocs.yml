@@ -129,6 +129,8 @@ nav:
     - Apache Maven: 04-configuration_management_system/maven.md
 
   - PKM:
+    - OA:
+      - Overview: 06-personal_knowledge_management/oa/README.md
     - Type Setting:
       - Text Editors: 06-personal_knowledge_management/type_setting/TextEditors.md
       - MarkDown: 06-personal_knowledge_management/type_setting/MarkDown.md
