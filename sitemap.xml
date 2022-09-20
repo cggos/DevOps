@@ -2,257 +2,257 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
          <loc>https://dev.cgabc.xyz/</loc>
-         <lastmod>2022-09-17</lastmod>
+         <lastmod>2022-09-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://dev.cgabc.xyz/00-std/code_format/</loc>
-         <lastmod>2022-09-17</lastmod>
+         <lastmod>2022-09-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://dev.cgabc.xyz/00-std/comment_output_style/</loc>
-         <lastmod>2022-09-17</lastmod>
+         <lastmod>2022-09-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://dev.cgabc.xyz/00-std/license/</loc>
-         <lastmod>2022-09-17</lastmod>
+         <lastmod>2022-09-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://dev.cgabc.xyz/01-basics/</loc>
-         <lastmod>2022-09-17</lastmod>
+         <lastmod>2022-09-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://dev.cgabc.xyz/01-basics/data_format/</loc>
-         <lastmod>2022-09-17</lastmod>
+         <lastmod>2022-09-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://dev.cgabc.xyz/01-basics/platform/</loc>
-         <lastmod>2022-09-17</lastmod>
+         <lastmod>2022-09-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://dev.cgabc.xyz/01-basics/software_arch_and_design_patterns/</loc>
-         <lastmod>2022-09-17</lastmod>
+         <lastmod>2022-09-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://dev.cgabc.xyz/02-program_languages/</loc>
-         <lastmod>2022-09-17</lastmod>
+         <lastmod>2022-09-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://dev.cgabc.xyz/02-scripting/</loc>
-         <lastmod>2022-09-17</lastmod>
+         <lastmod>2022-09-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://dev.cgabc.xyz/02-scripting/disk/</loc>
-         <lastmod>2022-09-17</lastmod>
+         <lastmod>2022-09-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://dev.cgabc.xyz/02-scripting/file/</loc>
-         <lastmod>2022-09-17</lastmod>
+         <lastmod>2022-09-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://dev.cgabc.xyz/02-scripting/grub_bios/</loc>
-         <lastmod>2022-09-17</lastmod>
+         <lastmod>2022-09-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://dev.cgabc.xyz/02-scripting/key/</loc>
-         <lastmod>2022-09-17</lastmod>
+         <lastmod>2022-09-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://dev.cgabc.xyz/02-scripting/system/</loc>
-         <lastmod>2022-09-17</lastmod>
+         <lastmod>2022-09-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://dev.cgabc.xyz/02-scripting/terminals_x11/</loc>
-         <lastmod>2022-09-17</lastmod>
+         <lastmod>2022-09-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://dev.cgabc.xyz/02-scripting/ubuntu_apps/</loc>
-         <lastmod>2022-09-17</lastmod>
+         <lastmod>2022-09-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://dev.cgabc.xyz/03-app_build/build_tools/</loc>
-         <lastmod>2022-09-17</lastmod>
+         <lastmod>2022-09-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://dev.cgabc.xyz/03-app_build/code_analysis/</loc>
-         <lastmod>2022-09-17</lastmod>
+         <lastmod>2022-09-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://dev.cgabc.xyz/03-app_build/compiler/</loc>
-         <lastmod>2022-09-17</lastmod>
+         <lastmod>2022-09-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://dev.cgabc.xyz/03-app_build/docker/</loc>
-         <lastmod>2022-09-17</lastmod>
+         <lastmod>2022-09-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://dev.cgabc.xyz/03-app_build/reverse_engineering/</loc>
-         <lastmod>2022-09-17</lastmod>
+         <lastmod>2022-09-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://dev.cgabc.xyz/03-app_build/software_debug/</loc>
-         <lastmod>2022-09-17</lastmod>
+         <lastmod>2022-09-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://dev.cgabc.xyz/03-app_build/software_test/</loc>
-         <lastmod>2022-09-17</lastmod>
+         <lastmod>2022-09-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://dev.cgabc.xyz/04-configuration_management_system/</loc>
-         <lastmod>2022-09-17</lastmod>
+         <lastmod>2022-09-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://dev.cgabc.xyz/04-configuration_management_system/git/</loc>
-         <lastmod>2022-09-17</lastmod>
+         <lastmod>2022-09-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://dev.cgabc.xyz/04-configuration_management_system/maven/</loc>
-         <lastmod>2022-09-17</lastmod>
+         <lastmod>2022-09-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://dev.cgabc.xyz/06-personal_knowledge_management/oa/</loc>
-         <lastmod>2022-09-17</lastmod>
+         <lastmod>2022-09-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://dev.cgabc.xyz/06-personal_knowledge_management/type_setting/API-Docs/</loc>
-         <lastmod>2022-09-17</lastmod>
+         <lastmod>2022-09-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://dev.cgabc.xyz/06-personal_knowledge_management/type_setting/CHM/</loc>
-         <lastmod>2022-09-17</lastmod>
+         <lastmod>2022-09-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://dev.cgabc.xyz/06-personal_knowledge_management/type_setting/Convertor/</loc>
-         <lastmod>2022-09-17</lastmod>
+         <lastmod>2022-09-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://dev.cgabc.xyz/06-personal_knowledge_management/type_setting/Diagrams/</loc>
-         <lastmod>2022-09-17</lastmod>
+         <lastmod>2022-09-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://dev.cgabc.xyz/06-personal_knowledge_management/type_setting/EPUB/</loc>
-         <lastmod>2022-09-17</lastmod>
+         <lastmod>2022-09-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://dev.cgabc.xyz/06-personal_knowledge_management/type_setting/Fonts/</loc>
-         <lastmod>2022-09-17</lastmod>
+         <lastmod>2022-09-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://dev.cgabc.xyz/06-personal_knowledge_management/type_setting/MarkDown/</loc>
-         <lastmod>2022-09-17</lastmod>
+         <lastmod>2022-09-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://dev.cgabc.xyz/06-personal_knowledge_management/type_setting/Sphinx/</loc>
-         <lastmod>2022-09-17</lastmod>
+         <lastmod>2022-09-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://dev.cgabc.xyz/06-personal_knowledge_management/type_setting/TextEditors/</loc>
-         <lastmod>2022-09-17</lastmod>
+         <lastmod>2022-09-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://dev.cgabc.xyz/06-personal_knowledge_management/website/Jekyll/</loc>
-         <lastmod>2022-09-17</lastmod>
+         <lastmod>2022-09-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://dev.cgabc.xyz/06-personal_knowledge_management/website/MkDocs/</loc>
-         <lastmod>2022-09-17</lastmod>
+         <lastmod>2022-09-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://dev.cgabc.xyz/06-personal_knowledge_management/website/OnlineDocs/</loc>
-         <lastmod>2022-09-17</lastmod>
+         <lastmod>2022-09-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://dev.cgabc.xyz/07-package_management_system/</loc>
-         <lastmod>2022-09-17</lastmod>
+         <lastmod>2022-09-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://dev.cgabc.xyz/08-network/</loc>
-         <lastmod>2022-09-17</lastmod>
+         <lastmod>2022-09-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://dev.cgabc.xyz/08-network/database/</loc>
-         <lastmod>2022-09-17</lastmod>
+         <lastmod>2022-09-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://dev.cgabc.xyz/08-network/download_managers/</loc>
-         <lastmod>2022-09-17</lastmod>
+         <lastmod>2022-09-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://dev.cgabc.xyz/08-network/nas/synology_nas/</loc>
-         <lastmod>2022-09-17</lastmod>
+         <lastmod>2022-09-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://dev.cgabc.xyz/08-network/network_devices/router/</loc>
-         <lastmod>2022-09-17</lastmod>
+         <lastmod>2022-09-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://dev.cgabc.xyz/08-network/proxy/</loc>
-         <lastmod>2022-09-17</lastmod>
+         <lastmod>2022-09-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://dev.cgabc.xyz/08-network/proxy/client/</loc>
-         <lastmod>2022-09-17</lastmod>
+         <lastmod>2022-09-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://dev.cgabc.xyz/08-network/proxy/server/</loc>
-         <lastmod>2022-09-17</lastmod>
+         <lastmod>2022-09-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://dev.cgabc.xyz/08-network/proxy/use/</loc>
-         <lastmod>2022-09-17</lastmod>
+         <lastmod>2022-09-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://dev.cgabc.xyz/08-network/serial_communication/</loc>
-         <lastmod>2022-09-17</lastmod>
+         <lastmod>2022-09-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
 </urlset>
