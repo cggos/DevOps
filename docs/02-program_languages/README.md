@@ -1,66 +1,42 @@
 # Programming Languages
 
------
+---
 
 ## C/C++
 
-### Time Utils
+* https://dsa.cgabc.xyz/cpp/
 
-### Configure file Utils
-
-* [libConfig++](http://config-plus.sourceforge.net/) is a portable and flexible C++ library for reading configuration files which were written in C style syntax
-* JsonCpp
-* libyaml-cpp
-* rosparam
-* cv::FileStorage
-
-### Log Utils
-
----
 
 ## GUI
 
-### C++ MFC
+* C++ MFC
+* C++ Qt
+* CSharp
+* Java
+* VB
 
-### C++ Qt
-
-### CSharp
-
-### Java
-
-### VB
-
----
 
 ## Scripts
 
-### Bash
+* Bash
+* Python
+* Matlab
 
-### Python
-
-### Matlab
-
----
 
 ## Database
 
-### SQL
+* SQL
 
----
 
 ## Web
 
-### HTML
+* HTML
+* CSS
+* PHP
 
-### CSS
-
-### PHP
-
----
 
 ## LabView
 
----
 
 ## Processing
 
