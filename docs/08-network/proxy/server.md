@@ -23,3 +23,4 @@
 * [Shadowsocks](https://portal.shadowsocks.nz/aff.php?aff=56214)
 
 * [IPLC.VIP](https://portal.uuks.club/aff.php?aff=2829)
+    - client: https://thirdislandchain.com/clientarea.php
