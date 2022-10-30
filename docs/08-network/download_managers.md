@@ -117,3 +117,19 @@ Much more sophisticated than axel with many advanced features like multi-segment
 
 * [BitTorrent](http://www.bittorrent.com/)
 * [uTorrent](http://www.utorrent.com/)
+
+
+## Download Google Drive Files using wget
+
+ref: https://medium.com/@acpanjan/download-google-drive-files-using-wget-3c2c025a8b99
+
+* generate a direct download link to files: https://sites.google.com/site/gdocs2direct/
+
+* get FileID
+
+* download with the script
+  ```sh
+  ./08-network/download/dl_google_file_large.sh <FileID> <OutputName>
+  
+  ./08-network/download/dl_google_file_small.sh <FileID> <OutputName>
+  ```
