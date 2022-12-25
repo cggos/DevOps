@@ -4,11 +4,11 @@
 * [谷歌开发者社区(GDG)](https://chinagdg.org/)
 
 <p align="center">
-  <img src="images/DevOps01.png" style="width:80%;">
+  <img src="img/DevOps01.png" style="width:80%;">
 </p>
 
 <p align="center">
-  <img src="images/DevOps-tools.jpg" style="width:80%;">
+  <img src="img/DevOps-tools.jpg" style="width:80%;">
 </p>
 
 ---

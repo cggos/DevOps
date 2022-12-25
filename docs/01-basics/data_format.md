@@ -61,4 +61,37 @@ CoffeeScript-Object-Notation. Same as JSON but for CoffeeScript objects.
 
 ## HDF - Hierarchical Data Format
 
-[Hierarchical Data Format (HDF)](https://eosweb.larc.nasa.gov/HBDOCS/hdf.html) is a data file format designed by the National Center for Supercomputing Applications (NCSA) to assist users in the storage and manipulation of scientific data across diverse operating systems and machines.
+[Hierarchical Data Format (HDF)](https://www.hdfgroup.org/solutions/hdf5) is a data file format designed by the National Center for Supercomputing Applications (NCSA) to assist users in the storage and manipulation of scientific data across diverse operating systems and machines.
+
+<p align="center">
+  <img src="../img/hdf5.png" style="width:100%;"/>
+</p>
+
+### SDK
+
+* C++
+  ```sh
+  sudo apt-get install libhdf5-dev
+  ```
+
+* HDF5 files in Python
+  ```sh
+  conda install h5py
+  ```
+
+### Tools
+
+* hdf5-tools
+  ```sh
+  sudo apt install hdf5-tools
+
+  h5dump file.h5
+  ```
+
+* hdfview
+  ```sh
+  sudo apt install hdfview
+  ```
+
+* [Panoply](https://www.giss.nasa.gov/tools/panoply/) netCDF, HDF and GRIB Data Viewer
+

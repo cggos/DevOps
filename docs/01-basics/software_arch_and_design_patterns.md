@@ -20,11 +20,11 @@
 
 ### UML
 
-* [UML site](http://www.uml.org/)
-* [UML软件工程组织-火龙果软件工程](http://www.uml.org.cn/)
-* [uml china](http://www.umlchina.com/)
+* [uml.org](http://www.uml.org/)
 
-* [UML类图与类的关系详解](http://www.uml.org.cn/oobject/201104212.asp)
+* [UML软件工程组织-火龙果软件工程](http://www.uml.org.cn/)
+    * [UML类图与类的关系详解](http://www.uml.org.cn/oobject/201104212.asp)
+
 
 #### Tools
 
