@@ -1,50 +1,47 @@
 # Diagrams
 
-* https://mermaidjs.github.io/
-
 * xkcd styled chart
-  - [xkcd](https://xkcd.com/): A webcomic of romance, sarcasm, math, and language.
-  - [xkcd styled chart lib](https://github.com/timqian/chart.xkcd)
+    - [xkcd](https://xkcd.com/): A webcomic of romance, sarcasm, math, and language.
+    - [xkcd styled chart lib](https://github.com/timqian/chart.xkcd)
 
 ---
 
-## Creating Graphics Programmatically
+## Overview
 
-* [Asymptote: The Vector Graphics Language](http://asymptote.sourceforge.net/)
+* [Inkscape](https://inkscape.org/) is a professional vector graphics editor for Windows, Mac OS X and Linux. It's free and open source.
+    * [InkscapeForum](http://www.inkscapeforum.com/)
+    * extensions
+        - [Inkscape Table Support](https://sourceforge.net/projects/inkscape-tables/)
 
-### [Graphviz](http://www.graphviz.org/) - Graph Visualization Software
-
-* [GraphViz Pocket Reference](https://graphs.grevian.org/)
-* [GraphViz User Guide](http://graphviz.readthedocs.io/en/stable/manual.html)
-
-
-## Diagram Tools
+* [Dia Diagram Editor](http://dia-installer.de/)
 
 * [Diagram Designer](http://logicnet.dk/DiagramDesigner/): Simple vector graphics editor for creating flowcharts, UML class diagrams, illustrations and slide shows.
-* [Dia Diagram Editor](http://dia-installer.de/) is a program to draw structured diagrams.
+
 * [Xfig](http://mcj.sourceforge.net/) is an interactive drawing tool which runs under X Window System Version 11 Release 4 (X11R4) or later, on most UNIX-compatible platforms, and e.g. under Darwin on the MacIntosh and any X server under Microsoft Windows. It is freeware, and can be downloaded freely
+
 * [Edraw](https://www.edrawsoft.com/): Creating flow chart, mind map, org charts, network diagrams and floor plans with rich gallery of examples and templates
 
-### Inkscape
-
-[Inkscape](https://inkscape.org/) is a professional vector graphics editor for Windows, Mac OS X and Linux. It's free and open source.
-
-* [InkscapeForum](http://www.inkscapeforum.com/)
-* extensions
-    - [Inkscape Table Support](https://sourceforge.net/projects/inkscape-tables/)
 
 ### Online Tools
 
-* [ProcessOn](https://www.processon.com/) 支持流程图、思维导图、原型图、UML、网络拓扑图、组织结构图等
-
 * [Google Diagram (draw.io)](https://app.diagrams.net/)
+
+* [ProcessOn](https://www.processon.com/) 
 
 * [Draw Anywhere](http://www.drawanywhere.com/): Create diagrams online. No download, no-install!
 
 * [WebSequenceDiagrams](https://www.websequencediagrams.com/)
 
 
-## 甘特图(Gantt Chart)
+## Creating Graphics Programmatically
+
+* [Mermaid](https://mermaid.js.org/)
+
+* [GraphViz](http://www.graphviz.org/)
+    * [GraphViz Pocket Reference](https://graphs.grevian.org/)
+    * [GraphViz User Guide](http://graphviz.readthedocs.io/en/stable/manual.html)
+
+* [Asymptote: The Vector Graphics Language](http://asymptote.sourceforge.net/)
 
 
 ## 思维导图(Mind Map)
