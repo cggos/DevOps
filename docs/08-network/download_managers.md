@@ -74,7 +74,7 @@ Much more sophisticated than axel with many advanced features like multi-segment
 
 * To download a file using aria2, run the following command:
   ```sh
-  aria2c "https://www.example.com/example.tar.gz"
+  aria2c [-c] "https://www.example.com/example.tar.gz"
   ```
 
 * To create multiple connections when downloading a file, run a command in following format (replace “4” with your own choice):
