@@ -43,6 +43,64 @@ valgrind --tool=memcheck --leak-check=full <program args>
 * [Landscape](https://landscape.io/) is an early warning system for your Python codebase
 * [Synk](https://snyk.io/): A developer-first solution that automates finding & fixing vulnerabilities in your dependencies
 
-* 代码量统计
-	  - Source Counter
-	  - LineCount（智能源码统计专家）
+### 代码量统计
+
+- Source Counter
+- LineCount（智能源码统计专家）
+- cloc
+- git log
+
+#### cloc
+
+```bash
+sudo apt-get install cloc
+```
+
+```bash
+./cloc
+```
+
+#### git scripts
+
+```bash
+# code_count.sh
+
+printf "\n1. 项目成员数量：";
+git log --pretty='%aN' | sort -u | wc -l
+
+printf "\n\n2. 按用户名统计代码提交次数：\n\n"
+printf "%10s  %s\n" "次数" "用户名"
+git log --pretty='%aN' | sort | uniq -c | sort -k1 -n -r | head -n 5
+printf "\n%10s" "合计"; printf "\n%5s" ""; git log --oneline | wc -l
+
+printf "\n3. 按用户名统计代码提交行数：\n\n"
+printf "%15s %20s+ %20s- %18s\n" "用户名" "总行数" "添加行数" "删除行数"
+git log --format='%aN' | sort -u -r | while read name; do printf "%15s" "$name"; \
+git log --author="$name" --pretty=tformat: --numstat | \
+awk '{ add += $1; subs += $2; loc += $1 - $2 } END { printf "%15s %15s %15s \n", loc, add, subs }' \
+-; done
+
+printf "\n%15s   " "总计："; git log --pretty=tformat: --numstat | \
+awk '{ add += $1; subs += $2; loc += $1 - $2 } END { printf "%15s %15s %15s \n", loc, add, subs }'
+
+echo ""
+# shellcheck disable=SC2162
+read -n 1 -p "请按任意键继续..."
+```
+
+排除多个文件夹
+
+```bash
+git log  --author="songyang" --since="2019-05-01" --until="2019-05-31" --pretty=tformat:  --numstat  -- . ":(exclude)static/built" ":(exclude)static/bower_components" | awk '{ add += $1; subs += $2; loc += $1 - $2 } END { printf "added lines: %s, removed lines: %s, total lines: %s\n", add, subs, loc }'
+```
+
+```bash
+git log -- . ":(exclude)file.txt" ":(exclude)another_file.txt"
+```
+
+- author: 作者，
+- since: 起始时间
+- until: 结束时间
+- `-- . ":(exclude)folderName"` 排除文件夹
+- `-- . ":(exclude)folderName1" ":(exclude)folderName2"` 排除多个文件夹
+
