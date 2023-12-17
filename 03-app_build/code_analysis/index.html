@@ -908,6 +908,39 @@
     Code Quantity
   </a>
   
+    <nav class="md-nav" aria-label="Code Quantity">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#代码量统计" class="md-nav__link">
+    代码量统计
+  </a>
+  
+    <nav class="md-nav" aria-label="代码量统计">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#cloc" class="md-nav__link">
+    cloc
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#git_scripts" class="md-nav__link">
+    git scripts
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
     </ul>
@@ -1711,6 +1744,39 @@
     Code Quantity
   </a>
   
+    <nav class="md-nav" aria-label="Code Quantity">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#代码量统计" class="md-nav__link">
+    代码量统计
+  </a>
+  
+    <nav class="md-nav" aria-label="代码量统计">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#cloc" class="md-nav__link">
+    cloc
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#git_scripts" class="md-nav__link">
+    git scripts
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
     </ul>
@@ -1742,7 +1808,14 @@
 <li><a href="#Cppcheck_-_a_static_analysis_tool_for_CC_code">Cppcheck - a static analysis tool for C/C++ code</a></li>
 <li><a href="#Valgrind_-_a_dynamic_analysis_tools">Valgrind - a dynamic analysis tools</a></li>
 <li><a href="#gprof_and_gcov">gprof and gcov</a></li>
-<li><a href="#Code_Quantity">Code Quantity</a></li>
+<li><a href="#Code_Quantity">Code Quantity</a><ul>
+<li><a href="#代码量统计">代码量统计</a><ul>
+<li><a href="#cloc">cloc</a></li>
+<li><a href="#git_scripts">git scripts</a></li>
+</ul>
+</li>
+</ul>
+</li>
 </ul>
 </li>
 </ul>
@@ -1776,16 +1849,56 @@
 <ul>
 <li><a href="https://wakatime.com/">WakaTime</a>: Open source plugins for automatic programming metrics</li>
 <li><a href="https://landscape.io/">Landscape</a> is an early warning system for your Python codebase</li>
-<li>
-<p><a href="https://snyk.io/">Synk</a>: A developer-first solution that automates finding &amp; fixing vulnerabilities in your dependencies</p>
-</li>
-<li>
-<p>代码量统计</p>
+<li><a href="https://snyk.io/">Synk</a>: A developer-first solution that automates finding &amp; fixing vulnerabilities in your dependencies</li>
+</ul>
+<h3 id="代码量统计">代码量统计<a class="headerlink" href="#代码量统计" title="Permanent link">&para;</a></h3>
 <ul>
 <li>Source Counter</li>
 <li>LineCount（智能源码统计专家）</li>
+<li>cloc</li>
+<li>git log</li>
 </ul>
-</li>
+<h4 id="cloc">cloc<a class="headerlink" href="#cloc" title="Permanent link">&para;</a></h4>
+<div class="highlight"><span class="filename">Bash</span><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a>sudo apt-get install cloc
+</code></pre></div>
+<div class="highlight"><span class="filename">Bash</span><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a>./cloc
+</code></pre></div>
+<h4 id="git_scripts">git scripts<a class="headerlink" href="#git_scripts" title="Permanent link">&para;</a></h4>
+<div class="highlight"><span class="filename">Bash</span><pre><span></span><code><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a><span class="c1"># code_count.sh</span>
+<a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a>
+<a id="__codelineno-6-3" name="__codelineno-6-3" href="#__codelineno-6-3"></a><span class="nb">printf</span> <span class="s2">&quot;\n1. 项目成员数量：&quot;</span><span class="p">;</span>
+<a id="__codelineno-6-4" name="__codelineno-6-4" href="#__codelineno-6-4"></a>git log --pretty<span class="o">=</span><span class="s1">&#39;%aN&#39;</span> <span class="p">|</span> sort -u <span class="p">|</span> wc -l
+<a id="__codelineno-6-5" name="__codelineno-6-5" href="#__codelineno-6-5"></a>
+<a id="__codelineno-6-6" name="__codelineno-6-6" href="#__codelineno-6-6"></a><span class="nb">printf</span> <span class="s2">&quot;\n\n2. 按用户名统计代码提交次数：\n\n&quot;</span>
+<a id="__codelineno-6-7" name="__codelineno-6-7" href="#__codelineno-6-7"></a><span class="nb">printf</span> <span class="s2">&quot;%10s  %s\n&quot;</span> <span class="s2">&quot;次数&quot;</span> <span class="s2">&quot;用户名&quot;</span>
+<a id="__codelineno-6-8" name="__codelineno-6-8" href="#__codelineno-6-8"></a>git log --pretty<span class="o">=</span><span class="s1">&#39;%aN&#39;</span> <span class="p">|</span> sort <span class="p">|</span> uniq -c <span class="p">|</span> sort -k1 -n -r <span class="p">|</span> head -n <span class="m">5</span>
+<a id="__codelineno-6-9" name="__codelineno-6-9" href="#__codelineno-6-9"></a><span class="nb">printf</span> <span class="s2">&quot;\n%10s&quot;</span> <span class="s2">&quot;合计&quot;</span><span class="p">;</span> <span class="nb">printf</span> <span class="s2">&quot;\n%5s&quot;</span> <span class="s2">&quot;&quot;</span><span class="p">;</span> git log --oneline <span class="p">|</span> wc -l
+<a id="__codelineno-6-10" name="__codelineno-6-10" href="#__codelineno-6-10"></a>
+<a id="__codelineno-6-11" name="__codelineno-6-11" href="#__codelineno-6-11"></a><span class="nb">printf</span> <span class="s2">&quot;\n3. 按用户名统计代码提交行数：\n\n&quot;</span>
+<a id="__codelineno-6-12" name="__codelineno-6-12" href="#__codelineno-6-12"></a><span class="nb">printf</span> <span class="s2">&quot;%15s %20s+ %20s- %18s\n&quot;</span> <span class="s2">&quot;用户名&quot;</span> <span class="s2">&quot;总行数&quot;</span> <span class="s2">&quot;添加行数&quot;</span> <span class="s2">&quot;删除行数&quot;</span>
+<a id="__codelineno-6-13" name="__codelineno-6-13" href="#__codelineno-6-13"></a>git log --format<span class="o">=</span><span class="s1">&#39;%aN&#39;</span> <span class="p">|</span> sort -u -r <span class="p">|</span> <span class="k">while</span> <span class="nb">read</span> name<span class="p">;</span> <span class="k">do</span> <span class="nb">printf</span> <span class="s2">&quot;%15s&quot;</span> <span class="s2">&quot;</span><span class="nv">$name</span><span class="s2">&quot;</span><span class="p">;</span> <span class="se">\</span>
+<a id="__codelineno-6-14" name="__codelineno-6-14" href="#__codelineno-6-14"></a>git log --author<span class="o">=</span><span class="s2">&quot;</span><span class="nv">$name</span><span class="s2">&quot;</span> --pretty<span class="o">=</span>tformat: --numstat <span class="p">|</span> <span class="se">\</span>
+<a id="__codelineno-6-15" name="__codelineno-6-15" href="#__codelineno-6-15"></a>awk <span class="s1">&#39;{ add += $1; subs += $2; loc += $1 - $2 } END { printf &quot;%15s %15s %15s \n&quot;, loc, add, subs }&#39;</span> <span class="se">\</span>
+<a id="__codelineno-6-16" name="__codelineno-6-16" href="#__codelineno-6-16"></a>-<span class="p">;</span> <span class="k">done</span>
+<a id="__codelineno-6-17" name="__codelineno-6-17" href="#__codelineno-6-17"></a>
+<a id="__codelineno-6-18" name="__codelineno-6-18" href="#__codelineno-6-18"></a><span class="nb">printf</span> <span class="s2">&quot;\n%15s   &quot;</span> <span class="s2">&quot;总计：&quot;</span><span class="p">;</span> git log --pretty<span class="o">=</span>tformat: --numstat <span class="p">|</span> <span class="se">\</span>
+<a id="__codelineno-6-19" name="__codelineno-6-19" href="#__codelineno-6-19"></a>awk <span class="s1">&#39;{ add += $1; subs += $2; loc += $1 - $2 } END { printf &quot;%15s %15s %15s \n&quot;, loc, add, subs }&#39;</span>
+<a id="__codelineno-6-20" name="__codelineno-6-20" href="#__codelineno-6-20"></a>
+<a id="__codelineno-6-21" name="__codelineno-6-21" href="#__codelineno-6-21"></a><span class="nb">echo</span> <span class="s2">&quot;&quot;</span>
+<a id="__codelineno-6-22" name="__codelineno-6-22" href="#__codelineno-6-22"></a><span class="c1"># shellcheck disable=SC2162</span>
+<a id="__codelineno-6-23" name="__codelineno-6-23" href="#__codelineno-6-23"></a><span class="nb">read</span> -n <span class="m">1</span> -p <span class="s2">&quot;请按任意键继续...&quot;</span>
+</code></pre></div>
+<p>排除多个文件夹</p>
+<div class="highlight"><span class="filename">Bash</span><pre><span></span><code><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a>git log  --author<span class="o">=</span><span class="s2">&quot;songyang&quot;</span> --since<span class="o">=</span><span class="s2">&quot;2019-05-01&quot;</span> --until<span class="o">=</span><span class="s2">&quot;2019-05-31&quot;</span> --pretty<span class="o">=</span>tformat:  --numstat  -- . <span class="s2">&quot;:(exclude)static/built&quot;</span> <span class="s2">&quot;:(exclude)static/bower_components&quot;</span> <span class="p">|</span> awk <span class="s1">&#39;{ add += $1; subs += $2; loc += $1 - $2 } END { printf &quot;added lines: %s, removed lines: %s, total lines: %s\n&quot;, add, subs, loc }&#39;</span>
+</code></pre></div>
+<div class="highlight"><span class="filename">Bash</span><pre><span></span><code><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a>git log -- . <span class="s2">&quot;:(exclude)file.txt&quot;</span> <span class="s2">&quot;:(exclude)another_file.txt&quot;</span>
+</code></pre></div>
+<ul>
+<li>author: 作者，</li>
+<li>since: 起始时间</li>
+<li>until: 结束时间</li>
+<li><code>-- . ":(exclude)folderName"</code> 排除文件夹</li>
+<li><code>-- . ":(exclude)folderName1" ":(exclude)folderName2"</code> 排除多个文件夹</li>
 </ul>
 
               
