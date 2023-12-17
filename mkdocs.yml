@@ -117,6 +117,7 @@ nav:
   - App Build:
     - Build Tools: 03-app_build/build_tools.md
     - Compiler: 03-app_build/compiler.md
+    - Cross Compilation: 03-app_build/cross_compilation.md
     - Debug: 03-app_build/software_debug.md
     - Test: 03-app_build/software_test.md
     - Code Analysis: 03-app_build/code_analysis.md
