@@ -10,14 +10,14 @@
         <meta name="author" content="Gavin Gao">
       
       
-        <link rel="canonical" href="https://dev.cgabc.xyz/02-scripting/key/">
+        <link rel="canonical" href="https://dev.cgabc.xyz/03-app_build/cross_compilation/">
       
       <link rel="icon" href="../../images/favicon.png">
       <meta name="generator" content="mkdocs-1.3.1, mkdocs-material-8.3.9">
     
     
       
-        <title>GPG & SSH Key - DevOps</title>
+        <title>Cross Compilation - DevOps</title>
       
     
     
@@ -64,7 +64,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#Linux_Key" class="md-skip">
+        <a href="#Cross_Compilation" class="md-skip">
           跳转至
         </a>
       
@@ -97,7 +97,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              GPG & SSH Key
+              Cross Compilation
             
           </span>
         </div>
@@ -225,15 +225,13 @@
         
   
   
-    
-  
 
 
   
   
   
     <li class="md-tabs__item">
-      <a href="../" class="md-tabs__link md-tabs__link--active">
+      <a href="../../02-scripting/" class="md-tabs__link">
         Scripting
       </a>
     </li>
@@ -243,13 +241,15 @@
         
   
   
+    
+  
 
 
   
   
   
     <li class="md-tabs__item">
-      <a href="../../03-app_build/build_tools/" class="md-tabs__link">
+      <a href="../build_tools/" class="md-tabs__link md-tabs__link--active">
         App Build
       </a>
     </li>
@@ -587,14 +587,12 @@
 
   
   
-    
-  
   
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5" type="checkbox" id="__nav_5" checked>
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" data-md-toggle="__nav_5" type="checkbox" id="__nav_5" checked>
       
       
       
@@ -622,7 +620,7 @@
         
         
         <div class="md-nav__link md-nav__link--index ">
-          <a href="../">Scripting</a>
+          <a href="../../02-scripting/">Scripting</a>
           
             <label for="__nav_5">
               <span class="md-nav__icon md-icon"></span>
@@ -645,7 +643,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../system/" class="md-nav__link">
+      <a href="../../02-scripting/system/" class="md-nav__link">
         System
       </a>
     </li>
@@ -659,7 +657,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../grub_bios/" class="md-nav__link">
+      <a href="../../02-scripting/grub_bios/" class="md-nav__link">
         Grub & BIOS
       </a>
     </li>
@@ -673,7 +671,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../disk/" class="md-nav__link">
+      <a href="../../02-scripting/disk/" class="md-nav__link">
         Disk
       </a>
     </li>
@@ -687,7 +685,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../file/" class="md-nav__link">
+      <a href="../../02-scripting/file/" class="md-nav__link">
         File & File Systems
       </a>
     </li>
@@ -699,79 +697,11 @@
               
   
   
-    
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          GPG & SSH Key
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../../02-scripting/key/" class="md-nav__link">
         GPG & SSH Key
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="目录">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      目录
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#Overview" class="md-nav__link">
-    Overview
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#GPGPGP" class="md-nav__link">
-    GPG/PGP
-  </a>
-  
-    <nav class="md-nav" aria-label="GPG/PGP">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#公钥服务器GPG_Keyserver" class="md-nav__link">
-    公钥服务器（GPG Keyserver）
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#SSH_Key" class="md-nav__link">
-    SSH Key
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -783,7 +713,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../terminals_x11/" class="md-nav__link">
+      <a href="../../02-scripting/terminals_x11/" class="md-nav__link">
         Terminals and X11
       </a>
     </li>
@@ -797,7 +727,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../ubuntu_apps/" class="md-nav__link">
+      <a href="../../02-scripting/ubuntu_apps/" class="md-nav__link">
         Ubuntu Apps
       </a>
     </li>
@@ -817,12 +747,14 @@
 
   
   
+    
+  
   
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" data-md-toggle="__nav_6" type="checkbox" id="__nav_6" checked>
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_6" type="checkbox" id="__nav_6" checked>
       
       
       
@@ -863,7 +795,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../03-app_build/build_tools/" class="md-nav__link">
+      <a href="../build_tools/" class="md-nav__link">
         Build Tools
       </a>
     </li>
@@ -877,7 +809,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../03-app_build/compiler/" class="md-nav__link">
+      <a href="../compiler/" class="md-nav__link">
         Compiler
       </a>
     </li>
@@ -889,11 +821,106 @@
               
   
   
+    
   
-    <li class="md-nav__item">
-      <a href="../../03-app_build/cross_compilation/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Cross Compilation
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         Cross Compilation
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="目录">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#CImg" class="md-nav__link">
+    CImg
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#OpenCV" class="md-nav__link">
+    OpenCV
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#Suitsparse" class="md-nav__link">
+    Suitsparse
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#Google_Ceres-Solver" class="md-nav__link">
+    Google Ceres-Solver
+  </a>
+  
+    <nav class="md-nav" aria-label="Google Ceres-Solver">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#ceres-solver-1140_for_Android" class="md-nav__link">
+    ceres-solver-1.14.0 for Android
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#FFTW" class="md-nav__link">
+    FFTW
+  </a>
+  
+    <nav class="md-nav" aria-label="FFTW">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#for_Android" class="md-nav__link">
+    for Android
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -905,7 +932,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../03-app_build/software_debug/" class="md-nav__link">
+      <a href="../software_debug/" class="md-nav__link">
         Debug
       </a>
     </li>
@@ -919,7 +946,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../03-app_build/software_test/" class="md-nav__link">
+      <a href="../software_test/" class="md-nav__link">
         Test
       </a>
     </li>
@@ -933,7 +960,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../03-app_build/code_analysis/" class="md-nav__link">
+      <a href="../code_analysis/" class="md-nav__link">
         Code Analysis
       </a>
     </li>
@@ -947,7 +974,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../03-app_build/reverse_engineering/" class="md-nav__link">
+      <a href="../reverse_engineering/" class="md-nav__link">
         Reverse Engineering
       </a>
     </li>
@@ -961,7 +988,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../03-app_build/docker/" class="md-nav__link">
+      <a href="../docker/" class="md-nav__link">
         Docker
       </a>
     </li>
@@ -1708,23 +1735,37 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#Overview" class="md-nav__link">
-    Overview
+  <a href="#CImg" class="md-nav__link">
+    CImg
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#GPGPGP" class="md-nav__link">
-    GPG/PGP
+  <a href="#OpenCV" class="md-nav__link">
+    OpenCV
   </a>
   
-    <nav class="md-nav" aria-label="GPG/PGP">
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#Suitsparse" class="md-nav__link">
+    Suitsparse
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#Google_Ceres-Solver" class="md-nav__link">
+    Google Ceres-Solver
+  </a>
+  
+    <nav class="md-nav" aria-label="Google Ceres-Solver">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#公钥服务器GPG_Keyserver" class="md-nav__link">
-    公钥服务器（GPG Keyserver）
+  <a href="#ceres-solver-1140_for_Android" class="md-nav__link">
+    ceres-solver-1.14.0 for Android
   </a>
   
 </li>
@@ -1735,9 +1776,22 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#SSH_Key" class="md-nav__link">
-    SSH Key
+  <a href="#FFTW" class="md-nav__link">
+    FFTW
   </a>
+  
+    <nav class="md-nav" aria-label="FFTW">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#for_Android" class="md-nav__link">
+    for Android
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -1753,7 +1807,7 @@
             <article class="md-content__inner md-typeset">
               
                 
-  <a href="https://github.com/cggos/DevOps/edit/master/docs/02-scripting/key.md" title="编辑此页" class="md-content__button md-icon">
+  <a href="https://github.com/cggos/DevOps/edit/master/docs/03-app_build/cross_compilation.md" title="编辑此页" class="md-content__button md-icon">
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25Z"/></svg>
   </a>
 
@@ -1762,29 +1816,78 @@
 
 
 
-<h1 id="Linux_Key">Linux Key<a class="headerlink" href="#Linux_Key" title="Permanent link">&para;</a></h1>
+<h1 id="Cross_Compilation">Cross Compilation<a class="headerlink" href="#Cross_Compilation" title="Permanent link">&para;</a></h1>
 <hr />
-<h2 id="Overview">Overview<a class="headerlink" href="#Overview" title="Permanent link">&para;</a></h2>
-<p>公钥和密钥，是现在密码学的一个发明。以我们生活中的例子来说，公钥相当于你的银行帐号，私钥相当于你的银行存折和银行卡。</p>
-<h2 id="GPGPGP">GPG/PGP<a class="headerlink" href="#GPGPGP" title="Permanent link">&para;</a></h2>
+<h2 id="CImg">CImg<a class="headerlink" href="#CImg" title="Permanent link">&para;</a></h2>
+<p>Add the following code in <code>CImg.h</code> from <a href="https://github.com/dtschump/CImg.git">https://github.com/dtschump/CImg.git</a> to <strong>NOT</strong> use <code>Xlib.h</code>:</p>
+<div class="highlight"><span class="filename">C++</span><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="cp">#undef cimg_display</span>
+<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="cp">#define cimg_display 0</span>
+</code></pre></div>
+<h2 id="OpenCV">OpenCV<a class="headerlink" href="#OpenCV" title="Permanent link">&para;</a></h2>
 <ul>
-<li><a href="https://wiki.ubuntu.org.cn/GPG/PGP">https://wiki.ubuntu.org.cn/GPG/PGP</a></li>
+<li>Android: <a href="https://blog.csdn.net/u011178262/article/details/78209791#for_Android_127">https://blog.csdn.net/u011178262/article/details/78209791#for_Android_127</a></li>
 </ul>
-<p>PGP，简单的说，是一款以利用公钥和密钥技术的加密和身份验证软件；而GPG呢，就是开源的PGP。</p>
-<h3 id="公钥服务器GPG_Keyserver">公钥服务器（GPG Keyserver）<a class="headerlink" href="#公钥服务器GPG_Keyserver" title="Permanent link">&para;</a></h3>
-<p>现在网络上有很多公钥服务器，而且都是互相同步的。比如：</p>
+<h2 id="Suitsparse">Suitsparse<a class="headerlink" href="#Suitsparse" title="Permanent link">&para;</a></h2>
 <ul>
-<li><a href="http://keyserver.ubuntu.com:11371">http://keyserver.ubuntu.com:11371</a> </li>
-<li><a href="http://pgp.mit.edu/">http://pgp.mit.edu/</a> </li>
-<li><a href="http://wwwkeys.pgp.net:11371">http://wwwkeys.pgp.net:11371</a> </li>
-<li><a href="http://subkeys.pgp.net">http://subkeys.pgp.net</a> </li>
+<li>Android: <a href="https://github.com/cggos/suitesparse_for_android">https://github.com/cggos/suitesparse_for_android</a></li>
 </ul>
-<h2 id="SSH_Key">SSH Key<a class="headerlink" href="#SSH_Key" title="Permanent link">&para;</a></h2>
-<ul>
-<li>Generating a new SSH key
-  <div class="highlight"><span class="filename">Bash</span><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>ssh-keygen -t rsa -b <span class="m">4096</span> -C <span class="s2">&quot;your_email@example.com&quot;</span>
-</code></pre></div></li>
-</ul>
+<h2 id="Google_Ceres-Solver">Google Ceres-Solver<a class="headerlink" href="#Google_Ceres-Solver" title="Permanent link">&para;</a></h2>
+<h3 id="ceres-solver-1140_for_Android">ceres-solver-1.14.0 for Android<a class="headerlink" href="#ceres-solver-1140_for_Android" title="Permanent link">&para;</a></h3>
+<p>ref: <a href="https://programmer.group/how-to-compile-ceres-android-library-with-ndk-under-mac.html">How to Compile Ceres Android Library with NDK under Mac</a></p>
+<p>替换 <code>ceres-solver-1.14.0/jni</code> 下 <code>Application.mk</code> 中的内容为</p>
+<div class="highlight"><span class="filename">Makefile</span><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="nv">APP_BUILD_SCRIPT</span> <span class="o">:=</span> <span class="k">$(</span>call my-dir<span class="k">)</span>/Android.mk
+<a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a><span class="nv">APP_PROJECT_PATH</span> <span class="o">:=</span> <span class="k">$(</span>call my-dir<span class="k">)</span>
+<a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a>
+<a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a><span class="nv">APP_CPPFLAGS</span> <span class="o">:=</span> -frtti -fexceptions -std<span class="o">=</span>c++0x
+<a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a><span class="nv">APP_OPTIM</span> <span class="o">:=</span> release
+<a id="__codelineno-1-6" name="__codelineno-1-6" href="#__codelineno-1-6"></a>
+<a id="__codelineno-1-7" name="__codelineno-1-7" href="#__codelineno-1-7"></a><span class="nv">APP_STL</span> <span class="o">:=</span> gnustl_static
+<a id="__codelineno-1-8" name="__codelineno-1-8" href="#__codelineno-1-8"></a><span class="nv">APP_ABI</span> <span class="o">:=</span> armeabi-v7a
+</code></pre></div>
+<p>在 <code>ceres-solver-1.14.0/jni</code> 下</p>
+<div class="highlight"><span class="filename">Bash</span><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="nv">EIGEN_PATH</span><span class="o">=</span>/home/cg/projects/3rdparty/eigen-3.3.7 ndk-build -j1
+</code></pre></div>
+<p>编译完后，在 <code>ceres-solver-1.14.0/obj/local/armeabi-v7a</code> 下生成 <code>libceres.a</code> 文件。</p>
+<h2 id="FFTW">FFTW<a class="headerlink" href="#FFTW" title="Permanent link">&para;</a></h2>
+<p>It is best to download official tarballs from <a href="http://fftw.org/">http://fftw.org/</a>, other than using its github repository!!!</p>
+<h3 id="for_Android">for Android<a class="headerlink" href="#for_Android" title="Permanent link">&para;</a></h3>
+<p>Build Reference: <a href="https://github.com/hekai/fftw_android">fftw_android( from he-kai github )</a></p>
+<div class="highlight"><span class="filename">Bash</span><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="ch">#!/bin/sh</span>
+<a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a><span class="nb">set</span> -o errexit
+<a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a>
+<a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a><span class="c1"># Compiles fftw3 for Android</span>
+<a id="__codelineno-3-5" name="__codelineno-3-5" href="#__codelineno-3-5"></a><span class="c1"># Make sure you have ANDROID_NDK defined in .bashrc or .bash_profile</span>
+<a id="__codelineno-3-6" name="__codelineno-3-6" href="#__codelineno-3-6"></a>
+<a id="__codelineno-3-7" name="__codelineno-3-7" href="#__codelineno-3-7"></a><span class="nv">PROJECT_ROOT</span><span class="o">=</span><span class="s2">&quot;`pwd`/../&quot;</span>
+<a id="__codelineno-3-8" name="__codelineno-3-8" href="#__codelineno-3-8"></a><span class="nv">INSTALL_DIR</span><span class="o">=</span><span class="s2">&quot;</span><span class="nv">$PROJECT_ROOT</span><span class="s2">/jni/ndk-modules/fftw3&quot;</span>
+<a id="__codelineno-3-9" name="__codelineno-3-9" href="#__codelineno-3-9"></a>mkdir -p <span class="nv">$INSTALL_DIR</span>
+<a id="__codelineno-3-10" name="__codelineno-3-10" href="#__codelineno-3-10"></a>
+<a id="__codelineno-3-11" name="__codelineno-3-11" href="#__codelineno-3-11"></a><span class="nv">NDK_DIR</span><span class="o">=</span><span class="si">${</span><span class="nv">ANDROID_NDK</span><span class="si">}</span>
+<a id="__codelineno-3-12" name="__codelineno-3-12" href="#__codelineno-3-12"></a>
+<a id="__codelineno-3-13" name="__codelineno-3-13" href="#__codelineno-3-13"></a><span class="nb">export</span> <span class="nv">PATH</span><span class="o">=</span><span class="s2">&quot;</span><span class="nv">$NDK_DIR</span><span class="s2">/toolchains/arm-linux-androideabi-4.9/prebuilt/linux-x86_64/bin/:</span><span class="nv">$PATH</span><span class="s2">&quot;</span>
+<a id="__codelineno-3-14" name="__codelineno-3-14" href="#__codelineno-3-14"></a><span class="nb">export</span> <span class="nv">SYS_ROOT</span><span class="o">=</span><span class="s2">&quot;</span><span class="nv">$NDK_DIR</span><span class="s2">/platforms/android-9/arch-arm/&quot;</span>
+<a id="__codelineno-3-15" name="__codelineno-3-15" href="#__codelineno-3-15"></a><span class="nb">export</span> <span class="nv">CC</span><span class="o">=</span><span class="s2">&quot;arm-linux-androideabi-gcc --sysroot=</span><span class="nv">$SYS_ROOT</span><span class="s2">&quot;</span>
+<a id="__codelineno-3-16" name="__codelineno-3-16" href="#__codelineno-3-16"></a><span class="nb">export</span> <span class="nv">CXX</span><span class="o">=</span><span class="s2">&quot;arm-linux-androideabi-g++&quot;</span>
+<a id="__codelineno-3-17" name="__codelineno-3-17" href="#__codelineno-3-17"></a><span class="nb">export</span> <span class="nv">LD</span><span class="o">=</span><span class="s2">&quot;arm-linux-androideabi-ld&quot;</span>
+<a id="__codelineno-3-18" name="__codelineno-3-18" href="#__codelineno-3-18"></a><span class="nb">export</span> <span class="nv">AR</span><span class="o">=</span><span class="s2">&quot;arm-linux-androideabi-ar&quot;</span>
+<a id="__codelineno-3-19" name="__codelineno-3-19" href="#__codelineno-3-19"></a><span class="nb">export</span> <span class="nv">RANLIB</span><span class="o">=</span><span class="s2">&quot;arm-linux-androideabi-ranlib&quot;</span>
+<a id="__codelineno-3-20" name="__codelineno-3-20" href="#__codelineno-3-20"></a><span class="nb">export</span> <span class="nv">STRIP</span><span class="o">=</span><span class="s2">&quot;arm-linux-androideabi-strip&quot;</span>
+<a id="__codelineno-3-21" name="__codelineno-3-21" href="#__codelineno-3-21"></a><span class="nb">export</span> <span class="nv">CFLAGS</span><span class="o">=</span><span class="s2">&quot;-mfpu=neon -march=armv7-a -mfloat-abi=softfp&quot;</span> <span class="c1">#use Thumb-2 instructs</span>
+<a id="__codelineno-3-22" name="__codelineno-3-22" href="#__codelineno-3-22"></a><span class="nb">export</span> <span class="nv">CXXFLAGS</span><span class="o">=</span><span class="s2">&quot;-lstdc++&quot;</span>
+<a id="__codelineno-3-23" name="__codelineno-3-23" href="#__codelineno-3-23"></a><span class="nb">export</span> <span class="nv">LDFLAGS</span><span class="o">=</span><span class="s2">&quot;-lc -lgcc&quot;</span>
+<a id="__codelineno-3-24" name="__codelineno-3-24" href="#__codelineno-3-24"></a>
+<a id="__codelineno-3-25" name="__codelineno-3-25" href="#__codelineno-3-25"></a><span class="nv">SRC_DIR</span><span class="o">=</span><span class="s2">&quot;./fftw-3.3.3&quot;</span>
+<a id="__codelineno-3-26" name="__codelineno-3-26" href="#__codelineno-3-26"></a><span class="nb">cd</span> <span class="nv">$SRC_DIR</span>
+<a id="__codelineno-3-27" name="__codelineno-3-27" href="#__codelineno-3-27"></a>
+<a id="__codelineno-3-28" name="__codelineno-3-28" href="#__codelineno-3-28"></a><span class="c1">##### configure &amp; make &amp; make install #####</span>
+<a id="__codelineno-3-29" name="__codelineno-3-29" href="#__codelineno-3-29"></a>
+<a id="__codelineno-3-30" name="__codelineno-3-30" href="#__codelineno-3-30"></a>./configure --host<span class="o">=</span>arm-eabi --prefix<span class="o">=</span><span class="nv">$INSTALL_DIR</span> --enable-float --enable-neon
+<a id="__codelineno-3-31" name="__codelineno-3-31" href="#__codelineno-3-31"></a>
+<a id="__codelineno-3-32" name="__codelineno-3-32" href="#__codelineno-3-32"></a>make -j<span class="k">$(</span>nproc<span class="k">)</span>
+<a id="__codelineno-3-33" name="__codelineno-3-33" href="#__codelineno-3-33"></a>make install -j<span class="k">$(</span>nproc<span class="k">)</span>
+<a id="__codelineno-3-34" name="__codelineno-3-34" href="#__codelineno-3-34"></a>
+<a id="__codelineno-3-35" name="__codelineno-3-35" href="#__codelineno-3-35"></a><span class="nb">exit</span> <span class="m">0</span>
+</code></pre></div>
 
               
             </article>
@@ -1805,7 +1908,7 @@
     <nav class="md-footer__inner md-grid" aria-label="页脚" >
       
         
-        <a href="../file/" class="md-footer__link md-footer__link--prev" aria-label="上一页: File &amp; File Systems" rel="prev">
+        <a href="../compiler/" class="md-footer__link md-footer__link--prev" aria-label="上一页: Compiler" rel="prev">
           <div class="md-footer__button md-icon">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
           </div>
@@ -1814,20 +1917,20 @@
               <span class="md-footer__direction">
                 上一页
               </span>
-              File & File Systems
+              Compiler
             </div>
           </div>
         </a>
       
       
         
-        <a href="../terminals_x11/" class="md-footer__link md-footer__link--next" aria-label="下一页: Terminals and X11" rel="next">
+        <a href="../software_debug/" class="md-footer__link md-footer__link--next" aria-label="下一页: Debug" rel="next">
           <div class="md-footer__title">
             <div class="md-ellipsis">
               <span class="md-footer__direction">
                 下一页
               </span>
-              Terminals and X11
+              Debug
             </div>
           </div>
           <div class="md-footer__button md-icon">
