@@ -4,6 +4,8 @@
 
 ## Vi/Vim
 
+* [neovim](https://neovim.io/): hyperextensible Vim-based text editor
+
 * [ViEmu](http://www.viemu.com/): Vi/vim emulation for Visual Studio, Xcode, Word, Outlook & SQL Server
 * [vimplus](https://github.com/chxuan/vimplus)
 * [VimAwesome](https://vimawesome.com/)
