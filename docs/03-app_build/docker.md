@@ -39,13 +39,39 @@
 * [Get Docker Engine - Community for Ubuntu](https://docs.docker.com/install/linux/docker-ce/ubuntu/)
 
 
-## Usage
+
+## Config & Check
+
+```json
+// vim /etc/docker/daemon.json
+{
+    "registry-mirrors":["https://docker.mirrors.ustc.edu.cn"]
+}
+```
+
+restart
+
+```bash
+sudo systemctl daemon-reload
+sudo systemctl restart docker
+```
+
+check
 
 ```sh
 sudo docker info
 ```
 
-### Image
+###  VS Code
+
+Error: permission denied while trying to connect to the Docker daemon socket at unix
+
+```bash
+sudo chmod 666 /var/run/docker.sock
+```
+
+
+## Image
 
 * view
   ```sh
@@ -73,7 +99,7 @@ sudo docker info
 
 * delete
   ```sh
-  sudo docker rmi <REPO-NAME>
+  sudo docker rmi <REPO-NAME>/<IMAGE-ID>
   ```
 
 * get
@@ -101,7 +127,51 @@ sudo docker info
       * ubuntu:15.10: 这是指用 ubuntu 15.10 版本镜像为基础来启动容器
       * /bin/bash：放在镜像名后的是命令，这里我们希望有个交互式 Shell，因此用的是 /bin/bash
 
-### Container
+### Run Examples
+
+```bash
+sudo docker run -it --rm --privileged \
+	-v /dev/bus/usb:/dev/bus/usb \
+	-v /home/gavin/projects/ml/rk/:/rknn_tk \
+	rknn-toolkit2:1.6.0-cp38 /bin/bash
+```
+
+#### with ROS
+
+* ros-kalibr
+  ```bash
+  sudo docker run --name=ros-kalibr -it --rm -e DISPLAY=$DISPLAY \
+    -v /tmp/.X11-unix:/tmp/.X11-unix \
+    davvdg/ros-kalibr \
+    /bin/bash
+  ```
+
+* [HKUST-Aerial-Robotics/VINS-kidnap](https://github.com/HKUST-Aerial-Robotics/VINS-kidnap)
+  ```bash
+  docker run --runtime=nvidia -it \
+          --add-host `hostname`:172.17.0.1 \
+          --env ROS_MASTER_URI=http://`hostname`:11311/ \
+          --env ROS_IP=172.17.0.2 \
+          --env CUDA_VISIBLE_DEVICES=0 \
+          --hostname happy_go \
+          --name happy_go  \
+          mpkuse/kusevisionkit:vins-kidnap bash
+  ```
+
+#### Params
+
+```sh
+--net=host
+
+# or
+--add-host `hostname`:172.17.0.1 \
+--env ROS_MASTER_URI=http://`hostname`:11311/ \
+--env ROS_IP=172.17.0.2 \
+--hostname happy_go \
+--name happy_go  \
+```
+
+## Container
 
 * view
   ```sh
@@ -158,44 +228,6 @@ sudo docker info
   docker cp <Container-ID>:/foo.txt foo.txt
   ```
 
-
-## with ROS
-
-* ros-kalibr
-  ```sh
-  sudo docker run \
-    --name=ros-kalibr \
-    -it --rm -e DISPLAY=$DISPLAY \
-    -v /tmp/.X11-unix:/tmp/.X11-unix davvdg/ros-kalibr \
-    /bin/bash
-  ```
-
-* [HKUST-Aerial-Robotics/VINS-kidnap](https://github.com/HKUST-Aerial-Robotics/VINS-kidnap)
-  ```sh
-  docker run --runtime=nvidia -it \
-          --add-host `hostname`:172.17.0.1 \
-          --env ROS_MASTER_URI=http://`hostname`:11311/ \
-          --env ROS_IP=172.17.0.2 \
-          --env CUDA_VISIBLE_DEVICES=0 \
-          --hostname happy_go \
-          --name happy_go  \
-          mpkuse/kusevisionkit:vins-kidnap bash
-  ```
-
-### Network
-
-params
-
-```sh
---net=host
-
-# or
---add-host `hostname`:172.17.0.1 \
---env ROS_MASTER_URI=http://`hostname`:11311/ \
---env ROS_IP=172.17.0.2 \
---hostname happy_go \
---name happy_go  \
-```
 
 ## Docker Hub
 
