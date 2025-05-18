@@ -30,21 +30,24 @@ elif [ -n "$ZSH_VERSION" ]; then
     alias ss_ros2="source /opt/ros/foxy/setup.zsh"
 fi
 
-# NV CUDA
-export CUDA_HOME=/usr/local/cuda
-export PATH=$PATH:$CUDA_HOME/bin
-export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:$CUDA_HOME/lib64
+# NVIDIA
+if command -v nvidia-smi &> /dev/null && nvidia-smi &> /dev/null; then
+    # NV CUDA
+    export CUDA_HOME=/usr/local/cuda
+    export PATH=$PATH:$CUDA_HOME/bin
+    export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:$CUDA_HOME/lib64
 
-# NV cuDNN
-export CUDNN_ROOT=${USER_APP_ROOT}/DevOps/nv/cudnn-linux-x86_64-8.8.1.3_cuda11-archive
-export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:$CUDNN_ROOT/lib
-export CPATH=$CUDNN_ROOT/include:$CPATH
+    # NV cuDNN
+    export CUDNN_ROOT=${USER_APP_ROOT}/DevOps/nv/cudnn-linux-x86_64-8.8.1.3_cuda11-archive
+    export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:$CUDNN_ROOT/lib
+    export CPATH=$CUDNN_ROOT/include:$CPATH
 
-# NV TRT
-export TRT_ROOT=${USER_APP_ROOT}/DevOps/nv/TensorRT-8.5.3.1
-export PATH=$PATH:$TRT_ROOT/bin
-export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:$TRT_ROOT/lib
-export CPATH=$TRT_ROOT/targets/x86_64-linux/include:$CPATH
+    # NV TRT
+    export TRT_ROOT=${USER_APP_ROOT}/DevOps/nv/TensorRT-8.5.3.1
+    export PATH=$PATH:$TRT_ROOT/bin
+    export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:$TRT_ROOT/lib
+    export CPATH=$TRT_ROOT/targets/x86_64-linux/include:$CPATH
+fi
 
 # JDK
 export JAVA_HOME=${USER_APP_ROOT}/DevOps/jdk/jdk-21.0.2
