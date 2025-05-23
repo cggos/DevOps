@@ -2,6 +2,8 @@ export USER_DATA_HOME="/opt/user_data"
 export USER_APP_ROOT="${USER_DATA_HOME}/apps"
 export USER_DM_ROOT="${USER_DATA_HOME}/dataset_models"
 
+export PATH=$HOME/.local/bin/:$PATH
+
 # echo "${USER_DATA_HOME}/user_shell.sh loaded"
 
 # >>> conda initialize >>>
@@ -59,7 +61,7 @@ export PATH=$JAVA_HOME/bin:$PATH
 
 # Node.js
 export N_PREFIX=$HOME/.local
-export PATH=$HOME/.npm-global/bin:$HOME/.local/bin/:$PATH
+export PATH=$HOME/.npm-global/bin:$PATH
 
 # fnm
 FNM_PATH="${HOME}/.local/share/fnm"
@@ -68,14 +70,15 @@ if [ -d "$FNM_PATH" ]; then
   eval "$(fnm env)"
 fi
 
+# rvm
+export PATH="$PATH:$HOME/.rvm/bin"
+
 # bun completions
 if [ -d "${HOME}/.bun" ]; then
   [ -s "${HOME}/.bun/_bun" ] && source "${HOME}/.bun/_bun"
+  export BUN_INSTALL="$HOME/.bun"
+  export PATH="$BUN_INSTALL/bin:$PATH"
 fi
-
-# bun
-export BUN_INSTALL="$HOME/.bun"
-export PATH="$BUN_INSTALL/bin:$PATH"
 
 # op
 export PATH="$USER_APP_ROOT/OA/op/:$PATH"
