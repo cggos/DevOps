@@ -102,6 +102,7 @@ export TOOL_CHAIN=${USER_APP_ROOT}/DevOps/toolchain/rk_toolchain
 export PATH=$PATH:${TOOL_CHAIN}/bin
 
 # AI
+alias ex_pypath="export PYTHONPATH=$PYTHONPATH:`pwd`"
 export PATH="$PATH:${HOME}/.lmstudio/bin"
 # export PATH="$PATH:/home/gavin/projects/ml/lm/llama.cpp/build/bin/"
 
