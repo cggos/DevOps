@@ -1,4 +1,5 @@
-export USER_DATA_HOME="/opt/user_data"
+# export USER_DATA_HOME="/opt/user_data"
+export USER_DATA_HOME="${HOME}/UserData"
 export USER_APP_ROOT="${USER_DATA_HOME}/apps"
 export USER_DM_ROOT="${USER_DATA_HOME}/dataset_models"
 
@@ -89,6 +90,11 @@ fi
 # fzf
 alias ff='find * -type f | fzf > selected'
 
+# Docker
+if [[ "$(uname -s)" == "Darwin" ]]; then
+  export PATH="$PATH:/Applications/Docker.app/Contents/Resources/bin/"
+fi
+
 # SSL
 export OPENSSL_ROOT_DIR=/usr/
 export OPENSSL_CRYPTO_LIBRARY=/usr/lib/ssl/
@@ -97,13 +103,22 @@ export OPENSSL_INCLUDE_DIR=/usr/include/openssl/
 # SSH
 alias ssh_jet="ssh jetson@192.168.55.1"
 
-# ARM
-export TOOL_CHAIN=${USER_APP_ROOT}/DevOps/toolchain/rk_toolchain
-export PATH=$PATH:${TOOL_CHAIN}/bin
-
-# AI
+# Python
 alias ex_pypath="export PYTHONPATH=$PYTHONPATH:`pwd`"
-export PATH="$PATH:${HOME}/.lmstudio/bin"
+
+# ARM
+export TOOL_CHAIN_RK=${USER_APP_ROOT}/DevOps/toolchain/rk_toolchain
+export TOOL_CHAIN_ESP=${USER_APP_ROOT}/DevOps/toolchain/xtensa-esp32-elf
+export PATH=$PATH:${TOOL_CHAIN_RK}/bin
+export PATH=$PATH:${TOOL_CHAIN_ESP}/bin
+alias ss_esp_idf=". ${USER_APP_ROOT}/DevOps/esp/esp-idf/export.sh"
+
+# AI Apps
+if [[ "$(uname -s)" == "Linux" ]]; then
+  export PATH="$PATH:${HOME}/.lmstudio/bin"
+elif [[ "$(uname -s)" == "Darwin" ]]; then
+  export PATH="$PATH:${HOME}/.cache/lm-studio/bin"
+fi
 # export PATH="$PATH:/home/gavin/projects/ml/lm/llama.cpp/build/bin/"
 
 # HF
