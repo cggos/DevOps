@@ -119,7 +119,10 @@ if [[ "$(uname -s)" == "Linux" ]]; then
 elif [[ "$(uname -s)" == "Darwin" ]]; then
   export PATH="$PATH:${HOME}/.cache/lm-studio/bin"
 fi
-# export PATH="$PATH:/home/gavin/projects/ml/lm/llama.cpp/build/bin/"
+# export OLLAMA_MODELS="${USER_DM_ROOT}/models_ml/ollama/models"
+export LLAMA_CPP_LIB_PATH="${USER_APP_ROOT}/AI/llama.cpp/build/bin"
+export PATH="${LLAMA_CPP_LIB_PATH}:$PATH"
+export LD_LIBRARY_PATH="${LLAMA_CPP_LIB_PATH}:$LD_LIBRARY_PATH"
 
 # HF
 export HF_HUB_ENABLE_HF_TRANSFER=1
