@@ -1,7 +1,7 @@
 # export USER_DATA_HOME="/opt/user_data"
 export USER_DATA_HOME="${HOME}/UserData"
 export USER_APP_ROOT="${USER_DATA_HOME}/apps"
-export USER_DM_ROOT="${USER_DATA_HOME}/dataset_models"
+export USER_DM_ROOT="${USER_DATA_HOME}/dms"
 
 export PATH=$HOME/.local/bin/:$PATH
 
@@ -102,6 +102,7 @@ export OPENSSL_INCLUDE_DIR=/usr/include/openssl/
 
 # SSH
 alias ssh_jet="ssh jetson@192.168.55.1"
+alias ssh_rpi="ssh pi@raspberrypi.local"
 
 # Python
 alias ex_pypath="export PYTHONPATH=$PYTHONPATH:`pwd`"
