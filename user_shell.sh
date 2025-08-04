@@ -5,7 +5,24 @@ export USER_DM_ROOT="${USER_DATA_HOME}/dms"
 
 export PATH=$HOME/.local/bin/:$PATH
 
-# echo "${USER_DATA_HOME}/user_shell.sh loaded"
+os_name=$(uname)
+if [[ "$os_name" == "Darwin" ]]; then
+    echo "macOS System"
+elif [[ "$os_name" == "Linux" ]]; then
+    os_id=$(grep '^ID=' /etc/os-release | cut -d '=' -f2 | tr -d '"')
+    os_codename=$(grep '^VERSION_CODENAME' /etc/os-release | cut -d '=' -f2)
+    
+    if [[ "$os_codename" == "focal" ]]; then
+        echo "Ubuntu 20.04 (Focal Fossa)"
+    elif [[ "$os_codename" == "jammy" ]]; then
+        echo "Ubuntu 22.04 (Jammy Jellyfish)"
+    else
+        echo "Linux System, ID: $os_id ,code name: $os_codename"
+    fi
+else
+    echo "Unknown OS: $os_name"
+fi
+
 
 # >>> conda initialize >>>
 # !! Contents within this block are managed by 'conda init' !!
@@ -25,12 +42,22 @@ unset __conda_setup
 # conda config --set auto_activate_base false
 
 # ROS
-if [ -n "$BASH_VERSION" ]; then
-  alias sc_ros1="source /opt/ros/noetic/setup.bash"
-  alias sc_ros2="source /opt/ros/foxy/setup.bash"
-elif [ -n "$ZSH_VERSION" ]; then
-  alias sc_ros1="source /opt/ros/noetic/setup.zsh"
-  alias sc_ros2="source /opt/ros/foxy/setup.zsh"
+if [[ "$os_id" == "ubuntu" ]]; then
+  if [[ "$os_codename" == "focal" ]]; then
+    if [ -n "$BASH_VERSION" ]; then
+      alias sc_ros1="source /opt/ros/noetic/setup.bash"
+      alias sc_ros2="source /opt/ros/foxy/setup.bash"
+    elif [ -n "$ZSH_VERSION" ]; then
+      alias sc_ros1="source /opt/ros/noetic/setup.zsh"
+      alias sc_ros2="source /opt/ros/foxy/setup.zsh"
+    fi
+  elif [[ "$os_codename" == "jammy" ]]; then
+    if [ -n "$BASH_VERSION" ]; then
+      alias sc_ros2="source /opt/ros/humble/setup.bash"
+    elif [ -n "$ZSH_VERSION" ]; then
+      alias sc_ros2="source /opt/ros/humble/setup.zsh"
+    fi
+  fi
 fi
 # export ROS_MASTER_URI=http://jet02.local:11311
 # export ROS_IP=$(hostname).local
@@ -107,13 +134,20 @@ alias ssh_rpi="ssh pi@raspberrypi.local"
 # Python
 alias ex_pypath="export PYTHONPATH=$PYTHONPATH:`pwd`"
 
-# ARM
+# Thirdparty
 export THIRD_PARTY=${USER_APP_ROOT}/DevOps/release
-export TOOL_CHAIN_RK=${USER_APP_ROOT}/DevOps/toolchain/rk_toolchain
-export TOOL_CHAIN_ESP=${USER_APP_ROOT}/DevOps/toolchain/xtensa-esp32-elf
-export PATH=$PATH:${TOOL_CHAIN_RK}/bin
-export PATH=$PATH:${TOOL_CHAIN_ESP}/bin
-alias sc_esp_idf=". ${USER_APP_ROOT}/DevOps/esp/esp-idf/export.sh"
+
+# Rockchip
+export RK_ROOT="${USER_APP_ROOT}/DevOps/rockchip"
+export RK_TOOL_CHAIN="${RK_ROOT}/rk_toolchain"
+export PATH=$PATH:${RK_TOOL_CHAIN}/bin
+
+# Espressif
+export ESP_ROOT="${USER_APP_ROOT}/DevOps/espressif"
+# export ESP_TOOL_CHAIN="${ESP_ROOT}/xtensa-esp32-elf"
+export ESP_TOOL_CHAIN="${HOME}/.espressif/tools/xtensa-esp32s3-elf"
+export PATH="$PATH:${ESP_TOOL_CHAIN}/bin"
+alias sc_esp_idf=". ${ESP_ROOT}/esp-idf/export.sh"
 
 # AI Apps
 if [[ "$(uname -s)" == "Linux" ]]; then
@@ -131,4 +165,4 @@ export HF_HUB_ENABLE_HF_TRANSFER=1
 export HF_ENDPOINT=https://hf-mirror.com
 
 # Dataset
-export CITYSCAPES_DATASET=$USER_DATASET_ROOT/data_ml/cityscapes
+export CITYSCAPES_DATASET=$USER_DM_ROOT/dataset_ml/cityscapes
