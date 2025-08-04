@@ -26,11 +26,11 @@ unset __conda_setup
 
 # ROS
 if [ -n "$BASH_VERSION" ]; then
-  alias ss_ros1="source /opt/ros/noetic/setup.bash"
-  alias ss_ros2="source /opt/ros/foxy/setup.bash"
+  alias sc_ros1="source /opt/ros/noetic/setup.bash"
+  alias sc_ros2="source /opt/ros/foxy/setup.bash"
 elif [ -n "$ZSH_VERSION" ]; then
-  alias ss_ros1="source /opt/ros/noetic/setup.zsh"
-  alias ss_ros2="source /opt/ros/foxy/setup.zsh"
+  alias sc_ros1="source /opt/ros/noetic/setup.zsh"
+  alias sc_ros2="source /opt/ros/foxy/setup.zsh"
 fi
 # export ROS_MASTER_URI=http://jet02.local:11311
 # export ROS_IP=$(hostname).local
@@ -108,11 +108,12 @@ alias ssh_rpi="ssh pi@raspberrypi.local"
 alias ex_pypath="export PYTHONPATH=$PYTHONPATH:`pwd`"
 
 # ARM
+export THIRD_PARTY=${USER_APP_ROOT}/DevOps/release
 export TOOL_CHAIN_RK=${USER_APP_ROOT}/DevOps/toolchain/rk_toolchain
 export TOOL_CHAIN_ESP=${USER_APP_ROOT}/DevOps/toolchain/xtensa-esp32-elf
 export PATH=$PATH:${TOOL_CHAIN_RK}/bin
 export PATH=$PATH:${TOOL_CHAIN_ESP}/bin
-alias ss_esp_idf=". ${USER_APP_ROOT}/DevOps/esp/esp-idf/export.sh"
+alias sc_esp_idf=". ${USER_APP_ROOT}/DevOps/esp/esp-idf/export.sh"
 
 # AI Apps
 if [[ "$(uname -s)" == "Linux" ]]; then
