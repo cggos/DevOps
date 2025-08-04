@@ -1,7 +1,11 @@
-# export USER_DATA_HOME="/opt/user_data"
-export USER_DATA_HOME="${HOME}/UserData"
-export USER_APP_ROOT="${USER_DATA_HOME}/apps"
-export USER_DM_ROOT="${USER_DATA_HOME}/dms"
+export CG_DATA_HOME="${HOME}/UserData"
+
+export CG_APP_ROOT="${CG_DATA_HOME}/apps"
+export CG_DM_ROOT="${CG_DATA_HOME}/dms"
+
+export CG_CONDA_ENVS="${CG_APP_ROOT}/DevOps/anaconda3/envs"
+export CG_THIRDPARTY="${CG_APP_ROOT}/DevOps/3rdparty/release"
+
 
 export PATH=$HOME/.local/bin/:$PATH
 
@@ -26,14 +30,14 @@ fi
 
 # >>> conda initialize >>>
 # !! Contents within this block are managed by 'conda init' !!
-__conda_setup="$('${USER_APP_ROOT}/DevOps/anaconda3/bin/conda' 'shell.zsh' 'hook' 2>/dev/null)"
+__conda_setup="$('${CG_APP_ROOT}/DevOps/anaconda3/bin/conda' 'shell.zsh' 'hook' 2>/dev/null)"
 if [ $? -eq 0 ]; then
   eval "$__conda_setup"
 else
-  if [ -f "${USER_APP_ROOT}/DevOps/anaconda3/etc/profile.d/conda.sh" ]; then
-    . "${USER_APP_ROOT}/DevOps/anaconda3/etc/profile.d/conda.sh"
+  if [ -f "${CG_APP_ROOT}/DevOps/anaconda3/etc/profile.d/conda.sh" ]; then
+    . "${CG_APP_ROOT}/DevOps/anaconda3/etc/profile.d/conda.sh"
   else
-    export PATH="${USER_APP_ROOT}/DevOps/anaconda3/bin:$PATH"
+    export PATH="${CG_APP_ROOT}/DevOps/anaconda3/bin:$PATH"
   fi
 fi
 unset __conda_setup
@@ -70,19 +74,19 @@ if command -v nvidia-smi &>/dev/null && nvidia-smi &>/dev/null; then
   export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:$CUDA_HOME/lib64
 
   # NV cuDNN
-  export CUDNN_ROOT=${USER_APP_ROOT}/DevOps/nv/cudnn-linux-x86_64-8.8.1.3_cuda11-archive
+  export CUDNN_ROOT=${CG_APP_ROOT}/DevOps/nv/cudnn-linux-x86_64-8.8.1.3_cuda11-archive
   export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:$CUDNN_ROOT/lib
   export CPATH=$CUDNN_ROOT/include:$CPATH
 
   # NV TRT
-  export TRT_ROOT=${USER_APP_ROOT}/DevOps/nv/TensorRT-8.5.3.1
+  export TRT_ROOT=${CG_APP_ROOT}/DevOps/nv/TensorRT-8.5.3.1
   export PATH=$PATH:$TRT_ROOT/bin
   export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:$TRT_ROOT/lib
   export CPATH=$TRT_ROOT/targets/x86_64-linux/include:$CPATH
 fi
 
 # JDK
-export JAVA_HOME=${USER_APP_ROOT}/DevOps/jdk/jdk-21.0.2
+export JAVA_HOME=${CG_APP_ROOT}/DevOps/jdk/jdk-21.0.2
 export JRE_HOME=$JAVA_HOME/jre
 export CLASSPATH=.:$JAVA_HOME/lib:$JRE_HOME/lib
 export PATH=$JAVA_HOME/bin:$PATH
@@ -109,9 +113,9 @@ if [ -d "${HOME}/.bun" ]; then
 fi
 
 # op
-export PATH="$USER_APP_ROOT/OA/op/:$PATH"
-if [ -f "$USER_APP_ROOT/OA/op/op.sh" ]; then
-  source "$USER_APP_ROOT/OA/op/op.sh"
+export PATH="$CG_APP_ROOT/OA/op/:$PATH"
+if [ -f "$CG_APP_ROOT/OA/op/op.sh" ]; then
+  source "$CG_APP_ROOT/OA/op/op.sh"
 fi
 
 # fzf
@@ -134,16 +138,13 @@ alias ssh_rpi="ssh pi@raspberrypi.local"
 # Python
 alias ex_pypath="export PYTHONPATH=$PYTHONPATH:`pwd`"
 
-# Thirdparty
-export THIRD_PARTY=${USER_APP_ROOT}/DevOps/release
-
 # Rockchip
-export RK_ROOT="${USER_APP_ROOT}/DevOps/rockchip"
+export RK_ROOT="${CG_APP_ROOT}/DevOps/rockchip"
 export RK_TOOL_CHAIN="${RK_ROOT}/rk_toolchain"
 export PATH=$PATH:${RK_TOOL_CHAIN}/bin
 
 # Espressif
-export ESP_ROOT="${USER_APP_ROOT}/DevOps/espressif"
+export ESP_ROOT="${CG_APP_ROOT}/DevOps/espressif"
 # export ESP_TOOL_CHAIN="${ESP_ROOT}/xtensa-esp32-elf"
 export ESP_TOOL_CHAIN="${HOME}/.espressif/tools/xtensa-esp32s3-elf"
 export PATH="$PATH:${ESP_TOOL_CHAIN}/bin"
@@ -155,8 +156,8 @@ if [[ "$(uname -s)" == "Linux" ]]; then
 elif [[ "$(uname -s)" == "Darwin" ]]; then
   export PATH="$PATH:${HOME}/.cache/lm-studio/bin"
 fi
-# export OLLAMA_MODELS="${USER_DM_ROOT}/models_ml/ollama/models"
-export LLAMA_CPP_LIB_PATH="${USER_APP_ROOT}/AI/llama.cpp/build/bin"
+# export OLLAMA_MODELS="${CG_DM_ROOT}/models_ml/ollama/models"
+export LLAMA_CPP_LIB_PATH="${CG_APP_ROOT}/AI/llama.cpp/build/bin"
 export PATH="${LLAMA_CPP_LIB_PATH}:$PATH"
 export LD_LIBRARY_PATH="${LLAMA_CPP_LIB_PATH}:$LD_LIBRARY_PATH"
 
@@ -165,4 +166,4 @@ export HF_HUB_ENABLE_HF_TRANSFER=1
 export HF_ENDPOINT=https://hf-mirror.com
 
 # Dataset
-export CITYSCAPES_DATASET=$USER_DM_ROOT/dataset_ml/cityscapes
+export CITYSCAPES_DATASET=$CG_DM_ROOT/dataset_ml/cityscapes
