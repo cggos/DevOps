@@ -101,7 +101,20 @@ nav:
     - Platform: 01-basics/platform.md
     - Software Architecture & Design Patterns: 01-basics/software_arch_and_design_patterns.md
 
-  - Languages: 02-program_languages/README.md
+  - Languages: 
+    - Overview: 02-program_languages/README.md
+    - Python:
+      - Overview: 02-program_languages/python/README.md
+      - Anaconda: 02-program_languages/python/anaconda.md
+      - pip & Wheel: 02-program_languages/python/pip_whl.md
+      - Libs: 02-program_languages/python/py_libs.md
+    - Matlab:
+      - Overview: 02-program_languages/matlab/README.md
+    - R: 
+      - Overview: 02-program_languages/r/README.md
+    - Wolfram:
+      - Overview: 02-program_languages/wolfram/README.md
+      - Wolfram Mathematica: 02-program_languages/wolfram/wolfram_mathematica.md
 
   - Scripting:
     - Overview: 02-scripting/README.md
@@ -130,19 +143,26 @@ nav:
   - PKM:
     - OA:
       - Overview: 06-personal_knowledge_management/oa/README.md
+    
     - Type Setting:
+      - Overview: 06-personal_knowledge_management/type_setting/README.md
       - Text Editors: 06-personal_knowledge_management/type_setting/TextEditors.md
-      - MarkDown: 06-personal_knowledge_management/type_setting/MarkDown.md
+      - Fonts: 06-personal_knowledge_management/type_setting/Fonts.md
       - CHM: 06-personal_knowledge_management/type_setting/CHM.md
       - EPUB: 06-personal_knowledge_management/type_setting/EPUB.md
       - API Docs: 06-personal_knowledge_management/type_setting/API-Docs.md
-      - Fonts: 06-personal_knowledge_management/type_setting/Fonts.md
       - Convertor: 06-personal_knowledge_management/type_setting/Convertor.md
+      - MarkDown: 06-personal_knowledge_management/type_setting/MarkDown.md
+      - Math Typesetting:
+        - Overview: 06-personal_knowledge_management/type_setting/math_typesetting/README.md
+        - TeX: 06-personal_knowledge_management/type_setting/math_typesetting/TeX.md
+        - Jupyter: 06-personal_knowledge_management/type_setting/math_typesetting/jupyter.md
+
     - Website:
-      - Online Docs: 06-personal_knowledge_management/website/OnlineDocs.md
+      - Overview: 06-personal_knowledge_management/website/README.md
+      - MkDocs: 06-personal_knowledge_management/website/MkDocs.md
       - Sphinx: 06-personal_knowledge_management/type_setting/Sphinx.md
       - Jekyll: 06-personal_knowledge_management/website/Jekyll.md
-      - MkDocs: 06-personal_knowledge_management/website/MkDocs.md
 
   - PMS:
     - Overview: 07-package_management_system/README.md
