@@ -49,7 +49,6 @@ markdown_extensions:
       permalink: true # "#"
       toc_depth: 5
       separator: "_"
-      slugify: !!python/name:pymdownx.slugs.uslugify_cased
   - codehilite:
       guess_lang: true
       linenums: true
@@ -73,8 +72,8 @@ markdown_extensions:
   - pymdownx.betterem:
       smart_enable: all
   - pymdownx.emoji:
-      emoji_index: !!python/name:materialx.emoji.twemoji
-      emoji_generator: !!python/name:materialx.emoji.to_svg
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
       # emoji_generator: !!python/name:pymdownx.emoji.to_png
   - pymdownx.tasklist:
       custom_checkbox: true
@@ -110,7 +109,6 @@ nav:
     - Grub & BIOS: 02-scripting/grub_bios.md
     - Disk: 02-scripting/disk.md
     - File & File Systems: 02-scripting/file.md
-    - GPG & SSH Key: 02-scripting/key.md
     - Terminals and X11: 02-scripting/terminals_x11.md
     - Ubuntu Apps: 02-scripting/ubuntu_apps.md
 
@@ -148,18 +146,3 @@ nav:
 
   - PMS:
     - Overview: 07-package_management_system/README.md
-
-  - Network:
-    - Overview: 08-network/README.md
-    
-    - Proxy: 
-      - Overview: 08-network/proxy/README.md
-      - Server: 08-network/proxy/server.md
-      - Client: 08-network/proxy/client.md
-      - Use: 08-network/proxy/use.md
-
-    - Database: 08-network/database.md
-    - Download Managers: 08-network/download_managers.md
-    - Synology DS128+: 08-network/nas/synology_nas.md
-    - Router: 08-network/network_devices/router.md
-    - Serial Communication: 08-network/serial_communication/README.md
