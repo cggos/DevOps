@@ -137,6 +137,7 @@ alias ssh_rpi="ssh pi@raspberrypi.local"
 
 # Python
 alias ex_pypath="export PYTHONPATH=$PYTHONPATH:`pwd`"
+alias ruff-fix="ruff check --fix . && ruff format ."
 
 # Rockchip
 export RK_ROOT="${CG_APP_ROOT}/DevOps/rockchip"
