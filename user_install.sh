@@ -43,6 +43,9 @@ sudo apt install filezilla
 
 ##### Docs
 
+sudo snap install codechenx-tv # table(e.g. tsv) viewer
+# Tad (Deb): https://www.tadviewer.com/
+
 # OB (or AppImage)
 sudo snap install obsidian --classic
 
