@@ -52,6 +52,11 @@ sudo snap install obsidian --classic
 # Typora (Deb)
 
 # WPS (Deb)
+## Chinese Display: https://gist.github.com/YcSmile/039024e79b9d7dca38e80fdca7890620
+## Chinese fonts for WPS
+# sudo apt install fonts-noto-cjk fonts-wqy-zenhei
+git clone https://github.com/IamDH4/ttf-wps-fonts.git /tmp/ttf-wps-fonts
+sudo sh /tmp/ttf-wps-fonts/install.sh
 
 # OneNote
 # sudo snap install p3x-onenote

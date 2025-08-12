@@ -1,3 +1,34 @@
+#!/usr/bin/env bash
+
+#
+# ~/UserData/
+# .
+# ├── apps
+# │   ├── 3DModeling
+# │   ├── Academic
+# │   ├── AI
+# │   ├── Container
+# │   ├── DevOps
+# │   ├── Medical
+# │   ├── OA
+# │   └── OS
+# ├── code
+# │   ├── DevOps
+# │   └── ccv
+# ├── dms
+# │   ├── 3d_models
+# │   ├── dataset_ml
+# │   ├── dataset_slam
+# │   ├── hf_hub -> ~/.cache/huggingface/hub
+# │   ├── models_ml
+# │   ├── models_train
+# │   └── torch_hub -> ~/.cache/torch/hub
+# ├── docs
+# │   └── TeX
+# └── user_shell.sh -> code/DevOps/user_shell.sh
+#
+
+
 export CG_DATA_HOME="${HOME}/UserData"
 
 export CG_APP_ROOT="${CG_DATA_HOME}/apps"
