@@ -79,8 +79,10 @@ sudo apt install okular
 sudo apt install imagemagick gimp
 # sudo apt install chafa
 
-sudo apt install ffmpeg vlc
-# sudo apt install mpv
+sudo apt install ffmpeg vlc mpv
+
+# camera viewer
+sudo apt install guvcview
 
 # sudo snap install blender
 
