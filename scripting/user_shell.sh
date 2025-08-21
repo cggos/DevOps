@@ -14,6 +14,9 @@
 # │   └── OS
 # ├── code
 # │   ├── DevOps
+# │   │   ├── 3rdparty
+# │   │   ├── 3rdparty_src
+# │   │   ├── app_release
 # │   └── ccv
 # ├── dms
 # │   ├── 3d_models
@@ -35,7 +38,7 @@ export CG_APP_ROOT="${CG_DATA_HOME}/apps"
 export CG_DM_ROOT="${CG_DATA_HOME}/dms"
 
 export CG_CONDA_ENVS="${CG_APP_ROOT}/DevOps/anaconda3/envs"
-export CG_THIRDPARTY="${CG_APP_ROOT}/DevOps/3rdparty/release"
+export CG_THIRDPARTY="${CG_APP_ROOT}/DevOps/3rdparty"
 
 
 export PATH=$HOME/.local/bin/:$PATH
