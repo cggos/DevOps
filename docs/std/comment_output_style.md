@@ -5,16 +5,18 @@
 ## Comment
 
 ```cpp
-// [CGGOS Begin][20220829]: Todo
+// [<username> Begin][20220829]: sth
 
-// [CGGOS End]
+// [<username> End]
 ```
 
-## Output
+## Log
 
 ```cpp
 // [CGGOS] <Function> <Line>: sth
 
-std::cout << "[CGGOS] " << __FUNCTION__ << " " << __LINE__ << ": "
+std::cout << "[<username>] " << __FUNCTION__ << " " << __LINE__ << ": "
           << "sth" << std::endl;
+
+logger_ptr_->set_pattern("[%Y-%m-%d %H:%M:%S.%e %z] [%t@%P] [%n] [%^%l%$] [%! %#] %v");
 ```

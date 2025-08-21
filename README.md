@@ -5,5 +5,5 @@
 -----
 
 <p align="center">
-  <img src="docs/images/DevOps00.png" style="width:80%;">
+  <img src="docs/img/DevOps00.png" style="width:80%;">
 </p>
