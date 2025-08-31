@@ -13,9 +13,9 @@
 
 ---
 
-## 01. Basics
+## Basics
 
-## 02. Languages
+## Languages
 
 * C/C++
 * Python
@@ -25,9 +25,9 @@
 * C#
 * Java
 
-## 02. Scripting (Linux & Windows)
+## Scripting (Linux & Windows)
 
-## 03. App Build
+## App Build
 
 * Compile
 
@@ -37,21 +37,19 @@
 
 * Docker
 
-## 04. CMS - Configuration Management System
+## CMS - Configuration Management System
 
-## 05. CMS - Content Management System
+## CMS - Content Management System
 
 * [Kirby](https://getkirby.com/) is a file‑based CMS
 
 * [Drupal](https://www.drupal.org/) is content management software.
 
-## 06. PKM - Personal Knowledge Management
+## PKM - Personal Knowledge Management
 
-## 07. PMS - Package Management System
+## PMS - Package Management System
 
-## 08. Network
-
-## 09. Mailing
+## Mailing
 
 * [Grokbase](https://grokbase.com/) is a growing mailing list archive that facilitates discovery of discussions and users within and across groups
 
