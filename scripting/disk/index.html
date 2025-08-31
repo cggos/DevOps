@@ -10,19 +10,25 @@
         <meta name="author" content="Gavin Gao">
       
       
+        <link rel="canonical" href="https://dev.cgabc.xyz/scripting/disk/">
       
       
+        <link rel="prev" href="../grub_bios/">
       
-      <link rel="icon" href="/images/favicon.png">
+      
+        <link rel="next" href="../file/">
+      
+      
+      <link rel="icon" href="../../images/favicon.png">
       <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.18">
     
     
       
-        <title>DevOps</title>
+        <title>Disk - DevOps</title>
       
     
     
-      <link rel="stylesheet" href="/assets/stylesheets/main.7e37652d.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.7e37652d.min.css">
       
       
 
@@ -41,7 +47,7 @@
       
     
     
-    <script>__md_scope=new URL("/",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
@@ -59,6 +65,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#disk_partition" class="md-skip">
+          跳转至
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -69,7 +80,7 @@
 
 <header class="md-header" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="页眉">
-    <a href="/." title="DevOps" class="md-header__button md-logo" aria-label="DevOps" data-md-component="logo">
+    <a href="../.." title="DevOps" class="md-header__button md-logo" aria-label="DevOps" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
@@ -89,7 +100,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              
+              Disk
             
           </span>
         </div>
@@ -174,7 +185,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="/." class="md-tabs__link">
+      <a href="../.." class="md-tabs__link">
         
   
   
@@ -195,7 +206,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="/std/code_format/" class="md-tabs__link">
+        <a href="../../std/code_format/" class="md-tabs__link">
           
   
   
@@ -217,7 +228,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="/basics/" class="md-tabs__link">
+        <a href="../../basics/" class="md-tabs__link">
           
   
   
@@ -239,7 +250,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="/program_languages/" class="md-tabs__link">
+        <a href="../../program_languages/" class="md-tabs__link">
           
   
   
@@ -257,11 +268,13 @@
   
   
   
+    
+  
   
     
     
-      <li class="md-tabs__item">
-        <a href="/scripting/" class="md-tabs__link">
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../" class="md-tabs__link">
           
   
   
@@ -283,7 +296,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="/app_build/build_tools/" class="md-tabs__link">
+        <a href="../../app_build/build_tools/" class="md-tabs__link">
           
   
   
@@ -305,7 +318,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="/containers/" class="md-tabs__link">
+        <a href="../../containers/" class="md-tabs__link">
           
   
   
@@ -327,7 +340,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="/configuration_management_system/" class="md-tabs__link">
+        <a href="../../configuration_management_system/" class="md-tabs__link">
           
   
   
@@ -356,7 +369,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="/personal_knowledge_management/oa/" class="md-tabs__link">
+        <a href="../../personal_knowledge_management/oa/" class="md-tabs__link">
           
   
   
@@ -381,7 +394,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="/package_management_system/" class="md-tabs__link">
+        <a href="../../package_management_system/" class="md-tabs__link">
           
   
   
@@ -417,7 +430,7 @@
 
 <nav class="md-nav md-nav--primary md-nav--lifted" aria-label="导航栏" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="/." title="DevOps" class="md-nav__button md-logo" aria-label="DevOps" data-md-component="logo">
+    <a href="../.." title="DevOps" class="md-nav__button md-logo" aria-label="DevOps" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
@@ -447,7 +460,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/." class="md-nav__link">
+      <a href="../.." class="md-nav__link">
         
   
   
@@ -497,7 +510,7 @@
   
   
   
-    <a href="/std/code_format/" class="md-nav__link">
+    <a href="../../std/code_format/" class="md-nav__link">
       
   
   
@@ -557,7 +570,7 @@
   
   
   
-    <a href="/basics/" class="md-nav__link">
+    <a href="../../basics/" class="md-nav__link">
       
   
   
@@ -619,7 +632,7 @@
   
   
   
-    <a href="/program_languages/" class="md-nav__link">
+    <a href="../../program_languages/" class="md-nav__link">
       
   
   
@@ -643,6 +656,8 @@
       
       
   
+  
+    
   
   
   
@@ -669,24 +684,26 @@
     
     
       
+        
+        
+      
       
         
       
     
     
       
-        
-        
-      
     
-    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
       
         
-  
-  
-  
-    <a href="/scripting/" class="md-nav__link">
-      
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" checked>
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../" class="md-nav__link ">
+              
   
   
   <span class="md-ellipsis">
@@ -695,12 +712,174 @@
   </span>
   
 
-      
-        <span class="md-nav__icon md-icon"></span>
-      
-    </a>
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_5" id="__nav_5_label" tabindex="">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            Scripting
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../system/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    System
+    
+  </span>
   
 
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../grub_bios/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Grub & BIOS
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    Disk
+    
+  </span>
+  
+
+      </a>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../file/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    File & File Systems
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../terminals_x11/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Terminals and X11
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ubuntu_apps/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Ubuntu Apps
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
       
     </li>
   
@@ -749,7 +928,7 @@
   
   
   
-    <a href="/app_build/build_tools/" class="md-nav__link">
+    <a href="../../app_build/build_tools/" class="md-nav__link">
       
   
   
@@ -805,7 +984,7 @@
   
   
   
-    <a href="/containers/" class="md-nav__link">
+    <a href="../../containers/" class="md-nav__link">
       
   
   
@@ -863,7 +1042,7 @@
   
   
   
-    <a href="/configuration_management_system/" class="md-nav__link">
+    <a href="../../configuration_management_system/" class="md-nav__link">
       
   
   
@@ -923,7 +1102,7 @@
   
   
   
-    <a href="/personal_knowledge_management/oa/" class="md-nav__link">
+    <a href="../../personal_knowledge_management/oa/" class="md-nav__link">
       
   
   
@@ -979,7 +1158,7 @@
   
   
   
-    <a href="/package_management_system/" class="md-nav__link">
+    <a href="../../package_management_system/" class="md-nav__link">
       
   
   
@@ -1017,6 +1196,8 @@
   
   
   
+    
+  
   
 </nav>
                   </div>
@@ -1028,8 +1209,92 @@
             <div class="md-content" data-md-component="content">
               <article class="md-content__inner md-typeset">
                 
-  <h1>404 - Not found</h1>
+                  
 
+
+  
+  
+
+
+<h1 id="disk_partition">Disk &amp; Partition<a class="headerlink" href="#disk_partition" title="Permanent link">&para;</a></h1>
+<hr />
+<ul>
+<li><a href="https://geekpeek.net/resize-filesystem-fdisk-resize2fs/">Resize Partition and Filesystem with fdisk &amp; resize2fs</a></li>
+</ul>
+<div class="highlight"><span class="filename">Bash</span><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>mount<span class="w"> </span>-t<span class="w"> </span>ext4<span class="w"> </span>/dev/sdb1<span class="w"> </span>/data
+<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>mount<span class="w"> </span><span class="p">|</span><span class="w"> </span>column<span class="w"> </span>-t<span class="w">             </span><span class="c1"># 查看挂接的分区状态</span>
+<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>fdisk<span class="w">                         </span><span class="c1"># manipulate disk partition table</span>
+<a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>swapon<span class="w"> </span>-s<span class="w">                     </span><span class="c1"># 查看所有交换分区</span>
+<a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a>hdparm<span class="w"> </span>-i<span class="w"> </span>/dev/hda<span class="w">            </span><span class="c1"># 查看磁盘参数(仅适用于IDE设备)</span>
+<a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a>free<span class="w"> </span>-m<span class="w">                       </span><span class="c1"># Display amount of free and used memory in the system</span>
+<a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a>df<span class="w"> </span>-h<span class="w">                         </span><span class="c1"># report file system disk space usage</span>
+<a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a>lsblk<span class="w">                         </span><span class="c1"># list block devices</span>
+<a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a>resize2fs<span class="w">                     </span><span class="c1"># ext2/ext3/ext4 file system resizer</span>
+<a id="__codelineno-0-10" name="__codelineno-0-10" href="#__codelineno-0-10"></a>e2fsck<span class="w">                        </span><span class="c1"># check a Linux ext2/ext3/ext4 file system</span>
+</code></pre></div>
+<p>磁盘格式化分区，并开机挂载：</p>
+<ul>
+<li>查看磁盘
+  <div class="highlight"><span class="filename">Bash</span><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>sudo<span class="w"> </span>fdisk<span class="w"> </span>-l
+</code></pre></div></li>
+<li>磁盘分区
+  <div class="highlight"><span class="filename">Bash</span><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>sudo<span class="w"> </span>fdisk<span class="w"> </span>/dev/sdb
+</code></pre></div></li>
+<li>磁盘格式化
+  <div class="highlight"><span class="filename">Bash</span><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>sudo<span class="w"> </span>mkfs.ext4<span class="w"> </span>/dev/sdb1
+</code></pre></div></li>
+<li>开机挂载硬盘，在 <strong>/etc/fstab</strong> 中添加
+  <div class="highlight"><span class="filename">Bash</span><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a>/dev/sdb1<span class="w"> </span>/dev_sdb<span class="w"> </span>ext4<span class="w"> </span>defaults<span class="w"> </span><span class="m">0</span><span class="w"> </span><span class="m">0</span>
+</code></pre></div></li>
+<li>建立软链接
+  <div class="highlight"><span class="filename">Bash</span><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a>ln<span class="w"> </span>-s<span class="w"> </span>/dev_sdb<span class="w"> </span>~/dev_sdb
+</code></pre></div></li>
+</ul>
+<p>修改卷标名：</p>
+<ul>
+<li>
+<p>查看卷标
+  <div class="highlight"><span class="filename">Bash</span><pre><span></span><code><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a>sudo<span class="w"> </span>blkid
+</code></pre></div></p>
+</li>
+<li>
+<p>umount
+  <div class="highlight"><span class="filename">Bash</span><pre><span></span><code><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a>sudo<span class="w"> </span>umount<span class="w"> </span>/dev/sdc1
+</code></pre></div></p>
+</li>
+<li>
+<p>修改卷标名
+  <div class="highlight"><span class="filename">Bash</span><pre><span></span><code><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a>sudo<span class="w"> </span>e2label<span class="w"> </span>/dev/sdc1<span class="w"> </span><span class="s2">&quot;udisk_cg&quot;</span><span class="w">     </span><span class="c1"># ext2 or ext3</span>
+<a id="__codelineno-8-2" name="__codelineno-8-2" href="#__codelineno-8-2"></a>sudo<span class="w"> </span>exfatlabel<span class="w"> </span>/dev/sdc1<span class="w"> </span><span class="s2">&quot;udisk_cg&quot;</span><span class="w">  </span><span class="c1"># exFat</span>
+<a id="__codelineno-8-3" name="__codelineno-8-3" href="#__codelineno-8-3"></a>sudo<span class="w"> </span>ntfslabel<span class="w"> </span>/dev/sdc1<span class="w"> </span><span class="s2">&quot;udisk_cg&quot;</span><span class="w">   </span><span class="c1"># NTFS</span>
+</code></pre></div></p>
+</li>
+<li>
+<p>solve problem of "g++: internal compiler error: Killed (program cc1plus)"
+  <div class="highlight"><span class="filename">Bash</span><pre><span></span><code><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a><span class="c1"># create swap space</span>
+<a id="__codelineno-9-2" name="__codelineno-9-2" href="#__codelineno-9-2"></a>sudo<span class="w"> </span>dd<span class="w"> </span><span class="k">if</span><span class="o">=</span>/dev/zero<span class="w"> </span><span class="nv">of</span><span class="o">=</span>/swapfile<span class="w"> </span><span class="nv">bs</span><span class="o">=</span>64M<span class="w"> </span><span class="nv">count</span><span class="o">=</span><span class="m">16</span>
+<a id="__codelineno-9-3" name="__codelineno-9-3" href="#__codelineno-9-3"></a>sudo<span class="w"> </span>mkswap<span class="w"> </span>/swapfile
+<a id="__codelineno-9-4" name="__codelineno-9-4" href="#__codelineno-9-4"></a>sudo<span class="w"> </span>swapon<span class="w"> </span>/swapfile
+<a id="__codelineno-9-5" name="__codelineno-9-5" href="#__codelineno-9-5"></a>
+<a id="__codelineno-9-6" name="__codelineno-9-6" href="#__codelineno-9-6"></a><span class="c1"># shut the swap space down</span>
+<a id="__codelineno-9-7" name="__codelineno-9-7" href="#__codelineno-9-7"></a>sudo<span class="w"> </span>swapoff<span class="w"> </span>/swapfile
+<a id="__codelineno-9-8" name="__codelineno-9-8" href="#__codelineno-9-8"></a>sudo<span class="w"> </span>rm<span class="w"> </span>/swapfile
+</code></pre></div></p>
+</li>
+</ul>
+
+
+
+
+
+
+
+
+
+
+
+
+                
               </article>
             </div>
           
@@ -1092,10 +1357,10 @@
     
     
       
-      <script id="__config" type="application/json">{"base": "/", "features": ["navigation.instant", "navigation.tracking", "navigation.tabs", "navigation.sections", "navigation.expand", "navigation.prune", "navigation.indexes", "navigation.top", "toc.follow", "content.code.annotate"], "search": "/assets/javascripts/workers/search.973d3a69.min.js", "tags": null, "translations": {"clipboard.copied": "\u5df2\u590d\u5236", "clipboard.copy": "\u590d\u5236", "search.result.more.one": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.more.other": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 # \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.none": "\u6ca1\u6709\u627e\u5230\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.one": "\u627e\u5230 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.other": "# \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.placeholder": "\u952e\u5165\u4ee5\u5f00\u59cb\u641c\u7d22", "search.result.term.missing": "\u7f3a\u5c11", "select.version": "\u9009\u62e9\u5f53\u524d\u7248\u672c"}, "version": null}</script>
+      <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.instant", "navigation.tracking", "navigation.tabs", "navigation.sections", "navigation.expand", "navigation.prune", "navigation.indexes", "navigation.top", "toc.follow", "content.code.annotate"], "search": "../../assets/javascripts/workers/search.973d3a69.min.js", "tags": null, "translations": {"clipboard.copied": "\u5df2\u590d\u5236", "clipboard.copy": "\u590d\u5236", "search.result.more.one": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.more.other": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 # \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.none": "\u6ca1\u6709\u627e\u5230\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.one": "\u627e\u5230 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.other": "# \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.placeholder": "\u952e\u5165\u4ee5\u5f00\u59cb\u641c\u7d22", "search.result.term.missing": "\u7f3a\u5c11", "select.version": "\u9009\u62e9\u5f53\u524d\u7248\u672c"}, "version": null}</script>
     
     
-      <script src="/assets/javascripts/bundle.92b07e13.min.js"></script>
+      <script src="../../assets/javascripts/bundle.92b07e13.min.js"></script>
       
     
   </body>

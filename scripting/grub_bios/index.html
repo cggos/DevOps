@@ -10,19 +10,25 @@
         <meta name="author" content="Gavin Gao">
       
       
+        <link rel="canonical" href="https://dev.cgabc.xyz/scripting/grub_bios/">
       
       
+        <link rel="prev" href="../system/">
       
-      <link rel="icon" href="/images/favicon.png">
+      
+        <link rel="next" href="../disk/">
+      
+      
+      <link rel="icon" href="../../images/favicon.png">
       <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.18">
     
     
       
-        <title>DevOps</title>
+        <title>Grub & BIOS - DevOps</title>
       
     
     
-      <link rel="stylesheet" href="/assets/stylesheets/main.7e37652d.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.7e37652d.min.css">
       
       
 
@@ -41,7 +47,7 @@
       
     
     
-    <script>__md_scope=new URL("/",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
@@ -59,6 +65,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#grub_bios" class="md-skip">
+          跳转至
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -69,7 +80,7 @@
 
 <header class="md-header" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="页眉">
-    <a href="/." title="DevOps" class="md-header__button md-logo" aria-label="DevOps" data-md-component="logo">
+    <a href="../.." title="DevOps" class="md-header__button md-logo" aria-label="DevOps" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
@@ -89,7 +100,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              
+              Grub & BIOS
             
           </span>
         </div>
@@ -174,7 +185,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="/." class="md-tabs__link">
+      <a href="../.." class="md-tabs__link">
         
   
   
@@ -195,7 +206,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="/std/code_format/" class="md-tabs__link">
+        <a href="../../std/code_format/" class="md-tabs__link">
           
   
   
@@ -217,7 +228,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="/basics/" class="md-tabs__link">
+        <a href="../../basics/" class="md-tabs__link">
           
   
   
@@ -239,7 +250,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="/program_languages/" class="md-tabs__link">
+        <a href="../../program_languages/" class="md-tabs__link">
           
   
   
@@ -257,11 +268,13 @@
   
   
   
+    
+  
   
     
     
-      <li class="md-tabs__item">
-        <a href="/scripting/" class="md-tabs__link">
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../" class="md-tabs__link">
           
   
   
@@ -283,7 +296,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="/app_build/build_tools/" class="md-tabs__link">
+        <a href="../../app_build/build_tools/" class="md-tabs__link">
           
   
   
@@ -305,7 +318,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="/containers/" class="md-tabs__link">
+        <a href="../../containers/" class="md-tabs__link">
           
   
   
@@ -327,7 +340,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="/configuration_management_system/" class="md-tabs__link">
+        <a href="../../configuration_management_system/" class="md-tabs__link">
           
   
   
@@ -356,7 +369,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="/personal_knowledge_management/oa/" class="md-tabs__link">
+        <a href="../../personal_knowledge_management/oa/" class="md-tabs__link">
           
   
   
@@ -381,7 +394,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="/package_management_system/" class="md-tabs__link">
+        <a href="../../package_management_system/" class="md-tabs__link">
           
   
   
@@ -417,7 +430,7 @@
 
 <nav class="md-nav md-nav--primary md-nav--lifted" aria-label="导航栏" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="/." title="DevOps" class="md-nav__button md-logo" aria-label="DevOps" data-md-component="logo">
+    <a href="../.." title="DevOps" class="md-nav__button md-logo" aria-label="DevOps" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
@@ -447,7 +460,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/." class="md-nav__link">
+      <a href="../.." class="md-nav__link">
         
   
   
@@ -497,7 +510,7 @@
   
   
   
-    <a href="/std/code_format/" class="md-nav__link">
+    <a href="../../std/code_format/" class="md-nav__link">
       
   
   
@@ -557,7 +570,7 @@
   
   
   
-    <a href="/basics/" class="md-nav__link">
+    <a href="../../basics/" class="md-nav__link">
       
   
   
@@ -619,7 +632,7 @@
   
   
   
-    <a href="/program_languages/" class="md-nav__link">
+    <a href="../../program_languages/" class="md-nav__link">
       
   
   
@@ -643,6 +656,8 @@
       
       
   
+  
+    
   
   
   
@@ -669,24 +684,26 @@
     
     
       
+        
+        
+      
       
         
       
     
     
       
-        
-        
-      
     
-    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
       
         
-  
-  
-  
-    <a href="/scripting/" class="md-nav__link">
-      
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" checked>
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../" class="md-nav__link ">
+              
   
   
   <span class="md-ellipsis">
@@ -695,12 +712,224 @@
   </span>
   
 
-      
-        <span class="md-nav__icon md-icon"></span>
-      
-    </a>
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_5" id="__nav_5_label" tabindex="">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            Scripting
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../system/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    System
+    
+  </span>
   
 
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    Grub & BIOS
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    Grub & BIOS
+    
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="目录">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#grub" class="md-nav__link">
+    <span class="md-ellipsis">
+      Grub
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#boot_bios" class="md-nav__link">
+    <span class="md-ellipsis">
+      Boot &amp; BIOS
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../disk/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Disk
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../file/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    File & File Systems
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../terminals_x11/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Terminals and X11
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ubuntu_apps/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Ubuntu Apps
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
       
     </li>
   
@@ -749,7 +978,7 @@
   
   
   
-    <a href="/app_build/build_tools/" class="md-nav__link">
+    <a href="../../app_build/build_tools/" class="md-nav__link">
       
   
   
@@ -805,7 +1034,7 @@
   
   
   
-    <a href="/containers/" class="md-nav__link">
+    <a href="../../containers/" class="md-nav__link">
       
   
   
@@ -863,7 +1092,7 @@
   
   
   
-    <a href="/configuration_management_system/" class="md-nav__link">
+    <a href="../../configuration_management_system/" class="md-nav__link">
       
   
   
@@ -923,7 +1152,7 @@
   
   
   
-    <a href="/personal_knowledge_management/oa/" class="md-nav__link">
+    <a href="../../personal_knowledge_management/oa/" class="md-nav__link">
       
   
   
@@ -979,7 +1208,7 @@
   
   
   
-    <a href="/package_management_system/" class="md-nav__link">
+    <a href="../../package_management_system/" class="md-nav__link">
       
   
   
@@ -1017,6 +1246,34 @@
   
   
   
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#grub" class="md-nav__link">
+    <span class="md-ellipsis">
+      Grub
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#boot_bios" class="md-nav__link">
+    <span class="md-ellipsis">
+      Boot &amp; BIOS
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
   
 </nav>
                   </div>
@@ -1028,8 +1285,90 @@
             <div class="md-content" data-md-component="content">
               <article class="md-content__inner md-typeset">
                 
-  <h1>404 - Not found</h1>
+                  
 
+
+  
+  
+
+
+<h1 id="grub_bios">Grub &amp; BIOS<a class="headerlink" href="#grub_bios" title="Permanent link">&para;</a></h1>
+<hr />
+<h2 id="grub">Grub<a class="headerlink" href="#grub" title="Permanent link">&para;</a></h2>
+<p>配置单Ubuntu系统开机启动显示grub菜单：  </p>
+<p>修改<code>/etc/default/grub</code>文件，修改内容</p>
+<div class="highlight"><span class="filename">/etc/default/grub</span><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a># GRUB_HIDDEN_TIMEOUT=0
+<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>GRUB_HIDDEN_TIMEOUT_QUIET=false
+<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>GRUB_TIMEOUT=10
+</code></pre></div>
+<p>该文件如下： </p>
+<div class="highlight"><span class="filename">/etc/default/grub</span><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a># If you change this file, run &#39;update-grub&#39; afterwards to update
+<a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a># /boot/grub/grub.cfg.
+<a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a># For full documentation of the options in this file, see:
+<a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a>#   info -f grub -n &#39;Simple configuration&#39;
+<a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a>
+<a id="__codelineno-1-6" name="__codelineno-1-6" href="#__codelineno-1-6"></a>GRUB_DEFAULT=0
+<a id="__codelineno-1-7" name="__codelineno-1-7" href="#__codelineno-1-7"></a># GRUB_HIDDEN_TIMEOUT=0
+<a id="__codelineno-1-8" name="__codelineno-1-8" href="#__codelineno-1-8"></a>GRUB_HIDDEN_TIMEOUT_QUIET=false
+<a id="__codelineno-1-9" name="__codelineno-1-9" href="#__codelineno-1-9"></a>GRUB_TIMEOUT=10
+<a id="__codelineno-1-10" name="__codelineno-1-10" href="#__codelineno-1-10"></a>GRUB_DISTRIBUTOR=`lsb_release -i -s 2&gt; /dev/null || echo Debian`
+<a id="__codelineno-1-11" name="__codelineno-1-11" href="#__codelineno-1-11"></a>GRUB_CMDLINE_LINUX_DEFAULT=&quot;quiet splash&quot;
+<a id="__codelineno-1-12" name="__codelineno-1-12" href="#__codelineno-1-12"></a>GRUB_CMDLINE_LINUX=&quot;&quot;
+<a id="__codelineno-1-13" name="__codelineno-1-13" href="#__codelineno-1-13"></a>
+<a id="__codelineno-1-14" name="__codelineno-1-14" href="#__codelineno-1-14"></a># Uncomment to enable BadRAM filtering, modify to suit your needs
+<a id="__codelineno-1-15" name="__codelineno-1-15" href="#__codelineno-1-15"></a># This works with Linux (no patch required) and with any kernel that obtains
+<a id="__codelineno-1-16" name="__codelineno-1-16" href="#__codelineno-1-16"></a># the memory map information from GRUB (GNU Mach, kernel of FreeBSD ...)
+<a id="__codelineno-1-17" name="__codelineno-1-17" href="#__codelineno-1-17"></a>#GRUB_BADRAM=&quot;0x01234567,0xfefefefe,0x89abcdef,0xefefefef&quot;
+<a id="__codelineno-1-18" name="__codelineno-1-18" href="#__codelineno-1-18"></a>
+<a id="__codelineno-1-19" name="__codelineno-1-19" href="#__codelineno-1-19"></a># Uncomment to disable graphical terminal (grub-pc only)
+<a id="__codelineno-1-20" name="__codelineno-1-20" href="#__codelineno-1-20"></a>#GRUB_TERMINAL=console
+<a id="__codelineno-1-21" name="__codelineno-1-21" href="#__codelineno-1-21"></a>
+<a id="__codelineno-1-22" name="__codelineno-1-22" href="#__codelineno-1-22"></a># The resolution used on graphical terminal
+<a id="__codelineno-1-23" name="__codelineno-1-23" href="#__codelineno-1-23"></a># note that you can use only modes which your graphic card supports via VBE
+<a id="__codelineno-1-24" name="__codelineno-1-24" href="#__codelineno-1-24"></a># you can see them in real GRUB with the command `vbeinfo&#39;
+<a id="__codelineno-1-25" name="__codelineno-1-25" href="#__codelineno-1-25"></a>GRUB_GFXMODE=1920x1080
+<a id="__codelineno-1-26" name="__codelineno-1-26" href="#__codelineno-1-26"></a>GRUB_GFXPAYLOAD_LINUX=keep
+<a id="__codelineno-1-27" name="__codelineno-1-27" href="#__codelineno-1-27"></a>
+<a id="__codelineno-1-28" name="__codelineno-1-28" href="#__codelineno-1-28"></a># Uncomment if you don&#39;t want GRUB to pass &quot;root=UUID=xxx&quot; parameter to Linux
+<a id="__codelineno-1-29" name="__codelineno-1-29" href="#__codelineno-1-29"></a>#GRUB_DISABLE_LINUX_UUID=true
+<a id="__codelineno-1-30" name="__codelineno-1-30" href="#__codelineno-1-30"></a>
+<a id="__codelineno-1-31" name="__codelineno-1-31" href="#__codelineno-1-31"></a># Uncomment to disable generation of recovery mode menu entries
+<a id="__codelineno-1-32" name="__codelineno-1-32" href="#__codelineno-1-32"></a>#GRUB_DISABLE_RECOVERY=&quot;true&quot;
+<a id="__codelineno-1-33" name="__codelineno-1-33" href="#__codelineno-1-33"></a>
+<a id="__codelineno-1-34" name="__codelineno-1-34" href="#__codelineno-1-34"></a># Uncomment to get a beep at grub start
+<a id="__codelineno-1-35" name="__codelineno-1-35" href="#__codelineno-1-35"></a>GRUB_INIT_TUNE=&quot;480 440 1&quot;
+</code></pre></div>
+<p>然后，<code>sudo update-grub</code>，最后重启即可。</p>
+<h2 id="boot_bios">Boot &amp; BIOS<a class="headerlink" href="#boot_bios" title="Permanent link">&para;</a></h2>
+<ul>
+<li>
+<p><a href="https://www.cnblogs.com/EasonJim/p/7130157.html?utm_source=itdadao&amp;utm_medium=referral">Ubuntu 16.04在启动和关机时不显示启动和关机画面且显示详细的命令信息，没有进度条和Logo，或者只有紫色界面，或者没有开机画面等问题解决</a></p>
+</li>
+<li>
+<p><a href="https://www.pcsuggest.com/check-bios-uefi-motherboard-info-in-linux/">Check BIOS, UEFI, motherboard info in Linux</a></p>
+</li>
+</ul>
+<div class="highlight"><span class="filename">Bash</span><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="c1"># biosdecode parses the BIOS memory and prints information about all structures (or entry points) it knows of</span>
+<a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a>biosdecode
+<a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a>
+<a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a><span class="c1"># dmidecode  is  a tool for dumping a computer&#39;s DMI (some say SMBIOS) table contents in a human-readable format</span>
+<a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a>dmidecode
+<a id="__codelineno-2-6" name="__codelineno-2-6" href="#__codelineno-2-6"></a>
+<a id="__codelineno-2-7" name="__codelineno-2-7" href="#__codelineno-2-7"></a>cat<span class="w"> </span>/proc/iomem<span class="w"> </span><span class="p">|</span><span class="w"> </span>head
+</code></pre></div>
+
+
+
+
+
+
+
+
+
+
+
+
+                
               </article>
             </div>
           
@@ -1092,10 +1431,10 @@
     
     
       
-      <script id="__config" type="application/json">{"base": "/", "features": ["navigation.instant", "navigation.tracking", "navigation.tabs", "navigation.sections", "navigation.expand", "navigation.prune", "navigation.indexes", "navigation.top", "toc.follow", "content.code.annotate"], "search": "/assets/javascripts/workers/search.973d3a69.min.js", "tags": null, "translations": {"clipboard.copied": "\u5df2\u590d\u5236", "clipboard.copy": "\u590d\u5236", "search.result.more.one": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.more.other": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 # \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.none": "\u6ca1\u6709\u627e\u5230\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.one": "\u627e\u5230 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.other": "# \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.placeholder": "\u952e\u5165\u4ee5\u5f00\u59cb\u641c\u7d22", "search.result.term.missing": "\u7f3a\u5c11", "select.version": "\u9009\u62e9\u5f53\u524d\u7248\u672c"}, "version": null}</script>
+      <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.instant", "navigation.tracking", "navigation.tabs", "navigation.sections", "navigation.expand", "navigation.prune", "navigation.indexes", "navigation.top", "toc.follow", "content.code.annotate"], "search": "../../assets/javascripts/workers/search.973d3a69.min.js", "tags": null, "translations": {"clipboard.copied": "\u5df2\u590d\u5236", "clipboard.copy": "\u590d\u5236", "search.result.more.one": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.more.other": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 # \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.none": "\u6ca1\u6709\u627e\u5230\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.one": "\u627e\u5230 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.other": "# \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.placeholder": "\u952e\u5165\u4ee5\u5f00\u59cb\u641c\u7d22", "search.result.term.missing": "\u7f3a\u5c11", "select.version": "\u9009\u62e9\u5f53\u524d\u7248\u672c"}, "version": null}</script>
     
     
-      <script src="/assets/javascripts/bundle.92b07e13.min.js"></script>
+      <script src="../../assets/javascripts/bundle.92b07e13.min.js"></script>
       
     
   </body>

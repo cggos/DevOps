@@ -10,23 +10,25 @@
         <meta name="author" content="Gavin Gao">
       
       
-        <link rel="canonical" href="https://dev.cgabc.xyz/">
+        <link rel="canonical" href="https://dev.cgabc.xyz/app_build/software_debug/">
       
       
+        <link rel="prev" href="../cross_compilation/">
       
-        <link rel="next" href="std/code_format/">
+      
+        <link rel="next" href="../software_test/">
       
       
-      <link rel="icon" href="images/favicon.png">
+      <link rel="icon" href="../../images/favicon.png">
       <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.18">
     
     
       
-        <title>DevOps</title>
+        <title>Debug - DevOps</title>
       
     
     
-      <link rel="stylesheet" href="assets/stylesheets/main.7e37652d.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.7e37652d.min.css">
       
       
 
@@ -45,7 +47,7 @@
       
     
     
-    <script>__md_scope=new URL(".",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
@@ -64,7 +66,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#devops" class="md-skip">
+        <a href="#software_debug" class="md-skip">
           跳转至
         </a>
       
@@ -78,7 +80,7 @@
 
 <header class="md-header" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="页眉">
-    <a href="." title="DevOps" class="md-header__button md-logo" aria-label="DevOps" data-md-component="logo">
+    <a href="../.." title="DevOps" class="md-header__button md-logo" aria-label="DevOps" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
@@ -98,7 +100,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Home
+              Debug
             
           </span>
         </div>
@@ -181,11 +183,9 @@
   
   
   
-    
   
-  
-    <li class="md-tabs__item md-tabs__item--active">
-      <a href="." class="md-tabs__link">
+    <li class="md-tabs__item">
+      <a href="../.." class="md-tabs__link">
         
   
   
@@ -206,7 +206,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="std/code_format/" class="md-tabs__link">
+        <a href="../../std/code_format/" class="md-tabs__link">
           
   
   
@@ -228,7 +228,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="basics/" class="md-tabs__link">
+        <a href="../../basics/" class="md-tabs__link">
           
   
   
@@ -250,7 +250,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="program_languages/" class="md-tabs__link">
+        <a href="../../program_languages/" class="md-tabs__link">
           
   
   
@@ -272,7 +272,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="scripting/" class="md-tabs__link">
+        <a href="../../scripting/" class="md-tabs__link">
           
   
   
@@ -290,11 +290,13 @@
   
   
   
+    
+  
   
     
     
-      <li class="md-tabs__item">
-        <a href="app_build/build_tools/" class="md-tabs__link">
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../build_tools/" class="md-tabs__link">
           
   
   
@@ -316,7 +318,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="containers/" class="md-tabs__link">
+        <a href="../../containers/" class="md-tabs__link">
           
   
   
@@ -338,7 +340,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="configuration_management_system/" class="md-tabs__link">
+        <a href="../../configuration_management_system/" class="md-tabs__link">
           
   
   
@@ -367,7 +369,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="personal_knowledge_management/oa/" class="md-tabs__link">
+        <a href="../../personal_knowledge_management/oa/" class="md-tabs__link">
           
   
   
@@ -392,7 +394,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="package_management_system/" class="md-tabs__link">
+        <a href="../../package_management_system/" class="md-tabs__link">
           
   
   
@@ -428,7 +430,7 @@
 
 <nav class="md-nav md-nav--primary md-nav--lifted" aria-label="导航栏" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="." title="DevOps" class="md-nav__button md-logo" aria-label="DevOps" data-md-component="logo">
+    <a href="../.." title="DevOps" class="md-nav__button md-logo" aria-label="DevOps" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
@@ -455,32 +457,10 @@
       
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  
-  <span class="md-ellipsis">
-    Home
-    
-  </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="." class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
         
   
   
@@ -491,107 +471,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="目录">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      目录
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#basics" class="md-nav__link">
-    <span class="md-ellipsis">
-      Basics
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#languages" class="md-nav__link">
-    <span class="md-ellipsis">
-      Languages
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#scripting_linux_windows" class="md-nav__link">
-    <span class="md-ellipsis">
-      Scripting (Linux &amp; Windows)
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#app_build" class="md-nav__link">
-    <span class="md-ellipsis">
-      App Build
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#cms_-_configuration_management_system" class="md-nav__link">
-    <span class="md-ellipsis">
-      CMS - Configuration Management System
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#cms_-_content_management_system" class="md-nav__link">
-    <span class="md-ellipsis">
-      CMS - Content Management System
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#pkm_-_personal_knowledge_management" class="md-nav__link">
-    <span class="md-ellipsis">
-      PKM - Personal Knowledge Management
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#pms_-_package_management_system" class="md-nav__link">
-    <span class="md-ellipsis">
-      PMS - Package Management System
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#mailing" class="md-nav__link">
-    <span class="md-ellipsis">
-      Mailing
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -631,7 +510,7 @@
   
   
   
-    <a href="std/code_format/" class="md-nav__link">
+    <a href="../../std/code_format/" class="md-nav__link">
       
   
   
@@ -691,7 +570,7 @@
   
   
   
-    <a href="basics/" class="md-nav__link">
+    <a href="../../basics/" class="md-nav__link">
       
   
   
@@ -753,7 +632,7 @@
   
   
   
-    <a href="program_languages/" class="md-nav__link">
+    <a href="../../program_languages/" class="md-nav__link">
       
   
   
@@ -819,7 +698,7 @@
   
   
   
-    <a href="scripting/" class="md-nav__link">
+    <a href="../../scripting/" class="md-nav__link">
       
   
   
@@ -844,47 +723,50 @@
       
   
   
-  
-  
     
-    
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-    
-    
-    
-      
-      
-        
-      
-    
-    
-      
-        
-        
-      
-    
-    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
-      
-        
   
   
   
-    <a href="app_build/build_tools/" class="md-nav__link">
+    
+    
       
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+      
+        
+      
+    
+    
+      
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="">
+            
   
   
   <span class="md-ellipsis">
@@ -893,12 +775,290 @@
   </span>
   
 
-      
-        <span class="md-nav__icon md-icon"></span>
-      
-    </a>
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_6">
+            <span class="md-nav__icon md-icon"></span>
+            App Build
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../build_tools/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Build Tools
+    
+  </span>
   
 
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../compiler/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Compiler
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../cross_compilation/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Cross Compilation
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    Debug
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    Debug
+    
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="目录">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#overview" class="md-nav__link">
+    <span class="md-ellipsis">
+      Overview
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#gdb" class="md-nav__link">
+    <span class="md-ellipsis">
+      GDB
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="GDB">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#build" class="md-nav__link">
+    <span class="md-ellipsis">
+      Build
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#start_gdb" class="md-nav__link">
+    <span class="md-ellipsis">
+      Start GDB
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#usage" class="md-nav__link">
+    <span class="md-ellipsis">
+      Usage
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#debug_utils" class="md-nav__link">
+    <span class="md-ellipsis">
+      Debug Utils
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#bug_manager" class="md-nav__link">
+    <span class="md-ellipsis">
+      Bug Manager
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../software_test/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Test
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../code_analysis/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Code Analysis
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../reverse_engineering/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Reverse Engineering
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
       
     </li>
   
@@ -939,7 +1099,7 @@
   
   
   
-    <a href="containers/" class="md-nav__link">
+    <a href="../../containers/" class="md-nav__link">
       
   
   
@@ -997,7 +1157,7 @@
   
   
   
-    <a href="configuration_management_system/" class="md-nav__link">
+    <a href="../../configuration_management_system/" class="md-nav__link">
       
   
   
@@ -1057,7 +1217,7 @@
   
   
   
-    <a href="personal_knowledge_management/oa/" class="md-nav__link">
+    <a href="../../personal_knowledge_management/oa/" class="md-nav__link">
       
   
   
@@ -1113,7 +1273,7 @@
   
   
   
-    <a href="package_management_system/" class="md-nav__link">
+    <a href="../../package_management_system/" class="md-nav__link">
       
   
   
@@ -1161,81 +1321,69 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#basics" class="md-nav__link">
+  <a href="#overview" class="md-nav__link">
     <span class="md-ellipsis">
-      Basics
+      Overview
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#languages" class="md-nav__link">
+  <a href="#gdb" class="md-nav__link">
     <span class="md-ellipsis">
-      Languages
+      GDB
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="GDB">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#build" class="md-nav__link">
+    <span class="md-ellipsis">
+      Build
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#start_gdb" class="md-nav__link">
+    <span class="md-ellipsis">
+      Start GDB
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#usage" class="md-nav__link">
+    <span class="md-ellipsis">
+      Usage
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#debug_utils" class="md-nav__link">
+    <span class="md-ellipsis">
+      Debug Utils
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#scripting_linux_windows" class="md-nav__link">
+  <a href="#bug_manager" class="md-nav__link">
     <span class="md-ellipsis">
-      Scripting (Linux &amp; Windows)
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#app_build" class="md-nav__link">
-    <span class="md-ellipsis">
-      App Build
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#cms_-_configuration_management_system" class="md-nav__link">
-    <span class="md-ellipsis">
-      CMS - Configuration Management System
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#cms_-_content_management_system" class="md-nav__link">
-    <span class="md-ellipsis">
-      CMS - Content Management System
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#pkm_-_personal_knowledge_management" class="md-nav__link">
-    <span class="md-ellipsis">
-      PKM - Personal Knowledge Management
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#pms_-_package_management_system" class="md-nav__link">
-    <span class="md-ellipsis">
-      PMS - Package Management System
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#mailing" class="md-nav__link">
-    <span class="md-ellipsis">
-      Mailing
+      Bug Manager
     </span>
   </a>
   
@@ -1260,70 +1408,124 @@
   
 
 
-<h1 id="devops">DevOps<a class="headerlink" href="#devops" title="Permanent link">&para;</a></h1>
-<ul>
-<li><a href="https://code.google.com/">Google Code</a></li>
-<li><a href="https://chinagdg.org/">谷歌开发者社区(GDG)</a></li>
-</ul>
-<p align="center">
-  <img src="img/DevOps01.png" style="width:80%;">
-</p>
-
-<p align="center">
-  <img src="img/DevOps-tools.jpg" style="width:80%;">
-</p>
-
+<h1 id="software_debug">Software Debug<a class="headerlink" href="#software_debug" title="Permanent link">&para;</a></h1>
 <hr />
-<h2 id="basics">Basics<a class="headerlink" href="#basics" title="Permanent link">&para;</a></h2>
-<h2 id="languages">Languages<a class="headerlink" href="#languages" title="Permanent link">&para;</a></h2>
-<ul>
-<li>C/C++</li>
-<li>Python</li>
-<li>Matlab</li>
-<li>R</li>
-<li>VB</li>
-<li>C#</li>
-<li>Java</li>
-</ul>
-<h2 id="scripting_linux_windows">Scripting (Linux &amp; Windows)<a class="headerlink" href="#scripting_linux_windows" title="Permanent link">&para;</a></h2>
-<h2 id="app_build">App Build<a class="headerlink" href="#app_build" title="Permanent link">&para;</a></h2>
+<h2 id="overview">Overview<a class="headerlink" href="#overview" title="Permanent link">&para;</a></h2>
 <ul>
 <li>
-<p>Compile</p>
+<p><a href="https://www.cprogramming.com/debugging/">Debuggers and Debugging Techniques</a></p>
 </li>
 <li>
-<p>Debug</p>
-</li>
-<li>
-<p>Reverse Engineering</p>
-</li>
-<li>
-<p>Docker</p>
+<p><a href="https://cgabc.xyz/tags/Debug/">Debug (CGABC)</a></p>
 </li>
 </ul>
-<h2 id="cms_-_configuration_management_system">CMS - Configuration Management System<a class="headerlink" href="#cms_-_configuration_management_system" title="Permanent link">&para;</a></h2>
-<h2 id="cms_-_content_management_system">CMS - Content Management System<a class="headerlink" href="#cms_-_content_management_system" title="Permanent link">&para;</a></h2>
+<h2 id="gdb">GDB<a class="headerlink" href="#gdb" title="Permanent link">&para;</a></h2>
+<p align="center">
+  <iframe src="https://www.youtube.com/embed/PorfLSr3DDI?rel=0&showinfo=0"
+    width="780" height="480" frameborder="no" scrolling="no" allowfullscreen="true">
+  </iframe>
+</p>
+
+<ul>
+<li><a href="https://www.gnu.org/software/gdb/">GDB</a>: The GNU Project Debugger</li>
+<li><a href="http://www.brendangregg.com/blog/2016-08-09/gdb-example-ncurses.html">gdb Debugging Full Example (Tutorial): ncurses</a></li>
+<li><a href="https://felix.abecassis.me/2012/08/gdb-debugging-stripped-binaries/">GDB - Debugging stripped binaries</a></li>
+<li><a href="http://airekans.github.io/cpp/2014/03/11/cpp-debug-01">一次调试C++程序的艰苦历程</a></li>
+<li><a href="https://www.eet-china.com/mp/a34200.html">图文并茂 | 彻底弄懂GDB调试原理</a></li>
+</ul>
+<h3 id="build">Build<a class="headerlink" href="#build" title="Permanent link">&para;</a></h3>
+<div class="highlight"><span class="filename">Bash</span><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>g++<span class="w"> </span>-g<span class="w"> </span>fun.cpp
+</code></pre></div>
+<h3 id="start_gdb">Start GDB<a class="headerlink" href="#start_gdb" title="Permanent link">&para;</a></h3>
+<div class="highlight"><span class="filename">Bash</span><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>gdb<span class="w"> </span>a.out<span class="w"> </span><span class="o">[</span>--tui<span class="o">]</span><span class="w"> </span><span class="c1"># or open TUI by Ctrl-X-O after entering gdb</span>
+</code></pre></div>
+<h3 id="usage">Usage<a class="headerlink" href="#usage" title="Permanent link">&para;</a></h3>
+<div class="highlight"><span class="filename">Bash</span><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="o">(</span>gdb<span class="o">)</span><span class="w"> </span>directory
+<a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a><span class="o">(</span>gdb<span class="o">)</span><span class="w"> </span>show<span class="w"> </span>directories
+<a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a>
+<a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a><span class="o">(</span>gdb<span class="o">)</span><span class="w"> </span><span class="nb">set</span><span class="w"> </span>args<span class="w"> </span>xxx
+<a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a><span class="o">(</span>gdb<span class="o">)</span><span class="w"> </span>show<span class="w"> </span>args
+<a id="__codelineno-2-6" name="__codelineno-2-6" href="#__codelineno-2-6"></a>
+<a id="__codelineno-2-7" name="__codelineno-2-7" href="#__codelineno-2-7"></a><span class="o">(</span>gdb<span class="o">)</span><span class="w"> </span>i<span class="w"> </span>r
+<a id="__codelineno-2-8" name="__codelineno-2-8" href="#__codelineno-2-8"></a>
+<a id="__codelineno-2-9" name="__codelineno-2-9" href="#__codelineno-2-9"></a><span class="o">(</span>gdb<span class="o">)</span><span class="w"> </span><span class="nb">set</span><span class="w"> </span>print<span class="w"> </span>pretty
+<a id="__codelineno-2-10" name="__codelineno-2-10" href="#__codelineno-2-10"></a><span class="o">(</span>gdb<span class="o">)</span><span class="w"> </span>p<span class="w"> </span>/d<span class="w"> </span>var<span class="w"> </span><span class="c1"># /x /o /t /f /c </span>
+<a id="__codelineno-2-11" name="__codelineno-2-11" href="#__codelineno-2-11"></a><span class="o">(</span>gdb<span class="o">)</span><span class="w"> </span>p<span class="w"> </span><span class="p">&amp;</span>var
+<a id="__codelineno-2-12" name="__codelineno-2-12" href="#__codelineno-2-12"></a><span class="o">(</span>gdb<span class="o">)</span><span class="w"> </span>p<span class="w"> </span><span class="nv">var</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">20</span>
+<a id="__codelineno-2-13" name="__codelineno-2-13" href="#__codelineno-2-13"></a><span class="o">(</span>gdb<span class="o">)</span><span class="w"> </span>p<span class="w"> </span>sizeof<span class="o">(</span>long<span class="o">)</span>
+<a id="__codelineno-2-14" name="__codelineno-2-14" href="#__codelineno-2-14"></a><span class="o">(</span>gdb<span class="o">)</span><span class="w"> </span><span class="nb">set</span><span class="w"> </span>print<span class="w"> </span>array<span class="w"> </span>on
+<a id="__codelineno-2-15" name="__codelineno-2-15" href="#__codelineno-2-15"></a>
+<a id="__codelineno-2-16" name="__codelineno-2-16" href="#__codelineno-2-16"></a><span class="o">(</span>gdb<span class="o">)</span><span class="w"> </span>x<span class="w"> </span>addr
+<a id="__codelineno-2-17" name="__codelineno-2-17" href="#__codelineno-2-17"></a>
+<a id="__codelineno-2-18" name="__codelineno-2-18" href="#__codelineno-2-18"></a><span class="o">(</span>gdb<span class="o">)</span><span class="w"> </span>bt
+<a id="__codelineno-2-19" name="__codelineno-2-19" href="#__codelineno-2-19"></a><span class="o">(</span>gdb<span class="o">)</span><span class="w"> </span>info<span class="w"> </span>frame
+<a id="__codelineno-2-20" name="__codelineno-2-20" href="#__codelineno-2-20"></a><span class="o">(</span>gdb<span class="o">)</span><span class="w"> </span>info<span class="w"> </span>args
+<a id="__codelineno-2-21" name="__codelineno-2-21" href="#__codelineno-2-21"></a><span class="o">(</span>gdb<span class="o">)</span><span class="w"> </span>info<span class="w"> </span>locals
+<a id="__codelineno-2-22" name="__codelineno-2-22" href="#__codelineno-2-22"></a><span class="o">(</span>gdb<span class="o">)</span><span class="w"> </span>info<span class="w"> </span>catch
+</code></pre></div>
+<h2 id="debug_utils">Debug Utils<a class="headerlink" href="#debug_utils" title="Permanent link">&para;</a></h2>
 <ul>
 <li>
-<p><a href="https://getkirby.com/">Kirby</a> is a file‑based CMS</p>
+<p>dmesg
+    <div class="highlight"><span class="filename">Bash</span><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>dmesg<span class="w"> </span><span class="p">|</span><span class="w"> </span>tail
+</code></pre></div></p>
 </li>
 <li>
-<p><a href="https://www.drupal.org/">Drupal</a> is content management software.</p>
+<p>readelf</p>
+</li>
+<li>
+<p>strace</p>
+</li>
+<li>
+<p>addr2line
+    <div class="highlight"><span class="filename">Bash</span><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="c1"># 根据 函数地址，查看函数名</span>
+<a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a>addr2line<span class="w"> </span>-e<span class="w"> </span>a.out<span class="w"> </span>0x4004e5<span class="w"> </span>-f<span class="w"> </span><span class="o">[</span>--demangle<span class="o">=</span>gnu-v3<span class="o">]</span>
+</code></pre></div></p>
+</li>
+<li>
+<p>nm: list symbols from object files
+    <div class="highlight"><span class="filename">Bash</span><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a>nm<span class="w"> </span>libhello.so
+</code></pre></div></p>
+</li>
+<li>
+<p>strip</p>
+</li>
+<li>
+<p><a href="https://github.com/bombela/backward-cpp">Backward-cpp</a>: a beautiful stack trace pretty printer for C++</p>
+</li>
+<li>
+<p>od: dump files in octal and other formats</p>
+</li>
+<li>
+<p>objdump: display information from object files
+    <div class="highlight"><span class="filename">Bash</span><pre><span></span><code><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a><span class="c1"># 查看.so文件的依赖关系</span>
+<a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a>objdump<span class="w"> </span>-x<span class="w"> </span>libxxx.so<span class="w"> </span><span class="p">|</span><span class="w"> </span>grep<span class="w"> </span>NEEDED
+<a id="__codelineno-6-3" name="__codelineno-6-3" href="#__codelineno-6-3"></a>
+<a id="__codelineno-6-4" name="__codelineno-6-4" href="#__codelineno-6-4"></a><span class="c1"># 查看动态库和静态库是32位，还是64位</span>
+<a id="__codelineno-6-5" name="__codelineno-6-5" href="#__codelineno-6-5"></a>file<span class="w"> </span>*.so<span class="w">  </span><span class="c1"># 动态库</span>
+<a id="__codelineno-6-6" name="__codelineno-6-6" href="#__codelineno-6-6"></a>objdump<span class="w"> </span>-x<span class="w"> </span>*.a<span class="w">  </span><span class="c1"># 静态</span>
+</code></pre></div></p>
+</li>
+<li>
+<p>ldd: print shared object dependencies
+    <div class="highlight"><span class="filename">Bash</span><pre><span></span><code><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a>ldd<span class="w"> </span>/bin/lnlibc.so.6
+</code></pre></div></p>
+</li>
+<li>
+<p>WinDbg</p>
+<ul>
+<li>不仅可以用于Kernel模式调试和用户模式调试，还可以调试Dump文件</li>
+<li>Dump文件是进程的内存镜像，可以把程序的执行状态通过调试器保存到dump文件中</li>
+</ul>
+</li>
+<li>
+<p>SxsTrace: 跟踪调试应用程序</p>
 </li>
 </ul>
-<h2 id="pkm_-_personal_knowledge_management">PKM - Personal Knowledge Management<a class="headerlink" href="#pkm_-_personal_knowledge_management" title="Permanent link">&para;</a></h2>
-<h2 id="pms_-_package_management_system">PMS - Package Management System<a class="headerlink" href="#pms_-_package_management_system" title="Permanent link">&para;</a></h2>
-<h2 id="mailing">Mailing<a class="headerlink" href="#mailing" title="Permanent link">&para;</a></h2>
+<h2 id="bug_manager">Bug Manager<a class="headerlink" href="#bug_manager" title="Permanent link">&para;</a></h2>
 <ul>
-<li>
-<p><a href="https://grokbase.com/">Grokbase</a> is a growing mailing list archive that facilitates discovery of discussions and users within and across groups</p>
-</li>
-<li>
-<p><a href="https://markmail.org/">MarkMail</a> is a free service for searching mailing list archives, with huge advantages over traditional search engines</p>
-</li>
-<li>
-<p><a href="http://git.net/">git.net</a></p>
-</li>
+<li><a href="https://www.bugclose.com/">bugclose</a>: 云端BUG管理工具</li>
+<li><a href="https://www.bugzilla.org/">Bugzilla</a> is server software designed to help you manage software development.</li>
 </ul>
 
 
@@ -1400,10 +1602,10 @@
     
     
       
-      <script id="__config" type="application/json">{"base": ".", "features": ["navigation.instant", "navigation.tracking", "navigation.tabs", "navigation.sections", "navigation.expand", "navigation.prune", "navigation.indexes", "navigation.top", "toc.follow", "content.code.annotate"], "search": "assets/javascripts/workers/search.973d3a69.min.js", "tags": null, "translations": {"clipboard.copied": "\u5df2\u590d\u5236", "clipboard.copy": "\u590d\u5236", "search.result.more.one": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.more.other": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 # \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.none": "\u6ca1\u6709\u627e\u5230\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.one": "\u627e\u5230 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.other": "# \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.placeholder": "\u952e\u5165\u4ee5\u5f00\u59cb\u641c\u7d22", "search.result.term.missing": "\u7f3a\u5c11", "select.version": "\u9009\u62e9\u5f53\u524d\u7248\u672c"}, "version": null}</script>
+      <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.instant", "navigation.tracking", "navigation.tabs", "navigation.sections", "navigation.expand", "navigation.prune", "navigation.indexes", "navigation.top", "toc.follow", "content.code.annotate"], "search": "../../assets/javascripts/workers/search.973d3a69.min.js", "tags": null, "translations": {"clipboard.copied": "\u5df2\u590d\u5236", "clipboard.copy": "\u590d\u5236", "search.result.more.one": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.more.other": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 # \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.none": "\u6ca1\u6709\u627e\u5230\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.one": "\u627e\u5230 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.other": "# \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.placeholder": "\u952e\u5165\u4ee5\u5f00\u59cb\u641c\u7d22", "search.result.term.missing": "\u7f3a\u5c11", "select.version": "\u9009\u62e9\u5f53\u524d\u7248\u672c"}, "version": null}</script>
     
     
-      <script src="assets/javascripts/bundle.92b07e13.min.js"></script>
+      <script src="../../assets/javascripts/bundle.92b07e13.min.js"></script>
       
     
   </body>
