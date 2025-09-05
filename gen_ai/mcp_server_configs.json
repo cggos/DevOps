@@ -1,0 +1,49 @@
+{
+  "mcpServers": {
+    "C_1lifuATHmclmzykO4qE": {
+      "name": "amap-maps",
+      "type": "stdio",
+      "description": "",
+      "isActive": true,
+      "registryUrl": "",
+      "command": "npx",
+      "args": ["-y", "@amap/amap-maps-mcp-server"],
+      "env": {
+        "AMAP_MAPS_API_KEY": "32633efc57d60cfa64371db28514511b"
+      }
+    },
+
+    "APwMbJ52z18oHGt2QF-d8": {
+      "name": "@cherry/filesystem",
+      "type": "inMemory",
+      "description": "实现文件系统操作的模型上下文协议（MCP）的 Node.js 服务器",
+      "isActive": true,
+      "args": [
+        "-y",
+        "@cherry/filesystem",
+        "/Users/gavin.gao/SynologyDrive/ObsidianVaults/"
+      ]
+    },
+
+    "zorFCsqTF-VkNhrERMf31": {
+      "name": "server-filesystem",
+      "type": "stdio",
+      "description": "MCP server for filesystem access\n\nUsage: npx @modelcontextprotocol/server-filesystem\nNPM: https://www.npmjs.com/package/@modelcontextprotocol/server-filesystem",
+      "isActive": true,
+      "registryUrl": "",
+      "command": "npx",
+      "args": [
+        "-y",
+        "@modelcontextprotocol/server-filesystem",
+        "/Users/gavin.gao/SynologyDrive/ObsidianVaults/"
+      ]
+    },
+
+    "Gq2ZNUqoLlXo7-IXuyEH2": {
+      "name": "@cherry/fetch",
+      "type": "inMemory",
+      "description": "用于获取 URL 网页内容的 MCP 服务器",
+      "isActive": true
+    }
+  }
+}
