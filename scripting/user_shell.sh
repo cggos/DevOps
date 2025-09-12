@@ -146,6 +146,10 @@ if [ -d "${HOME}/.bun" ]; then
   export PATH="$BUN_INSTALL/bin:$PATH"
 fi
 
+# Gem
+export GEM_HOME="$CG_APP_ROOT/DevOps/gems"
+export PATH="$PATH:$GEM_HOME/bin"
+
 # op
 export PATH="$CG_APP_ROOT/OA/op/:$PATH"
 if [ -f "$CG_APP_ROOT/OA/op/op.sh" ]; then
