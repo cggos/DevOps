@@ -168,11 +168,5 @@ nav:
         - TeX: personal_knowledge_management/type_setting/math_typesetting/TeX.md
         - Jupyter: personal_knowledge_management/type_setting/math_typesetting/jupyter.md
 
-    - Website:
-      - Overview: personal_knowledge_management/website/README.md
-      - MkDocs: personal_knowledge_management/website/MkDocs.md
-      - Sphinx: personal_knowledge_management/type_setting/Sphinx.md
-      - Jekyll: personal_knowledge_management/website/Jekyll.md
-
   - PMS:
     - Overview: package_management_system/README.md
