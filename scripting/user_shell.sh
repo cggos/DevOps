@@ -95,6 +95,7 @@ if [[ "$os_id" == "ubuntu" ]]; then
     elif [ -n "$ZSH_VERSION" ]; then
       alias sc_ros2="source /opt/ros/humble/setup.zsh"
     fi
+    export ROS2_PYTHON_SITE_PACKAGES="/opt/ros/humble/lib/python3.10/site-packages"
   fi
 fi
 # export ROS_MASTER_URI=http://jet02.local:11311
