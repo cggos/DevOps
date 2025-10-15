@@ -14,7 +14,6 @@
 # │   └── OS
 # ├── code
 # │   ├── DevOps
-# │   │   ├── 3rdparty
 # │   │   ├── 3rdparty_src
 # │   │   ├── app_release
 # │   └── ccv
