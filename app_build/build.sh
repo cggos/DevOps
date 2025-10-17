@@ -12,6 +12,11 @@ if [ $param_num -ne 3 ]; then
   exit
 fi
 
+if [ -z ${CG_THIRDPARTY} ]; then
+  echo "ENV CG_THIRDPARTY NOT set!!! Try export CG_THIRDPARTY, e.g. export CG_THIRDPARTY=/opt/3rdparty"
+  exit
+fi
+
 ########################################## Vars ##########################################
 
 function cur_abs_path {
@@ -58,7 +63,6 @@ if [ ${PLATFORM_ARCH} == "aarch64" ]; then
   echo "
 --------------------------------- build.sh vars aarch64 ---------------------------------
 ENV TOOL_CHAIN:    ${TOOL_CHAIN}
-TARGET_ARCH:       ${TARGET_ARCH}
 
 GNU_C_COMPLILER:   ${GNU_C_COMPLILER}
 GNU_CXX_COMPLILER: ${GNU_CXX_COMPLILER}
@@ -69,7 +73,7 @@ fi
 ########################################## CMAKE_DEFINES ##########################################
 
 CMAKE_DEFINES="
-  -Wno-dev
+  -Wno-dev \
   -D CMAKE_BUILD_TYPE=Release \
   -D CMAKE_C_STANDARD=11 \
   -D CMAKE_CXX_STANDARD=17 \
@@ -87,32 +91,32 @@ if [ ${PLATFORM_ARCH} == "aarch64" ]; then
     -D CMAKE_CXX_COMPILER=${GNU_CXX_COMPLILER}"
 fi
 
-if [ ${LIB_NAME} == "app_name" ]; then
-  CMAKE_DEFINES="${CMAKE_DEFINES} \
-    -D foonathan_memory_DIR=${INSTALL_ROOT}/foonathan_memory/lib/foonathan_memory/cmake \
-    -D EIGEN_INCLUDE_DIR=${INSTALL_ROOT}/eigen3/include/eigen3"
+# if [ ${LIB_NAME} == "app_name" ]; then
+#   CMAKE_DEFINES="${CMAKE_DEFINES} \
+#     -D foonathan_memory_DIR=${INSTALL_ROOT}/foonathan_memory/lib/foonathan_memory/cmake \
+#     -D EIGEN_INCLUDE_DIR=${INSTALL_ROOT}/eigen3/include/eigen3"
 
-  if [ ${PLATFORM_ARCH} == "aarch64" ]; then
-    CMAKE_DEFINES="${CMAKE_DEFINES} \
-    -D VP_BUILD_TEST=OFF \
-    -D VP_WITH_IO_SERIAL=OFF \
-    -D VP_WITH_IO_FASTDDS=OFF \
-    -D VP_WITH_DL_RKNN=ON \
-    -D VP_WITH_DL_TORCH=OFF \
-    -D VP_WITH_DL_TRT=OFF"
-  fi
+#   if [ ${PLATFORM_ARCH} == "aarch64" ]; then
+#     CMAKE_DEFINES="${CMAKE_DEFINES} \
+#     -D VP_BUILD_TEST=OFF \
+#     -D VP_WITH_IO_SERIAL=OFF \
+#     -D VP_WITH_IO_FASTDDS=OFF \
+#     -D VP_WITH_DL_RKNN=ON \
+#     -D VP_WITH_DL_TORCH=OFF \
+#     -D VP_WITH_DL_TRT=OFF"
+#   fi
 
-  if [ ${PLATFORM_ARCH} == "x86-64" ]; then
-    CMAKE_DEFINES="${CMAKE_DEFINES} \
-    -D VP_BUILD_TEST=ON \
-    -D VP_WITH_CAM_T265=OFF \
-    -D VP_WITH_IO_SERIAL=ON \
-    -D VP_WITH_IO_FASTDDS=OFF \
-    -D VP_WITH_DL_RKNN=OFF \
-    -D VP_WITH_DL_TORCH=ON \
-    -D VP_WITH_DL_TRT=OFF"
-  fi
-fi
+#   if [ ${PLATFORM_ARCH} == "x86-64" ]; then
+#     CMAKE_DEFINES="${CMAKE_DEFINES} \
+#     -D VP_BUILD_TEST=ON \
+#     -D VP_WITH_CAM_T265=OFF \
+#     -D VP_WITH_IO_SERIAL=ON \
+#     -D VP_WITH_IO_FASTDDS=OFF \
+#     -D VP_WITH_DL_RKNN=OFF \
+#     -D VP_WITH_DL_TORCH=ON \
+#     -D VP_WITH_DL_TRT=OFF"
+#   fi
+# fi
 
 if [ ${LIB_NAME} == "spdlog" ]; then
   CMAKE_DEFINES="${CMAKE_DEFINES} \
@@ -333,6 +337,14 @@ if [ ${LIB_NAME} == "ceres_solver" ]; then
     -D BUILD_TESTING=OFF \
     -D BUILD_EXAMPLES=OFF \
     -D BUILD_BENCHMARKS=OFF"
+fi
+
+if [ ${LIB_NAME} == "portaudio" ]; then
+  CMAKE_DEFINES="${CMAKE_DEFINES} \
+    -D PA_BUILD_SHARED=ON \
+    -D PA_BUILD_STATIC=OFF
+    -D PA_BUILD_TESTS=OFF \
+    -D PA_BUILD_EXAMPLES=OFF"
 fi
 
 echo "

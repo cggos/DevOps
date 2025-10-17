@@ -14,7 +14,6 @@
 # │   └── OS
 # ├── code
 # │   ├── DevOps
-# │   │   ├── 3rdparty
 # │   │   ├── 3rdparty_src
 # │   │   ├── app_release
 # │   └── ccv
@@ -39,6 +38,9 @@ export CG_DM_ROOT="${CG_DATA_HOME}/dms"
 
 export CG_CONDA_ENVS="${CG_APP_ROOT}/DevOps/anaconda3/envs"
 export CG_APP_RELEASE="${CG_APP_ROOT}/DevOps/app_release"
+export CG_THIRDPARTY=$CG_APP_RELEASE
+
+export CG_OUTPUT_ROOT="${HOME}/.cache/cgabc"
 
 
 export PATH=$HOME/.local/bin/:$PATH
@@ -189,6 +191,9 @@ export ESP_ROOT="${CG_APP_ROOT}/DevOps/espressif"
 export ESP_TOOL_CHAIN="${HOME}/.espressif/tools/xtensa-esp32s3-elf"
 export PATH="$PATH:${ESP_TOOL_CHAIN}/bin"
 alias sc_esp_idf=". ${ESP_ROOT}/esp-idf/export.sh"
+
+# FlameGraph
+export PATH="${CG_APP_ROOT}/DevOps/FlameGraph":$PATH
 
 # AI Apps
 if [[ "$(uname -s)" == "Linux" ]]; then
