@@ -339,6 +339,14 @@ if [ ${LIB_NAME} == "ceres_solver" ]; then
     -D BUILD_BENCHMARKS=OFF"
 fi
 
+if [ ${LIB_NAME} == "portaudio" ]; then
+  CMAKE_DEFINES="${CMAKE_DEFINES} \
+    -D PA_BUILD_SHARED=ON \
+    -D PA_BUILD_STATIC=OFF
+    -D PA_BUILD_TESTS=OFF \
+    -D PA_BUILD_EXAMPLES=OFF"
+fi
+
 echo "
 --------------------------------- CMAKE_DEFINES ---------------------------------
 ${CMAKE_DEFINES}
