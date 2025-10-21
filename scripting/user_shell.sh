@@ -194,6 +194,9 @@ alias sc_esp_idf=". ${ESP_ROOT}/esp-idf/export.sh"
 # FlameGraph
 export PATH="${CG_APP_ROOT}/DevOps/FlameGraph":$PATH
 
+# mcap
+export PATH="${CG_APP_ROOT}/DevOps/mcap":$PATH
+
 # AI Apps
 if [[ "$(uname -s)" == "Linux" ]]; then
   export PATH="$PATH:${HOME}/.lmstudio/bin"
