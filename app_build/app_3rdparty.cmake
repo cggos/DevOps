@@ -17,7 +17,26 @@ message("PLATFORM_ARCH: ${PLATFORM_ARCH}\n")
 # if(spdlog_FOUND)
 # # message(${spdlog_INCLUDE_DIR})
 # endif()
+# set(spdlog_DIR "$ENV{CG_THIRDPARTY}/${PLATFORM_ARCH}/spdlog/lib/cmake/spdlog/")
+if(PLATFORM_ARCH STREQUAL "aarch64")
+  include_directories("$ENV{CG_THIRDPARTY}/${PLATFORM_ARCH}/spdlog/include")
+  link_directories("$ENV{CG_THIRDPARTY}/${PLATFORM_ARCH}/spdlog/lib")
+endif()
+if(PLATFORM_ARCH STREQUAL "x86-64")
+  link_directories("/usr/lib/x86_64-linux-gnu") # solve conflicts with ROS2
+endif()
 add_definitions(-DFMT_HEADER_ONLY)
+
+# find_package(PkgConfig REQUIRED)
+# if(PkgConfig_FOUND)
+# pkg_check_modules(YAMLCPP REQUIRED yaml-cpp)
+# endif()
+# set(ENV{PKG_CONFIG_PATH} "$ENV{CG_THIRDPARTY}/${PLATFORM_ARCH}/yaml-cpp/lib/pkgconfig/")
+set(YAMLCPP_INCLUDE_DIRS $ENV{CG_THIRDPARTY}/${PLATFORM_ARCH}/yaml-cpp/include)
+set(YAMLCPP_LIBRARY_DIRS $ENV{CG_THIRDPARTY}/${PLATFORM_ARCH}/yaml-cpp/lib)
+include_directories(${YAMLCPP_INCLUDE_DIRS})
+link_directories(${YAMLCPP_LIBRARY_DIRS})
+set(YAMLCPP_LIBRARIES yaml-cpp)
 
 # set(TBB_DIR "$ENV{CG_THIRDPARTY}/${PLATFORM_ARCH}/tbb/lib/cmake/TBB")
 # find_package(TBB REQUIRED)
@@ -41,42 +60,31 @@ set(SOPHUS_INCLUDE_DIR $ENV{CG_THIRDPARTY}/${PLATFORM_ARCH}/sophus/include/)
 include_directories(${SOPHUS_INCLUDE_DIR})
 add_definitions(-DSOPHUS_USE_BASIC_LOGGING)
 
-# set(OpenCV_DIR "$ENV{CG_THIRDPARTY}/${PLATFORM_ARCH}/opencv/lib/cmake/opencv4/")
-# find_package(OpenCV 4 REQUIRED COMPONENTS core imgproc highgui calib3d) # gapi dnn
+set(OpenCV_DIR "$ENV{CG_THIRDPARTY}/${PLATFORM_ARCH}/opencv/lib/cmake/opencv4/")
+# find_package(OpenCV 4 REQUIRED COMPONENTS core imgproc highgui video calib3d gapi dnn)
 set(OpenCV_INCLUDE_DIRS "$ENV{CG_THIRDPARTY}/${PLATFORM_ARCH}/opencv/include/opencv4/")
 set(OpenCV_LIBRARY_DIRS "$ENV{CG_THIRDPARTY}/${PLATFORM_ARCH}/opencv/lib")
-set(OpenCV_LIBS 
+set(OpenCV_LIBS
   ${OpenCV_LIBRARY_DIRS}/libopencv_core.so
+  ${OpenCV_LIBRARY_DIRS}/libopencv_imgcodecs.so
   ${OpenCV_LIBRARY_DIRS}/libopencv_imgproc.so
   ${OpenCV_LIBRARY_DIRS}/libopencv_highgui.so
   ${OpenCV_LIBRARY_DIRS}/libopencv_calib3d.so
+  ${OpenCV_LIBRARY_DIRS}/libopencv_features2d.so
+  ${OpenCV_LIBRARY_DIRS}/libopencv_tracking.so
+  ${OpenCV_LIBRARY_DIRS}/libopencv_video.so
+  ${OpenCV_LIBRARY_DIRS}/libopencv_flann.so
   ${OpenCV_LIBRARY_DIRS}/libopencv_gapi.so
   ${OpenCV_LIBRARY_DIRS}/libopencv_dnn.so
 )
 include_directories(${OpenCV_INCLUDE_DIRS})
 
-# find_package(PkgConfig REQUIRED)
-# if(PkgConfig_FOUND)
-# pkg_check_modules(YAMLCPP REQUIRED yaml-cpp)
-# endif()
-# set(ENV{PKG_CONFIG_PATH} "$ENV{CG_THIRDPARTY}/${PLATFORM_ARCH}/yaml-cpp/lib/pkgconfig/")
-set(YAMLCPP_INCLUDE_DIRS $ENV{CG_THIRDPARTY}/${PLATFORM_ARCH}/yaml-cpp/include)
-set(YAMLCPP_LIBRARY_DIRS $ENV{CG_THIRDPARTY}/${PLATFORM_ARCH}/yaml-cpp/lib)
-include_directories(${YAMLCPP_INCLUDE_DIRS})
-link_directories(${YAMLCPP_LIBRARY_DIRS})
-set(YAMLCPP_LIBRARIES yaml-cpp)
-
-# set(spdlog_DIR "$ENV{CG_THIRDPARTY}/${PLATFORM_ARCH}/spdlog/lib/cmake/spdlog/")
-if(PLATFORM_ARCH STREQUAL "aarch64")
-  include_directories("$ENV{CG_THIRDPARTY}/${PLATFORM_ARCH}/spdlog/include")
-  link_directories("$ENV{CG_THIRDPARTY}/${PLATFORM_ARCH}/spdlog/lib")
-endif()
-if(PLATFORM_ARCH STREQUAL "x86-64")
-  link_directories("/usr/lib/x86_64-linux-gnu") # solve conflicts with ROS2
-endif()
-
 set(dbow2_DIR "$ENV{CG_THIRDPARTY}/${PLATFORM_ARCH}/dbow2/lib/cmake/DBoW2")
 include_directories("$ENV{CG_THIRDPARTY}/${PLATFORM_ARCH}/dbow2/include")
+
+set(DBOW3_INCLUDE_DIRS ${APP_RELEASE_ROOT}/dbow3/include)
+set(DBOW3_LIBRARY_DIRS ${APP_RELEASE_ROOT}/dbow3/lib)
+set(DBOW3_LIBRARIES DBoW3)
 
 set(ENV{PKG_CONFIG_PATH} "$ENV{PKG_CONFIG_PATH} $ENV{CG_THIRDPARTY}/${PLATFORM_ARCH}/pcl/lib/pkgconfig/")
 set(flann_DIR "$ENV{CG_THIRDPARTY}/${PLATFORM_ARCH}/flann/lib/cmake/flann/")
@@ -120,6 +128,15 @@ if(PLATFORM_ARCH STREQUAL "x86-64")
   set(PCL_INCLUDE_DIRS "/usr/include/pcl-1.10")
 endif()
 include_directories(${PCL_INCLUDE_DIRS})
+
+# set(Ceres_DIR ${APP_RELEASE_ROOT}/ceres_solver/lib/cmake/Ceres/)
+# find_package(Ceres REQUIRED)
+# if(Ceres_FOUND)
+# include_directories(${CERES_INCLUDE_DIRS})
+# endif()
+set(CERES_INCLUDE_DIRS ${APP_RELEASE_ROOT}/ceres_solver/include ${APP_RELEASE_ROOT}/ceres_solver/include/ceres/internal/miniglog)
+set(CERES_LIBRARY_DIRS ${APP_RELEASE_ROOT}/ceres_solver/lib)
+set(CERES_LIBRARIES ceres)
 
 set(GTest_DIR "$ENV{CG_THIRDPARTY}/${PLATFORM_ARCH}/gtest/lib/cmake/GTest")
 include_directories("$ENV{CG_THIRDPARTY}/${PLATFORM_ARCH}/gtest/include")
