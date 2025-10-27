@@ -47,8 +47,6 @@ BUILD_DIR:      ${BUILD_DIR}
 
 INSTALL_ROOT:   ${INSTALL_ROOT}
 INSTALL_DIR:    ${INSTALL_DIR}
-
-TOOL_CHAIN_CMAKE: ${TOOL_CHAIN_CMAKE}
 --------------------------------- build.sh vars ---------------------------------
 "
 
@@ -62,6 +60,8 @@ if [ ${PLATFORM_ARCH} == "aarch64" ]; then
 
   echo "
 --------------------------------- build.sh vars aarch64 ---------------------------------
+TOOL_CHAIN_CMAKE:  ${TOOL_CHAIN_CMAKE}
+
 ENV TOOL_CHAIN:    ${TOOL_CHAIN}
 
 GNU_C_COMPLILER:   ${GNU_C_COMPLILER}
@@ -79,7 +79,6 @@ CMAKE_DEFINES="
   -D CMAKE_CXX_STANDARD=17 \
   -D CMAKE_INSTALL_PREFIX=${INSTALL_DIR} \
   -D CPACK_OUTPUT_FILE_PREFIX=${INSTALL_ROOT} \
-  -D CMAKE_TOOLCHAIN_FILE=${TOOL_CHAIN_CMAKE} \
   -D PLATFORM_ARCH=${PLATFORM_ARCH} \
   -D LIB_NAME=${LIB_NAME} \
   -D INSTALL_ROOT=${INSTALL_ROOT}"
@@ -88,7 +87,8 @@ CMAKE_DEFINES="
 if [ ${PLATFORM_ARCH} == "aarch64" ]; then
   CMAKE_DEFINES="${CMAKE_DEFINES} \
     -D CMAKE_C_COMPILER=${GNU_C_COMPLILER} \
-    -D CMAKE_CXX_COMPILER=${GNU_CXX_COMPLILER}"
+    -D CMAKE_CXX_COMPILER=${GNU_CXX_COMPLILER} \
+    -D CMAKE_TOOLCHAIN_FILE=${TOOL_CHAIN_CMAKE}"
 fi
 
 # if [ ${LIB_NAME} == "app_name" ]; then
@@ -188,9 +188,7 @@ fi
 # for OpenCV 4.2: BUILD_opencv_gapi
 if [ ${LIB_NAME} == "opencv" ]; then
   CMAKE_DEFINES="${CMAKE_DEFINES} \
-    -D CMAKE_BUILD_TYPE=Release \
-    -D CMAKE_CXX_STANDARD=17 \
-    -D BUILD_LIST=highgui,calib3d,videoio,gapi,ml,dnn,shape,quality,tracking \
+    -D BUILD_LIST=highgui,calib3d,videoio,gapi,ml,dnn,shape,quality,tracking,aruco,ccalib,line_descriptor,stitching,stereo,rgbd,structured_light \
     -D BUILD_SHARED_LIBS=ON \
     -D BUILD_DOCS=OFF \
     -D BUILD_TESTS=OFF \
@@ -199,7 +197,6 @@ if [ ${LIB_NAME} == "opencv" ]; then
     -D BUILD_opencv_apps=OFF \
     -D BUILD_opencv_python2=OFF \
     -D BUILD_opencv_python3=OFF \
-    -D BUILD_opencv_gapi=ON
     -D WITH_MATLAB=OFF \
     -D WITH_VTK=OFF \
     -D WITH_V4L=ON \
@@ -216,19 +213,18 @@ if [ ${LIB_NAME} == "opencv" ]; then
     -D CV_DISABLE_OPTIMIZATION=OFF \
     -D ENABLE_PROFILING=ON \
     -D ENABLE_PRECOMPILED_HEADERS=OFF \
-    -D OPENCV_EXTRA_MODULES_PATH=${LIB_SRC}/../opencv_contrib-4.2.0/modules/"
+    -D OPENCV_EXTRA_MODULES_PATH=${LIB_SRC}/../opencv_contrib-4.8.0/modules/"
   if [ ${PLATFORM_ARCH} == "aarch64" ]; then
     CMAKE_DEFINES="${CMAKE_DEFINES} \
       -D ENABLE_NEON=ON \
       -D CPU_BASELINE=NEON \
       -D CPU_BASELINE_REQUIRE=NEON \
-      -D CPU_DISPATCH=NEON"
+      -D CPU_DISPATCH=NEON \
+      -D CMAKE_TOOLCHAIN_FILE=${LIB_SRC}/platforms/linux/aarch64-gnu.toolchain.cmake"
   else
     CMAKE_DEFINES="${CMAKE_DEFINES} \
       -D CPU_BASELINE=AVX2"
   fi
-
-  TOOL_CHAIN_CMAKE=${LIB_SRC}/platforms/linux/aarch64-gnu.toolchain.cmake
 fi
 
 if [ ${LIB_NAME} == "pcl" ]; then
@@ -337,6 +333,14 @@ if [ ${LIB_NAME} == "ceres_solver" ]; then
     -D BUILD_TESTING=OFF \
     -D BUILD_EXAMPLES=OFF \
     -D BUILD_BENCHMARKS=OFF"
+fi
+
+if [ ${LIB_NAME} == "portaudio" ]; then
+  CMAKE_DEFINES="${CMAKE_DEFINES} \
+    -D PA_BUILD_SHARED=ON \
+    -D PA_BUILD_STATIC=OFF
+    -D PA_BUILD_TESTS=OFF \
+    -D PA_BUILD_EXAMPLES=OFF"
 fi
 
 echo "
