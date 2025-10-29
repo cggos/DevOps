@@ -155,16 +155,23 @@ if [ ${LIB_NAME} == "libsvm" ]; then
 fi
 
 if [ ${LIB_NAME} == "onnxruntime" ]; then
+  # git clone --recursive -b v1.20.0 https://github.com/Microsoft/onnxruntime
+  # onnxruntime v1.20.0 --- Eigen3 3.4.1
+
   cd ${LIB_SRC}
 
   # ./build.sh --clean
 
   BUILDTYPE=Release
   BUILDARGS="--config ${BUILDTYPE}"
-  BUILDARGS="${BUILDARGS} --parallel=4"
+  BUILDARGS="${BUILDARGS} --parallel=8"
   BUILDARGS="${BUILDARGS} --build_shared_lib --skip_tests"
-  # BUILDARGS="${BUILDARGS} --use_preinstalled_eigen --eigen_path=${INSTALL_ROOT}/eigen3/include/eigen3"
+  # comment in onnxruntime_external_deps.cmake: find_package(Eigen3 CONFIG)
+  BUILDARGS="${BUILDARGS} --use_preinstalled_eigen --eigen_path=${INSTALL_ROOT}/eigen3/include/eigen3"
   BUILDARGS="${BUILDARGS} --cmake_extra_defines CMAKE_INSTALL_PREFIX=${INSTALL_DIR}"
+
+  echo "--------------------------------- ONNXRUNTIME BUILD ARGS ---------------------------------"
+  echo ${BUILDARGS}
 
   export CUDA_VERSION=`nvcc --version | grep release | awk '{print $6}' | cut -c 2-4`
   if [ ! -z "$CUDA_HOME" -a ! -z "$CUDA_VERSION" -a ! -z "$CUDNN_ROOT" ]; then
