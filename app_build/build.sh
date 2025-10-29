@@ -126,6 +126,12 @@ if [ ${LIB_NAME} == "spdlog" ]; then
     -D SPDLOG_BUILD_EXAMPLE=OFF"
 fi
 
+if [ ${LIB_NAME} == "eigen3" ]; then
+  CMAKE_DEFINES="${CMAKE_DEFINES} \
+    -D EIGEN_BUILD_DEMOS=OFF \
+    -D EIGEN_BUILD_TESTING=OFF"
+fi
+
 if [ ${LIB_NAME} == "sophus" ]; then
   CMAKE_DEFINES="${CMAKE_DEFINES} \
     -D SOPHUS_USE_BASIC_LOGGING=ON \
@@ -147,6 +153,31 @@ if [ ${LIB_NAME} == "libsvm" ]; then
   cd -
   exit
 fi
+
+if [ ${LIB_NAME} == "onnxruntime" ]; then
+  cd ${LIB_SRC}
+
+  # ./build.sh --clean
+
+  BUILDTYPE=Release
+  BUILDARGS="--config ${BUILDTYPE}"
+  BUILDARGS="${BUILDARGS} --parallel=4"
+  BUILDARGS="${BUILDARGS} --build_shared_lib --skip_tests"
+  # BUILDARGS="${BUILDARGS} --use_preinstalled_eigen --eigen_path=${INSTALL_ROOT}/eigen3/include/eigen3"
+  BUILDARGS="${BUILDARGS} --cmake_extra_defines CMAKE_INSTALL_PREFIX=${INSTALL_DIR}"
+
+  export CUDA_VERSION=`nvcc --version | grep release | awk '{print $6}' | cut -c 2-4`
+  if [ ! -z "$CUDA_HOME" -a ! -z "$CUDA_VERSION" -a ! -z "$CUDNN_ROOT" ]; then
+      BUILDARGS="${BUILDARGS} --use_cuda --cuda_version=${CUDA_VERSION} --cuda_home=${CUDA_HOME} --cudnn_home=${CUDNN_ROOT}"
+  fi
+
+  ./build.sh ${BUILDARGS}
+  cd ./build/Linux/${BUILDTYPE}
+  make install
+
+  exit
+fi
+
 
 if [ ${LIB_NAME} == "lz4" ]; then
   CMAKE_DEFINES="${CMAKE_DEFINES} \
