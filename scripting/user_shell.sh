@@ -38,7 +38,7 @@ export CG_DM_ROOT="${CG_DATA_HOME}/dms"
 
 export CG_CONDA_ENVS="${CG_APP_ROOT}/DevOps/anaconda3/envs"
 export CG_APP_RELEASE="${CG_APP_ROOT}/DevOps/app_release"
-export CG_THIRDPARTY=$CG_APP_RELEASE
+export CG_THIRDPARTY=${CG_APP_RELEASE}
 
 export CG_OUTPUT_ROOT="${HOME}/.cache/cgabc"
 
@@ -194,6 +194,9 @@ alias sc_esp_idf=". ${ESP_ROOT}/esp-idf/export.sh"
 
 # FlameGraph
 export PATH="${CG_APP_ROOT}/DevOps/FlameGraph":$PATH
+
+# mcap
+export PATH="${CG_APP_ROOT}/DevOps/mcap":$PATH
 
 # AI Apps
 if [[ "$(uname -s)" == "Linux" ]]; then
