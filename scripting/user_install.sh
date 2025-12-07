@@ -1,11 +1,26 @@
 sudo apt update
 
+
+##### DevOps
+
 sudo apt install vim curl wget 
 
 sudo apt install zsh tmux
 
 # oh-my-zsh
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+
+# SSH
+sudo apt install openssh-server
+
+# FTP
+sudo apt install filezilla
+
+# galances
+sudo apt install glances
+
+# net tools
+sudo apt install net-tools ethtool
 
 
 ##### Coding
@@ -28,13 +43,6 @@ sudo apt install fcitx fcitx-googlepinyin
 
 # TODO
 # sudo snap install microsoft-todo-unofficial
-
-# SSH
-sudo apt install openssh-server
-
-# FTP
-sudo apt install filezilla
-
 
 # google-chrome (Deb) 
 
