@@ -358,7 +358,7 @@ fi
 if [ ${LIB_NAME} == "ceres_solver" ]; then
   CMAKE_DEFINES="${CMAKE_DEFINES} \
     -D MINIGLOG=ON \
-    -D MINIGLOG_MAX_LOG_LEVEL=2 \
+    -D MINIGLOG_MAX_LOG_LEVEL=0 \
     -D GFLAGS=OFF \
     -D SUITESPARSE=OFF \
     -D CXSPARSE=OFF \
