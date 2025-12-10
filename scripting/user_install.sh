@@ -16,6 +16,9 @@ sudo apt install openssh-server
 # FTP
 sudo apt install filezilla
 
+# indicator
+sudo apt install indicator-multiload
+
 # galances
 sudo apt install glances
 
