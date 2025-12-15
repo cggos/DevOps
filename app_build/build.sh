@@ -5,7 +5,7 @@ param_num=$#
 if [ $param_num -ne 3 ]; then
   echo "Usage:
         mkdir build & cd build
-        build.sh <platform-arch> <lib-name> <lib-src-dir>
+        build.sh <platform-arch> <lib-name> <lib-src-abs-dir>
 
     platform-arch: aarch64 x86-64
   "
@@ -34,7 +34,7 @@ BUILD_DIR=$(pwd)/${LIB_NAME}
 INSTALL_ROOT=${CG_THIRDPARTY}/${PLATFORM_ARCH}
 INSTALL_DIR=${INSTALL_ROOT}/${LIB_NAME}
 
-TOOL_CHAIN_CMAKE="${EXE_ROOT}/toolchain_aarch64.cmake"
+CPACK_CONFIG="${EXE_ROOT}/app_cpack.cmake"
 
 echo "
 --------------------------------- build.sh vars ---------------------------------
@@ -47,10 +47,19 @@ BUILD_DIR:      ${BUILD_DIR}
 
 INSTALL_ROOT:   ${INSTALL_ROOT}
 INSTALL_DIR:    ${INSTALL_DIR}
+
+CPACK_CONFIG:   ${CPACK_CONFIG}
 --------------------------------- build.sh vars ---------------------------------
 "
 
 if [ ${PLATFORM_ARCH} == "aarch64" ]; then
+  if [ -z ${TOOL_CHAIN} ]; then
+    echo "ENV TOOL_CHAIN NOT set!!! Try export TOOL_CHAIN, e.g. export TOOL_CHAIN=$RK_TOOL_CHAIN"
+    exit
+  fi
+
+  TOOL_CHAIN_CMAKE="${EXE_ROOT}/toolchain_aarch64.cmake"
+  
   TARGET_ARCH=aarch64-none-linux-gnu
   GNU_C_COMPLILER=${TOOL_CHAIN}/bin/${TARGET_ARCH}-gcc
   GNU_CXX_COMPLILER=${TOOL_CHAIN}/bin/${TARGET_ARCH}-g++
@@ -60,9 +69,9 @@ if [ ${PLATFORM_ARCH} == "aarch64" ]; then
 
   echo "
 --------------------------------- build.sh vars aarch64 ---------------------------------
-TOOL_CHAIN_CMAKE:  ${TOOL_CHAIN_CMAKE}
-
 ENV TOOL_CHAIN:    ${TOOL_CHAIN}
+
+TOOL_CHAIN_CMAKE:  ${TOOL_CHAIN_CMAKE}
 
 GNU_C_COMPLILER:   ${GNU_C_COMPLILER}
 GNU_CXX_COMPLILER: ${GNU_CXX_COMPLILER}
@@ -79,9 +88,10 @@ CMAKE_DEFINES="
   -D CMAKE_CXX_STANDARD=17 \
   -D CMAKE_INSTALL_PREFIX=${INSTALL_DIR} \
   -D CPACK_OUTPUT_FILE_PREFIX=${INSTALL_ROOT} \
+  -D INSTALL_ROOT=${INSTALL_ROOT} \
   -D PLATFORM_ARCH=${PLATFORM_ARCH} \
   -D LIB_NAME=${LIB_NAME} \
-  -D INSTALL_ROOT=${INSTALL_ROOT}"
+  -D LIB_SRC=${LIB_SRC}"
 # -D CMAKE_FIND_DEBUG_MODE=ON
 
 if [ ${PLATFORM_ARCH} == "aarch64" ]; then
@@ -90,33 +100,6 @@ if [ ${PLATFORM_ARCH} == "aarch64" ]; then
     -D CMAKE_CXX_COMPILER=${GNU_CXX_COMPLILER} \
     -D CMAKE_TOOLCHAIN_FILE=${TOOL_CHAIN_CMAKE}"
 fi
-
-# if [ ${LIB_NAME} == "app_name" ]; then
-#   CMAKE_DEFINES="${CMAKE_DEFINES} \
-#     -D foonathan_memory_DIR=${INSTALL_ROOT}/foonathan_memory/lib/foonathan_memory/cmake \
-#     -D EIGEN_INCLUDE_DIR=${INSTALL_ROOT}/eigen3/include/eigen3"
-
-#   if [ ${PLATFORM_ARCH} == "aarch64" ]; then
-#     CMAKE_DEFINES="${CMAKE_DEFINES} \
-#     -D VP_BUILD_TEST=OFF \
-#     -D VP_WITH_IO_SERIAL=OFF \
-#     -D VP_WITH_IO_FASTDDS=OFF \
-#     -D VP_WITH_DL_RKNN=ON \
-#     -D VP_WITH_DL_TORCH=OFF \
-#     -D VP_WITH_DL_TRT=OFF"
-#   fi
-
-#   if [ ${PLATFORM_ARCH} == "x86-64" ]; then
-#     CMAKE_DEFINES="${CMAKE_DEFINES} \
-#     -D VP_BUILD_TEST=ON \
-#     -D VP_WITH_CAM_T265=OFF \
-#     -D VP_WITH_IO_SERIAL=ON \
-#     -D VP_WITH_IO_FASTDDS=OFF \
-#     -D VP_WITH_DL_RKNN=OFF \
-#     -D VP_WITH_DL_TORCH=ON \
-#     -D VP_WITH_DL_TRT=OFF"
-#   fi
-# fi
 
 if [ ${LIB_NAME} == "spdlog" ]; then
   CMAKE_DEFINES="${CMAKE_DEFINES} \
@@ -391,11 +374,9 @@ ${CMAKE_DEFINES}
 
 ########################################## cmake build, install, package ##########################################
 
-cmake -S ${LIB_SRC} -B ${BUILD_DIR} ${CMAKE_DEFINES}
+cmake -S ${LIB_SRC} -B ${BUILD_DIR} -DCPACK_PROJECT_CONFIG_FILE=${CPACK_CONFIG} ${CMAKE_DEFINES}
 cmake --build ${BUILD_DIR} --target install/strip --parallel $(($(nproc) / 4))
 # after cmake 3.15
 # cmake --install ${BUILD_DIR} --prefix ${INSTALL_DIR}
 
-if [ ${LIB_NAME} == "app_name" ]; then
-  cmake --build ${BUILD_DIR} --target package
-fi
+# cmake --build ${BUILD_DIR} --target package
