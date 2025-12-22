@@ -53,23 +53,23 @@ CPACK_CONFIG:   ${CPACK_CONFIG}
 "
 
 if [ ${PLATFORM_ARCH} == "aarch64" ]; then
-  if [ -z ${TOOL_CHAIN} ]; then
-    echo "ENV TOOL_CHAIN NOT set!!! Try export TOOL_CHAIN, e.g. export TOOL_CHAIN=$RK_TOOL_CHAIN"
+  if [ -z ${ARM_TOOLCHAIN} ]; then
+    echo "ENV ARM_TOOLCHAIN NOT set!!! Try export ARM_TOOLCHAIN, e.g. export ARM_TOOLCHAIN=$RK_TOOLCHAIN"
     exit
   fi
 
   TOOL_CHAIN_CMAKE="${EXE_ROOT}/toolchain_aarch64.cmake"
   
   TARGET_ARCH=aarch64-none-linux-gnu
-  GNU_C_COMPLILER=${TOOL_CHAIN}/bin/${TARGET_ARCH}-gcc
-  GNU_CXX_COMPLILER=${TOOL_CHAIN}/bin/${TARGET_ARCH}-g++
+  GNU_C_COMPLILER=${ARM_TOOLCHAIN}/bin/${TARGET_ARCH}-gcc
+  GNU_CXX_COMPLILER=${ARM_TOOLCHAIN}/bin/${TARGET_ARCH}-g++
 
-  export PATH=$PATH:${TOOL_CHAIN}/bin
-  export LD_LIBRARY_PATH=${TOOL_CHAIN}/lib64:$LD_LIBRARY_PATH
+  export PATH=$PATH:${ARM_TOOLCHAIN}/bin
+  export LD_LIBRARY_PATH=${ARM_TOOLCHAIN}/lib64:$LD_LIBRARY_PATH
 
   echo "
 --------------------------------- build.sh vars aarch64 ---------------------------------
-ENV TOOL_CHAIN:    ${TOOL_CHAIN}
+ENV ARM_TOOLCHAIN:    ${ARM_TOOLCHAIN}
 
 TOOL_CHAIN_CMAKE:  ${TOOL_CHAIN_CMAKE}
 

@@ -180,16 +180,21 @@ alias ssh_rpi="ssh pi@raspberrypi.local"
 alias ex_pypath="export PYTHONPATH=$PYTHONPATH:`pwd`"
 alias ruff-fix="ruff check --fix . && ruff format ."
 
+# ARM
+export ARM_ROOT="${CG_APP_ROOT}/DevOps/arm"
+export ARM_NONE_EABI_TOOLCHAIN="${ARM_ROOT}/arm-none-eabi-toolchain"
+export PATH=$PATH:${ARM_NONE_EABI_TOOLCHAIN}/bin
+
 # Rockchip
 export RK_ROOT="${CG_APP_ROOT}/DevOps/rockchip"
-export RK_TOOL_CHAIN="${RK_ROOT}/rk_toolchain"
-export PATH=$PATH:${RK_TOOL_CHAIN}/bin
+export RK_TOOLCHAIN="${RK_ROOT}/rk_toolchain"
+export PATH=$PATH:${RK_TOOLCHAIN}/bin
 
 # Espressif
 export ESP_ROOT="${CG_APP_ROOT}/DevOps/espressif"
-# export ESP_TOOL_CHAIN="${ESP_ROOT}/xtensa-esp32-elf"
-export ESP_TOOL_CHAIN="${HOME}/.espressif/tools/xtensa-esp32s3-elf"
-export PATH="$PATH:${ESP_TOOL_CHAIN}/bin"
+# export ESP_TOOLCHAIN="${ESP_ROOT}/xtensa-esp32-elf"
+export ESP_TOOLCHAIN="${HOME}/.espressif/tools/xtensa-esp32s3-elf"
+export PATH="$PATH:${ESP_TOOLCHAIN}/bin"
 alias sc_esp_idf=". ${ESP_ROOT}/esp-idf/export.sh"
 
 # FlameGraph
