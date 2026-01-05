@@ -10,6 +10,9 @@ sudo apt install zsh tmux
 # oh-my-zsh
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 
+# flatpak
+sudo apt install flatpak  # https://flathub.org/en/setup/Ubuntu
+
 # SSH
 sudo apt install openssh-server
 
@@ -17,7 +20,7 @@ sudo apt install openssh-server
 sudo apt install filezilla
 
 # indicator
-sudo apt install indicator-multiload
+sudo apt install htop indicator-multiload
 
 # galances
 sudo apt install glances
@@ -29,11 +32,11 @@ sudo apt install net-tools ethtool
 ##### Coding
 sudo apt install build-essential ninja-build ccache git cmake cmake-curses-gui rabbitvcs-* 
 
-sudo apt install clang-format
-
 sudo apt install python3-pip
 
-sudo python3 -m pip install black
+sudo apt install clang-format
+
+python3 -m pip install black  # https://black.readthedocs.io/en/stable/
 
 # VS Code (Deb)
 # JetBrains: toolbox, pycharm, clion
@@ -41,8 +44,11 @@ sudo python3 -m pip install black
 
 ##### OA
 
+# Archive
+sudo apt install p7zip
+
 # IM
-sudo apt install fcitx fcitx-googlepinyin
+# sudo apt install fcitx fcitx-googlepinyin
 
 # TODO
 # sudo snap install microsoft-todo-unofficial
@@ -50,6 +56,8 @@ sudo apt install fcitx fcitx-googlepinyin
 # google-chrome (Deb) 
 
 # synology-drive-client (Deb)
+
+# 1password (Deb)
 
 
 ##### Docs

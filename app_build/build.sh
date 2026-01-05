@@ -222,6 +222,7 @@ if [ ${LIB_NAME} == "opencv" ]; then
     -D WITH_VTK=OFF \
     -D WITH_V4L=ON \
     -D WITH_FFMPEG=ON \
+    -D WITH_OPENEXR=OFF \
     -D WITH_TBB=OFF \
     -D WITH_IPP=OFF \
     -D WITH_OPENMP=ON \
