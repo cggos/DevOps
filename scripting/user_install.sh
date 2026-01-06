@@ -32,6 +32,8 @@ sudo apt install net-tools ethtool
 ##### Coding
 sudo apt install build-essential ninja-build ccache git cmake cmake-curses-gui rabbitvcs-* 
 
+sudo apt install libgtk2.0-dev
+
 sudo apt install python3-pip
 
 sudo apt install clang-format

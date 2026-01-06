@@ -208,6 +208,8 @@ fi
 
 # for OpenCV 4.2: BUILD_opencv_gapi
 if [ ${LIB_NAME} == "opencv" ]; then
+  sudo apt install libgtk2.0-dev
+
   CMAKE_DEFINES="${CMAKE_DEFINES} \
     -D BUILD_LIST=highgui,calib3d,videoio,gapi,ml,dnn,shape,quality,tracking,aruco,ccalib,line_descriptor,stitching,stereo,rgbd,structured_light \
     -D BUILD_SHARED_LIBS=ON \
