@@ -307,14 +307,22 @@ if [ ${LIB_NAME} == "tbb" ]; then
     -D CMAKE_CXX_FLAGS=-DTBB_ALLOCATOR_TRAITS_BROKEN"
 fi
 
-if [ ${LIB_NAME} == "dbow3" ]; then
+if [ ${LIB_NAME} == "dbow2" ]; then
   if [ ${PLATFORM_ARCH} == "aarch64" ]; then
-    CMAKE_DEFINES="${CMAKE_DEFINES} \
-      -D CMAKE_SYSTEM_PROCESSOR=arm \
-      -D OpenCV_DIR=${INSTALL_ROOT}/opencv/lib/cmake/opencv4"
+    CMAKE_DEFINES="${CMAKE_DEFINES} -D CMAKE_SYSTEM_PROCESSOR=arm"
   fi
   CMAKE_DEFINES="${CMAKE_DEFINES} \
-    -D BUILD_UTILS=OFF"
+    -D BUILD_Demo=OFF \
+    -D OpenCV_DIR=${INSTALL_ROOT}/opencv/lib/cmake/opencv4"
+fi
+
+if [ ${LIB_NAME} == "dbow3" ]; then
+  if [ ${PLATFORM_ARCH} == "aarch64" ]; then
+    CMAKE_DEFINES="${CMAKE_DEFINES} -D CMAKE_SYSTEM_PROCESSOR=arm"
+  fi
+  CMAKE_DEFINES="${CMAKE_DEFINES} \
+    -D BUILD_UTILS=OFF \
+    -D OpenCV_DIR=${INSTALL_ROOT}/opencv/lib/cmake/opencv4"
 fi
 
 if [ ${LIB_NAME} == "foonathan_memory" ]; then

@@ -42,6 +42,10 @@ export CG_THIRDPARTY=${CG_APP_RELEASE}
 
 export CG_OUTPUT_ROOT="${HOME}/.cache/cgabc"
 
+if [ ! -d "$CG_OUTPUT_ROOT" ]; then
+    mkdir -p "$CG_OUTPUT_ROOT"
+fi
+
 
 export PATH=$HOME/.local/bin/:$PATH
 
@@ -220,3 +224,11 @@ export HF_ENDPOINT=https://hf-mirror.com
 
 # Dataset
 export CITYSCAPES_DATASET=$CG_DM_ROOT/dataset_ml/cityscapes
+
+# Core dumps
+CORE_DUMP_DIR="${CG_OUTPUT_ROOT}/cores"
+if [ ! -d "$CORE_DUMP_DIR" ]; then
+    mkdir -p "$CORE_DUMP_DIR"
+fi
+sudo sysctl -w kernel.core_uses_pid=1
+sudo sysctl -w kernel.core_pattern="${CORE_DUMP_DIR}/core-%h-%t-%e-%p.dump"
