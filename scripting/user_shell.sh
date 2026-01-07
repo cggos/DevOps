@@ -107,6 +107,8 @@ fi
 # export ROS_MASTER_URI=http://jet02.local:11311
 # export ROS_IP=$(hostname).local
 
+export TURTLEBOT3_MODEL=burger
+
 # NVIDIA
 if command -v nvidia-smi &>/dev/null && nvidia-smi &>/dev/null; then
   # NV CUDA
@@ -230,5 +232,5 @@ CORE_DUMP_DIR="${CG_OUTPUT_ROOT}/cores"
 if [ ! -d "$CORE_DUMP_DIR" ]; then
     mkdir -p "$CORE_DUMP_DIR"
 fi
-sudo sysctl -w kernel.core_uses_pid=1
-sudo sysctl -w kernel.core_pattern="${CORE_DUMP_DIR}/core-%h-%t-%e-%p.dump"
+# sudo sysctl -w kernel.core_uses_pid=1
+# sudo sysctl -w kernel.core_pattern="${CORE_DUMP_DIR}/core-%h-%t-%e-%p.dump"

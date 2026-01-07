@@ -40,7 +40,10 @@ sudo apt install clang-format
 
 python3 -m pip install black  # https://black.readthedocs.io/en/stable/
 
+# Anaconda
+
 # VS Code (Deb)
+
 # JetBrains: toolbox, pycharm, clion
 
 
