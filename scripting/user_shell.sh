@@ -107,7 +107,11 @@ fi
 # export ROS_MASTER_URI=http://jet02.local:11311
 # export ROS_IP=$(hostname).local
 
+export ROS_DOMAIN_ID=55
+# export RMW_IMPLEMENTATION=rmw_cyclonedds_cpp
+
 export TURTLEBOT3_MODEL=burger
+
 
 # NVIDIA
 if command -v nvidia-smi &>/dev/null && nvidia-smi &>/dev/null; then
@@ -117,12 +121,12 @@ if command -v nvidia-smi &>/dev/null && nvidia-smi &>/dev/null; then
   export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:$CUDA_HOME/lib64
 
   # NV cuDNN
-  export CUDNN_ROOT=${CG_APP_ROOT}/DevOps/nv/cudnn-linux-x86_64-8.8.1.3_cuda11-archive
+  export CUDNN_ROOT=${CG_APP_ROOT}/DevOps/nvidia/cudnn-linux-x86_64-8.8.1.3_cuda11-archive
   export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:$CUDNN_ROOT/lib
   export CPATH=$CUDNN_ROOT/include:$CPATH
 
   # NV TRT
-  export TRT_ROOT=${CG_APP_ROOT}/DevOps/nv/TensorRT-8.5.3.1
+  export TRT_ROOT=${CG_APP_ROOT}/DevOps/nvidia/TensorRT-8.5.3.1
   export PATH=$PATH:$TRT_ROOT/bin
   export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:$TRT_ROOT/lib
   export CPATH=$TRT_ROOT/targets/x86_64-linux/include:$CPATH
