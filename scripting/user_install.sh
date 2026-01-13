@@ -5,7 +5,7 @@ sudo apt update
 
 sudo apt install vim curl wget 
 
-sudo apt install zsh tmux
+sudo apt install zsh tmux xterm
 
 # oh-my-zsh
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"

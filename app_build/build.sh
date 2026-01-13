@@ -208,10 +208,12 @@ fi
 
 # for OpenCV 4.2: BUILD_opencv_gapi
 if [ ${LIB_NAME} == "opencv" ]; then
-  sudo apt install libgtk2.0-dev
+  sudo apt install libgtk2.0-dev libgoogle-glog-dev
+
+  OPENCV_CONTRIB_MODULES="shape,quality,tracking,aruco,ccalib,line_descriptor,ximgproc,stitching,stereo,rgbd,structured_light"
 
   CMAKE_DEFINES="${CMAKE_DEFINES} \
-    -D BUILD_LIST=highgui,calib3d,videoio,gapi,ml,dnn,shape,quality,tracking,aruco,ccalib,line_descriptor,stitching,stereo,rgbd,structured_light \
+    -D BUILD_LIST=highgui,calib3d,videoio,gapi,ml,dnn,${OPENCV_CONTRIB_MODULES} \
     -D BUILD_SHARED_LIBS=ON \
     -D BUILD_DOCS=OFF \
     -D BUILD_TESTS=OFF \
@@ -237,6 +239,7 @@ if [ ${LIB_NAME} == "opencv" ]; then
     -D CV_DISABLE_OPTIMIZATION=OFF \
     -D ENABLE_PROFILING=ON \
     -D ENABLE_PRECOMPILED_HEADERS=OFF \
+    -D GLOG_INCLUDE_DIR=/usr/include/glog \
     -D OPENCV_EXTRA_MODULES_PATH=${LIB_SRC}/../opencv_contrib-4.8.0/modules/"
   if [ ${PLATFORM_ARCH} == "aarch64" ]; then
     CMAKE_DEFINES="${CMAKE_DEFINES} \
