@@ -113,7 +113,7 @@ sudo apt install guvcview
 
 ##### Social
 
-sudo apt install iptux
+# sudo apt install iptux
 
 # ToDesk (Deb)
 
@@ -123,3 +123,4 @@ sudo apt install iptux
 
 # sudo snap install telegram-desktop
 
+# sudo snap install discord
