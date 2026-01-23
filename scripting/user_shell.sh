@@ -18,7 +18,7 @@
 # │   │   ├── app_release
 # │   └── ccv
 # ├── dms
-# │   ├── 3d_models
+# │   ├── design
 # │   ├── dataset_ml
 # │   ├── dataset_slam
 # │   ├── hf_hub -> ~/.cache/huggingface/hub
@@ -66,6 +66,9 @@ elif [[ "$os_name" == "Linux" ]]; then
 else
     echo "Unknown OS: $os_name"
 fi
+
+platform_arch=$(uname -m)
+echo "$platform_arch"
 
 
 # >>> conda initialize >>>
