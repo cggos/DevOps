@@ -34,9 +34,11 @@ sudo apt install build-essential ninja-build ccache git cmake cmake-curses-gui r
 
 sudo apt install libgtk2.0-dev
 
-sudo apt install python3-pip
+sudo apt install clang clangd
 
 sudo apt install clang-format
+
+sudo apt install python3-pip
 
 python3 -m pip install black  # https://black.readthedocs.io/en/stable/
 
@@ -113,7 +115,7 @@ sudo apt install guvcview
 
 ##### Social
 
-sudo apt install iptux
+# sudo apt install iptux
 
 # ToDesk (Deb)
 
@@ -123,3 +125,4 @@ sudo apt install iptux
 
 # sudo snap install telegram-desktop
 
+# sudo snap install discord
