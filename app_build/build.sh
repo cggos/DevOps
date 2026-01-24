@@ -208,8 +208,12 @@ fi
 
 # for OpenCV 4.2: BUILD_opencv_gapi
 if [ ${LIB_NAME} == "opencv" ]; then
+  sudo apt install libgtk2.0-dev libgoogle-glog-dev
+
+  OPENCV_CONTRIB_MODULES="shape,quality,tracking,aruco,ccalib,line_descriptor,ximgproc,stitching,stereo,rgbd,structured_light"
+
   CMAKE_DEFINES="${CMAKE_DEFINES} \
-    -D BUILD_LIST=highgui,calib3d,videoio,gapi,ml,dnn,shape,quality,tracking,aruco,ccalib,line_descriptor,stitching,stereo,rgbd,structured_light \
+    -D BUILD_LIST=highgui,calib3d,videoio,gapi,ml,dnn,${OPENCV_CONTRIB_MODULES} \
     -D BUILD_SHARED_LIBS=ON \
     -D BUILD_DOCS=OFF \
     -D BUILD_TESTS=OFF \
@@ -222,6 +226,7 @@ if [ ${LIB_NAME} == "opencv" ]; then
     -D WITH_VTK=OFF \
     -D WITH_V4L=ON \
     -D WITH_FFMPEG=ON \
+    -D WITH_OPENEXR=OFF \
     -D WITH_TBB=OFF \
     -D WITH_IPP=OFF \
     -D WITH_OPENMP=ON \
@@ -234,6 +239,7 @@ if [ ${LIB_NAME} == "opencv" ]; then
     -D CV_DISABLE_OPTIMIZATION=OFF \
     -D ENABLE_PROFILING=ON \
     -D ENABLE_PRECOMPILED_HEADERS=OFF \
+    -D GLOG_INCLUDE_DIR=/usr/include/glog \
     -D OPENCV_EXTRA_MODULES_PATH=${LIB_SRC}/../opencv_contrib-4.8.0/modules/"
   if [ ${PLATFORM_ARCH} == "aarch64" ]; then
     CMAKE_DEFINES="${CMAKE_DEFINES} \
@@ -304,14 +310,22 @@ if [ ${LIB_NAME} == "tbb" ]; then
     -D CMAKE_CXX_FLAGS=-DTBB_ALLOCATOR_TRAITS_BROKEN"
 fi
 
-if [ ${LIB_NAME} == "dbow3" ]; then
+if [ ${LIB_NAME} == "dbow2" ]; then
   if [ ${PLATFORM_ARCH} == "aarch64" ]; then
-    CMAKE_DEFINES="${CMAKE_DEFINES} \
-      -D CMAKE_SYSTEM_PROCESSOR=arm \
-      -D OpenCV_DIR=${INSTALL_ROOT}/opencv/lib/cmake/opencv4"
+    CMAKE_DEFINES="${CMAKE_DEFINES} -D CMAKE_SYSTEM_PROCESSOR=arm"
   fi
   CMAKE_DEFINES="${CMAKE_DEFINES} \
-    -D BUILD_UTILS=OFF"
+    -D BUILD_Demo=OFF \
+    -D OpenCV_DIR=${INSTALL_ROOT}/opencv/lib/cmake/opencv4"
+fi
+
+if [ ${LIB_NAME} == "dbow3" ]; then
+  if [ ${PLATFORM_ARCH} == "aarch64" ]; then
+    CMAKE_DEFINES="${CMAKE_DEFINES} -D CMAKE_SYSTEM_PROCESSOR=arm"
+  fi
+  CMAKE_DEFINES="${CMAKE_DEFINES} \
+    -D BUILD_UTILS=OFF \
+    -D OpenCV_DIR=${INSTALL_ROOT}/opencv/lib/cmake/opencv4"
 fi
 
 if [ ${LIB_NAME} == "foonathan_memory" ]; then
