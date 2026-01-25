@@ -129,7 +129,7 @@ if command -v nvidia-smi &>/dev/null && nvidia-smi &>/dev/null; then
   export CPATH=$CUDNN_ROOT/include:$CPATH
 
   # NV TRT
-  export TRT_ROOT=${CG_APP_ROOT}/DevOps/nvidia/TensorRT-8.5.3.1
+  export TRT_ROOT=${CG_APP_ROOT}/DevOps/nvidia/TensorRT # TensorRT-8.5.3.1, TensorRT-10.12.0.36
   export PATH=$PATH:$TRT_ROOT/bin
   export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:$TRT_ROOT/lib
   export CPATH=$TRT_ROOT/targets/x86_64-linux/include:$CPATH
@@ -216,13 +216,17 @@ export PATH="${CG_APP_ROOT}/DevOps/FlameGraph":$PATH
 # mcap
 export PATH="${CG_APP_ROOT}/DevOps/mcap":$PATH
 
-# AI Apps
+# LM Studio
 if [[ "$(uname -s)" == "Linux" ]]; then
   export PATH="$PATH:${HOME}/.lmstudio/bin"
 elif [[ "$(uname -s)" == "Darwin" ]]; then
   export PATH="$PATH:${HOME}/.cache/lm-studio/bin"
 fi
+
+# Ollama (config in ollama.service)
 # export OLLAMA_MODELS="${CG_DM_ROOT}/models_ml/ollama/models"
+
+# llama.cpp
 export LLAMA_CPP_LIB_PATH="${CG_APP_ROOT}/AI/llama.cpp/build/bin"
 export PATH="${LLAMA_CPP_LIB_PATH}:$PATH"
 export LD_LIBRARY_PATH="${LLAMA_CPP_LIB_PATH}:$LD_LIBRARY_PATH"
