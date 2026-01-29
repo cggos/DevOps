@@ -123,13 +123,13 @@ if command -v nvidia-smi &>/dev/null && nvidia-smi &>/dev/null; then
   export PATH=$PATH:$CUDA_HOME/bin
   export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:$CUDA_HOME/lib64
 
-  # NV cuDNN
-  export CUDNN_ROOT=${CG_APP_ROOT}/DevOps/nvidia/cudnn-linux-x86_64-8.8.1.3_cuda11-archive
+  # NV cuDNN (cudnn-linux-x86_64-8.8.1.3_cuda11-archive, cudnn-linux-x86_64-9.2.0.82_cuda12-archive)
+  export CUDNN_ROOT=${CG_APP_ROOT}/DevOps/nvidia/cuDNN
   export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:$CUDNN_ROOT/lib
   export CPATH=$CUDNN_ROOT/include:$CPATH
 
-  # NV TRT
-  export TRT_ROOT=${CG_APP_ROOT}/DevOps/nvidia/TensorRT # TensorRT-8.5.3.1, TensorRT-10.12.0.36
+  # NV TRT (TensorRT-8.5.3.1, TensorRT-10.12.0.36)
+  export TRT_ROOT=${CG_APP_ROOT}/DevOps/nvidia/TensorRT
   export PATH=$PATH:$TRT_ROOT/bin
   export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:$TRT_ROOT/lib
   export CPATH=$TRT_ROOT/targets/x86_64-linux/include:$CPATH
