@@ -146,20 +146,23 @@ if [ ${LIB_NAME} == "onnxruntime" ]; then
   # ./build.sh --clean
 
   BUILDTYPE=Release
-  BUILDARGS="--config ${BUILDTYPE}"
-  BUILDARGS="${BUILDARGS} --parallel=8"
-  BUILDARGS="${BUILDARGS} --build_shared_lib --skip_tests"
+  BUILDARGS="--config ${BUILDTYPE} --update --build --parallel --build_shared_lib --skip_tests"
   # comment in onnxruntime_external_deps.cmake: find_package(Eigen3 CONFIG)
   BUILDARGS="${BUILDARGS} --use_preinstalled_eigen --eigen_path=${INSTALL_ROOT}/eigen3/include/eigen3"
-  BUILDARGS="${BUILDARGS} --cmake_extra_defines CMAKE_INSTALL_PREFIX=${INSTALL_DIR}"
-
-  echo "--------------------------------- ONNXRUNTIME BUILD ARGS ---------------------------------"
-  echo ${BUILDARGS}
-
+  
   export CUDA_VERSION=`nvcc --version | grep release | awk '{print $6}' | cut -c 2-4`
   if [ ! -z "$CUDA_HOME" -a ! -z "$CUDA_VERSION" -a ! -z "$CUDNN_ROOT" ]; then
       BUILDARGS="${BUILDARGS} --use_cuda --cuda_version=${CUDA_VERSION} --cuda_home=${CUDA_HOME} --cudnn_home=${CUDNN_ROOT}"
   fi
+
+  if [ ! -z "$TRT_ROOT" ]; then
+      BUILDARGS="${BUILDARGS} --use_tensorrt --tensorrt_home=${TRT_ROOT}"
+  fi
+
+  BUILDARGS="${BUILDARGS} --cmake_extra_defines CMAKE_INSTALL_PREFIX=${INSTALL_DIR}"
+
+  echo "--------------------------------- ONNXRUNTIME BUILD ARGS ---------------------------------"
+  echo ${BUILDARGS}
 
   ./build.sh ${BUILDARGS}
   cd ./build/Linux/${BUILDTYPE}
