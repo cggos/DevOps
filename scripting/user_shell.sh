@@ -49,7 +49,7 @@ fi
 
 export PATH=$HOME/.local/bin/:$PATH
 
-output_content=""
+output_content="CG=>>"
 
 os_label="Unknown"
 os_name=$(uname)
@@ -72,7 +72,7 @@ fi
 
 platform_arch=$(uname -m)
 
-output_content="$platform_arch, $os_label"
+output_content="$output_content $platform_arch, $os_label"
 
 # >>> conda initialize >>>
 # !! Contents within this block are managed by 'conda init' !!
