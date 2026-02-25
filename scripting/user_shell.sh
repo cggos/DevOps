@@ -49,27 +49,30 @@ fi
 
 export PATH=$HOME/.local/bin/:$PATH
 
+output_content=""
+
+os_label="Unknown"
 os_name=$(uname)
 if [[ "$os_name" == "Darwin" ]]; then
-    echo "macOS System"
+    os_label="macOS System"
 elif [[ "$os_name" == "Linux" ]]; then
     os_id=$(grep '^ID=' /etc/os-release | cut -d '=' -f2 | tr -d '"')
     os_codename=$(grep '^VERSION_CODENAME' /etc/os-release | cut -d '=' -f2)
     
     if [[ "$os_codename" == "focal" ]]; then
-        echo "Ubuntu 20.04 (Focal Fossa)"
+        os_label="Ubuntu 20.04 (Focal Fossa)"
     elif [[ "$os_codename" == "jammy" ]]; then
-        echo "Ubuntu 22.04 (Jammy Jellyfish)"
+        os_label="Ubuntu 22.04 (Jammy Jellyfish)"
     else
-        echo "Linux System, ID: $os_id ,code name: $os_codename"
+        os_label="Linux System, ID: $os_id ,code name: $os_codename"
     fi
 else
     echo "Unknown OS: $os_name"
 fi
 
 platform_arch=$(uname -m)
-echo "$platform_arch"
 
+output_content="$platform_arch, $os_label"
 
 # >>> conda initialize >>>
 # !! Contents within this block are managed by 'conda init' !!
@@ -107,14 +110,6 @@ if [[ "$os_id" == "ubuntu" ]]; then
     export ROS2_PYTHON_SITE_PACKAGES="/opt/ros/humble/lib/python3.10/site-packages"
   fi
 fi
-# export ROS_MASTER_URI=http://jet02.local:11311
-# export ROS_IP=$(hostname).local
-
-export ROS_DOMAIN_ID=55
-# export RMW_IMPLEMENTATION=rmw_cyclonedds_cpp
-
-export TURTLEBOT3_MODEL=burger
-
 
 # NVIDIA
 if command -v nvidia-smi &>/dev/null && nvidia-smi &>/dev/null; then
@@ -185,10 +180,6 @@ export OPENSSL_ROOT_DIR=/usr/
 export OPENSSL_CRYPTO_LIBRARY=/usr/lib/ssl/
 export OPENSSL_INCLUDE_DIR=/usr/include/openssl/
 
-# SSH
-alias ssh_jet="ssh jetson@192.168.55.1"
-alias ssh_rpi="ssh pi@raspberrypi.local"
-
 # Python
 alias ex_pypath="export PYTHONPATH=$PYTHONPATH:`pwd`"
 alias ruff-fix="ruff check --fix . && ruff format ."
@@ -235,9 +226,6 @@ export LD_LIBRARY_PATH="${LLAMA_CPP_LIB_PATH}:$LD_LIBRARY_PATH"
 export HF_HUB_ENABLE_HF_TRANSFER=1
 export HF_ENDPOINT=https://hf-mirror.com
 
-# Dataset
-export CITYSCAPES_DATASET=$CG_DM_ROOT/dataset_ml/cityscapes
-
 # Core dumps
 CORE_DUMP_DIR="${CG_OUTPUT_ROOT}/cores"
 if [ ! -d "$CORE_DUMP_DIR" ]; then
@@ -245,3 +233,27 @@ if [ ! -d "$CORE_DUMP_DIR" ]; then
 fi
 # sudo sysctl -w kernel.core_uses_pid=1
 # sudo sysctl -w kernel.core_pattern="${CORE_DUMP_DIR}/core-%h-%t-%e-%p.dump"
+
+# Dataset
+export CITYSCAPES_DATASET=$CG_DM_ROOT/dataset_ml/cityscapes
+
+
+########################## Custom Envs Begin ##########################
+
+# SSH Servers
+alias ssh_jet="ssh jetson@192.168.55.1"
+alias ssh_rpi="ssh pi@raspberrypi.local"
+
+# ROS1
+# export ROS_MASTER_URI=http://jet02.local:11311
+# export ROS_IP=$(hostname).local
+
+# ROS2
+export ROS_DOMAIN_ID=55
+# export RMW_IMPLEMENTATION=rmw_cyclonedds_cpp
+
+export TURTLEBOT3_MODEL=burger
+
+########################## Custom Envs End ##########################
+
+echo "$output_content"
