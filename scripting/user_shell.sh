@@ -162,7 +162,9 @@ export GEM_HOME="$CG_APP_ROOT/DevOps/gems"
 export PATH="$PATH:$GEM_HOME/bin"
 
 # brew
-eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv zsh)"
+if [ -d "/home/linuxbrew/.linuxbrew" ]; then
+  export PATH="/home/linuxbrew/.linuxbrew/bin:$PATH"
+fi
 
 # op
 export PATH="$CG_APP_ROOT/OA/op/:$PATH"
