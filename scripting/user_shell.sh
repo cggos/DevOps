@@ -161,6 +161,11 @@ fi
 export GEM_HOME="$CG_APP_ROOT/DevOps/gems"
 export PATH="$PATH:$GEM_HOME/bin"
 
+# brew
+if [ -d "/home/linuxbrew/.linuxbrew" ]; then
+  export PATH="/home/linuxbrew/.linuxbrew/bin:$PATH"
+fi
+
 # op
 export PATH="$CG_APP_ROOT/OA/op/:$PATH"
 if [ -f "$CG_APP_ROOT/OA/op/op.sh" ]; then
