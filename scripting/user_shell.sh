@@ -252,8 +252,8 @@ alias ssh_rpi="ssh pi@raspberrypi.local"
 # export ROS_IP=$(hostname).local
 
 # ROS2
-export ROS_DOMAIN_ID=55
-# export RMW_IMPLEMENTATION=rmw_cyclonedds_cpp
+# export ROS_DOMAIN_ID=55
+export RMW_IMPLEMENTATION=rmw_cyclonedds_cpp
 
 export TURTLEBOT3_MODEL=burger
 
