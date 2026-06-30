@@ -70,7 +70,113 @@ fi
 
 platform_arch=$(uname -m)
 
-output_content="[CG] $platform_arch, $os_label"
+cg_trim() {
+  sed 's/^[[:space:]]*//;s/[[:space:]]*$//'
+}
+
+cg_simplify_hw_name() {
+  sed \
+    -e 's/(R)//g' \
+    -e 's/(TM)//g' \
+    -e 's/CPU//g' \
+    -e 's/Processor//g' \
+    -e 's/[[:space:]]\+/ /g' \
+    -e 's/^[[:space:]]*//;s/[[:space:]]*$//'
+}
+
+cg_cpu_info() {
+  local cpu_model cpu_threads cpu_cores cpu_sockets cpu_physical cpu_lscpu
+
+  if [[ "$os_name" == "Linux" ]] && command -v lscpu >/dev/null 2>&1; then
+    cpu_lscpu=$(lscpu)
+    cpu_model=$(printf '%s\n' "$cpu_lscpu" | awk -F: '/Model name:/ {print $2; exit}' | cg_simplify_hw_name)
+    cpu_threads=$(printf '%s\n' "$cpu_lscpu" | awk -F: '/^CPU\(s\):/ {gsub(/^[ \t]+|[ \t]+$/, "", $2); print $2; exit}')
+    cpu_cores=$(printf '%s\n' "$cpu_lscpu" | awk -F: '/Core\(s\) per socket:/ {gsub(/^[ \t]+|[ \t]+$/, "", $2); print $2; exit}')
+    cpu_sockets=$(printf '%s\n' "$cpu_lscpu" | awk -F: '/Socket\(s\):/ {gsub(/^[ \t]+|[ \t]+$/, "", $2); print $2; exit}')
+    if [[ -n "$cpu_cores" && -n "$cpu_sockets" ]]; then
+      cpu_physical=$((cpu_cores * cpu_sockets))
+    fi
+  elif [[ "$os_name" == "Darwin" ]] && command -v sysctl >/dev/null 2>&1; then
+    cpu_model=$(sysctl -n machdep.cpu.brand_string 2>/dev/null | cg_simplify_hw_name)
+    cpu_threads=$(sysctl -n hw.ncpu 2>/dev/null)
+    cpu_physical=$(sysctl -n hw.physicalcpu 2>/dev/null)
+  fi
+
+  cpu_model=${cpu_model:-Unknown}
+  if [[ -n "$cpu_physical" && -n "$cpu_threads" ]]; then
+    printf '%s %sC/%sT' "$cpu_model" "$cpu_physical" "$cpu_threads"
+  elif [[ -n "$cpu_threads" ]]; then
+    printf '%s %sT' "$cpu_model" "$cpu_threads"
+  else
+    printf '%s' "$cpu_model"
+  fi
+}
+
+cg_gpu_info() {
+  local gpu_lines gpu_count gpu_name gpu_mem gpu_vendors
+
+  if command -v nvidia-smi >/dev/null 2>&1; then
+    if command -v timeout >/dev/null 2>&1; then
+      gpu_lines=$(timeout 0.3 nvidia-smi --query-gpu=name,memory.total --format=csv,noheader,nounits 2>/dev/null)
+    else
+      gpu_lines=$(nvidia-smi --query-gpu=name,memory.total --format=csv,noheader,nounits 2>/dev/null)
+    fi
+    gpu_lines=$(printf '%s\n' "$gpu_lines" | grep -E ',[[:space:]]*[0-9]+$')
+    if [[ -n "$gpu_lines" ]]; then
+      gpu_count=$(printf '%s\n' "$gpu_lines" | sed '/^[[:space:]]*$/d' | wc -l | tr -d ' ')
+      gpu_name=$(printf '%s\n' "$gpu_lines" | awk -F, 'NR == 1 {print $1}' | cg_simplify_hw_name)
+      gpu_mem=$(printf '%s\n' "$gpu_lines" | awk -F, 'NR == 1 {gsub(/^[ \t]+|[ \t]+$/, "", $2); print int(($2 + 512) / 1024) "G"}')
+      if [[ "$gpu_count" -gt 1 ]]; then
+        printf '%sx %s %s' "$gpu_count" "$gpu_name" "$gpu_mem"
+      else
+        printf '%s %s' "$gpu_name" "$gpu_mem"
+      fi
+      return
+    fi
+  fi
+
+  if [[ "$os_name" == "Linux" ]] && command -v lspci >/dev/null 2>&1; then
+    gpu_vendors=$(lspci | grep -Ei 'vga|3d|display' | awk '
+      /NVIDIA/ && !seen["NVIDIA"]++ {items[++n]="NVIDIA"}
+      /AMD|ATI/ && !seen["AMD"]++ {items[++n]="AMD"}
+      /Intel/ && !seen["Intel"]++ {items[++n]="Intel"}
+      END {
+        for (i = 1; i <= n; i++) {
+          printf "%s%s", (i > 1 ? "+" : ""), items[i]
+        }
+      }')
+    if [[ -n "$gpu_vendors" ]]; then
+      printf '%s' "$gpu_vendors"
+      return
+    fi
+  fi
+
+  printf '-'
+}
+
+cg_npu_info() {
+  local npu_name
+
+  if [[ "$os_name" == "Linux" ]]; then
+    if ls /dev 2>/dev/null | grep -Eiq 'npu|vpu|hailo|davinci|tpu|accel|rknn'; then
+      npu_name=$(ls /dev 2>/dev/null | grep -Ei 'npu|vpu|hailo|davinci|tpu|accel|rknn' | head -n 1 | cg_trim)
+      printf '%s' "$npu_name"
+      return
+    fi
+
+    if command -v lspci >/dev/null 2>&1; then
+      npu_name=$(lspci | grep -Ei 'npu|neural|vpu|tpu|hailo|ascend|davinchi|gaudi|myriad|rockchip' | head -n 1 | sed 's/^[^:]*: //' | cg_trim)
+      if [[ -n "$npu_name" ]]; then
+        printf '%s' "$npu_name"
+        return
+      fi
+    fi
+  fi
+
+  printf '-'
+}
+
+output_content="[CG] ${platform_arch} | ${os_label} | CPU:$(cg_cpu_info) | GPU:$(cg_gpu_info) | NPU:$(cg_npu_info)"
 
 # >>> conda initialize >>>
 # !! Contents within this block are managed by 'conda init' !!
@@ -142,7 +248,11 @@ export PATH=$HOME/.npm-global/bin:$PATH
 FNM_PATH="${HOME}/.local/share/fnm"
 if [ -d "$FNM_PATH" ]; then
   export PATH="${HOME}/.local/share/fnm:$PATH"
-  eval "$(fnm env)"
+  __fnm_env="$(fnm env 2>/dev/null)"
+  if [ -n "$__fnm_env" ]; then
+    eval "$__fnm_env"
+  fi
+  unset __fnm_env
 fi
 
 # rvm
